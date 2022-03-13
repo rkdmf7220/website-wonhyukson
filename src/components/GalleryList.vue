@@ -5,6 +5,7 @@
         <gallery-list-item :item-data="item" />
       </li>
     </ul>
+    <router-view/>
   </div>
 </template>
 
