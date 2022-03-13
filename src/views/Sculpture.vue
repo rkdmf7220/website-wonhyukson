@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-    <h1>Sculpture</h1>
+    <h1>{{$route.name}}</h1>
     <gallery-list/>
   </div>
 </template>

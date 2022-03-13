@@ -11,31 +11,48 @@ const routes = [
     path: '/sculpture',
     name: 'Sculpture',
     component: Sculpture,
-    gnb: true
+    meta: {
+      isWorks: true
+    },
+    children: [
+      {
+        path: '/:id',
+        name: 'Detail',
+        component: () => import('../views/Detail'),
+      }
+    ]
   },
   {
     path: '/painting',
     name: 'Painting',
     component: () => import('../views/Painting'),
-    gnb: true
+    meta: {
+      isWorks: true
+    }
   },
   {
     path: '/typography',
     name: 'Typography',
     component: () => import('../views/Typography.vue'),
-    gnb: true
+    meta: {
+      isWorks: true
+    }
   },
   {
     path: '/video',
     name: 'Video',
     component: () => import('../views/Video.vue'),
-    gnb: true
+    meta: {
+      isWorks: true
+    }
   },
   {
     path: '/archive',
     name: 'Archive',
     component: () => import('../views/Archive.vue'),
-    gnb: true
+    meta: {
+      cssClass: 'margin-to-works'
+    }
   },
   {
     path: '/about',
@@ -43,26 +60,18 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
-    gnb: true
+    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
     path: '/cv',
     name: 'CV',
-    component: () => import('../views/CV.vue'),
-    gnb: true
+    component: () => import('../views/CV.vue')
   },
   {
     path: '/contact',
     name: 'Contact',
-    component: () => import('../views/Contact.vue'),
-    gnb: true
+    component: () => import('../views/Contact.vue')
   },
-  {
-    path: '/detail',
-    name: 'Detail',
-    component: () => import('../views/Detail')
-  }
 ]
 
 const router = createRouter({

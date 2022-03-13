@@ -2,7 +2,7 @@
   <div id="nav">
     <router-link to="/" class="logo">Wonhyuk Son</router-link>
     <ul>
-      <li v-for="item in menu" :key="item.name">
+      <li v-for="item in menu" :key="item.name" :class="item.meta.cssClass">
         <router-link :to="item.path">{{item.name}}</router-link>
       </li>
     </ul>
@@ -40,21 +40,26 @@ export default {
     padding: 100px 0 0 32px;
     box-sizing: border-box;
 
-    & .logo{
+    .logo{
       font-weight: 700;
       font-size: 1.25rem;
       padding: 16px;
       display: inline-block;
     }
 
-    & ul{
+    ul{
       font-size: 1rem;
       margin-top: 16px;
 
-      & a{
+      a{
         padding-left: 16px;
-        line-height: 2rem;
+        padding-bottom: 12px;
+        line-height: 1.25rem;
         display: block;
+      }
+
+      .margin-to-works{
+        margin-top: 48px;
       }
     }
   }
