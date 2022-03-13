@@ -1,16 +1,21 @@
 <template>
   <div class="item-wrap">
-    <div class="bg-img">
-      <img src="../../public/img/sculpture/buddha/4.jpg" alt="">
-    </div>
-    <p class="txt-title">Cycle (Lego Buddha</p>
-    <p class="txt-year">2021</p>
+    <router-link :to="'/sculpture/' + itemData.id">
+      <div class="bg-img">
+        <img :src="itemData.thumb" alt="">
+      </div>
+      <p class="txt-title">{{itemData.title}}</p>
+      <p class="txt-year">2021</p>
+    </router-link>
   </div>
 </template>
 
 <script>
 export default {
-  name: "GalleryListItem"
+  name: "GalleryListItem",
+  props: {
+    itemData: Object
+  }
 }
 </script>
 
