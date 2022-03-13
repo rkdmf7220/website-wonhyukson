@@ -1,53 +1,56 @@
 [
   {
     "type": "sculpture",
+    "id": "cycle",
     "title": "Cycle (Lego Buddha)",
     "year": 2021,
-    "thumb": "../../public/img/sculpture/buddha/4.jpg",
+    "thumb": "img/sculpture/buddha/4.jpg",
     "imgs": [
-      "../../public/img/sculpture/buddha/1.jpg",
-      "../../public/img/sculpture/buddha/2.jpg",
-      "../../public/img/sculpture/buddha/3.jpg",
-      "../../public/img/sculpture/buddha/4.jpg"
+      "img/sculpture/buddha/1.jpg",
+      "img/sculpture/buddha/2.jpg",
+      "img/sculpture/buddha/3.jpg",
+      "img/sculpture/buddha/4.jpg"
     ],
     "caption": "2021, Mixed media, Dimensions variable (430 x 400 x 140cm)",
     "text": "Circulation of color and expansion of Buddha.\nAn infinite white Buddha that expands and converges infinitely,\nwhose expressions and shapes are not clearly visible, looks at the transparent Buddha.\nPassing through the transparent Buddha's face, which acts as a prism,\nthe white Buddha expands to the original digital color RGB (Red, Green, Blue)\nand the original analog color CMYK (Cyan, Magenta, Yellow, and Black).\nThus, the color transmitted through the prism circulates back to the infinite Buddha.\nAll colors circulate and can implement all colors, expand and converge through the form of Buddha.\nThere is no beginning and end, and the Buddha, which constantly expands and converges,\ncirculates 4-3-1-∞(infinite) in a color-circulating hourglass structure.\nThe Buddha separated by color symbolizes line, the transparent Buddha converges into a prism symbolizes dot,\nand the infinite Buddha with infinite colors symbolizes plane, consisting of dot, line, and plane structures."
   },
   {
     "type": "sculpture",
+    "id": "194",
     "title": "194",
     "year": 2020,
     "caption": "2020, Lego brick on acrylic, 86.6 x 65 cm",
-    "thumb": "../../public/img/sculpture/194/9.jpg",
+    "thumb": "img/sculpture/194/9.jpg",
     "imgs": [
-      "../../public/img/sculpture/194/1.jpg",
-      "../../public/img/sculpture/194/2.jpg",
-      "../../public/img/sculpture/194/3.jpg",
-      "../../public/img/sculpture/194/4.jpg",
-      "../../public/img/sculpture/194/5.jpg",
-      "../../public/img/sculpture/194/6.jpg",
-      "../../public/img/sculpture/194/7.jpg",
-      "../../public/img/sculpture/194/8.jpg",
-      "../../public/img/sculpture/194/9.jpg"
+      "img/sculpture/194/1.jpg",
+      "img/sculpture/194/2.jpg",
+      "img/sculpture/194/3.jpg",
+      "img/sculpture/194/4.jpg",
+      "img/sculpture/194/5.jpg",
+      "img/sculpture/194/6.jpg",
+      "img/sculpture/194/7.jpg",
+      "img/sculpture/194/8.jpg",
+      "img/sculpture/194/9.jpg"
     ],
     "text": "Criticising the loss of modern people's soul and time caused by the remnants of times. Army, made for war, threw many questions to humanity.\nAnd until now it still remains and invites people into class society with forced patriotism and loyalty, excusing that it's all for the law and efficiency.\nPeople with unwanted invitation, consumes their time and soul.\nThey wander in the space of ignorance.\nHaving conversations without knowing anything, having lack of sleep, and at where nobody exists, without any thoughts, looking at the vanishing smoke and rising sun."
   },
   {
     "type": "painting",
+    "id": "composition4",
     "title": "Composition 4 (Division – Unity)",
     "year": 2020,
     "caption": "2020, acrylic on canvas, 35cm x 35cm",
-    "thumb": "../../public/img/composition-4/9.jpg",
+    "thumb": "img/composition-4/9.jpg",
     "imgs": [
-      "../../public/img/composition-4/1.jpg",
-      "../../public/img/composition-4/2.jpg",
-      "../../public/img/composition-4/3.jpg",
-      "../../public/img/composition-4/4.jpg",
-      "../../public/img/composition-4/5.jpg",
-      "../../public/img/composition-4/6.jpg",
-      "../../public/img/composition-4/7.jpg",
-      "../../public/img/composition-4/8.jpg",
-      "../../public/img/composition-4/9.jpg"
+      "img/composition-4/1.jpg",
+      "img/composition-4/2.jpg",
+      "img/composition-4/3.jpg",
+      "img/composition-4/4.jpg",
+      "img/composition-4/5.jpg",
+      "img/composition-4/6.jpg",
+      "img/composition-4/7.jpg",
+      "img/composition-4/8.jpg",
+      "img/composition-4/9.jpg"
     ],
     "text": "Criticising the loss of modern people's soul and time caused by the remnants of times. Army, made for war, threw many questions to humanity.\nAnd until now it still remains and invites people into class society with forced patriotism and loyalty, excusing that it's all for the law and efficiency.\nPeople with unwanted invitation, consumes their time and soul.\nThey wander in the space of ignorance.\nHaving conversations without knowing anything, having lack of sleep, and at where nobody exists, without any thoughts, looking at the vanishing smoke and rising sun."
   }
