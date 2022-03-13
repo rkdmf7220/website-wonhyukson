@@ -56,10 +56,13 @@ h1, h2{
 h1{
   font-size: 1.25rem
 }
+h2{
+  font-size: 1.125rem;
+}
 .wrap{
   margin: 116px 0 0 240px;
 
-  h1{
+  &>h1{
     margin-bottom: 32px;
   }
 }

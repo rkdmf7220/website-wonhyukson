@@ -57,6 +57,11 @@ const routes = [
     name: 'Contact',
     component: () => import('../views/Contact.vue'),
     gnb: true
+  },
+  {
+    path: '/detail',
+    name: 'Detail',
+    component: () => import('../views/Detail')
   }
 ]
 
