@@ -14,7 +14,8 @@ export default {
   name: "GlobalNav",
 
   mounted() {
-    console.log(this.$router.getRoutes())
+    // http://api.wonhyukson.com/sculpture/cycle
+    // console.log(this.$router.getRoutes().forEach(item => console.log(item, item.meta.isWorks)))
     this.menu = this.$router.getRoutes().filter(item => item.name !== 'Home')
   },
 
