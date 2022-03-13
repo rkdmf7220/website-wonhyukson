@@ -5,7 +5,7 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
 
 html, body, div, span, applet, object, iframe,
@@ -24,8 +24,6 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
   font-family: 'Noto Sans KR', sans-serif;
 }
@@ -44,11 +42,6 @@ ol, ul {
 blockquote, q {
   quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -58,7 +51,17 @@ a{
   color: black;
 }
 h1, h2{
-  font-weight: 700;
+  font-weight: 400;
+}
+h1{
+  font-size: 1.25rem
+}
+.wrap{
+  margin: 116px 0 0 240px;
+
+  h1{
+    margin-bottom: 32px;
+  }
 }
 </style>
 <script>
