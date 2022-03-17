@@ -1,8 +1,8 @@
 <template>
   <div class="contents">
-    <ul>
+    <ul v-if="visibleList">
       <li v-for="item in listData" :key="item.id">
-        <gallery-list-item :item-data="item" />
+        <gallery-list-item :item-data="item" @invisible="showList"/>
       </li>
     </ul>
     <router-view/>
@@ -20,7 +20,8 @@ export default {
   },
   data() {
     return{
-      listData: []
+      listData: [],
+      visibleList: true
     }
   },
   methods: {
@@ -37,6 +38,10 @@ export default {
             console.log('error', error);
             // TODO: error handling.
           });
+    },
+    showList(show) {
+      this.$emit('visable', show);
+      this.visibleList = show;
     }
   }
 }

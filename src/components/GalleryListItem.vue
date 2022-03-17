@@ -1,6 +1,6 @@
 <template>
   <div class="item-wrap">
-    <router-link :to="'/sculpture/' + itemData.id">
+    <router-link :to="'/sculpture/' + itemData.id" @click="onClickArtworkList">
       <div class="bg-img">
         <img :src="itemData.thumb" alt="">
       </div>
@@ -15,6 +15,17 @@ export default {
   name: "GalleryListItem",
   props: {
     itemData: Object
+  },
+  data() {
+    return {
+      displayList: true
+    }
+  },
+
+  methods: {
+    onClickArtworkList() {
+      this.$emit('invisible', !this.displayList);
+    }
   }
 }
 </script>

@@ -18,7 +18,7 @@ const routes = [
       {
         path: '/sculpture/:id',
         name: 'Detail',
-        component: () => import('../views/Detail'),
+        component: () => import('../components/Detail'),
       }
     ]
   },

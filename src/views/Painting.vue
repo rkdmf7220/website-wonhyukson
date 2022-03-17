@@ -9,7 +9,17 @@
 import GalleryList from "../components/GalleryList";
 export default {
   name: "Painting",
-  components: {GalleryList}
+  components: {GalleryList},
+  data() {
+    return {
+      visibleList: true
+    }
+  },
+  methods: {
+    invisibleList(show) {
+      this.visibleList = show;
+    }
+  }
 }
 </script>
 

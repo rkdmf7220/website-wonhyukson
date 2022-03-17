@@ -1,7 +1,7 @@
 <template>
   <div class="wrap">
-    <h1>{{$route.name}}</h1>
-    <gallery-list/>
+    <h1 v-if="visibleList">{{$route.name}}</h1>
+    <gallery-list @visable="invisibleList"/>
   </div>
 </template>
 
@@ -9,7 +9,17 @@
 import GalleryList from "../components/GalleryList";
 export default {
   name: "Sculpture",
-  components: {GalleryList}
+  components: {GalleryList},
+  data() {
+    return {
+      visibleList: true
+    }
+  },
+  methods: {
+    invisibleList(show) {
+      this.visibleList = show;
+    }
+  }
 }
 </script>
 
