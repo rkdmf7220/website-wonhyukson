@@ -37,6 +37,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+  .wrap{
+    margin: 0;
+  }
   .contents{
     max-width: 1200px;
 
