@@ -49,10 +49,12 @@ export default {
     ul{
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
 
       li{
         width: 23%;
         margin-right: 2%;
+        margin-bottom: 40px;
       }
     }
   }
