@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-    <h1>Cycle (Lego Buddha)</h1>
+    <h1 @click="testItemData">안녕</h1>
     <div class="contents">
       <div class="txt-wrap">
         <h2 class="txt-caption">2021, Mixed media, Dimensions variable (430 x 400 x 140cm)</h2>
@@ -31,8 +31,37 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
-  name: "Detail"
+  name: "Detail",
+  mounted() {
+    this.loadList()
+  },
+  data() {
+    return{
+      listData: []
+    }
+  },
+  methods: {
+    loadList() {
+      axios.get("../mockup/data-result.json")
+          .then(response => {
+            console.log('response 내용은',response);
+            if(response.statusText === "OK") {
+              this.listData = response.data;
+            } else {
+              // TODO: error handling.
+            }
+          }).catch(error => {
+        console.log('error', error);
+        // TODO: error handling.
+      });
+    },
+    testItemData() {
+      console.log(this.listData)
+    }
+  }
 }
 </script>
 
