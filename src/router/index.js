@@ -8,19 +8,24 @@ const routes = [
     redirect: '/sculpture',
   },
   {
+    path: '/:type:/:id',
+    name: 'DetailPage',
+    component: () => import('../components/Detail')
+  },
+  {
     path: '/sculpture',
     name: 'Sculpture',
     component: Sculpture,
     meta: {
       isWorks: true
-    },
+    }/*,
     children: [
       {
         path: '/:type/:id',
         name: 'Detail',
         component: () => import('../components/Detail'),
       }
-    ]
+    ]*/
   },
   {
     path: '/painting',
