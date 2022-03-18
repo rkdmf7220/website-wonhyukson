@@ -20,10 +20,10 @@
       </div>
       <div class="img-wrap">
         <ul class="img-list">
-          <li class="img-item"><img src="../../public/img/sculpture/buddha/1.jpg" alt=""></li>
-          <li class="img-item"><img src="../../public/img/sculpture/buddha/2.jpg" alt=""></li>
-          <li class="img-item"><img src="../../public/img/sculpture/buddha/3.jpg" alt=""></li>
-          <li class="img-item"><img src="../../public/img/sculpture/buddha/4.jpg" alt=""></li>
+          <li class="img-item"><img src="../../public/img/sculpture/buddha/01.jpg" alt=""></li>
+          <li class="img-item"><img src="../../public/img/sculpture/buddha/02.jpg" alt=""></li>
+          <li class="img-item"><img src="../../public/img/sculpture/buddha/03.jpg" alt=""></li>
+          <li class="img-item"><img src="../../public/img/sculpture/buddha/04.jpg" alt=""></li>
         </ul>
       </div>
     </div>

@@ -1,15 +1,15 @@
 [
   {
     "type": "sculpture",
-    "id": "cycle",
+    "id": "lego-buddha",
     "title": "Cycle (Lego Buddha)",
     "year": 2021,
-    "thumb": "img/sculpture/buddha/4.jpg",
+    "thumb": "img/sculpture/buddha/01.jpg",
     "imgs": [
-      "img/sculpture/buddha/1.jpg",
-      "img/sculpture/buddha/2.jpg",
-      "img/sculpture/buddha/3.jpg",
-      "img/sculpture/buddha/4.jpg"
+      "img/sculpture/buddha/01.jpg",
+      "img/sculpture/buddha/02.jpg",
+      "img/sculpture/buddha/03.jpg",
+      "img/sculpture/buddha/04.jpg"
     ],
     "caption": "2021, Mixed media, Dimensions variable (430 x 400 x 140cm)",
     "text": "Circulation of color and expansion of Buddha.\nAn infinite white Buddha that expands and converges infinitely,\nwhose expressions and shapes are not clearly visible, looks at the transparent Buddha.\nPassing through the transparent Buddha's face, which acts as a prism,\nthe white Buddha expands to the original digital color RGB (Red, Green, Blue)\nand the original analog color CMYK (Cyan, Magenta, Yellow, and Black).\nThus, the color transmitted through the prism circulates back to the infinite Buddha.\nAll colors circulate and can implement all colors, expand and converge through the form of Buddha.\nThere is no beginning and end, and the Buddha, which constantly expands and converges,\ncirculates 4-3-1-∞(infinite) in a color-circulating hourglass structure.\nThe Buddha separated by color symbolizes line, the transparent Buddha converges into a prism symbolizes dot,\nand the infinite Buddha with infinite colors symbolizes plane, consisting of dot, line, and plane structures."
@@ -20,19 +20,119 @@
     "title": "194",
     "year": 2020,
     "caption": "2020, Lego brick on acrylic, 86.6 x 65 cm",
-    "thumb": "img/sculpture/194/9.jpg",
+    "thumb": "img/sculpture/194/01.jpg",
     "imgs": [
-      "img/sculpture/194/1.jpg",
-      "img/sculpture/194/2.jpg",
-      "img/sculpture/194/3.jpg",
-      "img/sculpture/194/4.jpg",
-      "img/sculpture/194/5.jpg",
-      "img/sculpture/194/6.jpg",
-      "img/sculpture/194/7.jpg",
-      "img/sculpture/194/8.jpg",
-      "img/sculpture/194/9.jpg"
+      "img/sculpture/194/01.jpg",
+      "img/sculpture/194/02.jpg",
+      "img/sculpture/194/03.jpg",
+      "img/sculpture/194/04.jpg",
+      "img/sculpture/194/05.jpg",
+      "img/sculpture/194/06.jpg",
+      "img/sculpture/194/07.jpg",
+      "img/sculpture/194/08.jpg",
+      "img/sculpture/194/09.jpg"
     ],
     "text": "Criticising the loss of modern people's soul and time caused by the remnants of times. Army, made for war, threw many questions to humanity.\nAnd until now it still remains and invites people into class society with forced patriotism and loyalty, excusing that it's all for the law and efficiency.\nPeople with unwanted invitation, consumes their time and soul.\nThey wander in the space of ignorance.\nHaving conversations without knowing anything, having lack of sleep, and at where nobody exists, without any thoughts, looking at the vanishing smoke and rising sun."
+  },
+  {
+    "type": "sculpture",
+    "id": "hunchback-orange",
+    "title": "hunchback",
+    "year": 2020,
+    "caption": "2020, Lego brick, 22.7 x 3 x 42.5cm",
+    "thumb": "img/sculpture/hunchback_orange/01.jpg",
+    "imgs": [
+      "img/sculpture/hunchback_orange/01.jpg",
+      "img/sculpture/hunchback_orange/02.jpg",
+      "img/sculpture/hunchback_orange/03.jpg",
+      "img/sculpture/hunchback_orange/04.jpg",
+      "img/sculpture/hunchback_orange/05.jpg",
+      "img/sculpture/hunchback_orange/06.jpg",
+      "img/sculpture/hunchback_orange/07.jpg",
+      "img/sculpture/hunchback_orange/08.jpg",
+      "img/sculpture/hunchback_orange/09.jpg"
+    ],
+    "text": "People, that has to obey to unwanted order, carrying steels and gears\nthat is heavier than their weight, head to the destination.\nOne's self constrained even though it's unendurable.\nThat weak and innocent human's body, squashed by passive heavy steel, makes the form of hunchback.\nIt drives question whether Victor Hugo's 'Notre Dame de Paris's hunchback\nexists not only in a novel but also exists differently in the contemporary era."
+  },
+  {
+    "type": "sculpture",
+    "id": "hunchback",
+    "title": "hunchback",
+    "year": 2020,
+    "caption": "2020, Lego brick, 22.7 x 3 x 42.5cm",
+    "thumb": "img/sculpture/hunchback/01.jpg",
+    "imgs": [
+      "img/sculpture/hunchback/01.jpg",
+      "img/sculpture/hunchback/02.jpg",
+      "img/sculpture/hunchback/03.jpg",
+      "img/sculpture/hunchback/04.jpg",
+      "img/sculpture/hunchback/05.jpg",
+      "img/sculpture/hunchback/06.jpg",
+      "img/sculpture/hunchback/07.jpg",
+      "img/sculpture/hunchback/08.jpg",
+      "img/sculpture/hunchback/09.jpg"
+    ],
+    "text": "People, that has to obey to unwanted order, carrying steels and gears\nthat is heavier than their weight, head to the destination.\nOne's self constrained even though it's unendurable.\nThat weak and innocent human's body, squashed by passive heavy steel, makes the form of hunchback.\nIt drives question whether Victor Hugo's 'Notre Dame de Paris's hunchback\nexists not only in a novel but also exists differently in the contemporary era."
+  },
+  {
+    "type": "sculpture",
+    "id": "opera",
+    "title": "The fall of opera",
+    "year": 2019,
+    "caption": "2019, Lego brick, 41 x 24 x94cm",
+    "thumb": "img/sculpture/opera/01.jpg",
+    "imgs": [
+      "img/sculpture/opera/01.jpg",
+      "img/sculpture/opera/02.jpg",
+      "img/sculpture/opera/03.jpg",
+      "img/sculpture/opera/04.jpg",
+      "img/sculpture/opera/05.jpg",
+      "img/sculpture/opera/06.jpg",
+      "img/sculpture/opera/07.jpg",
+      "img/sculpture/opera/08.jpg",
+      "img/sculpture/opera/09.jpg"
+    ],
+    "text": "Opera, used to be a privilege class's symbol and culture, got popularized\nand had more variety of audience as people get modernized.\nHowever, popularity of opera faded due to low accessibility caused by unfamiliarity to public.\nNow opera is trying to reach audience again as popera by applying pop music components.\nThis fall of opera and rise of popera expressed though Lego,\nwhich is familiar to many modern people, and criticizes privileged culture.\nMany different colors symbolize variety of pop music styles.\nAnd white, the achromatic color, controls the balance between colors\nand symbolizes classical opera."
+  },
+  {
+    "type": "sculpture",
+    "id": "cathedral",
+    "title": "St.Atlas cathedral",
+    "year": 2018,
+    "caption": "2018, Lego brick, LED, 26 x 26 x 65cm",
+    "thumb": "img/sculpture/cathedral/01.jpg",
+    "imgs": [
+      "img/sculpture/cathedral/01.jpg",
+      "img/sculpture/cathedral/02.jpg",
+      "img/sculpture/cathedral/03.jpg",
+      "img/sculpture/cathedral/04.jpg",
+      "img/sculpture/cathedral/05.jpg",
+      "img/sculpture/cathedral/06.jpg",
+      "img/sculpture/cathedral/07.jpg",
+      "img/sculpture/cathedral/08.jpg",
+      "img/sculpture/cathedral/09.jpg"
+    ],
+    "text": "People often go and see cathedral, fascinated by grandness of cathedral and beauty of stained glass.\nMany purpose of cathedral's appearance is to evangelize people but eventually, fascinated by its appearance, human often miss the essential ideas.\nCriticising people with no actual belief but filled with empty formalities, vanity and lies through fancy look of the cathedral represented as golden bell and stained glass.\nBeing focused only on the fancy look eventually turned human untrue, impractical and greedy.\nMade by technique of making new style through mixing detailed Gothic styled stained glass with profound and huge Dome styled Arches and Ionian styles.\nThe cathedral has size ratio to human Lego figures like actual cathedral and human.\nIt talks about relative perspective and attitude through the cathedral created suitable to human Lego figures' size.\nFrom actual human's perspective, it's small and compact, but for human Lego figures, it's grand and huge.\nAlso, through the fact that it is the only Sculpture without applying glue, it shows, only when the attitude to the creation is careful and true, it won't broke."
+  },
+  {
+    "type": "sculpture",
+    "id": "guitar",
+    "title": "Millennium Falcon Guitar",
+    "year": 2016,
+    "caption": "2016, Lego brick, LED, Bluetooth speaker, Guitar string, 94 x 33 x 14cm",
+    "thumb": "img/sculpture/guitar/01.jpg",
+    "imgs": [
+      "img/sculpture/guitar/01.jpg",
+      "img/sculpture/guitar/02.jpg",
+      "img/sculpture/guitar/03.jpg",
+      "img/sculpture/guitar/04.jpg",
+      "img/sculpture/guitar/05.jpg",
+      "img/sculpture/guitar/06.jpg",
+      "img/sculpture/guitar/07.jpg",
+      "img/sculpture/guitar/08.jpg",
+      "img/sculpture/guitar/09.jpg"
+    ],
+    "text": "The movie 'Star Wars', nostalgic and dreamy to many modern people,\ncombined with many people's desire, capability of playing an instrument.\nWhile Millennium Falcon escapes from limited grounds and fly freely in space, guitar, brings happiness and sense of freedom through beautiful melody.\nIt elicits modern people's empathy.\nEspecially, by using ready-made Lego product, can approach many people with different consensus.\nIt also uses actual guitar strings, LED and bluetooth speakers\nand have conversation with different individuals with different characteristics and tastes by not limiting itself to classic formative materials."
   },
   {
     "type": "painting",
@@ -40,18 +140,281 @@
     "title": "Composition 4 (Division – Unity)",
     "year": 2020,
     "caption": "2020, acrylic on canvas, 35cm x 35cm",
-    "thumb": "img/composition-4/9.jpg",
+    "thumb": "img/painting/composition-4/01.jpg",
     "imgs": [
-      "img/composition-4/1.jpg",
-      "img/composition-4/2.jpg",
-      "img/composition-4/3.jpg",
-      "img/composition-4/4.jpg",
-      "img/composition-4/5.jpg",
-      "img/composition-4/6.jpg",
-      "img/composition-4/7.jpg",
-      "img/composition-4/8.jpg",
-      "img/composition-4/9.jpg"
+      "img/painting/composition-4/01.jpg",
+      "img/painting/composition-4/02.jpg",
+      "img/painting/composition-4/03.jpg",
+      "img/painting/composition-4/04.jpg",
+      "img/painting/composition-4/05.jpg",
+      "img/painting/composition-4/06.jpg",
+      "img/painting/composition-4/07.jpg",
+      "img/painting/composition-4/08.jpg",
+      "img/painting/composition-4/09.jpg"
     ],
-    "text": "Criticising the loss of modern people's soul and time caused by the remnants of times. Army, made for war, threw many questions to humanity.\nAnd until now it still remains and invites people into class society with forced patriotism and loyalty, excusing that it's all for the law and efficiency.\nPeople with unwanted invitation, consumes their time and soul.\nThey wander in the space of ignorance.\nHaving conversations without knowing anything, having lack of sleep, and at where nobody exists, without any thoughts, looking at the vanishing smoke and rising sun."
+    "text": "Variations on 'Block, 2020''s experiment. A brick of Lego reconstructs as a flat painting and that brick again deconstruct as a basic component of a painting; point, line and face and creates new, non-figurative ideal form.\nDifferent shapes and characters eventually, within the same context, combines.\nThus contains surreal structure, unidentifiable of its procedure and whether it is divided or united."
+  },
+  {
+    "type": "painting",
+    "id": "composition3",
+    "title": "Composition 3 (Division – Unity)",
+    "year": 2020,
+    "caption": "2020, acrylic on canvas, 35cm x 35cm",
+    "thumb": "img/painting/composition-3/01.jpg",
+    "imgs": [
+      "img/painting/composition-3/01.jpg",
+      "img/painting/composition-3/02.jpg",
+      "img/painting/composition-3/03.jpg",
+      "img/painting/composition-3/04.jpg",
+      "img/painting/composition-3/05.jpg",
+      "img/painting/composition-3/06.jpg",
+      "img/painting/composition-3/07.jpg",
+      "img/painting/composition-3/08.jpg",
+      "img/painting/composition-3/09.jpg"
+    ],
+    "text": "Variations on 'Block, 2020''s experiment. A brick of Lego reconstructs as a flat painting and that brick again deconstruct as a basic component of a painting; point, line and face and creates new, non-figurative ideal form.\nDifferent shapes and characters eventually, within the same context, combines.\nThus contains surreal structure, unidentifiable of its procedure and whether it is divided or united."
+  },
+  {
+    "type": "painting",
+    "id": "composition2",
+    "title": "Composition 2 (Division – Unity)",
+    "year": 2020,
+    "caption": "2020, acrylic on canvas, 35cm x 35cm",
+    "thumb": "img/painting/composition-2/01.jpg",
+    "imgs": [
+      "img/painting/composition-2/01.jpg",
+      "img/painting/composition-2/02.jpg",
+      "img/painting/composition-2/03.jpg",
+      "img/painting/composition-2/04.jpg",
+      "img/painting/composition-2/05.jpg",
+      "img/painting/composition-2/06.jpg",
+      "img/painting/composition-2/07.jpg",
+      "img/painting/composition-2/08.jpg",
+      "img/painting/composition-2/09.jpg"
+    ],
+    "text": "Variations on 'Block, 2020''s experiment. A brick of Lego reconstructs as a flat painting and that brick again deconstruct as a basic component of a painting; point, line and face and creates new, non-figurative ideal form.\nDifferent shapes and characters eventually, within the same context, combines.\nThus contains surreal structure, unidentifiable of its procedure and whether it is divided or united."
+  },
+  {
+    "type": "painting",
+    "id": "composition1",
+    "title": "Composition 1 (Division – Unity)",
+    "year": 2020,
+    "caption": "2020, acrylic on canvas, 35cm x 35cm",
+    "thumb": "img/painting/composition-1/01.jpg",
+    "imgs": [
+      "img/painting/composition-1/01.jpg",
+      "img/painting/composition-1/02.jpg",
+      "img/painting/composition-1/03.jpg",
+      "img/painting/composition-1/04.jpg",
+      "img/painting/composition-1/05.jpg",
+      "img/painting/composition-1/06.jpg",
+      "img/painting/composition-1/07.jpg",
+      "img/painting/composition-1/08.jpg",
+      "img/painting/composition-1/09.jpg"
+    ],
+    "text": "Variations on 'Block, 2020''s experiment. A brick of Lego reconstructs as a flat painting and that brick again deconstruct as a basic component of a painting; point, line and face and creates new, non-figurative ideal form.\nDifferent shapes and characters eventually, within the same context, combines.\nThus contains surreal structure, unidentifiable of its procedure and whether it is divided or united."
+  },
+  {
+    "type": "painting",
+    "id": "block-red",
+    "title": "block",
+    "year": 2020,
+    "caption": "2020, acrylic on canvas, 35cm x 35cm",
+    "thumb": "img/painting/block-red/01.jpg",
+    "imgs": [
+      "img/painting/block-red/01.jpg",
+      "img/painting/block-red/02.jpg",
+      "img/painting/block-red/03.jpg",
+      "img/painting/block-red/04.jpg",
+      "img/painting/block-red/05.jpg",
+      "img/painting/block-red/06.jpg",
+      "img/painting/block-red/07.jpg",
+      "img/painting/block-red/08.jpg",
+      "img/painting/block-red/09.jpg"
+    ],
+    "text": "VExperimental work on possibility and origin on Lego, not as a physical formative material but when reconstructed as a flat painting.\nIt changes its form even with the same limited colors and shapes through composition.\nshowing Lego's identity, assembly.\nEach form, geometric as a face and has attribute of nature, expresses a form, close to concrete art."
+  },
+  {
+    "type": "painting",
+    "id": "twisted-harmony",
+    "title": "Twisted harmony",
+    "year": 2018,
+    "caption": "2018, Lego brick on canvas, 53cm x 53cm",
+    "thumb": "img/painting/twisted-harmony/01.jpg",
+    "imgs": [
+      "img/painting/twisted-harmony/01.jpg",
+      "img/painting/twisted-harmony/02.jpg",
+      "img/painting/twisted-harmony/03.jpg",
+      "img/painting/twisted-harmony/04.jpg",
+      "img/painting/twisted-harmony/05.jpg",
+      "img/painting/twisted-harmony/06.jpg",
+      "img/painting/twisted-harmony/07.jpg",
+      "img/painting/twisted-harmony/08.jpg",
+      "img/painting/twisted-harmony/09.jpg"
+    ],
+    "text": "A collage artwork with Lego on canvas. Expresses human society, sharing only one space and not breaking its shape by having boundaries.\nThrough different types and sizes of Lego bricks that looks spreading but keeping its shape, it shows people, living different lives from each other but eventually are living in the same era and lifestyle."
+  },
+  {
+    "type": "typography",
+    "id": "poster-buddha",
+    "title": "Dream Land : color poster",
+    "year": 2021,
+    "caption": "2021, illustration, 59.4 x 84.1cm",
+    "thumb": "img/typography/buddha/01.jpg",
+    "imgs": [
+      "img/typography/buddha/01.jpg",
+      "img/typography/buddha/02.jpg",
+      "img/typography/buddha/03.jpg",
+      "img/typography/buddha/04.jpg",
+      "img/typography/buddha/05.jpg"
+    ],
+    "text": "A poster in the form of a non- square Hangeul combined with assembled Lego RGB and CMYK Buddha."
+  },
+  {
+    "type": "typography",
+    "id": "rainwater",
+    "title": "Rainwater",
+    "year": 2021,
+    "caption": "2021, illustration, 59.4 x 84.1cm",
+    "thumb": "img/typography/rainwater/01.jpg",
+    "imgs": [
+      "img/typography/rainwater/01.jpg"
+    ],
+    "text": "ㅂ / Flowing rainwater ㅂ / Cold rainwater ㅂ / Silent rainwater"
+  },
+  {
+    "type": "typography",
+    "id": "artwork",
+    "title": "2020 Wonhyuk Son Art collection",
+    "year": 2020,
+    "caption": "2020, Digital printing, A5",
+    "thumb": "img/typography/artwork/01.jpg",
+    "imgs": [
+      "img/typography/artwork/01.jpg",
+      "img/typography/artwork/02.jpg",
+      "img/typography/artwork/03.jpg",
+      "img/typography/artwork/04.jpg",
+      "img/typography/artwork/05.jpg",
+      "img/typography/artwork/06.jpg"
+    ],
+    "text": "2016 ~ 2020 Art work"
+  },
+  {
+    "type": "typography",
+    "id": "cycle-gestalt",
+    "title": "Cycle (gestalt)",
+    "year": 2020,
+    "caption": "2020, Digital printing, 59.4 x 84.1cm",
+    "thumb": "img/typography/cycle/01.jpg",
+    "imgs": [
+      "img/typography/cycle/01.jpg",
+      "img/typography/cycle/02.jpg",
+      "img/typography/cycle/03.jpg",
+      "img/typography/cycle/04.jpg"
+    ],
+    "text": "It looks at and interprets the human world again through letters created by humans.\nprinciple of stroke addition, whose shape changes as the sound becomes stronger and weaker, can be implicitly compared to the circulation of the human world.\nEach has different looks and properties, but in one context, the basic shapes,\nTherefore, there is a surreal structure in which the beginning and end of time are indistinguishable, and geometric and concrete artistic characteristics in the form of sans serif are prominent."
+  },
+  {
+    "type": "typography",
+    "id": "cycle-triangle",
+    "title": "Cycle (triangle)",
+    "year": 2020,
+    "caption": "2020, Digital printing, 59.4 x 84.1cm",
+    "thumb": "img/typography/cycle/01.jpg",
+    "imgs": [
+      "img/typography/cycle/01.jpg",
+      "img/typography/cycle/02.jpg",
+      "img/typography/cycle/03.jpg",
+      "img/typography/cycle/04.jpg"
+    ],
+    "text": "It looks at and interprets the human world again through letters created by humans.\nprinciple of stroke addition, whose shape changes as the sound becomes stronger and weaker, can be implicitly compared to the circulation of the human world.\nEach has different looks and properties, but in one context, the basic shapes,\nTherefore, there is a surreal structure in which the beginning and end of time are indistinguishable, and geometric and concrete artistic characteristics in the form of sans serif are prominent."
+  },
+  {
+    "type": "typography",
+    "id": "cycle-circle",
+    "title": "Cycle (circle)",
+    "year": 2020,
+    "caption": "2020, Digital printing, 59.4 x 84.1cm",
+    "thumb": "img/typography/cycle/01.jpg",
+    "imgs": [
+      "img/typography/cycle/01.jpg",
+      "img/typography/cycle/02.jpg",
+      "img/typography/cycle/03.jpg",
+      "img/typography/cycle/04.jpg"
+    ],
+    "text": "It looks at and interprets the human world again through letters created by humans.\nprinciple of stroke addition, whose shape changes as the sound becomes stronger and weaker, can be implicitly compared to the circulation of the human world.\nEach has different looks and properties, but in one context, the basic shapes,\nTherefore, there is a surreal structure in which the beginning and end of time are indistinguishable, and geometric and concrete artistic characteristics in the form of sans serif are prominent."
+  },
+  {
+    "type": "typography",
+    "id": "cycle-square",
+    "title": "Cycle (square)",
+    "year": 2020,
+    "caption": "2020, Digital printing, 59.4 x 84.1cm",
+    "thumb": "img/typography/cycle/01.jpg",
+    "imgs": [
+      "img/typography/cycle/01.jpg",
+      "img/typography/cycle/02.jpg",
+      "img/typography/cycle/03.jpg",
+      "img/typography/cycle/04.jpg"
+    ],
+    "text": "It looks at and interprets the human world again through letters created by humans.\nprinciple of stroke addition, whose shape changes as the sound becomes stronger and weaker, can be implicitly compared to the circulation of the human world.\nEach has different looks and properties, but in one context, the basic shapes,\nTherefore, there is a surreal structure in which the beginning and end of time are indistinguishable, and geometric and concrete artistic characteristics in the form of sans serif are prominent."
+  },
+  {
+    "type": "typography",
+    "id": "flower",
+    "title": "Flower",
+    "year": 2019,
+    "caption": "2019, Illustration, A1 / 59.4 x 84.1cm",
+    "thumb": "img/typography/flower/01.jpg",
+    "imgs": [
+      "img/typography/flower/01.jpg",
+      "img/typography/flower/02.jpg",
+      "img/typography/flower/03.jpg"
+    ],
+    "text": "By choosing the pure Korean one letter as a theme, ade of mandala using a combination structure of flower petals and consonants and vowels of Hangeul.\nIt is a work that uses the regularity and formality of Hangeul as a metaphor for flowers by changing the shape and structure of the flower."
+  },
+  {
+    "type": "typography",
+    "id": "yeot",
+    "title": "Yeot",
+    "year": 2019,
+    "caption": "2019, Illustration, A1 / 59.4 x 84.1cm",
+    "thumb": "img/typography/yeot/01.jpg",
+    "imgs": [
+      "img/typography/yeot/01.jpg",
+      "img/typography/yeot/02.jpg",
+      "img/typography/yeot/03.jpg"
+    ],
+    "text": "By choosing the pure Korean one letter as a theme, the Korean traditional snack, Yeot is melted, it captures the fluidity that moves freely, giving a feeling of being like a single brush stroke, not from the front."
+  },
+  {
+    "type": "video",
+    "id": "bauhaus-3",
+    "title": "Bauhaus and Gender ideology(Edit)",
+    "year": 2019,
+    "caption": "2019, PremierePro, AfterEffects, 1920 x 1080 Frame/ 59.4 x 84.1cm",
+    "thumb": "img/typography/video/thumb_bauhaus_03.jpg",
+    "link": "https://www.youtube.com/watch?v=UUiCPNO18yc",
+    "text": "This video was produced by Ahngrahics Publisher in commemoration of the 100th anniversary of Bauhaus, which is a compilation of lecture videos of the main characters exploring in Korea.\nIt was also screened at Dongdaemun Design Plaza to commemorate the 100th anniversary of Bauhaus."
+  },
+  {
+    "type": "video",
+    "id": "bauhaus-2",
+    "title": "What is Bauhaus in South Korea(Edit)",
+    "year": 2019,
+    "caption": "2019, PremierePro, AfterEffects, 1920 x 1080 Frame/ 59.4 x 84.1cm",
+    "thumb": "img/typography/video/thumb_bauhaus_02.jpg",
+    "link": "https://www.youtube.com/watch?v=xrXamqU1tCM",
+    "text": "By choosing the pure Korean one letter as a theme, the Korean traditional snack, Yeot is melted, it captures the fluidity that moves freely, giving a feeling of being like a single brush stroke, not from the front."
+  },
+  {
+    "type": "video",
+    "id": "bauhaus-1",
+    "title": "What is Bauhaus in South Korea(Edit)",
+    "year": 2019,
+    "caption": "2019, PremierePro, AfterEffects, 1920 x 1080 Frame/ 59.4 x 84.1cm",
+    "thumb": "img/typography/video/thumb_bauhaus_01.jpg",
+    "link": "https://www.youtube.com/watch?v=52L_MTIB8RA",
+    "text": "By choosing the pure Korean one letter as a theme, the Korean traditional snack, Yeot is melted, it captures the fluidity that moves freely, giving a feeling of being like a single brush stroke, not from the front."
   }
 ]
