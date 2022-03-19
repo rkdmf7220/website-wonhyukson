@@ -1,31 +1,14 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Sculpture from '../views/Sculpture.vue'
 
-const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    redirect: '/sculpture',
-  },
-  {
-    path: '/:type:/:id',
-    name: 'DetailPage',
-    component: () => import('../components/Detail')
-  },
+const gnb = [
   {
     path: '/sculpture',
     name: 'Sculpture',
     component: Sculpture,
     meta: {
       isWorks: true
-    }/*,
-    children: [
-      {
-        path: '/:type/:id',
-        name: 'Detail',
-        component: () => import('../components/Detail'),
-      }
-    ]*/
+    }
   },
   {
     path: '/painting',
@@ -76,12 +59,27 @@ const routes = [
     path: '/contact',
     name: 'Contact',
     component: () => import('../views/Contact.vue')
+  }
+];
+
+const routes = [
+  {
+    path: '/',
+    name: 'Home',
+    redirect: '/sculpture'
   },
+  {
+    path: '/:type:/:id',
+    name: 'DetailPage',
+    component: () => import('../components/Detail')
+  },
+  ...gnb
 ]
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes
+  routes,
+  gnb
 })
 
 export default router
