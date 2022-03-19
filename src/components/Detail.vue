@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-    <h1 @click="testItemData">안녕</h1>
+    <h1 @click="testItemData">{{$route.params.id}}</h1>
     <div class="contents">
       <div class="txt-wrap">
         <h2 class="txt-caption">2021, Mixed media, Dimensions variable (430 x 400 x 140cm)</h2>
@@ -45,7 +45,11 @@ export default {
   },
   methods: {
     loadList() {
-      axios.get("../mockup/data-result.json")
+      /*let param = {
+        type: this.$route.params.works,
+        id: this.$route.params.id
+      };*/
+      axios.get("../api/works/sculpture/cycle")
           .then(response => {
             console.log('response 내용은',response);
             if(response.statusText === "OK") {

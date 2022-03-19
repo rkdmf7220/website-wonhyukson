@@ -69,7 +69,7 @@ const routes = [
     redirect: '/sculpture'
   },
   {
-    path: '/:type:/:id',
+    path: '/:works/:id',
     name: 'DetailPage',
     component: () => import('../components/Detail')
   },
