@@ -1,6 +1,6 @@
 <template>
   <div class="item-wrap">
-    <router-link :to="'/' + itemData.type + '/' + itemData.id" @click="onClickArtworkList">
+    <router-link :to="`/${itemData.type}/${itemData.id}`" @click="onClickArtworkList">
       <div class="bg-img">
         <img :src="itemData.thumb" alt="">
       </div>
