@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-    <h1 v-if="visibleList">{{$route.name}}</h1>
+    <h1>{{$route.name}}</h1>
     <gallery-list @visable="invisibleList"/>
   </div>
 </template>
