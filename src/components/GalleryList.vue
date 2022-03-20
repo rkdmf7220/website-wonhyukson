@@ -11,26 +11,34 @@
 
 <script>
 import GalleryListItem from "./GalleryListItem";
-import axios from "axios";
+
 export default {
   name: "GalleryList",
   components: {GalleryListItem},
+  computed: {
+    listData() {
+      console.log('works list는', this.$store)
+      return this.$store.state.worksList
+    }
+  },
   mounted() {
-    this.loadList()
+    // this.loadList()
+    this.$store.dispatch('loadWorksList')
   },
   data() {
-    return{
-      listData: [],
+    return {
+      // listData: [],
       visibleList: true
     }
   },
   methods: {
-    loadList() {
+    /*loadList() {
       axios.get("../mockup/data-result.json")
           .then(response => {
             console.log('response 내용은',response);
             if(response.statusText === "OK") {
-              this.listData = response.data;
+              // this.listData = response.data;
+              this.$store.dispatch('updateWorksList', {list: response.data})
             } else {
               // TODO: error handling.
             }
@@ -38,7 +46,7 @@ export default {
             console.log('error', error);
             // TODO: error handling.
           });
-    },
+    },*/
     showList(show) {
       this.$emit('visable', show);
       this.visibleList = show;
@@ -48,17 +56,17 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  .contents{
-    max-width: 1200px;
+.contents {
+  max-width: 1200px;
 
-    ul{
-      display: flex;
-      flex-direction: row;
+  ul {
+    display: flex;
+    flex-direction: row;
 
-      li{
-        width: 23%;
-        margin-right: 2%;
-      }
+    li {
+      width: 23%;
+      margin-right: 2%;
     }
   }
+}
 </style>
