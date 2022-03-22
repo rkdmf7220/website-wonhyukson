@@ -1,12 +1,26 @@
 <template>
-<div class="wrap">
-  <h1>typography</h1>
-</div>
+  <div class="wrap">
+    <page-title/>
+    <gallery-list/>
+  </div>
 </template>
 
 <script>
+import GalleryList from "../components/GalleryList";
+import PageTitle from "../components/PageTitle";
 export default {
-  name: "Typography"
+  name: "Typography",
+  components: {PageTitle, GalleryList},
+  data() {
+    return {
+      visibleList: true
+    }
+  },
+  methods: {
+    invisibleList(show) {
+      this.visibleList = show;
+    }
+  }
 }
 </script>
 

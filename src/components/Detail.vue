@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-    <h1>Cycle (Lego Buddha)</h1>
+    <h1>{{ detailData.title }}</h1>
     <div class="contents">
       <div class="txt-wrap">
         <h2 class="txt-caption">2021, Mixed media, Dimensions variable (430 x 400 x 140cm)</h2>
@@ -32,41 +32,58 @@
 
 <script>
 export default {
-  name: "Detail"
+  name: "Detail",
+  mounted() {
+
+  },
+  computed: {
+    detailData() {
+      return this.$store.state.worksList.find(item => item.id === this.$route.params.id)
+    }
+  },
+  data() {
+    return {}
+  },
+  methods: {}
 }
 </script>
 
 <style scoped lang="scss">
-  .contents{
-    max-width: 1200px;
+.wrap {
+  //margin: 0;
+}
 
-    .txt-wrap{
-      margin-bottom: 120px;
+.contents {
+  max-width: 1200px;
 
-      .txt-caption{
-        border-bottom: 1px solid black;
-        padding-bottom: 32px;
-        margin-bottom: 32px;
-      }
-      .txt-explain{
-        font-size: 0.85rem;
-        line-height: 1.6rem;
-      }
+  .txt-wrap {
+    margin-bottom: 120px;
+
+    .txt-caption {
+      border-bottom: 1px solid black;
+      padding-bottom: 32px;
+      margin-bottom: 32px;
     }
 
-    .img-list{
-      display: flex;
-      flex-direction: row;
+    .txt-explain {
+      font-size: 0.85rem;
+      line-height: 1.6rem;
+    }
+  }
 
-      .img-item{
-        width: 23%;
-        margin-right: 2%;
+  .img-list {
+    display: flex;
+    flex-direction: row;
 
-        img{
-          width: 100%;
-          height: auto;
-        }
+    .img-item {
+      width: 23%;
+      margin-right: 2%;
+
+      img {
+        width: 100%;
+        height: auto;
       }
     }
   }
+}
 </style>
