@@ -2,10 +2,8 @@
   <div class="header">
     <h1>{{$route.name}}</h1>
     <div class="lang-container">
-      <ul>
-        <li @click="onClickLang(Constants.lang.kr)"><span>kr</span></li>
-        <li class="active" @click="onClickLang(Constants.lang.en)"><span>en</span></li>
-      </ul>
+        <button @click="onClickLang(Constants.lang.kr)"><span>KR</span></button>
+        <button class="active" @click="onClickLang(Constants.lang.en)"><span>EN</span></button>
     </div>
   </div>
 </template>
@@ -30,20 +28,25 @@ export default {
 <style scoped lang="scss">
   .header{
     display: flex;
+    margin-bottom: 32px;
 
     .lang-container{
       margin-left: auto;
 
-      ul{
-        display: flex;
+      button{
+        border: none;
+        background: transparent;
+        font-size: 1rem;
+        line-height: 1rem;
+        cursor: pointer;
+        padding: 0 12px;
+        color: #bbb;
 
-        li{
-          color: #999;
-          cursor: pointer;
-
-          &.active{
-            color: #000;
-          }
+        &:first-child{
+          border-right: 2px solid black
+        }
+        &.active{
+          color: #000;
         }
       }
     }

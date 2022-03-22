@@ -15,11 +15,6 @@ export default {
     return {
       visibleList: true
     }
-  },
-  methods: {
-    invisibleList(show) {
-      this.visibleList = show;
-    }
   }
 }
 </script>

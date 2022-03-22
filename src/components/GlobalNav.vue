@@ -18,7 +18,6 @@ export default {
     // console.log(this.$router.getRoutes().forEach(item => console.log(item, item.meta.isWorks)))
     // this.menu = this.$router.getRoutes().filter(item => item.name !== 'Home')
     this.menu = this.$router.options.gnb;
-    console.log('this.$router.gnb: ', this.$router.options.gnb);
   },
 
   data() {

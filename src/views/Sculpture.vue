@@ -1,7 +1,7 @@
 <template>
   <div class="wrap">
     <page-title/>
-    <gallery-list @visable="invisibleList"/>
+    <gallery-list/>
   </div>
 </template>
 
@@ -14,11 +14,6 @@ export default {
   data() {
     return {
       visibleList: true
-    }
-  },
-  methods: {
-    invisibleList(show) {
-      this.visibleList = show;
     }
   }
 }

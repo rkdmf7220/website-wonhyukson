@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-    <h1>{{ detailData.title }}</h1>
+    <page-title/>
     <div class="contents">
       <div class="txt-wrap">
         <h2 class="txt-caption">2021, Mixed media, Dimensions variable (430 x 400 x 140cm)</h2>
@@ -31,15 +31,12 @@
 </template>
 
 <script>
+import PageTitle from "./PageTitle";
 export default {
   name: "Detail",
+  components: {PageTitle},
   mounted() {
 
-  },
-  computed: {
-    detailData() {
-      return this.$store.state.worksList.find(item => item.id === this.$route.params.id)
-    }
   },
   data() {
     return {}
