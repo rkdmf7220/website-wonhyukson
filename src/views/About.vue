@@ -1,5 +1,11 @@
 <template>
   <div class="about">
-    <h1>About</h1>
+    <page-title/>
   </div>
 </template>
+<script>
+import PageTitle from "../components/PageTitle";
+export default {
+  components: {PageTitle}
+}
+</script>

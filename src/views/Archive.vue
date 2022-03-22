@@ -1,12 +1,14 @@
 <template>
   <div class="wrap">
-    <h1>Archive</h1>
+    <page-title/>
   </div>
 </template>
 
 <script>
+import PageTitle from "../components/PageTitle";
 export default {
-  name: "Archive"
+  name: "Archive",
+  components: {PageTitle}
 }
 </script>
 

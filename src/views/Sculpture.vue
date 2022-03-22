@@ -1,15 +1,16 @@
 <template>
   <div class="wrap">
-    <h1>{{$route.name}}</h1>
+    <page-title/>
     <gallery-list @visable="invisibleList"/>
   </div>
 </template>
 
 <script>
 import GalleryList from "../components/GalleryList";
+import PageTitle from "../components/PageTitle";
 export default {
   name: "Sculpture",
-  components: {GalleryList},
+  components: {PageTitle, GalleryList},
   data() {
     return {
       visibleList: true

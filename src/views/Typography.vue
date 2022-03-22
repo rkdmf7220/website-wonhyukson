@@ -1,15 +1,16 @@
 <template>
   <div class="wrap">
-    <h1>typography</h1>
+    <page-title/>
     <gallery-list/>
   </div>
 </template>
 
 <script>
 import GalleryList from "../components/GalleryList";
+import PageTitle from "../components/PageTitle";
 export default {
   name: "Typography",
-  components: {GalleryList},
+  components: {PageTitle, GalleryList},
   data() {
     return {
       visibleList: true
