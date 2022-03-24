@@ -3,20 +3,8 @@
     <page-title/>
     <div class="contents">
       <div class="txt-wrap">
-        <h2 class="txt-caption">2021, Mixed media, Dimensions variable (430 x 400 x 140cm)</h2>
-        <p class="txt-explain">Circulation of color and expansion of Buddha.
-          An infinite white Buddha that expands and converges infinitely,
-          whose expressions and shapes are not clearly visible, looks at the transparent Buddha.
-          Passing through the transparent Buddha's face, which acts as a prism,
-          the white Buddha expands to the original digital color RGB (Red, Green, Blue)
-          and the original analog color CMYK (Cyan, Magenta, Yellow, and Black).
-          Thus, the color transmitted through the prism circulates back to the infinite Buddha.
-          All colors circulate and can implement all colors, expand and converge through the form of Buddha.
-          There is no beginning and end, and the Buddha, which constantly expands and converges,
-          circulates 4-3-1-∞(infinite) in a color-circulating hourglass structure.
-          The Buddha separated by color symbolizes line, the transparent Buddha converges into a prism symbolizes dot,
-          and the infinite Buddha with infinite colors symbolizes plane, consisting of dot, line, and plane structures.
-        </p>
+        <h2 class="txt-caption">{{itemData?.caption}}</h2>
+        <p class="txt-explain">{{itemData?.text}}</p>
       </div>
       <div class="img-wrap">
         <ul class="img-list">
@@ -35,13 +23,21 @@ import PageTitle from "./PageTitle";
 export default {
   name: "Detail",
   components: {PageTitle},
+  computed: {
+    itemData() {
+      return this.$store.state.worksList.find(item => item.id === this.$route.params.id)
+    }
+  },
   mounted() {
-
+    this.$store.dispatch('loadWorksList')
   },
   data() {
-    return {}
+    return {
+      isThis : true
+    }
   },
-  methods: {}
+  methods: {
+  }
 }
 </script>
 
