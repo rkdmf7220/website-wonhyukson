@@ -8,10 +8,9 @@
       </div>
       <div class="img-wrap">
         <ul class="img-list">
-          <li class="img-item"><img src="../../public/img/sculpture/buddha/01.jpg" alt=""></li>
-          <li class="img-item"><img src="../../public/img/sculpture/buddha/02.jpg" alt=""></li>
-          <li class="img-item"><img src="../../public/img/sculpture/buddha/03.jpg" alt=""></li>
-          <li class="img-item"><img src="../../public/img/sculpture/buddha/04.jpg" alt=""></li>
+          <li class="img-item" v-for="(item, index) in itemData.imgs" :key="index">
+            <img :src="item" alt="">
+          </li>
         </ul>
       </div>
     </div>
@@ -33,10 +32,11 @@ export default {
   },
   data() {
     return {
-      isThis : true
+
     }
   },
   methods: {
+
   }
 }
 </script>

@@ -5,7 +5,7 @@
         <img :src="itemData.thumb" alt="">
       </div>
       <p class="txt-title">{{itemData.title}}</p>
-      <p class="txt-year">2021</p>
+      <p class="txt-year">{{itemData.year}}</p>
     </router-link>
   </div>
 </template>
