@@ -8,7 +8,7 @@
       </div>
       <div class="img-wrap">
         <ul class="img-list">
-          <li class="img-item" v-for="(item, index) in itemData.imgs" :key="index">
+          <li class="img-item" v-for="(item, index) in itemData?.imgs" :key="index">
             <img :src="item" alt="">
           </li>
         </ul>
@@ -29,6 +29,7 @@ export default {
   },
   mounted() {
     this.$store.dispatch('loadWorksList')
+    console.log(this.itemData)
   },
   data() {
     return {
@@ -73,8 +74,8 @@ export default {
       margin-right: 2%;
 
       img {
-        width: 100%;
-        height: auto;
+        width: 200px;
+        height: 200px;
       }
     }
   }

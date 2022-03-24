@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="wrap">
     <page-title/>
   </div>
 </template>

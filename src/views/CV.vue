@@ -2,9 +2,11 @@
   <div class="wrap">
     <page-title/>
     <div class="profile">
-      <h2>{{cv.profile.title}}</h2>
       <ul>
-        <li v-for="(item, index) in cv.profile.items" :key="index">{{item}}</li>
+        <li v-for="(item, index) in cv" :key="index">
+          <h2>{{item.title}}</h2>
+          <p v-for="(text, index) in item.items" :key="index">{{text}}</p>
+        </li>
       </ul>
     </div>
   </div>
@@ -26,6 +28,10 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+  ul{
+    li{
+      margin-bottom: 40px;
+    }
+  }
 </style>
