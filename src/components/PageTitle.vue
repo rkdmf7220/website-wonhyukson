@@ -29,6 +29,7 @@ export default {
   .header{
     display: flex;
     margin-bottom: 32px;
+    max-width: 1200px;
 
     .lang-container{
       margin-left: auto;

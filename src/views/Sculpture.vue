@@ -12,9 +12,7 @@ export default {
   name: "Sculpture",
   components: {PageTitle, GalleryList},
   data() {
-    return {
-      visibleList: true
-    }
+
   }
 }
 </script>
