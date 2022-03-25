@@ -6,12 +6,15 @@
         <h2 class="txt-caption">{{itemData?.caption}}</h2>
         <p class="txt-explain">{{itemData?.text}}</p>
       </div>
-      <div class="img-wrap">
+      <div class="img-wrap" v-if="itemData?.imgs">
         <ul class="img-list">
           <li class="img-item" v-for="(item, index) in itemData?.imgs" :key="index">
             <img :src="'/'+item" alt="">
           </li>
         </ul>
+      </div>
+      <div class="video-wrap" v-if="itemData?.link">
+        <iframe width="100%" height="100%" :src="itemData?.link" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
   </div>
@@ -43,12 +46,28 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.video-wrap{
+  width: 100%;
+  height: auto;
+  padding-bottom: 56.25%;
+  position: relative;
+
+  & > iframe{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
 .wrap {
   //margin: 0;
 }
 
 .contents {
   max-width: 1200px;
+  margin-bottom: 80px;
 
   .txt-wrap {
     margin-bottom: 120px;
