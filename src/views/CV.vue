@@ -32,6 +32,13 @@ export default {
   ul{
     li{
       margin-bottom: 40px;
+      h2{
+        font-weight: 700;
+      }
+      h2, p{
+        font-size: 0.75rem;
+        line-height: 1rem;
+      }
     }
   }
 </style>

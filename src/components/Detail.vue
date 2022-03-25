@@ -9,7 +9,7 @@
       <div class="img-wrap">
         <ul class="img-list">
           <li class="img-item" v-for="(item, index) in itemData?.imgs" :key="index">
-            <img :src="item" alt="">
+            <img :src="'/'+item" alt="">
           </li>
         </ul>
       </div>
@@ -68,14 +68,15 @@ export default {
   .img-list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 
     .img-item {
       width: 23%;
       margin-right: 2%;
 
       img {
-        width: 200px;
-        height: 200px;
+        width: 100%;
+        height: auto;
       }
     }
   }
