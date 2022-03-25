@@ -24,7 +24,7 @@ export default createStore({
             if(lang !== state.lang) {
                 commit('lang', lang);
                 dispatch('loadWorksList');
-                dispatch('cv');
+                dispatch('loadCv');
             }
         },
         loadWorksList({commit, state}) {
@@ -45,13 +45,28 @@ export default createStore({
                 // TODO: error handling.
             });
         },
-        loadCv({commit, state}) {
+        /*loadCv({commit, state}) {
+            console.log("cv의 주소는 : ","../sample/" + state.lang + "/cv.json")
             axios.get("../sample/" + state.lang + "/cv.json")
                 .then(response => {
                     console.log('response:', response)
                     commit('cv', response.data)
 
                 })
+        },*/
+        loadCv({commit, state}) {
+            console.log('cv의 주소를 알려드리죠 : ', "../sample/" + state.lang + "/cv.json")
+            axios.get("../sample/" + state.lang + "/cv.json")
+                .then(response => {
+                    console.log('response 내용은', response);
+                    if (response.statusText === "OK") {
+                        commit('cv', response.data)
+                    } else {
+                        // TODO: error handling.
+                    }
+                }).catch(error => {
+                console.log('error', error);
+            });
         }
     },
     modules: {}
