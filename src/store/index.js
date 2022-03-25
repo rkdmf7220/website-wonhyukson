@@ -6,7 +6,8 @@ export default createStore({
     state: {
         lang: Constants.lang.en,
         worksList: [],
-        cv: {}
+        cv: {},
+        contact: {}
     },
     mutations: {
         lang(state, lang) {
@@ -17,6 +18,9 @@ export default createStore({
         },
         cv(state, data) {
             state.cv = data
+        },
+        contact(state, info) {
+            state.contact = info
         }
     },
     actions: {
@@ -28,10 +32,10 @@ export default createStore({
             }
         },
         loadWorksList({commit, state}) {
-            console.log('<<<<<<<<<<<<<', "../sample/works-list-en.json")
+            // console.log('<<<<<<<<<<<<<', "../sample/works-list-en.json")
             axios.get("../sample/" + state.lang + "/data-result.json")
                 .then(response => {
-                    console.log('response 내용은', response);
+                    // console.log('response 내용은', response);
                     if (response.statusText === "OK") {
                         // this.listData = response.data;
                         // this.$store.dispatch('updateWorksList', {list: response.data})
@@ -55,7 +59,7 @@ export default createStore({
                 })
         },*/
         loadCv({commit, state}) {
-            console.log('cv의 주소를 알려드리죠 : ', "../sample/" + state.lang + "/cv.json")
+            // console.log('cv의 주소를 알려드리죠 : ', "../sample/" + state.lang + "/cv.json")
             axios.get("../sample/" + state.lang + "/cv.json")
                 .then(response => {
                     console.log('response 내용은', response);
@@ -66,6 +70,18 @@ export default createStore({
                     }
                 }).catch(error => {
                 console.log('error', error);
+            });
+        },
+        loadContact({commit, state}) {
+            axios.get("../sample/" + state.lang + "/contact.json")
+                .then(response => {
+                    if (response.statusText === "OK") {
+                        commit('contact', response.data)
+                    }   else {
+                        // TODO: error handling
+                    }
+                    }).catch(error => {
+                        console.log('error', error);
             });
         }
     },
