@@ -12,7 +12,7 @@ export default {
   name: "Sculpture",
   components: {PageTitle, GalleryList},
   data() {
-
+    return{}
   }
 }
 </script>

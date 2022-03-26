@@ -32,7 +32,7 @@ export default {
   },
   mounted() {
     this.$store.dispatch('loadWorksList')
-    console.log(this.itemData)
+    console.log(this.itemData + '\n' + this.$route.params.works)
   },
   data() {
     return {

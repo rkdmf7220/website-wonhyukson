@@ -13,7 +13,7 @@ export default {
   components: {PageTitle, GalleryList},
   data() {
     return {
-      visibleList: true
+
     }
   }
 }
