@@ -1,18 +1,25 @@
 <template>
   <div class="wrap">
-    <page-title/>
+    <page-title :title="itemData?.title"/>
     <div class="contents">
       <div class="txt-wrap">
         <h2 class="txt-caption">{{itemData?.caption}}</h2>
         <p class="txt-explain">{{itemData?.text}}</p>
       </div>
-      <div class="img-wrap" v-if="itemData?.imgs">
+
+      <lightgallery :settings="{speed: 500}" class="img-list">
+        <a class="img-item" v-for="(item, index) in itemData?.imgs" :href="'/'+item" :key="index">
+          <img :src="'/'+item" :alt="'img'+index">
+        </a>
+      </lightgallery>
+
+<!--      <div class="img-wrap" v-if="itemData?.imgs">
         <ul class="img-list">
           <li class="img-item" v-for="(item, index) in itemData?.imgs" :key="index">
             <img :src="'/'+item" alt="">
           </li>
         </ul>
-      </div>
+      </div>-->
       <div class="video-wrap" v-if="itemData?.link">
         <iframe width="100%" height="100%" :src="itemData?.link" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
@@ -22,9 +29,11 @@
 
 <script>
 import PageTitle from "./PageTitle";
+import Lightgallery from 'lightgallery/vue'
+import 'lightgallery/scss/lightgallery.scss';
 export default {
   name: "Detail",
-  components: {PageTitle},
+  components: {PageTitle, Lightgallery},
   computed: {
     itemData() {
       return this.$store.state.worksList.find(item => item.id === this.$route.params.id)

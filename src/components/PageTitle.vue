@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <h1>{{$route.name}}</h1>
+    <h1>{{detailTitle}}</h1>
     <div class="lang-container">
         <button @click="onClickLang(Constants.lang.kr)"><span>KR</span></button>
         <button class="active" @click="onClickLang(Constants.lang.en)"><span>EN</span></button>
@@ -12,6 +12,14 @@
 import Constants from "../contants/constants";
 export default {
   name: "PageTitle",
+  props: {
+    title: String
+  },
+  computed: {
+    detailTitle() {
+      return this.title || this.$route.name
+    }
+  },
   data() {
     return{
       Constants
