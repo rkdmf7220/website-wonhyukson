@@ -5,7 +5,7 @@
         <gallery-list-item :item-data="item"/>
       </li>
     </ul>
-    <router-view/>
+<!--    <router-view/>-->
   </div>
 </template>
 
@@ -16,7 +16,20 @@ export default {
   components: {GalleryListItem},
   computed: {
     listData() {
-      return this.$store.state.worksList
+      //return this.$store.state.worksList.filter(work => work.type === this.$route.name.toLowerCase());
+
+      // let list = this.$store.state.worksList;
+      // console.log('list는 = ',list, this.$route.name)
+      // if (list && list.isArray) {
+      //   list = list.filter(work => work.type === this.$route.name.toLowerCase());
+      // } else {
+      //   list = [];
+      // }
+      // return list;
+
+      let list = this.$store.state.worksList;
+      let filtered = list.filter(work => work.type === this.$route.name.toLowerCase());
+      return (list) ? filtered : [];
     }
   },
   mounted() {
