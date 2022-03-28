@@ -24,6 +24,13 @@ export default createStore({
         }
     },
     actions: {
+        /**
+         *
+         * @param commit
+         * @param state
+         * @param dispatch
+         * @param lang
+         */
         setLang({commit, state, dispatch}, lang) {
             if(lang !== state.lang) {
                 commit('lang', lang);
