@@ -1,7 +1,7 @@
 <template>
   <div class="wrap">
     <page-title/>
-    <h2>{{contact?.name}}안녕</h2>
+    <h2>{{contact?.name}}</h2>
     <div class="text-wrap">
       <p v-for="(info, index) in contact?.contactAddress" :key="index">{{info}}</p>
     </div>
@@ -26,6 +26,16 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+  h2{
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+  }
+  .text-wrap{
+    p{
+      font-size: 0.75rem;
+      line-height: 1.5rem;
+    }
+  }
 </style>
