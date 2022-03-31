@@ -136,8 +136,35 @@
   },
   {
     "type": "painting",
+    "id": "assemble-abstract",
+    "title": "조립 추상",
+    "year": 2021,
+    "caption": "2021, 캔버스에 아크릴, 80.3cm x 80.3cm",
+    "thumb": "img/painting/assemble/thumb.jpg",
+    "imgs": [
+      "img/painting/assemble/01.jpg",
+      "img/painting/assemble/02.jpg",
+      "img/painting/assemble/03.jpg",
+      "img/painting/assemble/04.jpg",
+      "img/painting/assemble/05.jpg",
+      "img/painting/assemble/06.jpg",
+      "img/painting/assemble/07.jpg",
+      "img/painting/assemble/08.jpg",
+      "img/painting/assemble/09.jpg",
+      "img/painting/assemble/10.jpg",
+      "img/painting/assemble/11.jpg",
+      "img/painting/assemble/12.jpg",
+      "img/painting/assemble/13.jpg",
+      "img/painting/assemble/14.jpg",
+      "img/painting/assemble/15.jpg",
+      "img/painting/assemble/16.jpg"
+    ],
+    "text": "색의 변주, 조화와 대비 그리고 균형과 긴장의 평형상태를 구축한 색면추상. 각 개의 회화는 평면적으로 조립될 수 있다.\n블록은 입체적 조립으로 형태가 구현되지만 조립추상은 이동식 회화로서 장소에 제약되지 않은 채 다양하게 변주되며 율동적으 로 평면적인 조립이 가능하다.\n블록/구성 1(분리 - 조합), 2020의 심화된 모습으로, 구성 연작은 형태에 대한 변주이고 조립 추상은 색채에 대한 변주를 다룬 연작이다."
+  },
+  {
+    "type": "painting",
     "id": "composition4",
-    "title": "구성 4 (분리 - 조합)\n",
+    "title": "구성 4 (분리 - 조합)",
     "year": 2020,
     "caption": "2020, 캔버스에 아크릴, 35cm x 35cm",
     "thumb": "img/painting/composition-4/01.jpg",
@@ -269,6 +296,18 @@
       "img/typography/buddha/05.jpg"
     ],
     "text": "조립되는 레고 RGB, CMYK 부처와 조합되는 탈네모꼴 한글이 형태를 이루는 포스터"
+  },
+  {
+    "type": "typography",
+    "id": "blue-wedge",
+    "title": "푸른색 쐐기로 붉은색을 쳐라",
+    "year": 2022,
+    "caption": "2022, 종이에 인쇄, 29.9 x 24.1cm",
+    "thumb": "img/typography/blue-wedge/01.jpg",
+    "imgs": [
+      "img/typography/blue-wedge/01.jpg"
+    ],
+    "text": "엘리치스키의 붉은색 쐐기로 흰색을 쳐라 (1919)의 오마주로, 공산주의 혁명으로 왕정 시대를 종식해야 한다는 메시지가, 합리적인 붉은 색이, 103년이 지난 2022년  러시아 - 우크라이나 전쟁으로 붉은 쐐기는 결국 어떤 이미지로 재탄생 됐는지 질문하게 된다."
   },
   {
     "type": "typography",
@@ -416,5 +455,261 @@
     "thumb": "img/video/thumb_bauhaus_01.jpg",
     "link": "https://www.youtube.com/embed/52L_MTIB8RA",
     "text": "바우하우스 100주년을 기념하여 안그라픽스에서 제작한 영상으로서, 한국에서 탐구하는 주된 인물들의 강연 영상을 편집한 영상 작업이다.\n동대문디자인플라자에서 진행된 바우하우스 100주년 기념 바우하우스 미러 전시회에도 상영되었다"
+  },
+  {
+    "type": "archive",
+    "id": "21-singing-word",
+    "title": "노래하는 말, 노래하는 글, 한국타이포그라피학회전 15, 단체전",
+    "year": 2021,
+    "caption": "2021년 12월 20일 - 2022년 1월 20일, 코엑스 C홀, 메타버스 온라인, 서울특별시 강남구 영동대로 513",
+    "thumb": "img/archive/2021-singing-word/thumb.jpg",
+    "imgs": [
+      "img/archive/2021-singing-word/01.jpeg",
+      "img/archive/2021-singing-word/02.jpeg",
+      "img/archive/2021-singing-word/03.jpeg"
+    ]
+  },
+  {
+    "type": "archive",
+    "id": "21-dreamland",
+    "title": "Dream Land: Color, 개인전",
+    "year": 2021,
+    "caption": "2021년 11월 28일 - 11월 30일, 광명시민회관, 경기 광명시 시청로 20 (철산동, 광명시청) 시민회관 2층 광명문화재단 (14234)",
+    "thumb": "img/archive/2021-dreamland/thumb.jpg",
+    "imgs": [
+      "img/archive/2021-dreamland/01.jpg",
+      "img/archive/2021-dreamland/02.jpg",
+      "img/archive/2021-dreamland/03.jpg",
+      "img/archive/2021-dreamland/04.jpg",
+      "img/archive/2021-dreamland/05.jpg",
+      "img/archive/2021-dreamland/06.jpg"
+    ]
+  },
+  {
+    "type": "archive",
+    "id": "21-relativity-circuit",
+    "title": "상대성 회로: 지속 가능성 보고서, 단체전",
+    "year": 2021,
+    "caption": "2021년 9월 29일 - 10월 4일, 동덕아트갤러리, 서울특별시 종로구 관훈동 우정국로 68",
+    "thumb": "img/archive/2021-relativity-circuit/thumb.jpg",
+    "imgs": [
+      "img/archive/2021-relativity-circuit/01.jpg",
+      "img/archive/2021-relativity-circuit/02.jpg",
+      "img/archive/2021-relativity-circuit/03.jpg",
+      "img/archive/2021-relativity-circuit/04.jpg",
+      "img/archive/2021-relativity-circuit/05.jpg",
+      "img/archive/2021-relativity-circuit/06.jpg"
+    ]
+  },
+  {
+    "type": "archive",
+    "id": "21-over-the-structures",
+    "title": "Over the structures 2021, 단체전",
+    "year": 2021,
+    "caption": "2021년 3월 10일 - 3월 28일, CICA 미술관, 경기도 김포시 양촌읍 삼도로 196-30",
+    "thumb": "img/archive/2021-over-the-structures/thumb.jpg",
+    "imgs": [
+      "img/archive/2021-over-the-structures/01.jpg",
+      "img/archive/2021-over-the-structures/02.jpg",
+      "img/archive/2021-over-the-structures/03.jpg",
+      "img/archive/2021-over-the-structures/04.jpg",
+      "img/archive/2021-over-the-structures/05.jpg"
+    ]
+  },
+  {
+    "type": "archive",
+    "id": "20-contactless",
+    "title": "만질 수 없는, 한국타이포그라피학회전 14, 단체전",
+    "year": 2020,
+    "caption": "2020년 12월 8일 - 2021년 2월 28일, 문화역서울284 RTO 및 온라인",
+    "thumb": "img/archive/2020-contactless/thumb.jpg",
+    "imgs": [
+      "img/archive/2020-contactless/01.jpeg",
+      "img/archive/2020-contactless/02.jpeg",
+      "img/archive/2020-contactless/03.jpeg",
+      "img/archive/2020-contactless/04.jpeg",
+      "img/archive/2020-contactless/05.png",
+      "img/archive/2020-contactless/06.jpeg"
+    ]
+  },
+  {
+    "type": "archive",
+    "id": "20-dreamland",
+    "title": "Dream Land, 개인전",
+    "year": 2020,
+    "caption": "2020년 10월 15일-10월 24일, h.art.bridge, 서울시 서초구 방배로 42길 43 노란건물 2층 (06584)",
+    "thumb": "img/archive/2020-dreamland/thumb.jpg",
+    "imgs": [
+      "img/archive/2020-dreamland/01.jpg",
+      "img/archive/2020-dreamland/02.jpg",
+      "img/archive/2020-dreamland/03.jpg",
+      "img/archive/2020-dreamland/04.jpg",
+      "img/archive/2020-dreamland/05.jpg",
+      "img/archive/2020-dreamland/06.jpg"
+    ]
+  },
+  {
+    "type": "archive",
+    "id": "19-myeongji",
+    "title": "명지전문대학 졸업전시회, 단체전",
+    "year": 2019,
+    "caption": "2019년 11월 28일 - 12월 3일, 명지전문대학",
+    "thumb": "img/archive/2019-myeongji/thumb.png",
+    "imgs": [
+      "img/archive/2019-myeongji/01.jpg"
+    ]
+  },
+  {
+    "type": "archive",
+    "id": "19-knowing",
+    "title": "‘앎’ 순우리말, 단체전",
+    "year": 2019,
+    "caption": "2019년 11월 13 - 15일, 명지전문대학",
+    "thumb": "img/archive/2019-knowing/thumb.jpg",
+    "imgs": [
+      "img/archive/2019-knowing/01.jpg",
+      "img/archive/2019-knowing/02.jpg",
+      "img/archive/2019-knowing/03.jpg",
+      "img/archive/2019-knowing/04.jpg",
+      "img/archive/2019-knowing/05.jpg",
+      "img/archive/2019-knowing/06.jpg"
+    ]
+  },
+  {
+    "type": "archive",
+    "id": "19-bauhaus-mirror",
+    "title": "bauhaus mirror, 단체전",
+    "year": 2019,
+    "caption": "2019년 10월 14일 - 11월 30일, 서울특별시 중구 을지로7가 을지로 281, DDP 기록관",
+    "thumb": "img/archive/2019-bauhaus-mirror/thumb.jpg",
+    "imgs": [
+      "img/archive/2019-bauhaus-mirror/01.jpg",
+      "img/archive/2019-bauhaus-mirror/02.jpg",
+      "img/archive/2019-bauhaus-mirror/03.jpg",
+      "img/archive/2019-bauhaus-mirror/04.jpg",
+      "img/archive/2019-bauhaus-mirror/05.jpg"
+    ]
+  },
+  {
+    "type": "archive",
+    "id": "19-gyeonggi-art-contest",
+    "title": "제 55회 경기미술대전, 단체전",
+    "year": 2019,
+    "caption": "2018년 6월 26일 - 6월 30일, 경기도 수원시 팔달구 효원로307번길 20 경기도 문화의 전당 갤러리",
+    "thumb": "img/archive/2019-gyeonggi-art-contest/thumb.jpg",
+    "imgs": [
+      "img/archive/2019-gyeonggi-art-contest/01.jpg",
+      "img/archive/2019-gyeonggi-art-contest/02.jpg",
+      "img/archive/2019-gyeonggi-art-contest/03.jpg",
+      "img/archive/2019-gyeonggi-art-contest/04.jpg",
+      "img/archive/2019-gyeonggi-art-contest/05.jpg",
+      "img/archive/2019-gyeonggi-art-contest/06.jpg"
+    ]
+  },
+  {
+    "type": "archive",
+    "id": "19-watch-the-wrold",
+    "title": "미술로 보는 세상, 단체전",
+    "year": 2019,
+    "caption": "2019년 4월 29일 - 5월 14일, 서울특별시 강남구 426 강남구청",
+    "thumb": "img/archive/2019-watch-the-world/thumb.jpg",
+    "imgs": [
+      "img/archive/2019-watch-the-world/01.jpg",
+      "img/archive/2019-watch-the-world/02.jpg",
+      "img/archive/2019-watch-the-world/03.jpg",
+      "img/archive/2019-watch-the-world/04.jpg",
+      "img/archive/2019-watch-the-world/05.jpg",
+      "img/archive/2019-watch-the-world/06.jpg"
+    ]
+  },
+  {
+    "type": "archive",
+    "id": "18-scope-miami-beach",
+    "title": "SCOPE MIAMI BEACH 2018, 아트페어",
+    "year": 2018,
+    "caption": "2018년 12월 4일 - 12월 9일, 801 Ocean Dr, Miami Beach, FL",
+    "thumb": "img/archive/2018-scope-miami-beach/thumb.png",
+    "imgs": [
+      "img/archive/2018-scope-miami-beach/01.jpg",
+      "img/archive/2018-scope-miami-beach/02.jpg",
+      "img/archive/2018-scope-miami-beach/03.jpg",
+      "img/archive/2018-scope-miami-beach/04.jpg",
+      "img/archive/2018-scope-miami-beach/05.jpg",
+      "img/archive/2018-scope-miami-beach/06.jpg",
+      "img/archive/2018-scope-miami-beach/07.jpg"
+    ]
+  },
+  {
+    "type": "archive",
+    "id": "18-young-artist",
+    "title": "YOUNG ARTIST CONTEST, 단체전",
+    "year": 2018,
+    "caption": "2018년 12월 4일 - 12월 9일, 801 Ocean Dr, Miami Beach, FL",
+    "thumb": "img/archive/2018-young-artist/thumb.jpg",
+    "imgs": [
+      "img/archive/2018-young-artist/01.jpg",
+      "img/archive/2018-young-artist/02.jpg",
+      "img/archive/2018-young-artist/03.jpg",
+      "img/archive/2018-young-artist/04.jpg",
+      "img/archive/2018-young-artist/05.jpg",
+      "img/archive/2018-young-artist/06.jpg"
+    ]
+  },
+  {
+    "type": "archive",
+    "id": "16-i-am-robot",
+    "title": "브릭의 반란 아이 엠 로봇, 단체전",
+    "year": 2016,
+    "caption": "2016년 12월 13일 - 2017년 1월 31일, 부천로보파크 3층 기획전시실",
+    "thumb": "img/archive/2016-i-am-robot/thumb.jpg",
+    "imgs": [
+      "img/archive/2016-i-am-robot/01.jpg",
+      "img/archive/2016-i-am-robot/02.jpg",
+      "img/archive/2016-i-am-robot/03.jpg",
+      "img/archive/2016-i-am-robot/04.png",
+      "img/archive/2016-i-am-robot/05.jpg"
+    ]
+  },
+  {
+    "type": "archive",
+    "id": "16-brick-convention",
+    "title": "BRICKOREA CONVENTION, 단체전",
+    "year": 2016,
+    "caption": "2016년 10월 22일 - 10월 30일, 현대백화점 판교점 10층",
+    "thumb": "img/archive/2016-brick-convention/thumb.jpg",
+    "imgs": [
+      "img/archive/2016-brick-convention/01.jpg",
+      "img/archive/2016-brick-convention/02.jpg"
+    ]
+  },
+  {
+    "type": "archive",
+    "id": "16-seoul-crafts-fair",
+    "title": "2016 서울공예박람회, 박람회",
+    "year": 2016,
+    "caption": "2016년 9월 22일 - 10월 2일, 서울특별시 중구 을지로7가 을지로 281, DDP 배움터 둘레길 (B2-4F)",
+    "thumb": "img/archive/2016-seoul-crafts-fair/thumb.jpg",
+    "imgs": [
+      "img/archive/2016-seoul-crafts-fair/01.jpg",
+      "img/archive/2016-seoul-crafts-fair/02.jpg",
+      "img/archive/2016-seoul-crafts-fair/03.jpg",
+      "img/archive/2016-seoul-crafts-fair/04.jpg",
+      "img/archive/2016-seoul-crafts-fair/05.jpg",
+      "img/archive/2016-seoul-crafts-fair/06.jpg"
+    ]
+  },
+  {
+    "type": "archive",
+    "id": "15-brick-convention",
+    "title": "BRICKOREA CONVENTION, 단체전",
+    "year": 2015,
+    "caption": "2015년 10월 3일 - 10월 11일, 현대백화점 판교점 10층",
+    "thumb": "img/archive/2015-brick-convention/thumb.jpg",
+    "imgs": [
+      "img/archive/2015-brick-convention/01.jpg",
+      "img/archive/2015-brick-convention/02.jpeg",
+      "img/archive/2015-brick-convention/03.jpeg",
+      "img/archive/2015-brick-convention/04.jpeg"
+    ]
   }
 ]
