@@ -2,8 +2,8 @@
   <div class="header">
     <h1>{{detailTitle}}</h1>
     <div class="lang-container">
-        <button @click="onClickLang(Constants.lang.kr)"><span>KR</span></button>
-        <button class="active" @click="onClickLang(Constants.lang.en)"><span>EN</span></button>
+        <button :class='{active : currentLang === Constants.lang.kr}' @click="onClickLang(Constants.lang.kr)"><span>KR</span></button>
+        <button :class='{active : currentLang === Constants.lang.en}' @click="onClickLang(Constants.lang.en)"><span>EN</span></button>
     </div>
   </div>
 </template>
@@ -22,12 +22,14 @@ export default {
   },
   data() {
     return{
-      Constants
+      Constants,
+      currentLang : "en"
     }
   },
   methods: {
     onClickLang(lang) {
       this.$store.dispatch('setLang', lang)
+      this.currentLang = lang
     }
   }
 }
@@ -41,6 +43,7 @@ export default {
 
     .lang-container{
       margin-left: auto;
+      margin-right: 2%;
 
       button{
         border: none;
