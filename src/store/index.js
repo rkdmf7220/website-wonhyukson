@@ -7,7 +7,8 @@ export default createStore({
         lang: Constants.lang.en,
         worksList: [],
         cv: {},
-        contact: {}
+        contact: {},
+        review: []
     },
     mutations: {
         lang(state, lang) {
@@ -21,6 +22,9 @@ export default createStore({
         },
         contact(state, info) {
             state.contact = info
+        },
+        review(state, data) {
+            state.review = data
         }
     },
     actions: {
@@ -36,6 +40,8 @@ export default createStore({
                 commit('lang', lang);
                 dispatch('loadWorksList');
                 dispatch('loadCv');
+                dispatch('loadContact');
+                dispatch('loadReview');
             }
         },
         loadWorksList({commit, state}) {
@@ -90,6 +96,18 @@ export default createStore({
                     }).catch(error => {
                         console.log('error', error);
             });
+        },
+        loadReview({commit, state}) {
+            axios.get("../sample/" + state.lang + "/review.json")
+                .then(response => {
+                    if (response.statusText === "OK") {
+                        commit('review', response.data)
+                    } else {
+                        //TODO: error handling
+                    }
+                }).catch(error => {
+                    console.log('error', error)
+            })
         }
     },
     modules: {}
