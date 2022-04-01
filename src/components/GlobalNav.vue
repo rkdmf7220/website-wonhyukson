@@ -41,6 +41,7 @@ export default {
     left: 0;
     padding: 100px 0 0 32px;
     box-sizing: border-box;
+    background-color: white;
 
     .logo{
       font-weight: 700;

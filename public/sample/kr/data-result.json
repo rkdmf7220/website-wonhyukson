@@ -283,6 +283,18 @@
   },
   {
     "type": "typography",
+    "id": "blue-wedge",
+    "title": "푸른색 쐐기로 붉은색을 쳐라",
+    "year": 2022,
+    "caption": "2022, 종이에 인쇄, 29.9 x 24.1cm",
+    "thumb": "img/typography/blue-wedge/01.jpg",
+    "imgs": [
+      "img/typography/blue-wedge/01.jpg"
+    ],
+    "text": "엘리치스키의 붉은색 쐐기로 흰색을 쳐라 (1919)의 오마주로, 공산주의 혁명으로 왕정 시대를 종식해야 한다는 메시지가, 합리적인 붉은 색이, 103년이 지난 2022년  러시아 - 우크라이나 전쟁으로 붉은 쐐기는 결국 어떤 이미지로 재탄생 됐는지 질문하게 된다."
+  },
+  {
+    "type": "typography",
     "id": "poster-buddha",
     "title": "Dream Land : color 포스터",
     "year": 2021,
@@ -296,18 +308,6 @@
       "img/typography/buddha/05.jpg"
     ],
     "text": "조립되는 레고 RGB, CMYK 부처와 조합되는 탈네모꼴 한글이 형태를 이루는 포스터"
-  },
-  {
-    "type": "typography",
-    "id": "blue-wedge",
-    "title": "푸른색 쐐기로 붉은색을 쳐라",
-    "year": 2022,
-    "caption": "2022, 종이에 인쇄, 29.9 x 24.1cm",
-    "thumb": "img/typography/blue-wedge/01.jpg",
-    "imgs": [
-      "img/typography/blue-wedge/01.jpg"
-    ],
-    "text": "엘리치스키의 붉은색 쐐기로 흰색을 쳐라 (1919)의 오마주로, 공산주의 혁명으로 왕정 시대를 종식해야 한다는 메시지가, 합리적인 붉은 색이, 103년이 지난 2022년  러시아 - 우크라이나 전쟁으로 붉은 쐐기는 결국 어떤 이미지로 재탄생 됐는지 질문하게 된다."
   },
   {
     "type": "typography",
