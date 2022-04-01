@@ -100,11 +100,16 @@ export default {
 
     .img-item {
       width: 23%;
-      margin-right: 2%;
+      margin: 0 2% 2% 0;
+      padding-bottom: 23%;
+      height: 0;
+      position: relative;
 
       img {
         width: 100%;
-        height: auto;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
       }
     }
   }

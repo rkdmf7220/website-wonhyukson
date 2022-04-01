@@ -37,10 +37,15 @@ export default {
 
     .bg-img {
       width: 100%;
-      height: auto;
+      height: 0;
+      padding-bottom: 100%;
+      position: relative;
 
       img {
+        position: absolute;
         width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
     }
 
