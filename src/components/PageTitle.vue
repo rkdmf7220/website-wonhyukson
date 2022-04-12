@@ -16,6 +16,9 @@ export default {
     title: String
   },
   computed: {
+    currentLang() {
+      return this.$store.state.lang;
+    },
     detailTitle() {
       return this.title || this.$route.name
     }
@@ -23,7 +26,7 @@ export default {
   data() {
     return{
       Constants,
-      currentLang : "en"
+      // currentLang : "en"
     }
   },
   methods: {
