@@ -77,4 +77,15 @@ export default {
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .contents {
+    ul {
+      li {
+        width: 100%;
+        margin-bottom: 64px;
+      }
+    }
+  }
+}
 </style>

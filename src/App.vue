@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <global-nav/>
+    <mobile-global-nav/>
     <router-view/>
   </div>
 </template>
@@ -66,10 +67,18 @@ h2{
     margin-bottom: 32px;
   }
 }
+
+@media screen and (max-width: 767px){
+  .wrap{
+    margin: 0;
+    padding: 80px 16px 0 16px;
+  }
+}
 </style>
 <script>
 import GlobalNav from "./components/GlobalNav";
+import MobileGlobalNav from "./components/MobileGlobalNav";
 export default {
-  components: {GlobalNav}
+  components: {MobileGlobalNav, GlobalNav}
 }
 </script>
