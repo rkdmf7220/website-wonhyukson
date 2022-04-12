@@ -33,37 +33,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  #nav{
-    width: 240px;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 100px 0 0 32px;
-    box-sizing: border-box;
-    background-color: white;
-
-    .logo{
-      font-weight: 700;
-      font-size: 1.25rem;
-      padding: 16px;
-      display: inline-block;
-    }
-
-    ul{
-      font-size: 1rem;
-      margin-top: 16px;
-
-      a{
-        padding-left: 16px;
-        padding-bottom: 12px;
-        line-height: 1.25rem;
-        display: block;
-      }
-
-      .margin-to-works{
-        margin-top: 48px;
-      }
-    }
-  }
+@import "src/assets/scss/global-nav";
 </style>
