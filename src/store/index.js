@@ -46,9 +46,9 @@ export default createStore({
         },
         loadWorksList({commit, state}) {
             // console.log('<<<<<<<<<<<<<', "../sample/works-list-en.json")
-            if (state.worksList.length) {
-                return;
-            }
+            // if (state.worksList.length) {
+            //     return;
+            // }
             return axios.get("../sample/" + state.lang + "/data-result.json")
                 .then(response => {
                     // console.log('response 내용은', response);
