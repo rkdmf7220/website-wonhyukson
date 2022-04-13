@@ -101,14 +101,30 @@ export default {
 
         .img-list{
           display: flex;
+          flex-wrap: wrap;
 
           .img-item{
-            margin-right: 16px;
+            width: 24%;
+            margin-right: 1%;
+
+            img{
+              width: 100%;
+            }
           }
         }
       }
     }
   }
 }
-  img{width: 200px;}
+
+@media screen and (max-width: 767px) {
+  .wrap details .review-wrap .info-wrap .img-list .img-item{
+    width: 49%;
+
+    &:nth-child(even){
+      margin-right: 0;
+      margin-left: 1%;
+    }
+  }
+}
 </style>
