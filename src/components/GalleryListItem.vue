@@ -5,13 +5,12 @@
         <img :src="itemData.thumb" alt="">
       </div>
       <p class="txt-title">{{itemData.title}}</p>
-      <p class="txt-year">{{moment(itemData.year).format("yyyy-MM-DD")}}</p>
+      <p class="txt-year">{{itemData.year}}</p>
     </router-link>
   </div>
 </template>
 
 <script>
-import moment from "moment"
 export default {
   name: "GalleryListItem",
   props: {
@@ -19,7 +18,6 @@ export default {
   },
   data() {
     return {
-      moment,
       displayList: true
     }
   },
