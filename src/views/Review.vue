@@ -66,9 +66,12 @@ export default {
     summary {
       list-style: none;
       font-size: 1.25rem;
+      line-height: 1.5rem;
       font-weight: 700;
       transition: all 0.15s;
       cursor: pointer;
+      word-break: keep-all;
+
 
       &::-webkit-details-marker {
         display: none;
@@ -84,6 +87,7 @@ export default {
       font-size: 0.85rem;
       font-weight: 700;
       margin-bottom: 16px;
+      word-break: keep-all;
     }
 
     .review-wrap {

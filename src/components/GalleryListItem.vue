@@ -52,6 +52,8 @@ export default {
     .txt-title{
       margin: 8px 0 6px 0;
       font-size: 0.75rem;
+      line-height: 1rem;
+      word-break: keep-all;
     }
     .txt-year{
       font-size: 0.75rem;
