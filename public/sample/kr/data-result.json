@@ -256,7 +256,8 @@
       "img/painting/block-red/06.jpg",
       "img/painting/block-red/07.jpg",
       "img/painting/block-red/08.jpg",
-      "img/painting/block-red/09.jpg"
+      "img/painting/block-red/09.jpg",
+      "img/painting/block-red/10.jpg"
     ],
     "text": "레고 블록이 입체적으로 조립되는 것이 아닌 평면적인 회화로서 재구성되어 조립되었을 때, 그 가능성과 근원성을 탐구한 작품이다.\n같은 모습의 한정된 색깔을 가져도 구성으로 그 모습이 변모되는, 즉 형태의 가능성이 무한하다.\n각기 다른 색과 사이즈를 가진 레고 블록을 이용하여 하나가 된 모습을 나타냈다.\n이것이 레고의 특성인 ‘조립’임을 나타내는 부분이다.\n각각의 형태는 면으로서 기하학적이며 본질의 속성을 담아내며 구체예술(concrete art)에 가까운 형태를 표현하고 있다."
   },
@@ -274,9 +275,7 @@
       "img/painting/twisted-harmony/04.jpg",
       "img/painting/twisted-harmony/05.jpg",
       "img/painting/twisted-harmony/06.jpg",
-      "img/painting/twisted-harmony/07.jpg",
-      "img/painting/twisted-harmony/08.jpg",
-      "img/painting/twisted-harmony/09.jpg"
+      "img/painting/twisted-harmony/07.jpg"
     ],
     "text": "레고 블록을 캔버스에 붙혀 콜라주한 공예 작품으로,\n각기 다른 모습과 생각을 가지고 다른 삶을 살아가지만 결국 근본적으로 하나의 시대를 품고 같은 생활양식 속에서 그 형태를 유지하는 현대인을 빗대어 각기 다른 색과 사이즈를 가진 레고 블록을 이용하여 하나가 된 모습을 나타냈다.\n뻗어져 나아가는 듯한 모습을 보이지만 그 형태가 깨지지 않고, 테두리가 존재하여 하나의 공간만을 공유할 수 있음 나타내는 인간 사회를 표현한 작품이다."
   },
@@ -426,41 +425,29 @@
     "text": "순우리말 한글자를 주제로 삼아, 한국의 전통 간식인 엿이 녹았을 때, 자유자재로 움직이는 유동성을 포착하여,\n앞면이 아닌 단면으로부터 시작하는 마치 한 번의 붓글씨와 같은 느낌을 주며 엿의 역동적인 모습을 표현한 작품이다."
   },
   {
-    "type": "video",
-    "id": "bauhaus-3",
-    "title": "바우하우스와 젠더 이데올로기 (편집)\n",
+    "type": "typography",
+    "id": "bauhaus",
+    "title": "한국에서의 바우하우스란 무엇인가",
     "year": 2019,
-    "caption": "2019, 프리미어프로, 에프터이펙트, 1920 x 1080 프레임",
-    "thumb": "img/video/thumb_bauhaus_03.jpg",
-    "link": "https://www.youtube.com/embed/UUiCPNO18yc",
-    "text": "바우하우스 100주년을 기념하여 안그라픽스에서 제작한 영상으로서, 한국에서 탐구하는 주된 인물들의 강연 영상을 편집한 영상 작업이다.\n동대문디자인플라자에서 진행된 바우하우스 100주년 기념 바우하우스 미러 전시회에도 상영되었다"
-  },
-  {
-    "type": "video",
-    "id": "bauhaus-2",
-    "title": "한국에서의 바우하우스란 무엇인가 (편집)",
-    "year": 2019,
-    "caption": "2019, 프리미어프로, 에프터이펙트, 1920 x 1080 프레임",
-    "thumb": "img/video/thumb_bauhaus_02.jpg",
-    "link": "https://www.youtube.com/embed/xrXamqU1tCM",
-    "text": "바우하우스 100주년을 기념하여 안그라픽스에서 제작한 영상으로서, 한국에서 탐구하는 주된 인물들의 강연 영상을 편집한 영상 작업이다.\n동대문디자인플라자에서 진행된 바우하우스 100주년 기념 바우하우스 미러 전시회에도 상영되었다"
-  },
-  {
-    "type": "video",
-    "id": "bauhaus-1",
-    "title": "한국에서의 바우하우스란 무엇인가 (편집)",
-    "year": 2019,
-    "caption": "2019, 프리미어프로, 에프터이펙트, 1920 x 1080 프레임",
-    "thumb": "img/video/thumb_bauhaus_01.jpg",
-    "link": "https://www.youtube.com/embed/52L_MTIB8RA",
-    "text": "바우하우스 100주년을 기념하여 안그라픽스에서 제작한 영상으로서, 한국에서 탐구하는 주된 인물들의 강연 영상을 편집한 영상 작업이다.\n동대문디자인플라자에서 진행된 바우하우스 100주년 기념 바우하우스 미러 전시회에도 상영되었다"
+    "caption": "2019, 단채널 비디오, 1920 x 1080 Frame, 9.5, 9, 10.5 min",
+    "thumb": "img/typography/bauhaus/01.png",
+    "imgs": [
+      "img/typography/bauhaus/01.png",
+      "img/typography/bauhaus/02.png",
+      "img/typography/bauhaus/03.png",
+      "img/typography/bauhaus/04.jpg",
+      "img/typography/bauhaus/05.jpg",
+      "img/typography/bauhaus/06.jpg"
+    ],
+    "text": "클라이언트: 안그라픽스\n\n바우하우스 100주년을 기념하여 한국에서 바우하우스를 탐구하는 주된 인물들의 강연 영상을 편집, 디자인한 작업.\n동대문디자인플라자에서 진행된 바우하우스 100주년 기념 바우하우스 미러 전시회에도 상영되었다."
   },
   {
     "type": "archive",
     "id": "21-singing-word",
     "title": "노래하는 말, 노래하는 글, 한국타이포그라피학회전 15, 단체전",
     "year": 2021,
-    "caption": "2021년 12월 20일 - 2022년 1월 20일, 코엑스 C홀, 메타버스 온라인, 서울특별시 강남구 영동대로 513",
+    "caption": "2021년 12월 20일 - 2022년 1월 20일",
+    "text": "코엑스 C홀, 메타버스 온라인, 서울특별시 강남구 영동대로 513",
     "thumb": "img/archive/2021-singing-word/thumb.jpg",
     "imgs": [
       "img/archive/2021-singing-word/01.jpeg",
@@ -473,7 +460,8 @@
     "id": "21-dreamland",
     "title": "Dream Land: Color, 개인전",
     "year": 2021,
-    "caption": "2021년 11월 28일 - 11월 30일, 광명시민회관, 경기 광명시 시청로 20 (철산동, 광명시청) 시민회관 2층 광명문화재단 (14234)",
+    "caption": "2021년 11월 28일 - 11월 30일",
+    "text": "광명시민회관, 경기 광명시 시청로 20 (철산동, 광명시청) 시민회관 2층 광명문화재단 (14234)",
     "thumb": "img/archive/2021-dreamland/thumb.jpg",
     "imgs": [
       "img/archive/2021-dreamland/01.jpg",
@@ -489,7 +477,8 @@
     "id": "21-relativity-circuit",
     "title": "상대성 회로: 지속 가능성 보고서, 단체전",
     "year": 2021,
-    "caption": "2021년 9월 29일 - 10월 4일, 동덕아트갤러리, 서울특별시 종로구 관훈동 우정국로 68",
+    "caption": "2021년 9월 29일 - 10월 4일",
+    "text": "동덕아트갤러리, 서울특별시 종로구 관훈동 우정국로 68",
     "thumb": "img/archive/2021-relativity-circuit/thumb.jpg",
     "imgs": [
       "img/archive/2021-relativity-circuit/01.jpg",
@@ -505,7 +494,8 @@
     "id": "21-over-the-structures",
     "title": "Over the structures 2021, 단체전",
     "year": 2021,
-    "caption": "2021년 3월 10일 - 3월 28일, CICA 미술관, 경기도 김포시 양촌읍 삼도로 196-30",
+    "caption": "2021년 3월 10일 - 3월 28일",
+    "text": "CICA 미술관, 경기도 김포시 양촌읍 삼도로 196-30",
     "thumb": "img/archive/2021-over-the-structures/thumb.jpg",
     "imgs": [
       "img/archive/2021-over-the-structures/01.jpg",
@@ -520,7 +510,8 @@
     "id": "20-contactless",
     "title": "만질 수 없는, 한국타이포그라피학회전 14, 단체전",
     "year": 2020,
-    "caption": "2020년 12월 8일 - 2021년 2월 28일, 문화역서울284 RTO 및 온라인",
+    "caption": "2020년 12월 8일 - 2021년 2월 28일",
+    "text": "문화역서울284 RTO 및 온라인",
     "thumb": "img/archive/2020-contactless/thumb.jpg",
     "imgs": [
       "img/archive/2020-contactless/01.jpeg",
@@ -536,7 +527,8 @@
     "id": "20-dreamland",
     "title": "Dream Land, 개인전",
     "year": 2020,
-    "caption": "2020년 10월 15일-10월 24일, h.art.bridge, 서울시 서초구 방배로 42길 43 노란건물 2층 (06584)",
+    "caption": "2020년 10월 15일-10월 24일",
+    "text": "h.art.bridge, 서울시 서초구 방배로 42길 43 노란건물 2층 (06584)",
     "thumb": "img/archive/2020-dreamland/thumb.jpg",
     "imgs": [
       "img/archive/2020-dreamland/01.jpg",
@@ -552,7 +544,8 @@
     "id": "19-myeongji",
     "title": "명지전문대학 졸업전시회, 단체전",
     "year": 2019,
-    "caption": "2019년 11월 28일 - 12월 3일, 명지전문대학",
+    "caption": "2019년 11월 28일 - 12월 3일",
+    "text": "명지전문대학",
     "thumb": "img/archive/2019-myeongji/thumb.png",
     "imgs": [
       "img/archive/2019-myeongji/01.jpg"
@@ -563,7 +556,8 @@
     "id": "19-knowing",
     "title": "‘앎’ 순우리말, 단체전",
     "year": 2019,
-    "caption": "2019년 11월 13 - 15일, 명지전문대학",
+    "caption": "2019년 11월 13 - 15일",
+    "text": "명지전문대학",
     "thumb": "img/archive/2019-knowing/thumb.jpg",
     "imgs": [
       "img/archive/2019-knowing/01.jpg",
@@ -579,7 +573,8 @@
     "id": "19-bauhaus-mirror",
     "title": "bauhaus mirror, 단체전",
     "year": 2019,
-    "caption": "2019년 10월 14일 - 11월 30일, 서울특별시 중구 을지로7가 을지로 281, DDP 기록관",
+    "caption": "2019년 10월 14일 - 11월 30일",
+    "text": "서울특별시 중구 을지로7가 을지로 281, DDP 기록관",
     "thumb": "img/archive/2019-bauhaus-mirror/thumb.jpg",
     "imgs": [
       "img/archive/2019-bauhaus-mirror/01.jpg",
@@ -594,15 +589,14 @@
     "id": "19-gyeonggi-art-contest",
     "title": "제 55회 경기미술대전, 단체전",
     "year": 2019,
-    "caption": "2018년 6월 26일 - 6월 30일, 경기도 수원시 팔달구 효원로307번길 20 경기도 문화의 전당 갤러리",
+    "caption": "2018년 6월 26일 - 6월 30일",
+    "text": "경기도 수원시 팔달구 효원로307번길 20 경기도 문화의 전당 갤러리",
     "thumb": "img/archive/2019-gyeonggi-art-contest/thumb.jpg",
     "imgs": [
       "img/archive/2019-gyeonggi-art-contest/01.jpg",
       "img/archive/2019-gyeonggi-art-contest/02.jpg",
       "img/archive/2019-gyeonggi-art-contest/03.jpg",
-      "img/archive/2019-gyeonggi-art-contest/04.jpg",
-      "img/archive/2019-gyeonggi-art-contest/05.jpg",
-      "img/archive/2019-gyeonggi-art-contest/06.jpg"
+      "img/archive/2019-gyeonggi-art-contest/04.jpg"
     ]
   },
   {
@@ -610,7 +604,8 @@
     "id": "19-watch-the-wrold",
     "title": "미술로 보는 세상, 단체전",
     "year": 2019,
-    "caption": "2019년 4월 29일 - 5월 14일, 서울특별시 강남구 426 강남구청",
+    "caption": "2019년 4월 29일 - 5월 14일",
+    "text": "서울특별시 강남구 426 강남구청",
     "thumb": "img/archive/2019-watch-the-world/thumb.jpg",
     "imgs": [
       "img/archive/2019-watch-the-world/01.jpg",
@@ -626,7 +621,8 @@
     "id": "18-scope-miami-beach",
     "title": "SCOPE MIAMI BEACH 2018, 아트페어",
     "year": 2018,
-    "caption": "2018년 12월 4일 - 12월 9일, 801 Ocean Dr, Miami Beach, FL",
+    "caption": "2018년 12월 4일 - 12월 9일",
+    "text": "801 Ocean Dr, Miami Beach, FL",
     "thumb": "img/archive/2018-scope-miami-beach/thumb.png",
     "imgs": [
       "img/archive/2018-scope-miami-beach/01.jpg",
@@ -643,7 +639,8 @@
     "id": "18-young-artist",
     "title": "YOUNG ARTIST CONTEST, 단체전",
     "year": 2018,
-    "caption": "2018년 12월 4일 - 12월 9일, 801 Ocean Dr, Miami Beach, FL",
+    "caption": "2018년 12월 4일 - 12월 9일",
+    "text": "801 Ocean Dr, Miami Beach, FL",
     "thumb": "img/archive/2018-young-artist/thumb.jpg",
     "imgs": [
       "img/archive/2018-young-artist/01.jpg",
@@ -659,7 +656,8 @@
     "id": "16-i-am-robot",
     "title": "브릭의 반란 아이 엠 로봇, 단체전",
     "year": 2016,
-    "caption": "2016년 12월 13일 - 2017년 1월 31일, 부천로보파크 3층 기획전시실",
+    "caption": "2016년 12월 13일 - 2017년 1월 31일",
+    "text": "부천로보파크 3층 기획전시실",
     "thumb": "img/archive/2016-i-am-robot/thumb.jpg",
     "imgs": [
       "img/archive/2016-i-am-robot/01.jpg",
@@ -674,7 +672,8 @@
     "id": "16-brick-convention",
     "title": "BRICKOREA CONVENTION, 단체전",
     "year": 2016,
-    "caption": "2016년 10월 22일 - 10월 30일, 현대백화점 판교점 10층",
+    "caption": "2016년 10월 22일 - 10월 30일",
+    "text": "현대백화점 판교점 10층",
     "thumb": "img/archive/2016-brick-convention/thumb.jpg",
     "imgs": [
       "img/archive/2016-brick-convention/01.jpg",
@@ -686,7 +685,8 @@
     "id": "16-seoul-crafts-fair",
     "title": "2016 서울공예박람회, 박람회",
     "year": 2016,
-    "caption": "2016년 9월 22일 - 10월 2일, 서울특별시 중구 을지로7가 을지로 281, DDP 배움터 둘레길 (B2-4F)",
+    "caption": "2016년 9월 22일 - 10월 2일",
+    "text": "서울특별시 중구 을지로7가 을지로 281, DDP 배움터 둘레길 (B2-4F)",
     "thumb": "img/archive/2016-seoul-crafts-fair/thumb.jpg",
     "imgs": [
       "img/archive/2016-seoul-crafts-fair/01.jpg",
@@ -702,7 +702,8 @@
     "id": "15-brick-convention",
     "title": "BRICKOREA CONVENTION, 단체전",
     "year": 2015,
-    "caption": "2015년 10월 3일 - 10월 11일, 현대백화점 판교점 10층",
+    "caption": "2015년 10월 3일 - 10월 11일",
+    "text": "현대백화점 판교점 10층",
     "thumb": "img/archive/2015-brick-convention/thumb.jpg",
     "imgs": [
       "img/archive/2015-brick-convention/01.jpg",

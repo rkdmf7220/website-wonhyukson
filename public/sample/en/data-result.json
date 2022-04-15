@@ -256,7 +256,8 @@
       "img/painting/block-red/06.jpg",
       "img/painting/block-red/07.jpg",
       "img/painting/block-red/08.jpg",
-      "img/painting/block-red/09.jpg"
+      "img/painting/block-red/09.jpg",
+      "img/painting/block-red/10.jpg"
     ],
     "text": "Experimental work on possibility and origin on Lego, not as a physical formative material but when reconstructed as a flat painting.\nIt changes its form even with the same limited colors and shapes through composition.\nshowing Lego's identity, assembly.\nEach form, geometric as a face and has attribute of nature, expresses a form, close to concrete art."
   },
@@ -274,9 +275,7 @@
       "img/painting/twisted-harmony/04.jpg",
       "img/painting/twisted-harmony/05.jpg",
       "img/painting/twisted-harmony/06.jpg",
-      "img/painting/twisted-harmony/07.jpg",
-      "img/painting/twisted-harmony/08.jpg",
-      "img/painting/twisted-harmony/09.jpg"
+      "img/painting/twisted-harmony/07.jpg"
     ],
     "text": "A collage artwork with Lego on canvas. Expresses human society, sharing only one space and not breaking its shape by having boundaries.\nThrough different types and sizes of Lego bricks that looks spreading but keeping its shape, it shows people, living different lives from each other but eventually are living in the same era and lifestyle."
   },
@@ -426,41 +425,29 @@
     "text": "As Korean traditional snack, Yeot, is melted, it captures a fluidity like a single stroke of a brush, giving a sense of being a single brush stroke, not from the front."
   },
   {
-    "type": "video",
-    "id": "bauhaus-3",
-    "title": "Bauhaus and Gender ideology(Edit)",
+    "type": "typography",
+    "id": "bauhaus",
+    "title": "What is Bauhaus in South Korea",
     "year": 2019,
-    "caption": "2019, PremierePro, AfterEffects, 1920 x 1080 Frame",
-    "thumb": "img/video/thumb_bauhaus_03.jpg",
-    "link": "https://www.youtube.com/embed/UUiCPNO18yc",
-    "text": "This video was produced by Ahngrahics Publisher in commemoration of the 100th anniversary of Bauhaus, which is a compilation of lecture videos of the main characters exploring in Korea.\nIt was also screened at Dongdaemun Design Plaza to commemorate the 100th anniversary of Bauhaus."
-  },
-  {
-    "type": "video",
-    "id": "bauhaus-2",
-    "title": "What is Bauhaus in South Korea(Edit)",
-    "year": 2019,
-    "caption": "2019, PremierePro, AfterEffects, 1920 x 1080 Frame",
-    "thumb": "img/video/thumb_bauhaus_02.jpg",
-    "link": "https://www.youtube.com/embed/xrXamqU1tCM",
-    "text": "By choosing the pure Korean one letter as a theme, the Korean traditional snack, Yeot is melted, it captures the fluidity that moves freely, giving a feeling of being like a single brush stroke, not from the front."
-  },
-  {
-    "type": "video",
-    "id": "bauhaus-1",
-    "title": "What is Bauhaus in South Korea(Edit)",
-    "year": 2019,
-    "caption": "2019, PremierePro, AfterEffects, 1920 x 1080 Frame",
-    "thumb": "img/video/thumb_bauhaus_01.jpg",
-    "link": "https://www.youtube.com/embed/52L_MTIB8RA",
-    "text": "By choosing the pure Korean one letter as a theme, the Korean traditional snack, Yeot is melted, it captures the fluidity that moves freely, giving a feeling of being like a single brush stroke, not from the front."
+    "caption": "2019, Single-channel video, 1920 x 1080 Frame, 9.5, 9, 10.5 min",
+    "thumb": "img/typography/bauhaus/01.png",
+    "imgs": [
+      "img/typography/bauhaus/01.png",
+      "img/typography/bauhaus/02.png",
+      "img/typography/bauhaus/03.png",
+      "img/typography/bauhaus/04.jpg",
+      "img/typography/bauhaus/05.jpg",
+      "img/typography/bauhaus/06.jpg"
+    ],
+    "text": "Client: AhnGraphics Publisher\n\nVideo created for the 100th anniversary of Bauhaus that combines lecture videos of its main characters exploring bauhaus in South Korea.\nAdditionally, it was screened at Dongdaemun Design Plaza in commemoration of Bauhaus' 100th anniversary."
   },
   {
     "type": "archive",
     "id": "21-singing-word",
     "title": "Singing word, singing text, Korean Society of Typography Exhibition 15 ",
     "year": 2021,
-    "caption": "December 20 2021 - January 20 2022, COEX Hall C, Seoul, Metaverse online, 513, Yeongdong-daero, Gangnam-gu, Seoul, Republic of Korea",
+    "caption": "December 20 2021 - January 20 2022",
+    "text" : "COEX Hall C, Seoul, Metaverse online, 513, Yeongdong-daero, Gangnam-gu, Seoul, Republic of Korea",
     "thumb": "img/archive/2021-singing-word/thumb.jpg",
     "imgs": [
       "img/archive/2021-singing-word/01.jpeg",
@@ -473,7 +460,8 @@
     "id": "21-dreamland",
     "title": "Dream Land: Color, Solo Exhibition",
     "year": 2021,
-    "caption": "November 28 - November 30, 2021, Gwangmyeong Foundation for Arts and Culture, 2F Civic center, 20, Sicheong-ro, Gwangmyeong-si, Gyeonggi-do, Korea (14234)",
+    "caption": "November 28 - November 30, 2021",
+    "text": "Gwangmyeong Foundation for Arts and Culture, 2F Civic center, 20, Sicheong-ro, Gwangmyeong-si, Gyeonggi-do, Korea (14234)",
     "thumb": "img/archive/2021-dreamland/thumb.jpg",
     "imgs": [
       "img/archive/2021-dreamland/01.jpg",
@@ -489,7 +477,8 @@
     "id": "21-relativity-circuit",
     "title": "Relativity Circuit: Sustainability Report",
     "year": 2021,
-    "caption": "September 29 - October 4, Dongduk art gallery, 68, Ujeongguk-ro, Jongno-gu, Seoul, Republic of Korea",
+    "caption": "September 29 - October 4",
+    "text" : "Dongduk art gallery, 68, Ujeongguk-ro, Jongno-gu, Seoul, Republic of Korea",
     "thumb": "img/archive/2021-relativity-circuit/thumb.jpg",
     "imgs": [
       "img/archive/2021-relativity-circuit/01.jpg",
@@ -505,7 +494,8 @@
     "id": "21-over-the-structures",
     "title": "Over the structures 2021, Group Exhibition",
     "year": 2021,
-    "caption": "March 10 - March 28, 2021, CICA Museum 196-30, Samdo-ro, Yangchon-eup, Gimpo-si, Gyeonggi-do, Korea",
+    "caption": "March 10 - March 28, 2021",
+    "text": " CICA Museum 196-30, Samdo-ro, Yangchon-eup, Gimpo-si, Gyeonggi-do, Korea",
     "thumb": "img/archive/2021-over-the-structures/thumb.jpg",
     "imgs": [
       "img/archive/2021-over-the-structures/01.jpg",
@@ -520,7 +510,8 @@
     "id": "20-contactless",
     "title": "Contactless, Korean Society of Typography Exhibition 14, Group Exhibition",
     "year": 2020,
-    "caption": "December 8, 2020 - February 28, 2021, Culture Station Seoul 284 RTO & Online, Seoul, Korea",
+    "caption": "December 8, 2020 - February 28",
+    "text": "2021, Culture Station Seoul 284 RTO & Online, Seoul, Korea",
     "thumb": "img/archive/2020-contactless/thumb.jpg",
     "imgs": [
       "img/archive/2020-contactless/01.jpeg",
@@ -536,7 +527,8 @@
     "id": "20-dreamland",
     "title": "Dream Land, Solo Exhibition",
     "year": 2020,
-    "caption": "October 15 - October 24, 2020, h.art.bridge, 2F, Bangbae-ro 42 gil, Seocho, Seoul, Korea (06584)",
+    "caption": "October 15 - October 24, 2020",
+    "text": "h.art.bridge, 2F, Bangbae-ro 42 gil, Seocho, Seoul, Korea (06584)",
     "thumb": "img/archive/2020-dreamland/thumb.jpg",
     "imgs": [
       "img/archive/2020-dreamland/01.jpg",
@@ -552,7 +544,8 @@
     "id": "19-myeongji",
     "title": "MyeongJi College graduation exhibition, Group Exhibition",
     "year": 2019,
-    "caption": "November 28 - December 3, 2019, MyeongJi College Gallery",
+    "caption": "November 28 - December 3",
+    "text": "2019, MyeongJi College Gallery",
     "thumb": "img/archive/2019-myeongji/thumb.png",
     "imgs": [
       "img/archive/2019-myeongji/01.jpg"
@@ -563,7 +556,8 @@
     "id": "19-knowing",
     "title": "‘Knowing’ pure Korean word, Group Exhibition",
     "year": 2019,
-    "caption": "November 13 - 15, 2019, MyeongJi College Gallery",
+    "caption": "November 13 - 15",
+    "text": "2019, MyeongJi College Gallery",
     "thumb": "img/archive/2019-knowing/thumb.jpg",
     "imgs": [
       "img/archive/2019-knowing/01.jpg",
@@ -579,7 +573,8 @@
     "id": "19-bauhaus-mirror",
     "title": "Bauhaus mirror, Group Exhibition",
     "year": 2019,
-    "caption": "October 14 - November 30, 2019, 281, Eulji-ro, Jung-gu, Seoul, Dongdaemun Design Plaza, DDP",
+    "caption": "October 14 - November 30, 2019",
+    "text": "281, Eulji-ro, Jung-gu, Seoul, Dongdaemun Design Plaza, DDP",
     "thumb": "img/archive/2019-bauhaus-mirror/thumb.jpg",
     "imgs": [
       "img/archive/2019-bauhaus-mirror/01.jpg",
@@ -594,15 +589,14 @@
     "id": "19-gyeonggi-art-contest",
     "title": "The 55th Gyeonggi art contest, Group Exhibition",
     "year": 2019,
-    "caption": "June 26 - 30, 2018, Gyeonggi art center gallery, 20, Hyowon-ro 307beon-gil, Paldal-gu, Suwon-si, Gyeonggi-do",
+    "caption": "June 26 - 30, 2018",
+    "text": "Gyeonggi art center gallery, 20, Hyowon-ro 307beon-gil, Paldal-gu, Suwon-si, Gyeonggi-do",
     "thumb": "img/archive/2019-gyeonggi-art-contest/thumb.jpg",
     "imgs": [
       "img/archive/2019-gyeonggi-art-contest/01.jpg",
       "img/archive/2019-gyeonggi-art-contest/02.jpg",
       "img/archive/2019-gyeonggi-art-contest/03.jpg",
-      "img/archive/2019-gyeonggi-art-contest/04.jpg",
-      "img/archive/2019-gyeonggi-art-contest/05.jpg",
-      "img/archive/2019-gyeonggi-art-contest/06.jpg"
+      "img/archive/2019-gyeonggi-art-contest/04.jpg"
     ]
   },
   {
@@ -610,7 +604,8 @@
     "id": "19-watch-the-wrold",
     "title": "Watch the world through the art, Group Exhibition",
     "year": 2019,
-    "caption": "April 4 - May 14, 2019, Gangnam-gu Office, Gangnam-gu 426, Seoul",
+    "caption": "April 4 - May 14, 2019",
+    "text": "Gangnam-gu Office, Gangnam-gu 426, Seoul",
     "thumb": "img/archive/2019-watch-the-world/thumb.jpg",
     "imgs": [
       "img/archive/2019-watch-the-world/01.jpg",
@@ -626,7 +621,8 @@
     "id": "18-scope-miami-beach",
     "title": "SCOPE MIAMI BEACH 2018, Art Fair",
     "year": 2018,
-    "caption": "December 4 - 9, 2018, 801 Ocean Dr, Miami Beach, FL",
+    "caption": "December 4 - 9, 2018",
+    "text": "801 Ocean Dr, Miami Beach, FL",
     "thumb": "img/archive/2018-scope-miami-beach/thumb.png",
     "imgs": [
       "img/archive/2018-scope-miami-beach/01.jpg",
@@ -643,7 +639,8 @@
     "id": "18-young-artist",
     "title": "YOUNG ARTIST CONTEST, Group Exhibition",
     "year": 2018,
-    "caption": "August 1 - August 24, 2018, 15-1, Dosan-daero 56-gil, Gangnam-gu, Seoul (06062)",
+    "caption": "August 1 - August 24, 2018",
+    "text": "15-1, Dosan-daero 56-gil, Gangnam-gu, Seoul (06062)",
     "thumb": "img/archive/2018-young-artist/thumb.jpg",
     "imgs": [
       "img/archive/2018-young-artist/01.jpg",
@@ -659,7 +656,8 @@
     "id": "16-i-am-robot",
     "title": "I AM ROBOT, Group Exhibition",
     "year": 2016,
-    "caption": "December 13 - January 31, 2016 - 2017, Bucheon Robo Park 3F",
+    "caption": "December 13 - January 31, 2016 - 2017",
+    "text": "Bucheon Robo Park 3F",
     "thumb": "img/archive/2016-i-am-robot/thumb.jpg",
     "imgs": [
       "img/archive/2016-i-am-robot/01.jpg",
@@ -674,7 +672,8 @@
     "id": "16-brick-convention",
     "title": "BRICKOREA CONVENTION, Group Exhibition",
     "year": 2016,
-    "caption": "October 22 - October 30, 2015, Hyundai Departmentstore 10F",
+    "caption": "October 22 - October 30, 2015",
+    "text": "Hyundai Departmentstore 10F",
     "thumb": "img/archive/2016-brick-convention/thumb.jpg",
     "imgs": [
       "img/archive/2016-brick-convention/01.jpg",
@@ -686,7 +685,8 @@
     "id": "16-seoul-crafts-fair",
     "title": "2016 SEOUL CRAFTS FAIR, Fair",
     "year": 2016,
-    "caption": "September 22 - October 2, 2016, 281, Eulji-ro, Jung-gu, Seoul, Dongdaemun Design Plaza, DDP",
+    "caption": "September 22 - October 2, 2016",
+    "text": "281, Eulji-ro, Jung-gu, Seoul, Dongdaemun Design Plaza, DDP",
     "thumb": "img/archive/2016-seoul-crafts-fair/thumb.jpg",
     "imgs": [
       "img/archive/2016-seoul-crafts-fair/01.jpg",
@@ -702,7 +702,8 @@
     "id": "15-brick-convention",
     "title": "BRICKOREA CONVENTION, Group Exhibition",
     "year": 2015,
-    "caption": "October 3 - October 11, 2015, Hyundai Departmentstore 10F",
+    "caption": "October 3 - October 11, 2015",
+    "text": "Hyundai Departmentstore 10F",
     "thumb": "img/archive/2015-brick-convention/thumb.jpg",
     "imgs": [
       "img/archive/2015-brick-convention/01.jpg",
