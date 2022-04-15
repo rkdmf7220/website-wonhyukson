@@ -26,21 +26,18 @@ const gnb = [
       isWorks: true
     }
   },
-  {
-    path: '/video',
-    name: 'Video',
-    component: () => import('../views/Video.vue'),
-    meta: {
-      isWorks: true
-    }
-  },
+  // {
+  //   path: '/video',
+  //   name: 'Video',
+  //   component: () => import('../views/Video.vue'),
+  //   meta: {
+  //     isWorks: true
+  //   }
+  // },
   {
     path: '/review',
     name: 'Review',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Review.vue'),
+    component: () => import('../views/Review.vue'),
     meta: {
       cssClass: 'margin-to-works'
     }

@@ -45,7 +45,7 @@ export default createStore({
             }
         },
         loadWorksList({commit, state}) {
-            // console.log('<<<<<<<<<<<<<', "../sample/works-list-en.json")
+            // TODO: if 문에 언어가 동일할 때 조건 추가
             // if (state.worksList.length) {
             //     return;
             // }

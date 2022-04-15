@@ -53,8 +53,6 @@ export default {
     width: 100%;
     box-sizing: border-box;
     z-index: 100;
-/*    background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(4px);*/
 
     &.active{
       background-color: transparent;
