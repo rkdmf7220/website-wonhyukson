@@ -5,7 +5,9 @@
     <div class="text-wrap">
       <p v-for="(info, index) in contact?.contactAddress" :key="index">{{info}}</p>
     </div>
-    <img :src="contact.profileImage" alt="">
+    <div class="img-wrap">
+      <img :src="contact.profileImage" alt="">
+    </div>
   </div>
 </template>
 
@@ -32,10 +34,19 @@ export default {
     line-height: 1.5rem;
     font-weight: 700;
   }
+
   .text-wrap{
     p{
       font-size: 0.75rem;
       line-height: 1.5rem;
+    }
+  }
+
+  .img-wrap{
+    width: 100%;
+
+    img{
+      width: 100%;
     }
   }
 </style>

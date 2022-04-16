@@ -16,17 +16,6 @@ export default {
   components: {GalleryListItem},
   computed: {
     listData() {
-      //return this.$store.state.worksList.filter(work => work.type === this.$route.name.toLowerCase());
-
-      // let list = this.$store.state.worksList;
-      // console.log('list는 = ',list, this.$route.name)
-      // if (list && list.isArray) {
-      //   list = list.filter(work => work.type === this.$route.name.toLowerCase());
-      // } else {
-      //   list = [];
-      // }
-      // return list;
-
       let list = this.$store.state.worksList;
       let filtered = list.filter(work => work.type === this.$route.name.toLowerCase());
       return (list) ? filtered : [];
@@ -42,21 +31,7 @@ export default {
     }
   },
   methods: {
-    /*loadList() {
-      axios.get("../mockup/data-result.json")
-          .then(response => {
-            console.log('response 내용은',response);
-            if(response.statusText === "OK") {
-              // this.listData = response.data;
-              this.$store.dispatch('updateWorksList', {list: response.data})
-            } else {
-              // TODO: error handling.
-            }
-          }).catch(error => {
-            console.log('error', error);
-            // TODO: error handling.
-          });
-    },*/
+
   }
 }
 </script>
@@ -74,6 +49,18 @@ export default {
       width: 23%;
       margin-right: 2%;
       margin-bottom: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contents {
+    ul {
+      li {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 64px;
+      }
     }
   }
 }

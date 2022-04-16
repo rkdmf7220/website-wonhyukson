@@ -45,10 +45,10 @@ export default createStore({
             }
         },
         loadWorksList({commit, state}) {
-            // console.log('<<<<<<<<<<<<<', "../sample/works-list-en.json")
-            if (state.worksList.length) {
-                return;
-            }
+            // TODO: if 문에 언어가 동일할 때 조건 추가
+            // if (state.worksList.length) {
+            //     return;
+            // }
             return axios.get("../sample/" + state.lang + "/data-result.json")
                 .then(response => {
                     // console.log('response 내용은', response);

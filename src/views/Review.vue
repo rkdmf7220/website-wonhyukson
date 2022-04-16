@@ -66,9 +66,12 @@ export default {
     summary {
       list-style: none;
       font-size: 1.25rem;
+      line-height: 1.5rem;
       font-weight: 700;
       transition: all 0.15s;
       cursor: pointer;
+      word-break: keep-all;
+
 
       &::-webkit-details-marker {
         display: none;
@@ -84,6 +87,7 @@ export default {
       font-size: 0.85rem;
       font-weight: 700;
       margin-bottom: 16px;
+      word-break: keep-all;
     }
 
     .review-wrap {
@@ -101,14 +105,30 @@ export default {
 
         .img-list{
           display: flex;
+          flex-wrap: wrap;
 
           .img-item{
-            margin-right: 16px;
+            width: 24%;
+            margin-right: 1%;
+
+            img{
+              width: 100%;
+            }
           }
         }
       }
     }
   }
 }
-  img{width: 200px;}
+
+@media screen and (max-width: 767px) {
+  .wrap details .review-wrap .info-wrap .img-list .img-item{
+    width: 49%;
+
+    &:nth-child(even){
+      margin-right: 0;
+      margin-left: 1%;
+    }
+  }
+}
 </style>

@@ -44,9 +44,13 @@ export default {
     margin-bottom: 32px;
     max-width: 1200px;
 
+    h1{
+      line-height: 1.75rem;
+    }
+
     .lang-container{
-      margin-left: auto;
-      margin-right: 2%;
+      margin: 6px 2% 0 auto;
+      flex-shrink: 0;
 
       button{
         border: none;
@@ -65,5 +69,12 @@ export default {
         }
       }
     }
+  }
+
+  @media screen and (max-width: 767px){
+    .lang-container{
+      display: none;
+    }
+  ;
   }
 </style>
