@@ -44,6 +44,7 @@ export default {
 
   .img-wrap{
     width: 100%;
+    max-width: 1200px;
 
     img{
       width: 100%;
