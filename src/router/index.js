@@ -62,8 +62,9 @@ const gnb = [
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    redirect: '/sculpture'
+    name: 'Intro',
+    component: () => import('../views/Intro')
+    // redirect: '/sculpture'
   },
   {
     path: '/:works/:id',
