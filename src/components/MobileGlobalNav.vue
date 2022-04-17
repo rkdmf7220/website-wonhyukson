@@ -1,6 +1,6 @@
 <template>
-  <div id="mobile-nav" :class="{active: !this.isActive}" >
-    <router-link to="/" class="logo">Wonhyuk Son</router-link>
+  <div id="mobile-nav" :class="{active: !this.isActive}" v-if="this.displayNavigation !== '/'">
+    <router-link to="/sculpture" class="logo">Wonhyuk Son</router-link>
     <div class="lang-container">
       <button :class='{active : currentLang === Constants.lang.kr}' @click="onClickLang(Constants.lang.kr)"><span>KR</span></button>
       <button :class='{active : currentLang === Constants.lang.en}' @click="onClickLang(Constants.lang.en)"><span>EN</span></button>
