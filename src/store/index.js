@@ -45,17 +45,9 @@ export default createStore({
             }
         },
         loadWorksList({commit, state}) {
-            // TODO: if 문에 언어가 동일할 때 조건 추가
-            // if (state.worksList.length) {
-            //     return;
-            // }
             return axios.get("../sample/" + state.lang + "/data-result.json")
                 .then(response => {
-                    // console.log('response 내용은', response);
                     if (response.statusText === "OK") {
-                        // this.listData = response.data;
-                        // this.$store.dispatch('updateWorksList', {list: response.data})
-
                         commit('worksList', response.data)
                     } else {
                         // TODO: error handling.
@@ -65,20 +57,9 @@ export default createStore({
                 // TODO: error handling.
             });
         },
-        /*loadCv({commit, state}) {
-            console.log("cv의 주소는 : ","../sample/" + state.lang + "/cv.json")
-            axios.get("../sample/" + state.lang + "/cv.json")
-                .then(response => {
-                    console.log('response:', response)
-                    commit('cv', response.data)
-
-                })
-        },*/
         loadCv({commit, state}) {
-            // console.log('cv의 주소를 알려드리죠 : ', "../sample/" + state.lang + "/cv.json")
             axios.get("../sample/" + state.lang + "/cv.json")
                 .then(response => {
-                    console.log('response 내용은', response);
                     if (response.statusText === "OK") {
                         commit('cv', response.data)
                     } else {
