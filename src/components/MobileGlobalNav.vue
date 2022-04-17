@@ -23,10 +23,15 @@ export default {
       return this.$store.state.lang;
     },
   },
+  mounted() {
+    window.addEventListener('scroll', this.onScrollToggleClass)
+  },
   data() {
     return{
       Constants,
-      isActive: Boolean
+      isActive: Boolean,
+      currentScrollTop: Number,
+      pastScrollTop: Number
     }
   },
   methods: {
@@ -40,6 +45,23 @@ export default {
     closeMobileMenu(close) {
       console.log('close 테스트',close)
       this.isActive = !close;
+    },
+    onScrollHideNav(direction) {
+      let nav = document.querySelector("#mobile-nav");
+        if (direction === "up") {
+          nav.className = "";
+        } else if (direction === "down") {
+          nav.className = "scroll"
+        }
+    },
+    onScrollToggleClass() {
+      this.currentScrollTop = window.pageYOffset || 0;
+      if (this.currentScrollTop > this.pastScrollTop) {
+        this.onScrollHideNav("down");
+      } else if (this.currentScrollTop < this.pastScrollTop) {
+        this.onScrollHideNav("up")
+      }
+      this.pastScrollTop = this.currentScrollTop;
     }
   }
 }
@@ -53,6 +75,12 @@ export default {
     width: 100%;
     box-sizing: border-box;
     z-index: 100;
+    transition: top 0.3s;
+    top: 0;
+
+    &.scroll{
+      top: -60px;
+    }
 
     &.active{
       background-color: transparent;
