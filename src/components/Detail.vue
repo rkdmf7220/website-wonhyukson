@@ -7,7 +7,7 @@
         <p class="txt-explain">{{itemData?.text}}</p>
       </div>
 
-      <lightgallery :settings="{speed: 500, download: false}" class="img-list">
+      <lightgallery :settings="{speed: 500, download: false, showCloseIcon: true}" class="img-list">
         <a class="img-item" v-for="(item, index) in itemData?.imgs" :href="'/'+item" :key="index">
           <img :src="'/'+item">
         </a>

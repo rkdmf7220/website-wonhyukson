@@ -1,7 +1,7 @@
 <template>
   <div class="wrap">
     <div class="video-wrap">
-      <video src="/video/intro01.mp4" autoplay loop muted></video>
+      <video src="/video/intro01.mp4" class="background-video" autoplay loop muted></video>
     </div>
     <div class="opening-wrap">
       <router-link to="/sculpture">
@@ -24,15 +24,17 @@ export default {
     position: absolute;
     overflow: hidden;
     margin: 0;
+    padding: 0;
+    z-index: 99;
 
     .video-wrap{
       position: absolute;
       object-fit: cover;
-      z-index: 10;
+      width: 100%;
+      height: 100%;
 
-      video{
+      .background-video{
         width: 100%;
-        height: 100%;
       }
     }
 
@@ -40,7 +42,6 @@ export default {
       position: absolute;
       width: 100%;
       height: 100%;
-      z-index: 99;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -57,6 +58,17 @@ export default {
         &:hover{
           background-color: white;
           color: black;
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-aspect-ratio: 16/9) {
+    .wrap{
+      .video-wrap{
+        .background-video {
+          width: auto;
+          height: 100%;
         }
       }
     }
