@@ -1,5 +1,5 @@
 <template>
-  <div id="nav">
+  <div id="nav" v-if="this.$route.name !== 'Intro'">
     <router-link to="/sculpture" class="logo">Wonhyuk Son</router-link>
     <ul>
       <li v-for="item in menu" :key="item.name" :class="item?.meta?.cssClass">
