@@ -1,7 +1,7 @@
 <template>
   <div class="wrap">
     <div class="video-wrap">
-      <video src="/video/intro01.mp4" class="background-video" autoplay loop muted></video>
+      <video src="/video/intro01.mp4" class="background-video" autoplay muted playsinline></video>
     </div>
     <div class="opening-wrap">
       <router-link to="/sculpture">
@@ -13,7 +13,27 @@
 
 <script>
 export default {
-  name: "Intro"
+  name: "Intro",
+  mounted() {
+    document.querySelector('.background-video').addEventListener('ended', this.continueNextVideo);
+  },
+  data() {
+    return{
+      videoCount: 1
+    }
+  },
+  methods: {
+    continueNextVideo() {
+      this.videoCount ++;
+      if (this.videoCount > 2) {
+        this.videoCount = 1;
+      }
+      let nextVideo = "/video/intro0"+this.videoCount+".mp4";
+      let videoPlayer = document.querySelector('.background-video');
+      videoPlayer.src = nextVideo;
+      videoPlayer.play();
+    }
+  }
 }
 </script>
 
@@ -25,13 +45,14 @@ export default {
     overflow: hidden;
     margin: 0;
     padding: 0;
-    z-index: 99;
+    z-index: 100;
 
     .video-wrap{
       position: absolute;
       object-fit: cover;
       width: 100%;
       height: 100%;
+      background-color: #999;
 
       .background-video{
         width: 100%;
