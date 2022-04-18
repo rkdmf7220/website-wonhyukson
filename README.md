@@ -1,24 +1,11 @@
 # wonhyukson
 
-## Project setup
+## Intro
 ```
-npm install
+Artist Wonhyuk Son's archives website
 ```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+[View website](http://wonhyukson.com)
+### Use skill stack
+- Vue.js
+- Vuex
+- lightGallery plugin
