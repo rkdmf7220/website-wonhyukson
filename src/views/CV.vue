@@ -2,12 +2,17 @@
   <div class="wrap">
     <page-title/>
     <div class="profile">
-      <ul>
-        <li v-for="(item, index) in cv" :key="index">
-          <h2>{{item.title}}</h2>
-          <p v-for="(text, index) in item.items" :key="index">{{text}}</p>
-        </li>
-      </ul>
+      <div>
+        <div class="item" v-for="(item, index) in cv" :key="index">
+          <h2 class="title">{{item.title}}</h2>
+          <div v-for="(items, index) in item.items" :key="index" class="text-wrap">
+            <span v-if="items.year" class="year">{{items.year}}</span>
+            <ul>
+              <li class="info-list" v-for="(text, index) in items.text" :key="index">{{text}}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -29,16 +34,32 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  ul{
-    li{
-      margin-bottom: 40px;
-      h2{
-        font-weight: 700;
+
+  .item{
+    margin-bottom: 40px;
+    .title, .info-list, .year{
+      font-size: 0.75rem;
+      line-height: 1rem;
+    }
+    .title{
+      font-weight: 700;
+    }
+    .text-wrap{
+      display: flex;
+      flex-direction: row;
+      .year{
+        margin-right: 8px;
+        white-space: pre;
       }
-      h2, p{
-        font-size: 0.75rem;
-        line-height: 1rem;
+      .info-list{
+        margin-bottom: 8px;
       }
     }
   }
+
+@media screen and (max-width: 768px) {
+  .text-wrap{
+    margin-bottom: 8px;
+  }
+}
 </style>
