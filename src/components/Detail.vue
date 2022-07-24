@@ -4,7 +4,7 @@
     <div class="contents">
       <div class="txt-wrap">
         <h2 class="txt-caption">{{itemData?.caption}}</h2>
-        <p class="txt-explain">{{itemData?.text}}</p>
+        <p v-if="this.$route.params.works ==='archive'" class="txt-explain">{{itemData?.text}}</p>
       </div>
 
       <lightgallery :settings="{speed: 500, download: false, showCloseIcon: true}" class="img-list">
