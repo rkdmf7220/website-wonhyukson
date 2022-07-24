@@ -92,6 +92,10 @@ export default {
           height: 100%;
         }
       }
+
+      .opening-wrap button{
+        font-size: 2rem;
+      }
     }
   }
 </style>
