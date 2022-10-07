@@ -19,6 +19,15 @@ h1{
 h2{
   font-size: 1.125rem;
 }
+
+::-webkit-scrollbar{
+  width:10px;
+  background-color:#fff
+}
+::-webkit-scrollbar-thumb{
+  background-color:#000
+}
+
 .wrap{
   margin: 116px 0 80px 240px;
 
