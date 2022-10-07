@@ -38,7 +38,7 @@ export default {
 
 <style scoped lang="scss">
 .contents {
-  max-width: 1200px;
+  width: calc(100% - 80px);
 
   ul {
     display: flex;
@@ -53,8 +53,27 @@ export default {
   }
 }
 
+@media screen and (min-width: 1921px) {
+  .contents {
+    ul {
+      li {
+        width: 18%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1023px) {
+  .contents{
+    ul {
+      li {
+        width: 48%;
+      }
+    }
+  }
+}
 @media screen and (max-width: 767px) {
   .contents {
+    width: 100%;
     ul {
       li {
         width: 100%;

@@ -25,8 +25,7 @@ export default {
   },
   data() {
     return{
-      Constants,
-      // currentLang : "en"
+      Constants
     }
   },
   methods: {
@@ -42,11 +41,7 @@ export default {
   .header{
     display: flex;
     margin-bottom: 32px;
-    max-width: 1200px;
-
-    h1{
-      line-height: 1.75rem;
-    }
+    width: calc(100% - 80px);
 
     .lang-container{
       margin: 6px 2% 0 auto;
@@ -61,8 +56,9 @@ export default {
         padding: 0 12px;
         color: #bbb;
 
-        &:first-child{
-          border-right: 2px solid black
+        &:last-child{
+          border-left: 2px solid black;
+          margin-right: -12px;
         }
         &.active{
           color: #000;

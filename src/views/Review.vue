@@ -43,13 +43,14 @@ export default {
 
 <style lang="scss">
 .wrap{
-  max-width: 1200px;
   details {
+    width: calc(98% - 80px);
     border-top: 1px solid #ccc;
     padding: 32px 0 32px 16px;
     font-size: 0.75rem;
     line-height: 1.25rem;
     margin-right: 2%;
+    box-sizing: border-box;
 
     &:last-child {
       border-bottom: 1px solid #ccc;

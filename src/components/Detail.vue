@@ -65,7 +65,7 @@ export default {
 }
 
 .contents {
-  max-width: 1200px;
+  width: calc(100% - 80px);
   margin-bottom: 80px;
 
   .txt-wrap {
@@ -109,10 +109,21 @@ export default {
     }
   }
 }
-
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   .wrap{
-    .txt-wrap{
+    .contents{
+      .img-list{
+        .img-item{
+          width: 31.3333%;
+          padding-bottom: 31.3333%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .wrap {
+    .txt-wrap {
       padding-right: 0;
     }
     .img-list {

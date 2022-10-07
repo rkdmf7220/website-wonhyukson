@@ -27,6 +27,7 @@ export default {
 
 <style scoped lang="scss">
   .m-menu-wrap{
+    display: none;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -72,6 +73,11 @@ export default {
           padding: 8px 16px;
         }
       }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .m-menu-wrap{
+      display: block;
     }
   }
 </style>
