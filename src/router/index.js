@@ -77,7 +77,10 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
-  gnb
+  gnb,
+  scrollBehavior(){
+    return { top: 0 }
+  },
 })
 
 export default router
