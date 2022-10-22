@@ -43,6 +43,10 @@ export default {
     margin-bottom: 32px;
     width: calc(100% - 80px);
 
+    h1{
+      line-height:  1.75rem;
+    }
+
     .lang-container{
       margin: 6px 2% 0 auto;
       flex-shrink: 0;

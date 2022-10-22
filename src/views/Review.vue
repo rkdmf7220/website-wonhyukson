@@ -43,6 +43,7 @@ export default {
 
 <style lang="scss">
 .wrap{
+  min-height: calc(100vh - 276px);
   details {
     width: calc(98% - 80px);
     border-top: 1px solid #ccc;
@@ -123,12 +124,21 @@ export default {
 }
 
 @media screen and (max-width: 767px) {
-  .wrap details .review-wrap .info-wrap .img-list .img-item{
-    width: 49%;
+  .wrap {
+    min-height: calc(100vh - 184px);
+    margin-bottom: 64px;
+    details {
+      width: 100%;
+      padding-right: 16px;
 
-    &:nth-child(even){
-      margin-right: 0;
-      margin-left: 1%;
+      .review-wrap .info-wrap .img-list .img-item {
+        width: 49%;
+
+        &:nth-child(even) {
+          margin-right: 0;
+          margin-left: 1%;
+        }
+      }
     }
   }
 }

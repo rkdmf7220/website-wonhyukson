@@ -4,7 +4,12 @@
     <div class="contents">
       <div class="txt-wrap">
         <h2 class="txt-caption">{{itemData?.caption}}</h2>
-        <p v-if="this.$route.params.works ==='archive'" class="txt-explain">{{itemData?.text}}</p>
+        <div v-if="this.$route.params.works === 'archive'" class="info-list">
+          <div v-for="(item, index) in itemData?.info" :key="index" class="info-item">
+            <span class="info-title">{{ item.title }}</span>
+            <span class="info-text">{{ item.text}}</span>
+          </div>
+        </div>
       </div>
 
       <lightgallery :settings="{speed: 500, download: false, showCloseIcon: true}" class="img-list">
@@ -69,7 +74,7 @@ export default {
   margin-bottom: 80px;
 
   .txt-wrap {
-    margin-bottom: 120px;
+    margin-bottom: 100px;
     padding-right: 2%;
 
     .txt-caption {
@@ -85,6 +90,41 @@ export default {
       line-height: 1.6rem;
       white-space: pre-wrap;
       word-break: keep-all;
+    }
+  }
+
+  .info-list{
+    font-size: 0.85rem;
+    line-height: 1.6rem;
+    white-space: pre-wrap;
+    word-break: keep-all;
+
+    .info-item{
+      display: flex;
+      &:last-child{
+        margin-bottom: 0;
+      }
+
+      .info-title{
+        flex-shrink: 0;
+        padding-right: 10px;
+        margin-right: 10px;
+        position: relative;
+
+        &::after{
+          content: '';
+          position: absolute;
+          right: 0;
+          top: 6px;
+          width: 1px;
+          height: 1rem;
+          background-color: #000;
+        }
+      }
+
+      .info-text{
+        word-break: keep-all;
+      }
     }
   }
 
@@ -110,10 +150,10 @@ export default {
   }
 }
 @media screen and (max-width: 1023px) {
-  .wrap{
-    .contents{
-      .img-list{
-        .img-item{
+  .wrap {
+    .contents {
+      .img-list {
+        .img-item {
           width: 31.3333%;
           padding-bottom: 31.3333%;
         }
@@ -123,23 +163,28 @@ export default {
 }
 @media screen and (max-width: 767px) {
   .wrap {
-    .txt-wrap {
-      padding-right: 0;
-    }
-    .img-list {
-      .img-item {
-        width: 49%;
-        margin: 0 0 2% 0;
-        padding-bottom: 49%;
+    .contents {
+      width: 100%;
+      .txt-wrap {
+        padding-right: 0;
+      }
 
-        &:nth-child(odd) {
-          margin-right: 1%;
-        }
-        &:nth-child(even) {
-          margin-left: 1%;
+      .img-list {
+        .img-item {
+          width: 49%;
+          margin: 0 0 2% 0;
+          padding-bottom: 49%;
+
+          &:nth-child(odd) {
+            margin-right: 1%;
+          }
+
+          &:nth-child(even) {
+            margin-left: 1%;
+          }
         }
       }
     }
-}
+  }
 }
 </style>

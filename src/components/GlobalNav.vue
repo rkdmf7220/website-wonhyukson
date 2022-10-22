@@ -43,6 +43,7 @@ export default {
     .logo{
       font-weight: 700;
       font-size: 1.25rem;
+      line-height: 1.75rem;
       padding: 16px;
       display: inline-block;
     }
