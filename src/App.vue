@@ -3,6 +3,7 @@
     <global-nav/>
     <mobile-global-nav/>
     <router-view/>
+    <Copyright/>
   </div>
 </template>
 
@@ -46,7 +47,8 @@ h2{
 <script>
 import GlobalNav from "./components/GlobalNav";
 import MobileGlobalNav from "./components/MobileGlobalNav";
+import Copyright from "./components/Copyright";
 export default {
-  components: {MobileGlobalNav, GlobalNav}
+  components: {Copyright, MobileGlobalNav, GlobalNav}
 }
 </script>
