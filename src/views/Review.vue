@@ -25,11 +25,6 @@
 import PageTitle from "../components/PageTitle";
 export default {
   components: {PageTitle},
-  data() {
-    return{
-
-    }
-  },
   computed: {
     reviewData() {
       return this.$store.state.review
@@ -43,7 +38,7 @@ export default {
 
 <style lang="scss">
 .wrap{
-  min-height: calc(100vh - 276px);
+  min-height: calc(100vh - 256px);
   details {
     width: calc(98% - 80px);
     border-top: 1px solid #ccc;
@@ -125,7 +120,8 @@ export default {
 
 @media screen and (max-width: 767px) {
   .wrap {
-    min-height: calc(100vh - 184px);
+    //min-height: calc(100vh - 184px);
+    min-height: calc(var(--vh, 1vh) - 184px);
     margin-bottom: 64px;
     details {
       width: 100%;

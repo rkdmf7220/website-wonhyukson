@@ -49,6 +49,20 @@ import GlobalNav from "./components/GlobalNav";
 import MobileGlobalNav from "./components/MobileGlobalNav";
 import Copyright from "./components/Copyright";
 export default {
-  components: {Copyright, MobileGlobalNav, GlobalNav}
+  components: {Copyright, MobileGlobalNav, GlobalNav},
+  mounted() {
+    this.$store.dispatch('loadReview');
+    window.addEventListener('resize', this.setScreenSize)
+    this.setScreenSize()
+  },
+  beforeUnmount() {
+    window.addEventListener('resize', this.setScreenSize)
+  },
+  methods: {
+    setScreenSize() {
+      let vh = window.innerHeight;
+      document.documentElement.style.setProperty('--vh', `${vh}px`)
+    }
+  }
 }
 </script>
