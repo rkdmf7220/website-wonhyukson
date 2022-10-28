@@ -60,7 +60,7 @@ export default {
   },
   methods: {
     setScreenSize() {
-      let vh = window.innerHeight;
+      let vh = window.innerHeight * 0.01;
       document.documentElement.style.setProperty('--vh', `${vh}px`)
     }
   }
