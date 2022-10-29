@@ -31,7 +31,8 @@ export default {
   methods: {
     onClickLang(lang) {
       this.$store.dispatch('setLang', lang)
-      this.currentLang = lang
+      // this.currentLang = lang
+      this.$store.state.lang = lang
     }
   }
 }

@@ -37,13 +37,13 @@ export default {
   methods: {
     onClickLang(lang) {
       this.$store.dispatch('setLang', lang)
-      this.currentLang = lang
+      // this.currentLang = lang
+      this.$store.state.lang = lang
     },
     onClickMenu() {
       this.isActive = !this.isActive
     },
     closeMobileMenu(close) {
-      console.log('close 테스트',close)
       this.isActive = !close;
     },
     onScrollHideNav(direction) {

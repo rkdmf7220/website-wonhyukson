@@ -17,6 +17,11 @@ export default {
   mounted() {
     this.menu = this.$router.options.gnb;
   },
+  data() {
+    return {
+      menu: null
+    }
+  },
   methods: {
     closeMobileMenu() {
       this.$emit('removeClass', !this.isActive)
