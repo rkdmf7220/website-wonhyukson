@@ -13,7 +13,6 @@ export default {
 <style scoped lang="scss">
 .copyright{
   width: 100%;
-  height: 20px;
   padding: 0 0 60px 240px;
   color: #666666;
   font-size: 0.75rem;
@@ -22,8 +21,7 @@ export default {
 @media screen and (max-width: 767px){
   .copyright{
     width: 100%;
-    margin: 60px 0 20px 0;
-    padding: 0 16px;
+    padding: 0 16px 20px 16px;
   }
 }
 </style>

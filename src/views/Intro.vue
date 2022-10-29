@@ -46,6 +46,7 @@ export default {
     margin: 0;
     padding: 0;
     z-index: 100;
+    background-color: #999;
 
     .video-wrap{
       position: absolute;

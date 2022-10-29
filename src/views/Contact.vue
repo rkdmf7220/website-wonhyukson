@@ -31,6 +31,7 @@ export default {
 <style scoped lang="scss">
   .wrap{
     min-height: calc(100vh - 256px);
+    margin-bottom: 64px;
 
     h2 {
       font-size: 0.75rem;
@@ -56,7 +57,7 @@ export default {
   }
   @media screen and (max-width: 767px) {
     .wrap {
-      min-height: calc(calc(var(--vh, 1vh) * 100) - 184px);
+      min-height: calc(calc(var(--vh, 1vh) * 100) - 176px);
     }
   }
 </style>
