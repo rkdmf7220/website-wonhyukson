@@ -3,7 +3,7 @@
     <page-title :title="itemData?.title"/>
     <div class="contents">
       <div class="txt-wrap">
-        <h2 class="txt-caption">{{itemData?.caption}}</h2>
+        <h2 class="txt-caption" @click="this.showSwiper = !this.showSwiper">{{itemData?.caption}}</h2>
         <div v-if="this.$route.params.works === 'archive'" class="info-list">
           <div v-for="(item, index) in itemData?.info" :key="index" class="info-item">
             <span class="info-title">{{ item.title }}</span>
@@ -12,11 +12,22 @@
         </div>
       </div>
 
-      <lightgallery :settings="{speed: 500, download: false, showCloseIcon: true}" class="img-list">
+<!--      <lightgallery :settings="{speed: 500, download: false, showCloseIcon: true}" class="img-list">
         <a class="img-item" v-for="(item, index) in itemData?.imgs" :href="'/'+item" :key="index">
           <img :src="'/'+item">
         </a>
-      </lightgallery>
+      </lightgallery>-->
+
+<!--      <swiper :pagination="pagination" :option="this.swiperOption" :modules="modules" :class="{'is-show': showSwiper}" ref="swiper">-->
+      <swiper :pagination="pagination" :modules="modules" :class="{'is-show': showSwiper}" ref="swiper">
+        <div class="swiper-toolbar">
+          <button @click="onClickSwiperClose" class="swiper-close">✕</button>
+        </div>
+        <swiper-slide v-for="(item, index) in itemData?.imgs" :key="index">
+          <img :src="'/'+item" alt="">
+        </swiper-slide>
+        <div class="swiper-dim"></div>
+      </swiper>
 
       <div class="video-wrap" v-if="itemData?.link">
         <iframe width="100%" height="100%" :src="itemData?.link" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -28,11 +39,25 @@
 
 <script>
 import PageTitle from "./PageTitle";
-import Lightgallery from 'lightgallery/vue'
 import 'lightgallery/scss/lightgallery.scss';
+import { Swiper, SwiperSlide} from "swiper/vue/swiper-vue";
+import { Pagination } from "swiper"
+import "../assets/scss/swiper.scss"
+import "swiper/modules/pagination/pagination.scss"
 export default {
   name: "Detail",
-  components: {PageTitle, Lightgallery},
+  components: {PageTitle, Swiper, SwiperSlide},
+  setup() {
+    return {
+      pagination: {
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + "</span>";
+        },
+      },
+      modules: [Pagination],
+    };
+  },
   computed: {
     itemData() {
       return this.$store.state.worksList.find(item => item.id === this.$route.params.id)
@@ -43,11 +68,13 @@ export default {
   },
   data() {
     return {
-
+      showSwiper: false,
     }
   },
   methods: {
-
+    onClickSwiperClose() {
+      this.showSwiper = !this.showSwiper
+    },
   }
 }
 </script>
@@ -147,6 +174,12 @@ export default {
         position: absolute;
       }
     }
+  }
+
+  .swiper .swiper-wrapper .swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 }
 @media screen and (max-width: 1023px) {
