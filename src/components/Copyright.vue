@@ -17,6 +17,9 @@ export default {
   color: #666666;
   font-size: 0.75rem;
   box-sizing: border-box;
+  span{
+    font-size: 0.75rem;
+  }
 }
 @media screen and (max-width: 767px){
   .copyright{

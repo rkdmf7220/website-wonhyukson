@@ -89,6 +89,7 @@ export default {
 
     .review-wrap {
       margin-bottom: 32px;
+      max-width: 750px;
       &:last-child{
         margin-bottom: 0;
       }
