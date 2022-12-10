@@ -10,24 +10,13 @@
       }
     ]
   },
-  "education": {
-    "title": "Education",
-    "items": [
-      {
-        "year": "2018-2020 AA",
-        "text": [
-          "| Myeongji College (Seoul, South Korea) | Communication Design"
-        ]
-      }
-    ]
-  },
   "soloExhibition": {
     "title": "Solo Exhibition",
     "items": [
       {
         "year": "2022",
         "text": [
-          "Dream Land (CICA Museum, Gimpo) exhibition scheduled"
+          "Forthcoming | Assemblogy: compose and combine (CICA Museum | Czong Institute for Contemporary Art, Gimpo)"
         ]
       },
       {
@@ -48,9 +37,22 @@
     "title": "Group Exhibition",
     "items": [
       {
+        "year": "2023",
+        "text": [
+          "Forthcoming | Portrait 2023 (CICA Museum, Gimpo)"
+        ]
+      },
+      {
+        "year": "2022",
+        "text": [
+          "Forthcoming | Korean Society of Typography Exhibition 16 (TBD, Online)",
+          "Forthcoming | Observer: Sculpture (Gallery OOOJH, Seoul)"
+        ]
+      },
+      {
         "year": "2021",
         "text": [
-          "‘Singing word, singing text’ Korean Society of Typography Exhibition 15 (COEX Hall C, Seoul, Metaverse online)",
+          "Singing word, singing text | Korean Society of Typography Exhibition 15 (COEX Hall C, Seoul, Metaverse online)",
           "Relativity Circuit: Sustainability Report (Dongduk art gallery, Seoul)",
           "Over the structures 2021 (CICA Museum, Gimpo)"
         ]
@@ -58,14 +60,14 @@
       {
         "year": "2020",
         "text": [
-          "‘Contactless’ Korean Society of Typography Exhibition 14 (Culture Station Seoul 284 RTO, Seoul, Online)"
+          "Contactless | Korean Society of Typography Exhibition 14 (Culture Station Seoul 284 RTO, Seoul, Online)"
         ]
       },
       {
         "year": "2019",
         "text": [
-          "‘Knowing’ pure Korean word (MJC Gallery, Seoul)",
-          "Bauhaus mirror (DDP, Seoul)",
+          "Knowing (MJ Gallery, Seoul)",
+          "bauhaus mirror (DDP, Seoul)",
           "The 55th Gyeonggi art contest (Gyeonggi art center gallery, Suwon)",
           "Watch the world through the art (Gangnam-gu office, Seoul)"
         ]
@@ -73,14 +75,12 @@
       {
         "year": "2018",
         "text": [
-          "Miami scope art fair (Scope art fair, Miami US)",
           "International young artist association contest (Gallery We, Seoul)"
         ]
       },
       {
         "year": "2016",
         "text": [
-          "DDP Craft exposition (DDP, Seoul)",
           "Rebellion of brick ‘I AM ROBOT’ (RoboPark, Bucheon)",
           "Brick Convention (Hyundai Departmentstore, Pangyo)"
         ]
@@ -93,8 +93,25 @@
       }
     ]
   },
+  "artFair": {
+    "title": "Art Fair",
+    "items": [
+      {
+        "year": "2018",
+        "text": [
+          "Miami Scope Art Fair (Scope art fair, Miami)"
+        ]
+      },
+      {
+        "year": "2016",
+        "text": [      
+          "DDP Craft exposition (DDP, Seoul)"
+        ]
+      }
+    ]
+  },
   "prizeArchive": {
-    "title": "Prize and Archive",
+    "title": "Prize and Support",
     "items": [
       {
         "year": "2021",
@@ -103,22 +120,15 @@
         ]
       },
       {
+        "year": "2020",
+        "text": [
+          "Arts Council Korea 'Visual Art Space Support Project'"
+        ]
+      },
+      {
         "year": "2019",
         "text": [
-          "CDAK Design award | Web·MiraeN 5th Textbook cover special award | Typeface design award",
           "The 55th Gyeonggi art contest ‘Sculpture’ award"
-        ]
-      },
-      {
-        "year": "2018",
-        "text": [
-          "IYAA 1st art contest award"
-        ]
-      },
-      {
-        "year": "2016",
-        "text": [
-          "DDP Craft exposition‘Make a food using the brick’ 4th award"
         ]
       }
     ]
@@ -138,28 +148,27 @@
     "title": "Division",
     "items": [
       {
-        "year": "2020-",
+        "year": "2022 -",
         "text": [
-          "E-Land Gallery ARTRO | Artist",
+          "OBSERVER: SCULPTURE (OS) | Member"
+        ]
+      },
+      {
+        "year": "2020 -",
+        "text": [
           "Korean Society of Typography | Regular Member"
         ]
       },
       {
-        "year": "2019 ",
+        "year": "2019",
         "text": [
-          "Extypo (group) | President"
+          "Extypo (experimental typography group) | President"
         ]
       },
       {
-        "year": "2019-",
+        "year": "2018 - 2019",
         "text": [
-          "Korean Artists Welfare Foundation | Visual Artist"
-        ]
-      },
-      {
-        "year": "2018-",
-        "text": [
-          "International Young Artist Association | Plastic Artist"
+          "IYAA (International Young Artist Association) | Visual Artist"
         ]
       }
     ]
@@ -170,21 +179,14 @@
       {
         "year": "2021",
         "text": [
-          "Introduction on Art Continue Nominated Artists Magazine (Art Magazine)",
-          "Introduction on ‘CA BOOKS’ <#254 Contactless> (Design Magazine)"
-        ]
-      },
-      {
-        "year": "2020",
-        "text": [
-          "Introduction on ‘Lego Group’s’ (Lego Official account)"
+          "Art Continue 『2022 Nominated Artists in South Korea』",
+          "CA BOOKS 『#254 Contactless』"
         ]
       },
       {
         "year": "2017",
         "text": [
-          "Interview with ‘Creator’ (Korea Lego Magazine)",
-          "Interview with ‘The Brothers Brick’ (International Lego Media)"
+          "Creator 『#9 IDEA OF CREATION』 (Interview)"
         ]
       }
     ]
