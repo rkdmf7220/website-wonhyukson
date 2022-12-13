@@ -12,6 +12,14 @@
         </div>
       </div>
 
+      <image-slider/>
+
+      <div class="img-list">
+        <div class="img-item" v-for="(item, index) in itemData?.imgs" :href="'/'+item" :key="index">
+          <img :src="'/'+item">
+        </div>
+      </div>
+
 <!--      <lightgallery :settings="{speed: 500, download: false, showCloseIcon: true}" class="img-list">
         <a class="img-item" v-for="(item, index) in itemData?.imgs" :href="'/'+item" :key="index">
           <img :src="'/'+item">
@@ -19,7 +27,8 @@
       </lightgallery>-->
 
 <!--      <swiper :pagination="pagination" :option="this.swiperOption" :modules="modules" :class="{'is-show': showSwiper}" ref="swiper">-->
-      <swiper :pagination="pagination" :modules="modules" :class="{'is-show': showSwiper}" ref="swiper">
+<!--      <swiper :pagination="pagination" :modules="modules" :class="{'is-show': showSwiper}" ref="swiper">-->
+<!--      <swiper :pagination="{el: paginationEl}" :modules="modules" :class="{'is-show': showSwiper}" ref="swiper">
         <div class="swiper-toolbar">
           <button @click="onClickSwiperClose" class="swiper-close">✕</button>
         </div>
@@ -27,7 +36,7 @@
           <img :src="'/'+item" alt="">
         </swiper-slide>
         <div class="swiper-dim"></div>
-      </swiper>
+      </swiper>-->
 
       <div class="video-wrap" v-if="itemData?.link">
         <iframe width="100%" height="100%" :src="itemData?.link" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -40,14 +49,16 @@
 <script>
 import PageTitle from "./PageTitle";
 import 'lightgallery/scss/lightgallery.scss';
-import { Swiper, SwiperSlide} from "swiper/vue/swiper-vue";
+import ImageSlider from "./ImageSlider.vue";
+/*import { Swiper, SwiperSlide} from "swiper/vue/swiper-vue";
 import { Pagination } from "swiper"
 import "../assets/scss/swiper.scss"
-import "swiper/modules/pagination/pagination.scss"
+import "swiper/modules/pagination/pagination.scss"*/
 export default {
   name: "Detail",
-  components: {PageTitle, Swiper, SwiperSlide},
-  setup() {
+  components: {ImageSlider, PageTitle},
+  // components: {PageTitle, Swiper, SwiperSlide},
+/*  setup() {
     return {
       pagination: {
         clickable: true,
@@ -57,7 +68,7 @@ export default {
       },
       modules: [Pagination],
     };
-  },
+  },*/
   computed: {
     itemData() {
       return this.$store.state.worksList.find(item => item.id === this.$route.params.id)
@@ -66,7 +77,7 @@ export default {
   mounted() {
     this.$store.dispatch('loadWorksList')
   },
-  data() {
+/*  data() {
     return {
       showSwiper: false,
     }
@@ -75,7 +86,7 @@ export default {
     onClickSwiperClose() {
       this.showSwiper = !this.showSwiper
     },
-  }
+  }*/
 }
 </script>
 
@@ -176,11 +187,11 @@ export default {
     }
   }
 
-  .swiper .swiper-wrapper .swiper-slide img{
+/*  .swiper .swiper-wrapper .swiper-slide img{
     width: 100%;
     height: 100%;
     object-fit: contain;
-  }
+  }*/
 }
 @media screen and (max-width: 1023px) {
   .wrap {
