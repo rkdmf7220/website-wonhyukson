@@ -3,7 +3,7 @@
     <page-title :title="itemData?.title"/>
     <div class="contents">
       <div class="txt-wrap">
-        <h2 class="txt-caption" @click="this.showSwiper = !this.showSwiper">{{itemData?.caption}}</h2>
+        <h2 class="txt-caption">{{itemData?.caption}}</h2>
         <div v-if="this.$route.params.works === 'archive'" class="info-list">
           <div v-for="(item, index) in itemData?.info" :key="index" class="info-item">
             <span class="info-title">{{ item.title }}</span>
@@ -12,10 +12,15 @@
         </div>
       </div>
 
-      <image-slider/>
+      <image-slider
+          @close:slider="onClickCloseBtn"
+          :show-slider="this.showSlider"
+          :img-list="itemData?.imgs"
+          ref="slider-component"
+      />
 
       <div class="img-list">
-        <div class="img-item" v-for="(item, index) in itemData?.imgs" :href="'/'+item" :key="index">
+        <div @click="onClickThumbnail(index)" v-for="(item, index) in itemData?.imgs" :key="index" class="img-item" >
           <img :src="'/'+item">
         </div>
       </div>
@@ -50,25 +55,9 @@
 import PageTitle from "./PageTitle";
 import 'lightgallery/scss/lightgallery.scss';
 import ImageSlider from "./ImageSlider.vue";
-/*import { Swiper, SwiperSlide} from "swiper/vue/swiper-vue";
-import { Pagination } from "swiper"
-import "../assets/scss/swiper.scss"
-import "swiper/modules/pagination/pagination.scss"*/
 export default {
   name: "Detail",
   components: {ImageSlider, PageTitle},
-  // components: {PageTitle, Swiper, SwiperSlide},
-/*  setup() {
-    return {
-      pagination: {
-        clickable: true,
-        renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + (index + 1) + "</span>";
-        },
-      },
-      modules: [Pagination],
-    };
-  },*/
   computed: {
     itemData() {
       return this.$store.state.worksList.find(item => item.id === this.$route.params.id)
@@ -77,16 +66,21 @@ export default {
   mounted() {
     this.$store.dispatch('loadWorksList')
   },
-/*  data() {
+  data() {
     return {
-      showSwiper: false,
+      showSlider: false
     }
   },
   methods: {
-    onClickSwiperClose() {
-      this.showSwiper = !this.showSwiper
+    onClickThumbnail(index) {
+      console.log('썸네일 index는?! >>>', index)
+      this.$refs["slider-component"].currentIndex = index + 1
+      this.showSlider = true;
     },
-  }*/
+    onClickCloseBtn() {
+      this.showSlider = false
+    }
+  }
 }
 </script>
 
@@ -173,10 +167,11 @@ export default {
 
     .img-item {
       width: 23%;
+      height: 0;
       margin: 0 2% 2% 0;
       padding-bottom: 23%;
-      height: 0;
       position: relative;
+      cursor: pointer;
 
       img {
         width: 100%;

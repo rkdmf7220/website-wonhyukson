@@ -1,26 +1,17 @@
 <template>
-  <div class="image-slider is-show">
+  <div :class="{'is-show': showSlider}" class="image-slider">
     <div class="slide-inner">
       <div class="slide-toolbar">
         <div class="slide-counter">
-          <span>1 / 1</span>
+          <span>{{ currentIndex }} / {{ maxIndex }}</span>
         </div>
-        <button class="slide-close-btn">✕</button>
+        <button @click="onClickCloseBtn" class="slide-close-btn">✕</button>
       </div>
-      <button class="slide-btn slide-prev-btn">&lt;</button>
-      <button class="slide-btn slide-next-btn">&gt;</button>
-      <div class="slide-contents">
-        <div class="slide-img-wrapper">
-          <img src="/img/sculpture/buddha/01.jpg" alt="">
-        </div>
-        <div class="slide-img-wrapper">
-          <img src="/img/sculpture/buddha/02.jpg" alt="">
-        </div>
-        <div class="slide-img-wrapper">
-          <img src="/img/sculpture/buddha/03.jpg" alt="">
-        </div>
-        <div class="slide-img-wrapper">
-          <img src="/img/sculpture/buddha/04.jpg" alt="">
+      <button @click="onClickPrevBtn" :class="{'is-disable': this.currentIndex === 1}" class="slide-btn slide-prev-btn">&lt;</button>
+      <button @click="onClickNextBtn" :class="{'is-disable': this.currentIndex === this.maxIndex}" class="slide-btn slide-next-btn">&gt;</button>
+      <div ref="slide-contents" class="slide-contents" :style="`transform: translateX(${slideTranslatePosition}px)`">
+        <div v-for="(item, index) in imgList" :key="index" class="slide-img-wrapper">
+          <img :src="'/' + item" :alt="this.$route.params.id + ' image ' + (index + 1)">
         </div>
       </div>
     </div>
@@ -30,17 +21,45 @@
 
 <script>
 export default {
-  name: "ImageSlider"
+  name: "ImageSlider",
+  props: {
+    showSlider : Boolean,
+    imgList: Array
+  },
+  computed: {
+    slideTranslatePosition() {
+      return (this.currentIndex - 1) * -1920;
+    },
+    maxIndex() {
+      return this.imgList?.length
+    }
+  },
+  data() {
+    return {
+      currentIndex: 1,
+    }
+  },
+  methods: {
+    onClickCloseBtn() {
+      this.$emit('close:slider')
+    },
+    onClickPrevBtn() {
+      if(this.currentIndex > 1)
+      this.currentIndex --;
+      this.$refs["slide-contents"].style.transform = `translateX(${(this.currentIndex - 1) * -1920}px)`
+    },
+    onClickNextBtn() {
+      if(this.currentIndex < this.maxIndex)
+      this.currentIndex ++;
+      this.$refs["slide-contents"].style.transform = `translateX(${(this.currentIndex - 1) * -1920}px)`
+    }
+  }
 }
 </script>
 
 <style scoped lang="scss">
 $TOOL_BAR_SIZE: 50px;
 $BUTTON_SIZE: 50px;
-
-:root{
-  --button-size: 50px;
-}
 
 .image-slider{
   display: none;
@@ -63,7 +82,8 @@ $BUTTON_SIZE: 50px;
       color: #cccccc;
 
       .slide-counter{
-        width: $BUTTON_SIZE;
+        //min-width: $BUTTON_SIZE;
+        padding-left: 10px;
         margin-right: auto;
         line-height: $BUTTON_SIZE;
         text-align: center;
@@ -91,6 +111,7 @@ $BUTTON_SIZE: 50px;
       height: $BUTTON_SIZE;
       padding: 0;
       position: absolute;
+      z-index: 10;
       top: 50%;
       margin-top: -20px;
       color: #cccccc;
@@ -102,6 +123,13 @@ $BUTTON_SIZE: 50px;
       &:hover{
         color: #ffffff;
         background-color: rgba(255, 255, 255, 0.15);
+      }
+      &.is-disable{
+        color: #666666;
+        &:hover{
+          color: #666666;
+          background: transparent;
+        }
       }
 
       &.slide-prev-btn{
@@ -119,6 +147,7 @@ $BUTTON_SIZE: 50px;
       width: 100%;
       height: 100%;
       display: flex;
+      transition: transform 0.25s;
 
       .slide-img-wrapper{
         width: 100%;
