@@ -1,12 +1,12 @@
 <template>
   <div :class="{'is-show': showSlider}" class="image-slider">
-    <div class="slide-inner">
-      <div class="slide-toolbar">
-        <div class="slide-counter">
-          <span>{{ currentIndex }} / {{ maxIndex }}</span>
-        </div>
-        <button @click="onClickCloseBtn" class="slide-close-btn">✕</button>
+    <div class="slide-toolbar">
+      <div class="slide-counter">
+        <span>{{ currentIndex }} / {{ maxIndex }}</span>
       </div>
+      <button @click="onClickCloseBtn" class="slide-close-btn">✕</button>
+    </div>
+    <div class="slide-inner">
       <button @click="onClickPrevBtn" :class="{'is-disable': this.currentIndex === 1}" class="slide-btn slide-prev-btn">&lt;</button>
       <button @click="onClickNextBtn" :class="{'is-disable': this.currentIndex === this.maxIndex}" class="slide-btn slide-next-btn">&gt;</button>
       <div ref="slide-contents" class="slide-contents" :style="`transform: translateX(${slideTranslatePosition}px)`">
@@ -28,7 +28,8 @@ export default {
   },
   computed: {
     slideTranslatePosition() {
-      return (this.currentIndex - 1) * -1920;
+      // console.log('위치 및 크기 확인 >>>>', this.currentIndex, this.$refs["slide-contents"], this.$refs["slide-contents"]?.clientWidth)
+      return (this.currentIndex - 1) * -document.body.clientWidth;
     },
     maxIndex() {
       return this.imgList?.length
@@ -46,12 +47,23 @@ export default {
     onClickPrevBtn() {
       if(this.currentIndex > 1)
       this.currentIndex --;
-      this.$refs["slide-contents"].style.transform = `translateX(${(this.currentIndex - 1) * -1920}px)`
+      // console.log('prev btn >>>>', this.$refs["slide-contents"], this.$refs["slide-contents"]?.clientWidth)
+      this.moveSliderPosition()
     },
     onClickNextBtn() {
       if(this.currentIndex < this.maxIndex)
       this.currentIndex ++;
-      this.$refs["slide-contents"].style.transform = `translateX(${(this.currentIndex - 1) * -1920}px)`
+      this.moveSliderPosition()
+    },
+    moveSliderPosition() {
+      this.$refs["slide-contents"].style.transform = `translateX(${(this.currentIndex - 1) * -this.$refs["slide-contents"]?.clientWidth}px)`
+    },
+    onDragSlider() {
+      // TODO: 슬라이드 드래그 이벤트 1 (slide-contents가 드래그를 따라다님)
+      // TODO: 슬라이드 드래그 이벤트 2 (드래그 놓았을 때 slide-contents가 이동 혹은 복귀)
+    },
+    onResizeBrowser() {
+      // TODO: 브라우저 리사이즈시 slide-contents의 translateX 값 변경
     }
   }
 }
@@ -67,53 +79,57 @@ $BUTTON_SIZE: 50px;
     display: block;
   }
 
-  .slide-inner{
+  .slide-toolbar{
     width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: 10;
+    height: $TOOL_BAR_SIZE;
     top: 0;
     left: 0;
+    position: fixed;
+    display: flex;
+    color: #cccccc;
+    z-index: 110;
 
-    .slide-toolbar{
-      width: 100%;
-      height: $TOOL_BAR_SIZE;
-      display: flex;
+    .slide-counter{
+      //min-width: $BUTTON_SIZE;
+      padding-left: 10px;
+      margin-right: auto;
+      line-height: $BUTTON_SIZE;
+      text-align: center;
+    }
+
+    .slide-close-btn{
+      width: $BUTTON_SIZE;
+      padding: 0;
+      margin-left: auto;
       color: #cccccc;
-
-      .slide-counter{
-        //min-width: $BUTTON_SIZE;
-        padding-left: 10px;
-        margin-right: auto;
-        line-height: $BUTTON_SIZE;
-        text-align: center;
-      }
-
-      .slide-close-btn{
-        width: $BUTTON_SIZE;
-        padding: 0;
-        margin-left: auto;
-        color: #cccccc;
-        border: none;
-        background-color: transparent;
-        font-size: 1.5em;
-        cursor: pointer;
-        transition: color, background-color 0.15s;
-        &:hover{
-          color: #ffffff;
-          background-color: rgba(255, 255, 255, 0.15);
-        }
+      border: none;
+      background-color: transparent;
+      font-size: 1.5em;
+      cursor: pointer;
+      transition: color, background-color 0.15s;
+      &:hover{
+        color: #ffffff;
+        background-color: rgba(255, 255, 255, 0.15);
       }
     }
+  }
+
+  .slide-inner{
+    width: 100%;
+    height: calc(100% - #{$TOOL_BAR_SIZE});
+    position: fixed;
+    z-index: 110;
+    top: $TOOL_BAR_SIZE;
+    left: 0;
 
     .slide-btn{
       width: $BUTTON_SIZE;
       height: $BUTTON_SIZE;
       padding: 0;
       position: absolute;
-      z-index: 10;
+      z-index: 110;
       top: 50%;
-      margin-top: -20px;
+      margin-top: -$TOOL_BAR_SIZE/2;
       color: #cccccc;
       border: none;
       background-color: transparent;
@@ -173,7 +189,7 @@ $BUTTON_SIZE: 50px;
     width: 100%;
     height: 100%;
     position: fixed;
-    z-index: 9;
+    z-index: 109;
     left: 0;
     top: 0;
     background-color: #000000;
