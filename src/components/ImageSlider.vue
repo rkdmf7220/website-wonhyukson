@@ -9,8 +9,18 @@
     <div class="slide-inner">
       <button @click="onClickPrevBtn" :class="{'is-disable': this.currentIndex === 1}" class="slide-btn slide-prev-btn">&lt;</button>
       <button @click="onClickNextBtn" :class="{'is-disable': this.currentIndex === this.maxIndex}" class="slide-btn slide-next-btn">&gt;</button>
-      <div ref="slide-contents" class="slide-contents" :style="`transform: translateX(${slideTranslatePosition}px)`">
-        <div v-for="(item, index) in imgList" :key="index" class="slide-img-wrapper">
+      <div
+          @dragstart="(e) => onDragStartSlider(e)"
+          @dragend="(e) => onDropSlider(e)"
+          :class="{'is-drag': isDrag}"
+          :style="`transform: translateX(${slideTranslatePosition}px)`"
+          ref="slide-contents"
+          class="slide-contents"
+      >
+        <div
+            v-for="(item, index) in imgList"
+            :key="index" class="slide-img-wrapper"
+        >
           <img :src="'/' + item" :alt="this.$route.params.id + ' image ' + (index + 1)">
         </div>
       </div>
@@ -38,6 +48,9 @@ export default {
   data() {
     return {
       currentIndex: 1,
+      isDrag: false,
+      startDragPoint: null,
+      currentDragPoint: null
     }
   },
   methods: {
@@ -58,9 +71,31 @@ export default {
     moveSliderPosition() {
       this.$refs["slide-contents"].style.transform = `translateX(${(this.currentIndex - 1) * -this.$refs["slide-contents"]?.clientWidth}px)`
     },
-    onDragSlider() {
-      // TODO: 슬라이드 드래그 이벤트 1 (slide-contents가 드래그를 따라다님)
-      // TODO: 슬라이드 드래그 이벤트 2 (드래그 놓았을 때 slide-contents가 이동 혹은 복귀)
+    onDragStartSlider(e) {
+      // TODO: 최초 드래그 X 좌표 저장
+      this.startDragPoint = e.offsetX
+      console.log('드래그 시작', e, e.offsetX)
+    },
+    onDragSlider(e) {
+      console.log(e)
+      // TODO: 드래그 시작시 저장한 값과 현재 값을 비교하며 translate 값 설정
+    },
+    onDropSlider(e) {
+      let endDragPoint = e.offsetX
+      // TODO: 드래그 드랍 시 slide-contents가 이동 혹은 복귀
+      // 드래그 시작 X 좌표와 드랍 X 좌표를 비교
+      // ??px 이상 이동하면 ++ / -- 적용 및 moveSliderPosition 함수 실행
+      // ??px 이하 이동하면 바로 moveSliderPosition 함수 실행
+      // console.log(e)
+      if (this.startDragPoint > endDragPoint + 50 && this.currentIndex < this.maxIndex) {
+        console.log('prev 작동해야 함')
+        this.currentIndex ++;
+      } else if (this.startDragPoint < endDragPoint + 50 && this.currentIndex > 1) {
+        console.log('next 작동해야 함')
+        this.currentIndex --;
+      }
+      this.moveSliderPosition()
+      console.log('move 작동함')
     },
     onResizeBrowser() {
       // TODO: 브라우저 리사이즈시 slide-contents의 translateX 값 변경
@@ -164,11 +199,13 @@ $BUTTON_SIZE: 50px;
       height: 100%;
       display: flex;
       transition: transform 0.25s;
+      &.is-drag{
+        transition: none;
+      }
 
       .slide-img-wrapper{
         width: 100%;
         height: 100%;
-        cursor: grab;
         flex-shrink: 0;
         display: flex;
         justify-content: center;
@@ -179,6 +216,7 @@ $BUTTON_SIZE: 50px;
           width: auto;
           height: auto;
           object-fit: contain;
+          cursor: grab;
         }
       }
     }
