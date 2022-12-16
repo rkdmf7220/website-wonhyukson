@@ -12,6 +12,7 @@
       <div
           @dragstart="(e) => onDragStartSlider(e)"
           @dragend="(e) => onDropSlider(e)"
+          @click="(e) => onClickDimArea(e)"
           :class="{'is-drag': isDrag}"
           :style="`transform: translateX(${slideTranslatePosition}px)`"
           ref="slide-contents"
@@ -45,6 +46,14 @@ export default {
       return this.imgList?.length
     }
   },
+  mounted() {
+    window.addEventListener('keydown', (e) => {
+      let key = e.which || e.key;
+      if (key === 27) {
+        this.onClickCloseBtn()
+      }
+    })
+  },
   data() {
     return {
       currentIndex: 1,
@@ -56,6 +65,12 @@ export default {
   methods: {
     onClickCloseBtn() {
       this.$emit('close:slider')
+    },
+    onClickDimArea(e) {
+      if (e.target.getAttribute('class') === 'slide-img-wrapper') {
+        this.$emit('close:slider')
+      }
+      // TODO: 화면의 세로가 더 길 때, img 크기 조정
     },
     onClickPrevBtn() {
       if(this.currentIndex > 1)
