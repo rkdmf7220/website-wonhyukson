@@ -11,6 +11,7 @@
       <button @click="onClickNextBtn" :class="{'is-disable': this.currentIndex === this.maxIndex}" class="slide-btn slide-next-btn">&gt;</button>
       <div
           @dragstart="(e) => onDragStartSlider(e)"
+          @dragover="(e) => onDragSlider(e)"
           @dragend="(e) => onDropSlider(e)"
           @click="(e) => onClickDimArea(e)"
           :class="{'is-drag': isDrag}"
@@ -85,32 +86,52 @@ export default {
     },
     moveSliderPosition() {
       this.$refs["slide-contents"].style.transform = `translateX(${(this.currentIndex - 1) * -this.$refs["slide-contents"]?.clientWidth}px)`
+      this.$refs["slide-contents"].style.transitionDuration = '700ms'
     },
     onDragStartSlider(e) {
-      // TODO: 최초 드래그 X 좌표 저장
-      this.startDragPoint = e.offsetX
-      console.log('드래그 시작', e, e.offsetX)
+      this.startDragPoint = e.clientX
+      this.isDrag = true
+      // console.log('드래그 시작', e, e.clientX)
     },
     onDragSlider(e) {
-      console.log(e)
-      // TODO: 드래그 시작시 저장한 값과 현재 값을 비교하며 translate 값 설정
+      if (!this.isDrag) {return}
+      let currentDragPoint = e.clientX
+      let movedDragDistance = currentDragPoint - this.startDragPoint
+      let sliderPosition = (this.currentIndex - 1) * -this.$refs["slide-contents"]?.clientWidth
+      // console.log('dragging 확인용', currentDragPoint + "px")
+      // this.$refs["slide-contents"].style.transform = currentDragPoint + "px"
+/*      console.log('최초값 >>>> ', this.startDragPoint)
+      console.log('이동값 >>>> ', currentDragPoint)
+      console.log('값차이 >>>> ', movedDragDistance)
+      console.log('포지션 >>>> ', sliderPosition)*/
+      // console.log('e.clientX >>>>', e.clientX)
+      // console.log('e.offsetX >>>>', e.offsetX)
+      // console.log('e.screenX >>>>', e.screenX)
+      this.$refs["slide-contents"].style.transform = `translateX(${movedDragDistance + sliderPosition}px)`
+      // console.log('값 확인 >>>', `translateX(${movedDragDistance + sliderPosition}px)`)
+      this.$refs["slide-contents"].style.transitionDuration = '0ms'
     },
+    // TODO: 모바일용 swipe 이벤트 적용
     onDropSlider(e) {
-      let endDragPoint = e.offsetX
-      // TODO: 드래그 드랍 시 slide-contents가 이동 혹은 복귀
+      let endDragPoint = e.clientX
+      this.isDrag = false
       // 드래그 시작 X 좌표와 드랍 X 좌표를 비교
       // ??px 이상 이동하면 ++ / -- 적용 및 moveSliderPosition 함수 실행
       // ??px 이하 이동하면 바로 moveSliderPosition 함수 실행
       // console.log(e)
+      // console.log('startDragPoint >>>> ', this.startDragPoint)
+      // console.log('endDragPoint >>>> ', endDragPoint)
       if (this.startDragPoint > endDragPoint + 50 && this.currentIndex < this.maxIndex) {
-        console.log('prev 작동해야 함')
+        // console.log('prev 작동해야 함')
         this.currentIndex ++;
-      } else if (this.startDragPoint < endDragPoint + 50 && this.currentIndex > 1) {
-        console.log('next 작동해야 함')
+      } else if (this.startDragPoint < endDragPoint - 50 && this.currentIndex > 1) {
+        // console.log('next 작동해야 함')
         this.currentIndex --;
       }
+      this.$refs["slide-contents"].style.transitionDuration = '500ms'
       this.moveSliderPosition()
-      console.log('move 작동함')
+      this.$refs["slide-contents"].style.transitionDuration = '300ms'
+      // console.log('move 작동함')
     },
     onResizeBrowser() {
       // TODO: 브라우저 리사이즈시 slide-contents의 translateX 값 변경
@@ -213,9 +234,12 @@ $BUTTON_SIZE: 50px;
       width: 100%;
       height: 100%;
       display: flex;
-      transition: transform 0.25s;
+      transition-duration: 300ms;
       &.is-drag{
-        transition: none;
+        
+        .slide-img-wrapper img{
+          cursor: grab;
+        }
       }
 
       .slide-img-wrapper{
@@ -231,7 +255,8 @@ $BUTTON_SIZE: 50px;
           width: auto;
           height: auto;
           object-fit: contain;
-          cursor: grab;
+          cursor: pointer;
+          align-self: center;
         }
       }
     }
