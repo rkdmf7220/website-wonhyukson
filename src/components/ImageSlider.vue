@@ -52,6 +52,10 @@ export default {
       let key = e.which || e.key;
       if (key === 27) {
         this.onClickCloseBtn()
+      } else if (key === 37) {
+        this.onClickPrevBtn()
+      } else if (key === 39) {
+        this.onClickNextBtn()
       }
     })
   },
@@ -71,7 +75,6 @@ export default {
       if (e.target.getAttribute('class') === 'slide-img-wrapper') {
         this.$emit('close:slider')
       }
-      // TODO: 화면의 세로가 더 길 때, img 크기 조정
     },
     onClickPrevBtn() {
       if(this.currentIndex > 1)
@@ -86,7 +89,7 @@ export default {
     },
     moveSliderPosition() {
       this.$refs["slide-contents"].style.transform = `translateX(${(this.currentIndex - 1) * -this.$refs["slide-contents"]?.clientWidth}px)`
-      this.$refs["slide-contents"].style.transitionDuration = '700ms'
+      this.$refs["slide-contents"].style.transitionDuration = '300ms'
     },
     onDragStartSlider(e) {
       this.startDragPoint = e.clientX
@@ -128,7 +131,6 @@ export default {
         // console.log('next 작동해야 함')
         this.currentIndex --;
       }
-      this.$refs["slide-contents"].style.transitionDuration = '500ms'
       this.moveSliderPosition()
       this.$refs["slide-contents"].style.transitionDuration = '300ms'
       // console.log('move 작동함')
@@ -146,8 +148,10 @@ $BUTTON_SIZE: 50px;
 
 .image-slider{
   display: none;
+  transition: opacity 300ms;
   &.is-show{
     display: block;
+    opacity: 1;
   }
 
   .slide-toolbar{
