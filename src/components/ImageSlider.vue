@@ -57,7 +57,9 @@ export default {
       } else if (key === 39) {
         this.onClickNextBtn()
       }
-    })
+    });
+    // resize slider position
+    window.addEventListener('resize', this.moveSliderPosition)
   },
   data() {
     return {
@@ -134,9 +136,6 @@ export default {
       this.moveSliderPosition()
       this.$refs["slide-contents"].style.transitionDuration = '300ms'
       // console.log('move 작동함')
-    },
-    onResizeBrowser() {
-      // TODO: 브라우저 리사이즈시 slide-contents의 translateX 값 변경
     }
   }
 }
@@ -147,11 +146,14 @@ $TOOL_BAR_SIZE: 50px;
 $BUTTON_SIZE: 50px;
 
 .image-slider{
-  display: none;
-  transition: opacity 300ms;
+  opacity: 0;
+  transition: opacity 150ms;
+  position: relative;
+  z-index: 101;
+  pointer-events: none;
   &.is-show{
-    display: block;
     opacity: 1;
+    pointer-events: initial;
   }
 
   .slide-toolbar{
@@ -181,7 +183,7 @@ $BUTTON_SIZE: 50px;
       background-color: transparent;
       font-size: 1.5em;
       cursor: pointer;
-      transition: color, background-color 0.15s;
+      transition: color 0.15s, background-color 0.15s;
       &:hover{
         color: #ffffff;
         background-color: rgba(255, 255, 255, 0.15);
@@ -238,7 +240,7 @@ $BUTTON_SIZE: 50px;
       width: 100%;
       height: 100%;
       display: flex;
-      transition-duration: 300ms;
+      transition-duration: 0ms;
       &.is-drag{
         
         .slide-img-wrapper img{
