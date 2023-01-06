@@ -19,7 +19,7 @@
           ref="slider-component"
       />
 
-      <div class="img-list">
+      <div :class="{'is-disable': this.showSlider}" class="img-list">
         <div @click="onClickThumbnail(index)" v-for="(item, index) in itemData?.imgs" :key="index" class="img-item" >
           <img :src="'/'+item">
         </div>
@@ -53,7 +53,6 @@
 
 <script>
 import PageTitle from "./PageTitle";
-import 'lightgallery/scss/lightgallery.scss';
 import ImageSlider from "./ImageSlider.vue";
 export default {
   name: "Detail",
@@ -68,12 +67,15 @@ export default {
   },
   data() {
     return {
-      showSlider: false
+      showSlider: false,
     }
   },
   methods: {
     onClickThumbnail(index) {
-      console.log('썸네일 index는?! >>>', index)
+      if (this.showSlider) {
+        return
+      }
+      // console.log('썸네일 index는?! >>>', index)
       this.$refs["slider-component"].currentIndex = index + 1
       this.showSlider = true;
     },
@@ -192,6 +194,10 @@ export default {
   .wrap {
     .contents {
       .img-list {
+        pointer-events: initial;
+        &.is-disable {
+          pointer-events: none;
+        }
         .img-item {
           width: 31.3333%;
           padding-bottom: 31.3333%;
