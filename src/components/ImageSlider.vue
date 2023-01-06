@@ -13,7 +13,6 @@
           @dragstart="(e) => onDragStartSlider(e)"
           @dragover="(e) => onDragSlider(e)"
           @dragend="(e) => onDropSlider(e)"
-          @click="(e) => onClickDimArea(e)"
           :class="{'is-drag': isDrag}"
           :style="`transform: translateX(${slideTranslatePosition}px)`"
           ref="slide-contents"
@@ -24,7 +23,6 @@
             :key="index" class="slide-img-wrapper"
         >
           <img :src="'/' + item" :alt="this.$route.params.id + ' image ' + (index + 1)">
-<!--          <div style="color: #007aff">{{ item }}</div>-->
         </div>
       </div>
     </div>
@@ -33,6 +31,7 @@
 </template>
 
 <script>
+
 export default {
   name: "ImageSlider",
   props: {
@@ -41,7 +40,6 @@ export default {
   },
   computed: {
     slideTranslatePosition() {
-      // console.log('위치 및 크기 확인 >>>>', this.currentIndex, this.$refs["slide-contents"], this.$refs["slide-contents"]?.clientWidth)
       return (this.currentIndex - 1) * -document.body.clientWidth;
     },
     maxIndex() {
@@ -52,24 +50,22 @@ export default {
     }
   },
   mounted() {
-    window.addEventListener('keydown', (e) => {
-      let key = e.which || e.key;
-      if (key === 27) {
-        this.onClickCloseBtn()
-      } else if (key === 37) {
-        this.onClickPrevBtn()
-      } else if (key === 39) {
-        this.onClickNextBtn()
-      }
-    });
-    // resize slider position
+    window.addEventListener('keydown', (e) => this.onKeydownSlide(e));
     window.addEventListener('resize', this.moveSliderPosition);
     if (this.isTouchDevice) {
       this.$refs["slide-contents"].addEventListener('touchstart', this.onSwipeStartSlider)
       this.$refs["slide-contents"].addEventListener('touchmove', this.onSwipeSlider)
       this.$refs["slide-contents"].addEventListener('touchend', this.onDropSlider)
     }
-    // const isTouchDevice = (navigator.maxTouchPoints || 'ontouchstart' in document.documentElement);
+  },
+  unmounted() {
+    window.removeEventListener('keydown', (e) => this.onKeydownSlide(e));
+    window.removeEventListener('resize', this.moveSliderPosition);
+    if (this.isTouchDevice) {
+      this.$refs["slide-contents"].removeEventListener('touchstart', this.onSwipeStartSlider)
+      this.$refs["slide-contents"].removeEventListener('touchmove', this.onSwipeSlider)
+      this.$refs["slide-contents"].removeEventListener('touchend', this.onDropSlider)
+    }
   },
   data() {
     return {
@@ -77,7 +73,6 @@ export default {
       isDrag: false,
       startDragPoint: null,
       currentDragPoint: null,
-      // isTouchDevice : (navigator.maxTouchPoints || 'ontouchstart' in document.documentElement)
     }
   },
   methods: {
@@ -85,16 +80,12 @@ export default {
       this.$emit('close:slider')
     },
     onClickDimArea(e) {
-      // console.log('e target 확인', e.target)
       console.log(e)
-/*      if (e.target.getAttribute('class') === 'slide-img-wrapper') {
-        this.$emit('close:slider')
-      }*/
+      // TODO: dim area 클릭시 slider 닫힘
     },
     onClickPrevBtn() {
       if(this.currentIndex > 1)
       this.currentIndex --;
-      // console.log('prev btn >>>>', this.$refs["slide-contents"], this.$refs["slide-contents"]?.clientWidth)
       this.moveSliderPosition()
     },
     onClickNextBtn() {
@@ -130,26 +121,18 @@ export default {
 /*      if (!this.isDrag) {
         return
       }*/
-
       let currentDragPoint = e.touches[0].clientX
       let movedDragDistance = currentDragPoint - this.startDragPoint
       let sliderPosition = (this.currentIndex - 1) * -this.$refs["slide-contents"]?.clientWidth
-      // console.log('확인 >>>', e, currentDragPoint, movedDragDistance, sliderPosition)
       this.$refs["slide-contents"].style.transform = `translateX(${movedDragDistance + sliderPosition}px)`
       this.$refs["slide-contents"].style.transitionDuration = '0ms'
     },
-    // TODO: 모바일용 swipe 이벤트 적용
     onDropSlider(e) {
       let endDragPoint
       if (this.isTouchDevice) {
         endDragPoint = e.changedTouches[0].clientX
-        // if (this.startDragPoint > endDragPoint + 5 || this.startDragPoint < endDragPoint - 5) {
         if (Math.abs(this.startDragPoint - endDragPoint) < 10 && e.target.getAttribute('class') === 'slide-img-wrapper') {
           console.log(e)
-          // console.log('touchPoint', this.startDragPoint, endDragPoint)
-          // touch dim area in mobile device
-          // console.log('mobile touch')
-          // this.onTouchDimArea()
           setTimeout(this.onTouchDimArea, 10)
           this.moveSliderPosition()
           return
@@ -159,19 +142,25 @@ export default {
       }
       this.isDrag = false
       if (this.startDragPoint > endDragPoint + 50 && this.currentIndex < this.maxIndex) {
-        // console.log('prev 작동해야 함')
         this.currentIndex ++;
       } else if (this.startDragPoint < endDragPoint - 50 && this.currentIndex > 1) {
-        // console.log('next 작동해야 함')
         this.currentIndex --;
       }
       this.moveSliderPosition()
       this.$refs["slide-contents"].style.transitionDuration = '300ms'
-      // console.log('move 작동함')
     },
     onTouchDimArea() {
-      // console.log('close:slider')
       this.$emit('close:slider')
+    },
+    onKeydownSlide(e) {
+      let key = e.which || e.key;
+      if (key === 27) {
+        this.onClickCloseBtn()
+      } else if (key === 37) {
+        this.onClickPrevBtn()
+      } else if (key === 39) {
+        this.onClickNextBtn()
+      }
     }
   }
 }
