@@ -53,18 +53,24 @@ export default {
     window.addEventListener('keydown', (e) => this.onKeydownSlide(e));
     window.addEventListener('resize', this.moveSliderPosition);
     if (this.isTouchDevice) {
-      this.$refs["slide-contents"].addEventListener('touchstart', this.onSwipeStartSlider)
+/*      this.$refs["slide-contents"].addEventListener('touchstart', this.onSwipeStartSlider)
       this.$refs["slide-contents"].addEventListener('touchmove', this.onSwipeSlider)
-      this.$refs["slide-contents"].addEventListener('touchend', this.onDropSlider)
+      this.$refs["slide-contents"].addEventListener('touchend', this.onDropSlider)*/
+      window.addEventListener('touchstart', this.onSwipeStartSlider)
+      window.addEventListener('touchmove', this.onSwipeSlider)
+      window.addEventListener('touchend', this.onDropSlider)
     }
   },
-  unmounted() {
+  beforeUnmount() {
     window.removeEventListener('keydown', (e) => this.onKeydownSlide(e));
     window.removeEventListener('resize', this.moveSliderPosition);
     if (this.isTouchDevice) {
-      this.$refs["slide-contents"].removeEventListener('touchstart', this.onSwipeStartSlider)
+/*      this.$refs["slide-contents"].removeEventListener('touchstart', this.onSwipeStartSlider)
       this.$refs["slide-contents"].removeEventListener('touchmove', this.onSwipeSlider)
-      this.$refs["slide-contents"].removeEventListener('touchend', this.onDropSlider)
+      this.$refs["slide-contents"].removeEventListener('touchend', this.onDropSlider)*/
+      window.removeEventListener('touchstart', this.onSwipeStartSlider)
+      window.removeEventListener('touchmove', this.onSwipeSlider)
+      window.removeEventListener('touchend', this.onDropSlider)
     }
   },
   data() {
@@ -117,7 +123,7 @@ export default {
       this.isDrag = true
     },
     onSwipeSlider(e) {
-      console.log(this.isTouchDevice)
+      // console.log(this.isTouchDevice)
 /*      if (!this.isDrag) {
         return
       }*/
