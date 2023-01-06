@@ -42,20 +42,20 @@ export default {
 
     .logo{
       font-weight: 700;
-      font-size: 1.25rem;
-      line-height: 1.75rem;
+      font-size: 1.25em;
+      line-height: 1.4em;
       padding: 16px;
       display: inline-block;
     }
 
     ul{
-      font-size: 1rem;
+      font-size: 1em;
       margin-top: 16px;
 
       a{
         padding-left: 16px;
         padding-bottom: 12px;
-        line-height: 1.25rem;
+        line-height: 1.25em;
         display: block;
       }
 

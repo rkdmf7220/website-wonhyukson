@@ -115,21 +115,21 @@ export default {
       border-bottom: 1px solid black;
       padding-bottom: 32px;
       margin-bottom: 32px;
-      line-height: 1.35rem;
+      line-height: 1.2em;
       word-break: keep-all;
     }
 
     .txt-explain {
-      font-size: 0.85rem;
-      line-height: 1.6rem;
+      font-size: 0.85em;
+      line-height: 1.6em;
       white-space: pre-wrap;
       word-break: keep-all;
     }
   }
 
   .info-list{
-    font-size: 0.85rem;
-    line-height: 1.6rem;
+    font-size: 0.85em;
+    line-height: 1.88235em;
     white-space: pre-wrap;
     word-break: keep-all;
 
@@ -151,7 +151,7 @@ export default {
           right: 0;
           top: 6px;
           width: 1px;
-          height: 1rem;
+          height: 1.175em;
           background-color: #000;
         }
       }

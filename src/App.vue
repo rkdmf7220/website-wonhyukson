@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="rendered">
     <global-nav/>
     <mobile-global-nav/>
     <router-view/>
@@ -11,14 +11,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
 @import "src/assets/css/reset";
 
+body{
+  font-size: 16px;
+}
+
 h1, h2{
   font-weight: 400;
 }
 h1{
-  font-size: 1.25rem
+  font-size: 1.25em
 }
 h2{
-  font-size: 1.125rem;
+  font-size: 1.125em;
 }
 
 ::-webkit-scrollbar{

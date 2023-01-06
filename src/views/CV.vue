@@ -38,8 +38,8 @@ export default {
   .item{
     margin-bottom: 40px;
     .title, .info-list, .year{
-      font-size: 0.75rem;
-      line-height: 1rem;
+      font-size: 0.75em;
+      line-height: 1.3333em;
     }
     .title{
       font-weight: 700;

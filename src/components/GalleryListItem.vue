@@ -51,12 +51,12 @@ export default {
 
     .txt-title{
       margin: 8px 0 6px 0;
-      font-size: 0.75rem;
-      line-height: 1rem;
+      font-size: 0.75em;
+      line-height: 1.3333em;
       word-break: keep-all;
     }
     .txt-year{
-      font-size: 0.75rem;
+      font-size: 0.75em;
       color: #666666;
     }
   }

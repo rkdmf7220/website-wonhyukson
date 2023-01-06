@@ -72,7 +72,7 @@ export default {
         border: 1px solid white;
         background-color: transparent;
         color: white;
-        font-size: 2.25rem;
+        font-size: 2.25em;
         padding: 16px 32px;
         cursor: pointer;
         transition: 0.3s all;
@@ -95,7 +95,7 @@ export default {
       }
 
       .opening-wrap button{
-        font-size: 2rem;
+        font-size: 2em;
       }
     }
   }

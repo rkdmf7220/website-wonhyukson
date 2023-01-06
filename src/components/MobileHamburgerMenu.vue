@@ -50,8 +50,8 @@ export default {
 
     ul{
       margin: 80px auto 0 auto;
-      font-size: 1.15rem;
-      line-height: 1.5rem;
+      font-size: 1.15em;
+      line-height: 1.3em;
       width: 80%;
 
       li{

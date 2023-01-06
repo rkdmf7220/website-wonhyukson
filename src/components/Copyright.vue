@@ -15,10 +15,9 @@ export default {
   width: 100%;
   padding: 0 0 60px 240px;
   color: #666666;
-  font-size: 0.75rem;
   box-sizing: border-box;
   span{
-    font-size: 0.75rem;
+    font-size: 0.75em;
   }
 }
 @media screen and (max-width: 767px){

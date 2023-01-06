@@ -43,8 +43,8 @@ export default {
     width: calc(98% - 80px);
     border-top: 1px solid #ccc;
     padding: 32px 0 32px 16px;
-    font-size: 0.75rem;
-    line-height: 1.25rem;
+    font-size: 0.75em;
+    line-height: 1.6666em;
     margin-right: 2%;
     box-sizing: border-box;
 
@@ -62,8 +62,8 @@ export default {
 
     summary {
       list-style: none;
-      font-size: 1.25rem;
-      line-height: 1.5rem;
+      font-size: 1.6666em;
+      line-height: 1.2em;
       font-weight: 700;
       transition: all 0.15s;
       cursor: pointer;
@@ -81,7 +81,7 @@ export default {
     }
 
     .sub-title {
-      font-size: 0.85rem;
+      font-size: 1.135em;
       font-weight: 700;
       margin-bottom: 16px;
       word-break: keep-all;

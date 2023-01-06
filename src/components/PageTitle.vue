@@ -45,7 +45,7 @@ export default {
     width: calc(100% - 80px);
 
     h1{
-      line-height:  1.75rem;
+      line-height:  1.4em;
     }
 
     .lang-container{
@@ -55,8 +55,8 @@ export default {
       button{
         border: none;
         background: transparent;
-        font-size: 1rem;
-        line-height: 1rem;
+        font-size: 1em;
+        line-height: 1em;
         cursor: pointer;
         padding: 0 12px;
         color: #bbb;

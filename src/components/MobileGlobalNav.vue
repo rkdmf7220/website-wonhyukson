@@ -88,7 +88,7 @@ export default {
     }
 
     .logo{
-      font-size: 1.25rem;
+      font-size: 1.25em;
       font-weight: 700;
       transition: color 0.3s;
     }
@@ -100,8 +100,8 @@ export default {
       button{
         border: none;
         background: transparent;
-        font-size: 1rem;
-        line-height: 1rem;
+        font-size: 1em;
+        line-height: 1em;
         cursor: pointer;
         transition: all 0.3s;
         color: #bbb;

@@ -34,15 +34,15 @@ export default {
     margin-bottom: 64px;
 
     h2 {
-      font-size: 0.75rem;
-      line-height: 1.5rem;
+      font-size: 0.75em;
+      line-height: 1.5em;
       font-weight: 700;
     }
 
     .text-wrap {
       p {
-        font-size: 0.75rem;
-        line-height: 1.5rem;
+        font-size: 0.75em;
+        line-height: 1.5em;
       }
     }
 
