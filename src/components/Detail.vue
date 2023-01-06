@@ -21,7 +21,7 @@
 
       <div :class="{'is-disable': this.showSlider}" class="img-list">
         <div @click="onClickThumbnail(index)" v-for="(item, index) in itemData?.imgs" :key="index" class="img-item" >
-          <img :src="'/'+item">
+          <img :src="'/'+item" :alt="`${this.$route.params.id} img ${index+1}`">
         </div>
       </div>
 
