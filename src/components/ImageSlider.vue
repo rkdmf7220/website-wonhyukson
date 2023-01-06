@@ -244,17 +244,6 @@ $BUTTON_SIZE: 50px;
       font-size: 1.5em;
       cursor: pointer;
       transition: color, background-color 0.15s;
-      &:hover{
-        color: #ffffff;
-        background-color: rgba(255, 255, 255, 0.15);
-      }
-      &.is-disable{
-        color: #666666;
-        &:hover{
-          color: #666666;
-          background: transparent;
-        }
-      }
 
       &.slide-prev-btn{
         left: 0;
@@ -310,5 +299,23 @@ $BUTTON_SIZE: 50px;
     background-color: #000000;
   }
 ;
+}
+
+@media(hover: hover) and (pointer: fine) {
+  .image-slider .slide-inner .slide-btn {
+    &:hover {
+      color: #ffffff;
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    &.is-disable {
+      color: #666666;
+
+      &:hover {
+        color: #666666;
+        background: transparent;
+      }
+    }
+  }
 }
 </style>
