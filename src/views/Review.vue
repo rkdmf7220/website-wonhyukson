@@ -122,7 +122,7 @@ export default {
 @media screen and (max-width: 767px) {
   .wrap {
     //min-height: calc(100vh - 184px);
-    min-height: calc(calc(var(--vh, 1vh) * 100) - 176px);
+    min-height: calc(calc(var(--vh, 1vh) * 100) - 184px);
     margin-bottom: 64px;
     details {
       width: 100%;
