@@ -13,6 +13,7 @@
 
 body{
   font-size: 16px;
+  overscroll-behavior-y: none;
 }
 
 h1, h2{
@@ -23,6 +24,10 @@ h1{
 }
 h2{
   font-size: 1.125em;
+}
+
+a, div, button{
+  -webkit-tap-highlight-color: transparent;
 }
 
 ::-webkit-scrollbar{
