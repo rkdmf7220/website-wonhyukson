@@ -14,6 +14,12 @@
 body{
   font-size: 16px;
   overscroll-behavior-y: none;
+  height: auto;
+
+  &.show-slider {
+    height: 100vh;
+    overflow: hidden;
+  }
 }
 
 h1, h2{

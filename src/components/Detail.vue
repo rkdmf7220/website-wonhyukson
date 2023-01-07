@@ -79,9 +79,11 @@ export default {
       this.$refs["slider-component"].currentIndex = index + 1
       this.$refs["slider-component"].sliderOpacity = 1
       this.showSlider = true;
+      document.body.classList.add('show-slider')
     },
     onClickCloseBtn() {
       this.showSlider = false
+      document.body.classList.remove('show-slider')
     }
   }
 }
