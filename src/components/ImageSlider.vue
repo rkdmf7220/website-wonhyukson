@@ -56,11 +56,14 @@ export default {
 /*      this.$refs["slide-contents"].addEventListener('touchstart', this.onSwipeStartSlider)
       this.$refs["slide-contents"].addEventListener('touchmove', this.onSwipeSlider)
       this.$refs["slide-contents"].addEventListener('touchend', this.onDropSlider)*/
-      window.addEventListener('touchstart', this.onSwipeStartSlider)
+/*      window.addEventListener('touchstart', this.onSwipeStartSlider)
       window.addEventListener('touchmove', this.onHandleSwipeDirect)
       window.addEventListener('touchmove', this.onSwipeSlider)
-      window.addEventListener('touchend', this.onDropSlider)
-      // window.addEventListener('touchend', this.onHandleSliderClose)
+      window.addEventListener('touchend', this.onDropSlider)*/
+      this.$refs["image-slider"].addEventListener('touchstart', this.onSwipeStartSlider)
+      this.$refs["image-slider"].addEventListener('touchmove', this.onHandleSwipeDirect)
+      this.$refs["image-slider"].addEventListener('touchmove', this.onSwipeSlider)
+      this.$refs["image-slider"].addEventListener('touchend', this.onDropSlider)
     }
   },
   beforeUnmount() {
@@ -70,11 +73,14 @@ export default {
 /*      this.$refs["slide-contents"].removeEventListener('touchstart', this.onSwipeStartSlider)
       this.$refs["slide-contents"].removeEventListener('touchmove', this.onSwipeSlider)
       this.$refs["slide-contents"].removeEventListener('touchend', this.onDropSlider)*/
-      window.removeEventListener('touchstart', this.onSwipeStartSlider)
+/*      window.removeEventListener('touchstart', this.onSwipeStartSlider)
       window.removeEventListener('touchmove', this.onHandleSwipeDirect)
       window.removeEventListener('touchmove', this.onSwipeSlider)
-      window.removeEventListener('touchend', this.onDropSlider)
-      // window.removeEventListener('touchend', this.onHandleSliderClose)
+      window.removeEventListener('touchend', this.onDropSlider)*/
+      this.$refs["image-slider"].removeEventListener('touchstart', this.onSwipeStartSlider)
+      this.$refs["image-slider"].removeEventListener('touchmove', this.onHandleSwipeDirect)
+      this.$refs["image-slider"].removeEventListener('touchmove', this.onSwipeSlider)
+      this.$refs["image-slider"].removeEventListener('touchend', this.onDropSlider)
     }
   },
   data() {
@@ -166,7 +172,6 @@ export default {
       }
     },*/
     onSwipeSlider(e) {
-
       // let currentDragPointY = e.touches[0].clientY
       // let movedDragDistanceY = currentDragPointY - this.startDragPointY
 
