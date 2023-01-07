@@ -77,6 +77,7 @@ export default {
       }
       // console.log('썸네일 index는?! >>>', index)
       this.$refs["slider-component"].currentIndex = index + 1
+      this.$refs["slider-component"].sliderOpacity = 1
       this.showSlider = true;
     },
     onClickCloseBtn() {

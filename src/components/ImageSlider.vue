@@ -1,5 +1,5 @@
 <template>
-  <div :class="{'is-show': showSlider}" class="image-slider">
+  <div :class="{'is-show': showSlider}" :style="{opacity: sliderOpacity}" ref="image-slider" class="image-slider">
     <div class="slide-toolbar">
       <div class="slide-counter">
         <span>{{ currentIndex }} / {{ maxIndex }}</span>
@@ -57,8 +57,10 @@ export default {
       this.$refs["slide-contents"].addEventListener('touchmove', this.onSwipeSlider)
       this.$refs["slide-contents"].addEventListener('touchend', this.onDropSlider)*/
       window.addEventListener('touchstart', this.onSwipeStartSlider)
+      window.addEventListener('touchmove', this.onHandleSwipeDirect)
       window.addEventListener('touchmove', this.onSwipeSlider)
       window.addEventListener('touchend', this.onDropSlider)
+      // window.addEventListener('touchend', this.onHandleSliderClose)
     }
   },
   beforeUnmount() {
@@ -69,20 +71,27 @@ export default {
       this.$refs["slide-contents"].removeEventListener('touchmove', this.onSwipeSlider)
       this.$refs["slide-contents"].removeEventListener('touchend', this.onDropSlider)*/
       window.removeEventListener('touchstart', this.onSwipeStartSlider)
+      window.removeEventListener('touchmove', this.onHandleSwipeDirect)
       window.removeEventListener('touchmove', this.onSwipeSlider)
       window.removeEventListener('touchend', this.onDropSlider)
+      // window.removeEventListener('touchend', this.onHandleSliderClose)
     }
   },
   data() {
     return {
       currentIndex: 1,
       isDrag: false,
-      startDragPoint: null,
-      currentDragPoint: null,
+      startDragPointX: null,
+      startDragPointY: null,
+      currentDragPointX: null,
+      currentDragPointY: null,
+      swipeDirection: null,
+      sliderOpacity: 0
     }
   },
   methods: {
     onClickCloseBtn() {
+      this.sliderOpacity = 0
       this.$emit('close:slider')
     },
     onClickDimArea(e) {
@@ -104,59 +113,130 @@ export default {
       this.$refs["slide-contents"].style.transitionDuration = '300ms'
     },
     onDragStartSlider(e) {
-      this.startDragPoint = e.clientX
+      this.startDragPointX = e.clientX
       this.isDrag = true
+      this.swipeDirection = 'horizontal'
     },
     onDragSlider(e) {
-      console.log(this.isTouchDevice)
+      // console.log(this.isTouchDevice)
       if (!this.isDrag) {
         return
       }
       let currentDragPoint = e.clientX
-      let movedDragDistance = currentDragPoint - this.startDragPoint
+      let movedDragDistance = currentDragPoint - this.startDragPointX
       let sliderPosition = (this.currentIndex - 1) * -this.$refs["slide-contents"]?.clientWidth
       this.$refs["slide-contents"].style.transform = `translateX(${movedDragDistance + sliderPosition}px)`
       this.$refs["slide-contents"].style.transitionDuration = '0ms'
     },
     onSwipeStartSlider(e) {
-      this.startDragPoint = e.touches[0].clientX
+      this.startDragPointX = e.touches[0].clientX
+      this.startDragPointY = e.touches[0].clientY
       this.isDrag = true
     },
+    onHandleSwipeDirect(e) {
+      if (!this.swipeDirection) {
+        let currentDragPointX = e.touches[0].clientX
+        let currentDragPointY = e.touches[0].clientY
+        let movedDragDistanceX = currentDragPointX - this.startDragPointX
+        let movedDragDistanceY = currentDragPointY - this.startDragPointY
+
+        if (Math.abs(movedDragDistanceX) > 5) {
+          // 가로로 움직임
+          this.swipeDirection = 'horizontal'
+        } else if ( movedDragDistanceY > 5) {
+          // 세로로 움직임
+          this.swipeDirection = 'vertical'
+        }
+      }
+    },
+/*    onHandleSwipeDirect(e) {
+      let currentDragPointX = e.touches[0].clientX
+      let currentDragPointY = e.touches[0].clientY
+      let movedDragDistanceX = currentDragPointX - this.startDragPointX
+      let movedDragDistanceY = currentDragPointY - this.startDragPointY
+      console.log('X 좌표 >>', currentDragPointX, 'Y 좌표 >>', currentDragPointY)
+      console.log('X 차이 >>', movedDragDistanceX, 'Y 차이 >>', movedDragDistanceY)
+
+      if (Math.abs(movedDragDistanceX) > 5) {
+        // 가로로 움직임
+        this.swipeDirection = 'horizontal'
+      } else if ( movedDragDistanceY > 5) {
+        // 세로로 움직임
+        this.swipeDirection = 'vertical'
+      }
+    },*/
     onSwipeSlider(e) {
-      // console.log(this.isTouchDevice)
-/*      if (!this.isDrag) {
-        return
-      }*/
-      let currentDragPoint = e.touches[0].clientX
-      let movedDragDistance = currentDragPoint - this.startDragPoint
-      let sliderPosition = (this.currentIndex - 1) * -this.$refs["slide-contents"]?.clientWidth
-      this.$refs["slide-contents"].style.transform = `translateX(${movedDragDistance + sliderPosition}px)`
-      this.$refs["slide-contents"].style.transitionDuration = '0ms'
+
+      // let currentDragPointY = e.touches[0].clientY
+      // let movedDragDistanceY = currentDragPointY - this.startDragPointY
+
+      if (this.swipeDirection === 'horizontal') {
+        // 가로로 움직임
+        let currentDragPointX = e.touches[0].clientX
+        let movedDragDistanceX = currentDragPointX - this.startDragPointX
+        let sliderPosition = (this.currentIndex - 1) * -this.$refs["slide-contents"]?.clientWidth
+        this.$refs["slide-contents"].style.transform = `translateX(${movedDragDistanceX + sliderPosition}px)`
+        this.$refs["slide-contents"].style.transitionDuration = '0ms'
+      } else if (this.swipeDirection === 'vertical') {
+        // 세로로 움직임
+        let currentDragPointY = e.touches[0].clientY
+        let movedDragDistanceY = currentDragPointY - this.startDragPointY
+        this.sliderOpacity = 1.03 - (movedDragDistanceY * 0.003)
+      }
     },
     onDropSlider(e) {
+      if (this.swipeDirection === 'horizontal') {
+        this.onCheckHorizontalMove(e)
+        this.moveSliderPosition()
+        this.$refs["slide-contents"].style.transitionDuration = '300ms'
+      } else if (this.swipeDirection === 'vertical') {
+        // this.onCheckVerticalMove(e)
+        this.onHandleSliderClose(this.onCheckVerticalMove(e))
+      }
+      this.resetSwipeDirection()
+    },
+    onCheckHorizontalMove(e) {
       let endDragPoint
       if (this.isTouchDevice) {
         endDragPoint = e.changedTouches[0].clientX
-        if (Math.abs(this.startDragPoint - endDragPoint) < 10 && e.target.getAttribute('class') === 'slide-img-wrapper') {
+        if (Math.abs(this.startDragPointX - endDragPoint) < 10 && e.target.getAttribute('class') === 'slide-img-wrapper') {
           console.log(e)
           setTimeout(this.onTouchDimArea, 10)
           this.moveSliderPosition()
           return
         }
       } else {
+        console.log('else 작동')
         endDragPoint = e.clientX
       }
       this.isDrag = false
-      if (this.startDragPoint > endDragPoint + 50 && this.currentIndex < this.maxIndex) {
-        this.currentIndex ++;
-      } else if (this.startDragPoint < endDragPoint - 50 && this.currentIndex > 1) {
-        this.currentIndex --;
+      if (this.startDragPointX > endDragPoint + 50 && this.currentIndex < this.maxIndex) {
+        this.currentIndex++;
+      } else if (this.startDragPointX < endDragPoint - 50 && this.currentIndex > 1) {
+        this.currentIndex--;
       }
-      this.moveSliderPosition()
-      this.$refs["slide-contents"].style.transitionDuration = '300ms'
+    },
+    onCheckVerticalMove(e) {
+      // let endDragPoint
+      if (this.isTouchDevice) {
+        let endDragPoint = e.changedTouches[0].clientY
+        console.log('y 차이 확인 >>', endDragPoint - this.startDragPointY)
+        return endDragPoint - this.startDragPointY > 30;
+      }
     },
     onTouchDimArea() {
       this.$emit('close:slider')
+    },
+    onHandleSliderClose(moved) {
+      if (moved) {
+        this.$emit('close:slider')
+        this.sliderOpacity = 0
+      } else {
+        this.sliderOpacity = 1
+      }
+    },
+    resetSwipeDirection() {
+      this.swipeDirection = null
     },
     onKeydownSlide(e) {
       let key = e.which || e.key;
@@ -177,13 +257,11 @@ $TOOL_BAR_SIZE: 50px;
 $BUTTON_SIZE: 50px;
 
 .image-slider{
-  opacity: 0;
   transition: opacity 150ms;
   position: relative;
   z-index: 101;
   pointer-events: none;
   &.is-show{
-    opacity: 1;
     pointer-events: initial;
   }
 
@@ -252,6 +330,10 @@ $BUTTON_SIZE: 50px;
       &.slide-next-btn{
         right: 0;
       }
+
+      &.is-disable {
+        color: #666666;
+      }
     }
 
     .slide-contents{
@@ -308,13 +390,30 @@ $BUTTON_SIZE: 50px;
       background-color: rgba(255, 255, 255, 0.15);
     }
 
-    &.is-disable {
+    &.is-disable:hover {
       color: #666666;
+      background: transparent;
+    }
+  }
+}
 
-      &:hover {
-        color: #666666;
-        background: transparent;
-      }
+@media(pointer: coarse) {
+  .image-slider .slide-inner .slide-btn {
+    height: 100%;
+    margin-top: 0;
+    top: 0;
+    color: transparent;
+
+    &.is-disable {
+      color: transparent;
+    }
+
+    &.slide-prev-btn {
+      width: 30%;
+    }
+
+    &.slide-next-btn {
+      width: 60%;
     }
   }
 }
