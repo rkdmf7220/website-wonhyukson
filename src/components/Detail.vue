@@ -177,6 +177,7 @@ export default {
       padding-bottom: 23%;
       position: relative;
       cursor: pointer;
+      background-color: #efefef;
 
       img {
         width: 100%;

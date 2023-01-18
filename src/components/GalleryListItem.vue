@@ -40,6 +40,7 @@ export default {
       height: 0;
       padding-bottom: 100%;
       position: relative;
+      background-color: #efefef;
 
       img {
         position: absolute;
