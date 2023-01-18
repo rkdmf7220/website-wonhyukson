@@ -205,13 +205,13 @@ export default {
       if (this.isTouchDevice) {
         endDragPoint = e.changedTouches[0].clientX
         if (Math.abs(this.startDragPointX - endDragPoint) < 10 && e.target.getAttribute('class') === 'slide-img-wrapper') {
-          console.log(e)
+          // console.log(e)
           setTimeout(this.onTouchDimArea, 10)
           this.moveSliderPosition()
           return
         }
       } else {
-        console.log('else 작동')
+        // console.log('else 작동')
         endDragPoint = e.clientX
       }
       this.isDrag = false
@@ -225,7 +225,7 @@ export default {
       // let endDragPoint
       if (this.isTouchDevice) {
         let endDragPoint = e.changedTouches[0].clientY
-        console.log('y 차이 확인 >>', endDragPoint - this.startDragPointY)
+        // console.log('y 차이 확인 >>', endDragPoint - this.startDragPointY)
         return endDragPoint - this.startDragPointY > 30;
       }
     },
