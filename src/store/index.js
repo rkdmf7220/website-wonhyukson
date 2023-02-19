@@ -47,7 +47,7 @@ export default createStore({
         loadWorksList({commit, state}) {
             return axios.get("../sample/" + state.lang + "/data-result.json")
                 .then(response => {
-                    if (response.statusText === "OK") {
+                    if (response.statusText === "OK" || response.status === 200) {
                         commit('worksList', response.data)
                     } else {
                         // TODO: error handling.
@@ -60,7 +60,7 @@ export default createStore({
         loadCv({commit, state}) {
             axios.get("../sample/" + state.lang + "/cv.json")
                 .then(response => {
-                    if (response.statusText === "OK") {
+                    if (response.statusText === "OK" || response.status === 200) {
                         commit('cv', response.data)
                     } else {
                         // TODO: error handling.
@@ -72,7 +72,7 @@ export default createStore({
         loadContact({commit, state}) {
             axios.get("../sample/" + state.lang + "/contact.json")
                 .then(response => {
-                    if (response.statusText === "OK") {
+                    if (response.statusText === "OK" || response.status === 200) {
                         commit('contact', response.data)
                     }   else {
                         // TODO: error handling
@@ -84,7 +84,7 @@ export default createStore({
         loadReview({commit, state}) {
             axios.get("../sample/" + state.lang + "/review.json")
                 .then(response => {
-                    if (response.statusText === "OK") {
+                    if (response.statusText === "OK" || response.status === 200) {
                         commit('review', response.data)
                     } else {
                         //TODO: error handling
