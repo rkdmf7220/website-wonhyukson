@@ -1,0 +1,102 @@
+$TOOL_BAR_SIZE: 50px;
+$BUTTON_SIZE: 50px;
+
+// slide common btn
+.slide-btn {
+  width: $BUTTON_SIZE;
+  height: $BUTTON_SIZE;
+  padding: 0;
+  color: #cccccc;
+  border: none;
+  background-color: transparent;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: color, background-color 0.15s;
+  &:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+}
+
+// btn in toolbar
+.slide-toolbar {
+  width: 100%;
+  height: $TOOL_BAR_SIZE;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  color: #cccccc;
+  z-index: 110;
+
+  .slide-counter {
+    //min-width: $BUTTON_SIZE;
+    padding-left: 10px;
+    margin-right: auto;
+    line-height: $BUTTON_SIZE;
+    text-align: center;
+  }
+
+  .slide-toolbar-btn {
+    &.slide-zoom-btn.is-zoom {
+      color: #ffffff;
+    }
+  }
+}
+
+// btn in inner
+.slide-inner {
+  .slide-btn {
+    position: absolute;
+    z-index: 110;
+    top: 50%;
+    margin-top: -$TOOL_BAR_SIZE/2;
+
+    &.slide-prev-btn {
+      left: 0;
+    }
+
+    &.slide-next-btn {
+      right: 0;
+    }
+
+    &.is-disable {
+      color: #666666;
+    }
+  }
+}
+
+@media(hover: hover) and (pointer: fine) {
+  .image-slider .slide-inner .slide-btn {
+    &:hover {
+      color: #ffffff;
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    &.is-disable:hover {
+      color: #666666;
+      background: transparent;
+    }
+  }
+}
+
+@media(pointer: coarse) {
+  .image-slider .slide-inner .slide-btn {
+    height: 100%;
+    margin-top: 0;
+    top: 0;
+    color: transparent;
+
+    &.is-disable {
+      color: transparent;
+    }
+
+    &.slide-prev-btn {
+      width: 30%;
+    }
+
+    &.slide-next-btn {
+      width: 60%;
+    }
+  }
+}
