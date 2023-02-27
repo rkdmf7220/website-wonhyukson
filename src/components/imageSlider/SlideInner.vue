@@ -1,10 +1,18 @@
 <template>
   <div class="slide-inner">
-    <button @click="onClickPrevBtn" :class="{'is-disable': this.currentIndex === 1}" class="slide-btn slide-prev-btn">
+    <button
+        v-show="!isTouchDevice || !pinchZoom"
+        @click="onClickPrevBtn"
+        :class="{'is-disable': this.currentIndex === 1}"
+        class="slide-btn slide-prev-btn">
       &lt;
     </button>
-    <button @click="onClickNextBtn" :class="{'is-disable': this.currentIndex === this.maxIndex}"
-            class="slide-btn slide-next-btn">&gt;
+    <button
+        v-show="!isTouchDevice || !pinchZoom"
+        @click="onClickNextBtn"
+        :class="{'is-disable': this.currentIndex === this.maxIndex}"
+        class="slide-btn slide-next-btn">
+      &gt;
     </button>
     <div
         @dragstart="(e) => onDragStartSlider(e)"
@@ -22,8 +30,8 @@
           v-for="(item, index) in imgList"
           :key="index" class="slide-img-item"
       >
-        <picture :class="`slide-img-${index}`" class="slide-img-wrap">
-          <img :src="'/' + item" :alt="this.$route.params.id + ' image ' + (index + 1)">
+        <picture :id="`slide-img-wrap-${index + 1}`" class="slide-img-wrap">
+          <img :id="`slide-img-${index + 1}`" :src="'/' + item" :alt="this.$route.params.id + ' image ' + (index + 1)">
         </picture>
       </div>
     </div>
@@ -35,7 +43,9 @@ export default {
   name: "SlideInner",
   props: {
     imgList: Array,
-    currentIndex: Number
+    currentIndex: Number,
+    pinchZoom: Boolean,
+    pinchZoomScale: Number
   },
   computed: {
     slideTranslatePosition() {
@@ -86,26 +96,22 @@ export default {
       currentDragPointY: null,
       swipeDirection: null,
       sliderOpacity: 0,
-      pinchZoom: false
     }
   },
   methods: {
     onClickPrevBtn() {
-      if (this.isDrag) {
+      if (this.currentIndex > 1) {
         this.isDrag = false
-      }
-      if (this.currentIndex > 1)
+        this.resetZoomScale()
         this.$emit('decrease:index')
+      }
       this.moveSliderPosition()
     },
     onClickNextBtn() {
-      if (this.isDrag) {
+      if (this.currentIndex < this.maxIndex) {
         this.isDrag = false
-      }
-      if (this.currentIndex < this.maxIndex)
+        this.resetZoomScale()
         this.$emit('increase:index')
-      else {
-        console.log('뭔가 문제가?')
       }
       this.moveSliderPosition()
     },
@@ -113,18 +119,26 @@ export default {
       this.$refs["slide-contents"].style.transform = `translateX(${(this.currentIndex - 1) * -this.$refs["slide-contents"]?.clientWidth}px)`
     },
     onDragStartSlider(e) {
-      this.startDragPointX = e.clientX
-      this.isDrag = true
-      this.swipeDirection = 'horizontal'
+      if (!this.pinchZoom) {
+        this.startDragPointX = e.clientX
+        this.isDrag = true
+        this.swipeDirection = 'horizontal'
+        console.log(e.clientX, this.isDrag, this.swipeDirection)
+      }
     },
     onDragSlider(e) {
-      if (!this.isDrag) {
-        return
+      e.preventDefault()
+      e.dataTransfer.dropEffect = "move";
+      if (!this.pinchZoom) {
+        if (!this.isDrag) {
+          return
+        }
+        let currentDragPoint = e.clientX
+        let movedDragDistance = currentDragPoint - this.startDragPointX
+        let sliderPosition = (this.currentIndex - 1) * -this.$refs["slide-contents"]?.clientWidth
+        this.$refs["slide-contents"].style.transform = `translateX(${movedDragDistance + sliderPosition}px)`
+        // TODO: 이전/다음 슬라이드가 없을 땐 드래그 거리를 10% 감소
       }
-      let currentDragPoint = e.clientX
-      let movedDragDistance = currentDragPoint - this.startDragPointX
-      let sliderPosition = (this.currentIndex - 1) * -this.$refs["slide-contents"]?.clientWidth
-      this.$refs["slide-contents"].style.transform = `translateX(${movedDragDistance + sliderPosition}px)`
     },
     onSwipeStartSlider(e) {
       this.startDragPointX = e.touches[0].clientX
@@ -150,6 +164,7 @@ export default {
     onSwipeSlider(e) {
       if (this.swipeDirection === 'horizontal') {
         // 가로로 움직임
+        // TODO: 이전/다음 슬라이드가 없을 땐 드래그 거리를 10% 감소
         let currentDragPointX = e.touches[0].clientX
         let movedDragDistanceX = currentDragPointX - this.startDragPointX
         let sliderPosition = (this.currentIndex - 1) * -this.$refs["slide-contents"]?.clientWidth
@@ -162,12 +177,14 @@ export default {
       }
     },
     onDropSlider(e) {
-      if (this.swipeDirection === 'horizontal') {
-        this.onCheckHorizontalMove(e)
-      } else if (this.swipeDirection === 'vertical') {
-        this.onHandleSliderClose(this.onCheckVerticalMove(e))
+      if (!this.pinchZoom) {
+        if (this.swipeDirection === 'horizontal') {
+          this.onCheckHorizontalMove(e)
+        } else if (this.swipeDirection === 'vertical') {
+          this.onHandleSliderClose(this.onCheckVerticalMove(e))
+        }
+        this.resetSwipeDirection()
       }
-      this.resetSwipeDirection()
     },
     onCheckHorizontalMove(e) {
       let endDragPoint
@@ -209,6 +226,18 @@ export default {
       } else if (key === 39) {
         this.onClickNextBtn()
       }
+    },
+    // zoom 관련
+    applyZoomScale() {
+      console.log('applyZoomScale start', this.pinchZoomScale)
+      document.getElementById(`slide-img-wrap-${this.currentIndex}`).style.transform = "translate(0px, 0px)";
+      document.getElementById(`slide-img-${this.currentIndex}`).style.transform = `scale(${this.pinchZoomScale})`;
+      console.log('applyZoomScale end', this.pinchZoomScale);
+    },
+    resetZoomScale() {
+      document.getElementById(`slide-img-wrap-${this.currentIndex}`).style.transform = "translate(0px, 0px)";
+      document.getElementById(`slide-img-${this.currentIndex}`).style.transform = 'scale(1, 1)';
+      this.$emit('change:zoom', 'reset')
     }
   }
 }

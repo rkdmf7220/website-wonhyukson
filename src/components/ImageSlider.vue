@@ -3,13 +3,18 @@
     <SlideInner @decrease:index="decreaseCurrentIndex"
                 @increase:index="increaseCurrentIndex"
                 @close:slider="closeSlider"
+                @change:zoom="changeZoomScale"
                 ref="slide-inner"
                 :img-list="imgList"
-                :current-index="currentIndex"/>
+                :current-index="currentIndex"
+                :pinch-zoom="pinchZoom"
+                :pinch-zoom-scale="pinchZoomScale"/>
     <SlideToolbar @close:slider="closeSlider"
+                  @change:zoom="(zoomType) => changeZoomScale(zoomType)"
                   :max-index="maxIndex"
                   :current-index="currentIndex"
-                  :pinch-zoom="pinchZoom"/>
+                  :pinch-zoom="pinchZoom"
+                  :pinch-zoom-scale="pinchZoomScale"/>
     <div class="slide-dim"></div>
   </div>
 </template>
@@ -41,7 +46,8 @@ export default {
     return {
       currentIndex: 1,
       sliderOpacity: 0,
-      pinchZoom: false
+      pinchZoom: false,
+      pinchZoomScale: 1
     }
   },
   methods: {
@@ -51,10 +57,27 @@ export default {
     increaseCurrentIndex() {
       this.currentIndex++;
     },
+    changeZoomScale(zoomType) {
+      if (zoomType === 'zoom-out') {
+        this.pinchZoomScale--;
+      } else if (zoomType === 'zoom-in') {
+        this.pinchZoomScale++;
+      } else if (zoomType === 'reset') {
+        this.pinchZoomScale = 1;
+      }
+      this.setZoomMode()
+      this.$nextTick(() => {
+        this.$refs["slide-inner"].applyZoomScale(this.pinchZoomScale)
+      })
+    },
+    setZoomMode() {
+      this.pinchZoomScale > 1 ? this.pinchZoom = true : this.pinchZoom = false;
+    },
     closeSlider() {
       this.sliderOpacity = 0
       this.$emit('close:slider')
       this.$refs["slide-inner"].isDrag = true;
+      this.changeZoomScale('reset')
     },
   }
 }
