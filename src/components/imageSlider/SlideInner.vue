@@ -97,12 +97,12 @@ export default {
   beforeUnmount() {
     window.removeEventListener('keydown', (e) => this.onKeydownSlide(e));
     window.removeEventListener('resize', this.applyMovedSliderPosition);
-    if (this.isTouchDevice) {
+/*    if (this.isTouchDevice) {
       this.$parent.$refs["image-slider"].removeEventListener('touchstart', this.onSwipeStartSlider)
       this.$parent.$refs["image-slider"].removeEventListener('touchmove', this.onHandleSwipeDirect)
       this.$parent.$refs["image-slider"].removeEventListener('touchmove', this.onSwipeSlider)
       this.$parent.$refs["image-slider"].removeEventListener('touchend', this.onDropSlider)
-    }
+    }*/
   },
   data() {
     return {
@@ -151,7 +151,7 @@ export default {
         this.startDragPointX = e.clientX
         this.swipeDirection = 'horizontal'
       }
-      console.log('dragStart >>', this.startDragPointX)
+      // console.log('dragStart >>', this.startDragPointX)
     },
     onDragSlider(e) {
       e.preventDefault()
@@ -194,13 +194,13 @@ export default {
       }
 
       if (this.zoomVerticalMovable) {
-        console.log('Y 숫자 확인 >>', this.zoomVerticalDistance, Math.abs(this.currentZoomPositionY + movedDragDistanceY))
+        // console.log('Y 숫자 확인 >>', this.zoomVerticalDistance, Math.abs(this.currentZoomPositionY + movedDragDistanceY))
         if (this.zoomVerticalDistance >= Math.abs(this.currentZoomPositionY + movedDragDistanceY)) {
           movedDragPositionY = this.currentZoomPositionY + movedDragDistanceY;
-          console.log('work1')
+          // console.log('work1')
         } else {
           movedDragPositionY = (this.currentZoomPositionY + movedDragDistanceY) > 0 ? this.zoomVerticalDistance : -this.zoomVerticalDistance;
-          console.log('work2')
+          // console.log('work2')
         }
       } else {
         movedDragPositionY = 0
@@ -289,10 +289,10 @@ export default {
 
       if (this.zoomHorizontalDistance > Math.abs(this.currentZoomPositionX + movedDragDistanceX)) {
         this.currentZoomPositionX = this.currentZoomPositionX + movedDragDistanceX
-        console.log('drop if', this.currentZoomPositionX)
+        // console.log('drop if', this.currentZoomPositionX)
       } else {
         this.currentZoomPositionX = this.currentZoomPositionX + movedDragDistanceX > 0 ? this.zoomHorizontalDistance : -this.zoomHorizontalDistance
-        console.log('drop else', this.currentZoomPositionX)
+        // console.log('drop else', this.currentZoomPositionX)
       }
 
       if (this.zoomVerticalDistance > Math.abs(this.currentZoomPositionY + movedDragDistanceY)) {

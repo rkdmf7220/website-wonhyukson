@@ -42,6 +42,14 @@ export default {
       return navigator.maxTouchPoints || 'ontouchstart' in document.documentElement
     }
   },
+  beforeUnmount() {
+    if (this.$refs["slide-inner"].isTouchDevice) {
+      this.$refs["image-slider"].removeEventListener('touchstart', this.$refs["slide-inner"].onSwipeStartSlider)
+      this.$refs["image-slider"].removeEventListener('touchmove', this.$refs["slide-inner"].onHandleSwipeDirect)
+      this.$refs["image-slider"].removeEventListener('touchmove', this.$refs["slide-inner"].onSwipeSlider)
+      this.$refs["image-slider"].removeEventListener('touchend', this.$refs["slide-inner"].onDropSlider)
+    }
+  },
   data() {
     return {
       currentIndex: 1,
@@ -58,26 +66,42 @@ export default {
       this.currentIndex++;
     },
     changeZoomScale(zoomType) {
+      this.$refs["slide-inner"].prevZoomScale = this.pinchZoomScale
       if (zoomType === 'zoom-out') {
+        this.$refs["slide-inner"].isDrag = false;
         this.pinchZoomScale--;
       } else if (zoomType === 'zoom-in') {
+        this.$refs["slide-inner"].isDrag = false;
         this.pinchZoomScale++;
       } else if (zoomType === 'reset') {
         this.pinchZoomScale = 1;
+/*        this.$nextTick(() => {
+          this.setZoomMode()
+          this.$refs["slide-inner"].resetZoomScale(this.pinchZoomScale);
+        })
+        return*/
       }
-      this.setZoomMode()
-      this.$nextTick(() => {
-        this.$refs["slide-inner"].applyZoomScale(this.pinchZoomScale)
-      })
+      // this.$refs["slide-inner"].isDrag = false;
+      if (this.pinchZoomScale === 1 && this.pinchZoom) {
+        this.$nextTick(() => {
+          this.setZoomMode()
+          this.$refs["slide-inner"].resetZoomScale();
+        })
+      } else {
+        this.$nextTick(() => {
+          this.setZoomMode()
+          this.$refs["slide-inner"].applyZoomScale();
+        })
+      }
     },
     setZoomMode() {
       this.pinchZoomScale > 1 ? this.pinchZoom = true : this.pinchZoom = false;
     },
     closeSlider() {
       this.sliderOpacity = 0
-      this.$emit('close:slider')
       this.$refs["slide-inner"].isDrag = true;
       this.changeZoomScale('reset')
+      this.$emit('close:slider')
     },
   }
 }
