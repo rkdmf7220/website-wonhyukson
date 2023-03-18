@@ -68,10 +68,10 @@ export default {
     changeZoomScale(zoomType) {
       this.$refs["slide-inner"].prevZoomScale = this.pinchZoomScale
       if (zoomType === 'zoom-out') {
-        this.$refs["slide-inner"].isDrag = false;
+        this.$refs["slide-inner"].isPreventTransition = false;
         this.pinchZoomScale--;
       } else if (zoomType === 'zoom-in') {
-        this.$refs["slide-inner"].isDrag = false;
+        this.$refs["slide-inner"].isPreventTransition = false;
         this.pinchZoomScale++;
       } else if (zoomType === 'reset') {
         this.pinchZoomScale = 1;
@@ -99,7 +99,7 @@ export default {
     },
     closeSlider() {
       this.sliderOpacity = 0
-      this.$refs["slide-inner"].isDrag = true;
+      this.$refs["slide-inner"].isPreventTransition = true;
       this.changeZoomScale('reset')
       this.$emit('close:slider')
     },

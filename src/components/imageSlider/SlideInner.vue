@@ -7,10 +7,8 @@
       <SlideBtn v-show="!isTouchDevice || !pinchZoom" @click="onClickNextBtn" icon-type="nextIcon" class="slide-next-btn"/>
     </div>
     <div
-        @dragstart="(e) => onDragStartSlider(e)"
-        @dragover="(e) => onDragSlider(e)"
-        @dragend="(e) => onDropSlider(e)"
-        :class="{'is-drag': isDrag}"
+        @mousedown="(e) => onDragStartSlider(e)"
+        :class="{'is-drag': isPreventTransition}"
         :style="{
          'transform': `translateX(${slideTranslatePosition}px)`,
          'transition-duration': slideTransitionDuration
@@ -23,7 +21,7 @@
           :key="index" class="slide-img-item"
       >
         <picture :id="`slide-img-wrap-${index + 1}`" class="slide-img-wrap">
-          <img :id="`slide-img-${index + 1}`" :src="'/' + item" :alt="this.$route.params.id + ' image ' + (index + 1)">
+          <img :id="`slide-img-${index + 1}`" :src="'/' + item" :alt="this.$route.params.id + ' image ' + (index + 1)" :draggable="isTouchDevice">
         </picture>
       </div>
     </div>
@@ -53,17 +51,12 @@ export default {
       return navigator.maxTouchPoints || 'ontouchstart' in document.documentElement
     },
     slideTransitionDuration() {
-      return this.isDrag ? '0ms' : '300ms';
+      return this.isPreventTransition ? '0ms' : '300ms';
     },
     zoomHorizontalMovable() {
-      // return document.getElementById(`slide-img-${this.currentIndex}`).offsetWidth * this.pinchZoomScale;
-      // let offsetWidth = document.getElementById(`slide-img-${this.currentIndex}`).offsetWidth * this.pinchZoomScale
-      // let contentsWidth = this.$refs['slide-contents'].offsetWidth
-      // console.log('checkWidth >>', offsetWidth, 'and', contentsWidth)
       return (document.getElementById(`slide-img-${this.currentIndex}`).offsetWidth * this.pinchZoomScale) > this.$refs['slide-contents'].offsetWidth;
     },
     zoomVerticalMovable() {
-      // return document.getElementById(`slide-img-${this.currentIndex}`).offsetHeight * this.pinchZoomScale;
       return (document.getElementById(`slide-img-${this.currentIndex}`).offsetHeight * this.pinchZoomScale) > this.$refs['slide-contents'].offsetHeight;
     },
     zoomHorizontalDistance() {
@@ -87,21 +80,21 @@ export default {
         passive: false
       })
       this.$parent.$refs["image-slider"].addEventListener('touchend', this.onDropSlider)
+    } else {
+      window.addEventListener('mousemove', this.onDragSlider);
+      window.addEventListener('mouseup', this.onDropSlider);
     }
   },
   beforeUnmount() {
     window.removeEventListener('keydown', (e) => this.onKeydownSlide(e));
     window.removeEventListener('resize', this.applyMovedSliderPosition);
-/*    if (this.isTouchDevice) {
-      this.$parent.$refs["image-slider"].removeEventListener('touchstart', this.onSwipeStartSlider)
-      this.$parent.$refs["image-slider"].removeEventListener('touchmove', this.onHandleSwipeDirect)
-      this.$parent.$refs["image-slider"].removeEventListener('touchmove', this.onSwipeSlider)
-      this.$parent.$refs["image-slider"].removeEventListener('touchend', this.onDropSlider)
-    }*/
+    window.addEventListener('mousemove', this.onDragSlider);
+    window.addEventListener('mouseup', this.onDropSlider);
   },
   data() {
     return {
-      isDrag: true,
+      isMouseDown: false,
+      isPreventTransition: true,
       startDragPointX: null,
       startDragPointY: null,
       currentDragPointX: null,
@@ -116,7 +109,7 @@ export default {
   methods: {
     onClickPrevBtn() {
       if (this.currentIndex > 1) {
-        this.isDrag = false
+        this.isPreventTransition = false
         this.resetZoomScale()
         this.$emit('decrease:index')
       }
@@ -127,18 +120,17 @@ export default {
     },
     onClickNextBtn() {
       if (this.currentIndex < this.maxIndex) {
-        this.isDrag = false
+        this.isPreventTransition = false
         this.resetZoomScale()
         this.$emit('increase:index')
       }
-      // this.applyMovedSliderPosition()
     },
     applyMovedSliderPosition() {
       this.$refs["slide-contents"].style.transform = `translateX(${(this.currentIndex - 1) * -this.$refs["slide-contents"]?.clientWidth}px)`
     },
     onDragStartSlider(e) {
-      this.isDrag = true
-      // console.log('start >>', e)
+      this.isMouseDown = true
+      this.isPreventTransition = true
       if (this.pinchZoom) {
         this.startDragPointX = e.clientX
         this.startDragPointY = e.clientY
@@ -146,18 +138,15 @@ export default {
         this.startDragPointX = e.clientX
         this.swipeDirection = 'horizontal'
       }
-      // console.log('dragStart >>', this.startDragPointX)
     },
     onDragSlider(e) {
-      e.preventDefault()
-      e.dataTransfer.dropEffect = "move";
-      if (this.pinchZoom) {
+      if (this.pinchZoom && this.isMouseDown) {
+        console.log('mouseDown >>', this.isMouseDown)
         this.moveZoomPosition(e)
       } else {
-        /*if (!this.isDrag) {
+        if (!this.isMouseDown) {
           return
-          // 이 부분이 필요한가?
-        }*/
+        }
         this.moveSliderPosition(e)
       }
     },
@@ -167,7 +156,6 @@ export default {
       if (this.isTouchDevice) {
         currentDragPointX = e.touches[0].clientX;
         currentDragPointY = e.touches[0].clientY;
-        // console.log('dragXY', e, currentDragPointX, currentDragPointY)
       } else {
         currentDragPointX = e.clientX;
         currentDragPointY = e.clientY;
@@ -185,26 +173,17 @@ export default {
         }
       } else {
         movedDragPositionX = 0
-        // console.log('작동 4')
       }
 
       if (this.zoomVerticalMovable) {
-        // console.log('Y 숫자 확인 >>', this.zoomVerticalDistance, Math.abs(this.currentZoomPositionY + movedDragDistanceY))
         if (this.zoomVerticalDistance >= Math.abs(this.currentZoomPositionY + movedDragDistanceY)) {
           movedDragPositionY = this.currentZoomPositionY + movedDragDistanceY;
-          // console.log('work1')
         } else {
           movedDragPositionY = (this.currentZoomPositionY + movedDragDistanceY) > 0 ? this.zoomVerticalDistance : -this.zoomVerticalDistance;
-          // console.log('work2')
         }
       } else {
         movedDragPositionY = 0
-        // console.log('work3')
       }
-      /*      document.getElementById(`slide-img-wrap-${this.currentIndex}`).style.transform =
-                `translate(
-                ${this.currentZoomPositionX + movedDragDistanceX}px,
-                ${this.currentZoomPositionY + movedDragDistanceY}px)`*/
       document.getElementById(`slide-img-wrap-${this.currentIndex}`).style.transform =
           `translate(
           ${movedDragPositionX}px,
@@ -220,7 +199,7 @@ export default {
     onSwipeStartSlider(e) {
       this.startDragPointX = e.touches[0].clientX;
       this.startDragPointY = e.touches[0].clientY;
-      this.isDrag = true;
+      this.isPreventTransition = true;
     },
     onHandleSwipeDirect(e) {
       if (!this.swipeDirection && !this.pinchZoom) {
@@ -258,6 +237,9 @@ export default {
       }
     },
     onDropSlider(e) {
+      if (!this.isTouchDevice && !this.isMouseDown) {
+        return
+      }
       if (this.pinchZoom) {
         this.saveZoomPosition(e)
       } else {
@@ -270,6 +252,7 @@ export default {
       }
     },
     saveZoomPosition(e) {
+      this.isMouseDown = false
       let currentDragPointX
       let currentDragPointY
       if (this.isTouchDevice) {
@@ -284,10 +267,8 @@ export default {
 
       if (this.zoomHorizontalDistance > Math.abs(this.currentZoomPositionX + movedDragDistanceX)) {
         this.currentZoomPositionX = this.currentZoomPositionX + movedDragDistanceX
-        // console.log('drop if', this.currentZoomPositionX)
       } else {
         this.currentZoomPositionX = this.currentZoomPositionX + movedDragDistanceX > 0 ? this.zoomHorizontalDistance : -this.zoomHorizontalDistance
-        // console.log('drop else', this.currentZoomPositionX)
       }
 
       if (this.zoomVerticalDistance > Math.abs(this.currentZoomPositionY + movedDragDistanceY)) {
@@ -305,7 +286,8 @@ export default {
       } else {
         endDragPoint = e.clientX
       }
-      this.isDrag = false
+      this.isMouseDown = false
+      this.isPreventTransition = false
       if (this.startDragPointX > endDragPoint + 50 && this.currentIndex < this.maxIndex) {
         this.$emit('increase:index')
       } else if (this.startDragPointX < endDragPoint - 50 && this.currentIndex > 1) {
@@ -341,26 +323,14 @@ export default {
     },
     // zoom 관련
     applyZoomScale() {
-      /*      if (!this.pinchZoom) {
-              console.log('!pinchZoom', this.pinchZoomScale)
-              return
-            }*/
       this.currentZoomPositionX = this.currentZoomPositionX / this.prevZoomScale * this.pinchZoomScale;
       this.currentZoomPositionY = this.currentZoomPositionY / this.prevZoomScale * this.pinchZoomScale;
-      // document.getElementById(`slide-img-wrap-${this.currentIndex}`).style.transform =
-      //     `translate(
-      //     ${this.currentZoomPositionX / this.prevZoomScale * this.pinchZoomScale}px,
-      //     ${this.currentZoomPositionY / this.prevZoomScale * this.pinchZoomScale}px)`;
       document.getElementById(`slide-img-wrap-${this.currentIndex}`).style.transform = `translate(${this.currentZoomPositionX}px, ${this.currentZoomPositionY}px)`;
       document.getElementById(`slide-img-${this.currentIndex}`).style.transform = `scale(${this.pinchZoomScale})`;
     },
     resetZoomScale() {
       this.currentZoomPositionX = 0;
       this.currentZoomPositionY = 0;
-      // console.log('pinchScale >>', this.pinchZoomScale);
-      // document.getElementById(`slide-img-wrap-${this.currentIndex}`).style.transform = "translate(0px, 0px)";
-      // document.getElementById(`slide-img-${this.currentIndex}`).style.transform = 'scale(1, 1)';
-      // console.log('정보 확인 >>', this.currentIndex, this.currentZoomPositionX, this.currentZoomPositionY, this.pinchZoomScale)
       document.getElementById(`slide-img-wrap-${this.currentIndex}`).style.transform = `translate(${this.currentZoomPositionX}px, ${this.currentZoomPositionY}px)`;
       document.getElementById(`slide-img-${this.currentIndex}`).style.transform = `scale(1)`;
       this.$emit('change:zoom', 'reset')
