@@ -1,19 +1,11 @@
 <template>
   <div class="slide-inner">
-    <button
-        v-show="!isTouchDevice || !pinchZoom"
-        @click="onClickPrevBtn"
-        :class="{'is-disable': this.currentIndex === 1}"
-        class="slide-btn slide-prev-btn">
-      &lt;
-    </button>
-    <button
-        v-show="!isTouchDevice || !pinchZoom"
-        @click="onClickNextBtn"
-        :class="{'is-disable': this.currentIndex === this.maxIndex}"
-        class="slide-btn slide-next-btn">
-      &gt;
-    </button>
+    <div :class="{'is-disable': this.currentIndex === 1}" class="slide-btn-wrap prev-btn-wrap">
+      <SlideBtn v-show="!isTouchDevice || !pinchZoom" @click="onClickPrevBtn" icon-type="prevIcon" class="slide-prev-btn"/>
+    </div>
+    <div :class="{'is-disable': this.currentIndex === maxIndex}" class="slide-btn-wrap next-btn-wrap">
+      <SlideBtn v-show="!isTouchDevice || !pinchZoom" @click="onClickNextBtn" icon-type="nextIcon" class="slide-next-btn"/>
+    </div>
     <div
         @dragstart="(e) => onDragStartSlider(e)"
         @dragover="(e) => onDragSlider(e)"
@@ -39,8 +31,11 @@
 </template>
 
 <script>
+import SlideBtn from "./SlideBtn.vue";
+
 export default {
   name: "SlideInner",
+  components: {SlideBtn},
   props: {
     imgList: Array,
     currentIndex: Number,
