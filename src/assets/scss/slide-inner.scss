@@ -1,5 +1,4 @@
-$TOOL_BAR_SIZE: 50px;
-$BUTTON_SIZE: 50px;
+@import "variables";
 
 .slide-inner {
   width: 100%;
@@ -15,8 +14,13 @@ $BUTTON_SIZE: 50px;
     display: flex;
     transition-duration: 0ms;
     &.is-drag {
-      .slide-img-item img {
-        cursor: grab;
+      .slide-img-item .slide-img-wrap {
+        transition-duration: 0ms;
+
+        img {
+          transition-duration: 0ms;
+          cursor: grabbing;
+        }
       }
     }
 
@@ -33,6 +37,7 @@ $BUTTON_SIZE: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: transform 0.15s;
 
         img {
           max-width: 100%;
@@ -40,7 +45,8 @@ $BUTTON_SIZE: 50px;
           width: auto;
           height: auto;
           //object-fit: contain;
-          cursor: pointer;
+          cursor: grab;
+          transition: transform 0.15s;
         }
       }
     }
