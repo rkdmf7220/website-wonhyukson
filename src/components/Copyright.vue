@@ -23,7 +23,8 @@ export default {
 @media screen and (max-width: 767px){
   .copyright{
     width: 100%;
-    padding: 0 16px 20px 16px;
+    height: 40px;
+    padding: 0 16px 0 16px;
   }
 }
 </style>
