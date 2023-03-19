@@ -141,7 +141,6 @@ export default {
     },
     onDragSlider(e) {
       if (this.pinchZoom && this.isMouseDown) {
-        console.log('mouseDown >>', this.isMouseDown)
         this.moveZoomPosition(e)
       } else {
         if (!this.isMouseDown) {
