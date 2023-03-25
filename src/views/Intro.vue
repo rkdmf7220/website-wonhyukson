@@ -1,7 +1,7 @@
 <template>
   <div class="wrap">
     <div class="video-wrap">
-      <video src="/video/intro01.mp4" class="background-video" autoplay muted playsinline></video>
+      <video :src="`/video/intro01${this.isTouchDevice}.mp4`" class="background-video" autoplay muted playsinline></video>
     </div>
     <div class="opening-wrap">
       <router-link to="/sculpture">
@@ -14,6 +14,11 @@
 <script>
 export default {
   name: "Intro",
+  computed: {
+    isTouchDevice() {
+      return navigator.maxTouchPoints || 'ontouchstart' in document.documentElement ? "_M" : "";
+    }
+  },
   mounted() {
     document.querySelector('.background-video').addEventListener('ended', this.continueNextVideo);
   },
@@ -28,7 +33,8 @@ export default {
       if (this.videoCount > 2) {
         this.videoCount = 1;
       }
-      let nextVideo = "/video/intro0"+this.videoCount+".mp4";
+      // let nextVideo = "/video/intro0" + this.videoCount + isMobile + ".mp4";
+      let nextVideo = `/video/intro0${this.videoCount}${this.isTouchDevice}.mp4`;
       let videoPlayer = document.querySelector('.background-video');
       videoPlayer.src = nextVideo;
       videoPlayer.play();
