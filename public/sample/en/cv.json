@@ -1,194 +1,238 @@
 {
-  "profile": {
-    "title": "Wonhyuk Son",
-    "items": [
-      {
-        "year": null,
-        "text": [
-          "Born in 1999 Seoul, South Korea"
+  "selectedCv": {
+    "name": "Selected CV",
+    "list": {
+      "profile": {
+        "title": "Wonhyuk Son",
+        "items": [
+          {
+            "year": null,
+            "text": [
+              "Born in 1999 Seoul, South Korea"
+            ]
+          }
+        ]
+      },
+      "soloExhibition": {
+        "title": "Solo Exhibition",
+        "items": [
+          {
+            "year": "2022",
+            "text": [
+              "Forthcoming | Assemblogy: compose and combine (CICA Museum | Czong Institute for Contemporary Art, Gimpo)"
+            ]
+          },
+          {
+            "year": "2021",
+            "text": [
+              "Dream Land: Color (Gwangmyeong Civic Center, Gwangmyeong)"
+            ]
+          },
+          {
+            "year": "2020",
+            "text": [
+              "Dream Land (H.art.bridge, Seoul)"
+            ]
+          }
         ]
       }
-    ]
+    }
   },
-  "soloExhibition": {
-    "title": "Solo Exhibition",
-    "items": [
-      {
-        "year": "2022",
-        "text": [
-          "Forthcoming | Assemblogy: compose and combine (CICA Museum | Czong Institute for Contemporary Art, Gimpo)"
+  "fullCv": {
+    "name": "Full CV",
+    "list": {
+      "profile": {
+        "title": "Wonhyuk Son",
+        "items": [
+          {
+            "year": null,
+            "text": [
+              "Born in 1999 Seoul, South Korea"
+            ]
+          }
         ]
       },
-      {
-        "year": "2021",
-        "text": [
-          "Dream Land: Color (Gwangmyeong Civic Center, Gwangmyeong)"
+      "soloExhibition": {
+        "title": "Solo Exhibition",
+        "items": [
+          {
+            "year": "2022",
+            "text": [
+              "Forthcoming | Assemblogy: compose and combine (CICA Museum | Czong Institute for Contemporary Art, Gimpo)"
+            ]
+          },
+          {
+            "year": "2021",
+            "text": [
+              "Dream Land: Color (Gwangmyeong Civic Center, Gwangmyeong)"
+            ]
+          },
+          {
+            "year": "2020",
+            "text": [
+              "Dream Land (H.art.bridge, Seoul)"
+            ]
+          }
         ]
       },
-      {
-        "year": "2020",
-        "text": [
-          "Dream Land (H.art.bridge, Seoul)"
+      "groupExhibition": {
+        "title": "Group Exhibition",
+        "items": [
+          {
+            "year": "2023",
+            "text": [
+              "Forthcoming | Portrait 2023 (CICA Museum, Gimpo)"
+            ]
+          },
+          {
+            "year": "2022",
+            "text": [
+              "Forthcoming | Korean Society of Typography Exhibition 16 (TBD, Online)",
+              "Forthcoming | Observer: Sculpture (Gallery OOOJH, Seoul)"
+            ]
+          },
+          {
+            "year": "2021",
+            "text": [
+              "Singing word, singing text | Korean Society of Typography Exhibition 15 (COEX Hall C, Seoul, Metaverse online)",
+              "Relativity Circuit: Sustainability Report (Dongduk art gallery, Seoul)",
+              "Over the structures 2021 (CICA Museum, Gimpo)"
+            ]
+          },
+          {
+            "year": "2020",
+            "text": [
+              "Contactless | Korean Society of Typography Exhibition 14 (Culture Station Seoul 284 RTO, Seoul, Online)"
+            ]
+          },
+          {
+            "year": "2019",
+            "text": [
+              "Knowing (MJ Gallery, Seoul)",
+              "bauhaus mirror (DDP, Seoul)",
+              "The 55th Gyeonggi art contest (Gyeonggi art center gallery, Suwon)",
+              "Watch the world through the art (Gangnam-gu office, Seoul)"
+            ]
+          },
+          {
+            "year": "2018",
+            "text": [
+              "International young artist association contest (Gallery We, Seoul)"
+            ]
+          },
+          {
+            "year": "2016",
+            "text": [
+              "Rebellion of brick ‘I AM ROBOT’ (RoboPark, Bucheon)",
+              "Brick Convention (Hyundai Departmentstore, Pangyo)"
+            ]
+          },
+          {
+            "year": "2015",
+            "text": [
+              "Brick Convention (Hyundai Departmentstore, Pangyo)"
+            ]
+          }
+        ]
+      },
+      "artFair": {
+        "title": "Art Fair",
+        "items": [
+          {
+            "year": "2018",
+            "text": [
+              "Miami Scope Art Fair (Scope art fair, Miami)"
+            ]
+          },
+          {
+            "year": "2016",
+            "text": [
+              "DDP Craft exposition (DDP, Seoul)"
+            ]
+          }
+        ]
+      },
+      "prizeArchive": {
+        "title": "Prize and Support",
+        "items": [
+          {
+            "year": "2021",
+            "text": [
+              "Gwangmyeong Cultural Foundation ‘Young Artist Support Project’"
+            ]
+          },
+          {
+            "year": "2020",
+            "text": [
+              "Arts Council Korea 'Visual Art Space Support Project'"
+            ]
+          },
+          {
+            "year": "2019",
+            "text": [
+              "The 55th Gyeonggi art contest ‘Sculpture’ award"
+            ]
+          }
+        ]
+      },
+      "ph": {
+        "title": "PH",
+        "items": [
+          {
+            "year": "2019",
+            "text": [
+              "AhnGraphics Publishers | Designer (intern)"
+            ]
+          }
+        ]
+      },
+      "division": {
+        "title": "Division",
+        "items": [
+          {
+            "year": "2022 -",
+            "text": [
+              "OBSERVER: SCULPTURE (OS) | Member"
+            ]
+          },
+          {
+            "year": "2020 -",
+            "text": [
+              "Korean Society of Typography | Regular Member"
+            ]
+          },
+          {
+            "year": "2019",
+            "text": [
+              "Extypo (experimental typography group) | President"
+            ]
+          },
+          {
+            "year": "2018 - 2019",
+            "text": [
+              "IYAA (International Young Artist Association) | Visual Artist"
+            ]
+          }
+        ]
+      },
+      "introduction": {
+        "title": "Introduction",
+        "items": [
+          {
+            "year": "2021",
+            "text": [
+              "Art Continue 『2022 Nominated Artists in South Korea』",
+              "CA BOOKS 『#254 Contactless』"
+            ]
+          },
+          {
+            "year": "2017",
+            "text": [
+              "Creator 『#9 IDEA OF CREATION』 (Interview)"
+            ]
+          }
         ]
       }
-    ]
-  },
-  "groupExhibition": {
-    "title": "Group Exhibition",
-    "items": [
-      {
-        "year": "2023",
-        "text": [
-          "Forthcoming | Portrait 2023 (CICA Museum, Gimpo)"
-        ]
-      },
-      {
-        "year": "2022",
-        "text": [
-          "Forthcoming | Korean Society of Typography Exhibition 16 (TBD, Online)",
-          "Forthcoming | Observer: Sculpture (Gallery OOOJH, Seoul)"
-        ]
-      },
-      {
-        "year": "2021",
-        "text": [
-          "Singing word, singing text | Korean Society of Typography Exhibition 15 (COEX Hall C, Seoul, Metaverse online)",
-          "Relativity Circuit: Sustainability Report (Dongduk art gallery, Seoul)",
-          "Over the structures 2021 (CICA Museum, Gimpo)"
-        ]
-      },
-      {
-        "year": "2020",
-        "text": [
-          "Contactless | Korean Society of Typography Exhibition 14 (Culture Station Seoul 284 RTO, Seoul, Online)"
-        ]
-      },
-      {
-        "year": "2019",
-        "text": [
-          "Knowing (MJ Gallery, Seoul)",
-          "bauhaus mirror (DDP, Seoul)",
-          "The 55th Gyeonggi art contest (Gyeonggi art center gallery, Suwon)",
-          "Watch the world through the art (Gangnam-gu office, Seoul)"
-        ]
-      },
-      {
-        "year": "2018",
-        "text": [
-          "International young artist association contest (Gallery We, Seoul)"
-        ]
-      },
-      {
-        "year": "2016",
-        "text": [
-          "Rebellion of brick ‘I AM ROBOT’ (RoboPark, Bucheon)",
-          "Brick Convention (Hyundai Departmentstore, Pangyo)"
-        ]
-      },
-      {
-        "year": "2015",
-        "text": [
-          "Brick Convention (Hyundai Departmentstore, Pangyo)"
-        ]
-      }
-    ]
-  },
-  "artFair": {
-    "title": "Art Fair",
-    "items": [
-      {
-        "year": "2018",
-        "text": [
-          "Miami Scope Art Fair (Scope art fair, Miami)"
-        ]
-      },
-      {
-        "year": "2016",
-        "text": [      
-          "DDP Craft exposition (DDP, Seoul)"
-        ]
-      }
-    ]
-  },
-  "prizeArchive": {
-    "title": "Prize and Support",
-    "items": [
-      {
-        "year": "2021",
-        "text": [
-          "Gwangmyeong Cultural Foundation ‘Young Artist Support Project’"
-        ]
-      },
-      {
-        "year": "2020",
-        "text": [
-          "Arts Council Korea 'Visual Art Space Support Project'"
-        ]
-      },
-      {
-        "year": "2019",
-        "text": [
-          "The 55th Gyeonggi art contest ‘Sculpture’ award"
-        ]
-      }
-    ]
-  },
-  "ph": {
-    "title": "PH",
-    "items": [
-      {
-        "year": "2019",
-        "text": [
-          "AhnGraphics Publishers | Designer (intern)"
-        ]
-      }
-    ]
-  },
-  "division": {
-    "title": "Division",
-    "items": [
-      {
-        "year": "2022 -",
-        "text": [
-          "OBSERVER: SCULPTURE (OS) | Member"
-        ]
-      },
-      {
-        "year": "2020 -",
-        "text": [
-          "Korean Society of Typography | Regular Member"
-        ]
-      },
-      {
-        "year": "2019",
-        "text": [
-          "Extypo (experimental typography group) | President"
-        ]
-      },
-      {
-        "year": "2018 - 2019",
-        "text": [
-          "IYAA (International Young Artist Association) | Visual Artist"
-        ]
-      }
-    ]
-  },
-  "introduction": {
-    "title": "Introduction",
-    "items": [
-      {
-        "year": "2021",
-        "text": [
-          "Art Continue 『2022 Nominated Artists in South Korea』",
-          "CA BOOKS 『#254 Contactless』"
-        ]
-      },
-      {
-        "year": "2017",
-        "text": [
-          "Creator 『#9 IDEA OF CREATION』 (Interview)"
-        ]
-      }
-    ]
+    }
   }
 }

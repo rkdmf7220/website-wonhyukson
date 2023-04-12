@@ -2,10 +2,10 @@
   <div class="wrap">
     <page-title/>
     <details v-for="(item, index) in reviewData" :key="index">
-      <summary>{{item.title}}</summary>
-      <p class="sub-title">{{item.subTitle}}</p>
+      <summary>{{ item.title }}</summary>
+      <p class="sub-title">{{ item.subTitle }}</p>
       <div class="review-wrap" v-for="(data, index) in item.contents" :key="index">
-        <span>{{data.text}}</span>
+        <span>{{ data.text }}</span>
         <div v-if="data.imgs" class="info-wrap">
           <div class="img-list">
             <div class="img-item" v-for="(pic, index) in data.imgs" :key="index">
@@ -13,7 +13,7 @@
             </div>
           </div>
           <div class="caption-list" v-for="(caption, index) in data.imgs" :key="index">
-            <p class="caption-text">{{caption.caption}}</p>
+            <p class="caption-text">{{ caption.caption }}</p>
           </div>
         </div>
       </div>
@@ -23,6 +23,7 @@
 
 <script>
 import PageTitle from "../components/PageTitle";
+
 export default {
   components: {PageTitle},
   computed: {
@@ -36,9 +37,10 @@ export default {
 }
 </script>
 
-<style lang="scss">
-.wrap{
+<style lang="scss" scoped>
+.wrap {
   min-height: calc(100vh - 256px);
+
   details {
     width: calc(98% - 80px);
     border-top: 1px solid #ccc;
@@ -90,7 +92,8 @@ export default {
     .review-wrap {
       margin-bottom: 32px;
       max-width: 750px;
-      &:last-child{
+
+      &:last-child {
         margin-bottom: 0;
       }
 
@@ -98,18 +101,18 @@ export default {
         white-space: pre-wrap;
       }
 
-      .info-wrap{
+      .info-wrap {
         margin-top: 16px;
 
-        .img-list{
+        .img-list {
           display: flex;
           flex-wrap: wrap;
 
-          .img-item{
+          .img-item {
             width: 24%;
             margin-right: 1%;
 
-            img{
+            img {
               width: 100%;
               display: block;
             }
@@ -125,6 +128,7 @@ export default {
     //min-height: calc(100vh - 184px);
     min-height: calc(calc(var(--vh, 1vh) * 100) - 184px);
     margin-bottom: 64px;
+
     details {
       width: 100%;
       padding-right: 16px;
