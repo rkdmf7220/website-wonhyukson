@@ -1,5 +1,5 @@
 <template>
-  <button :style="{maskImage: 'url(' + svgIcon.get(iconType) + ')'}" class="slide-btn"></button>
+  <button :style="{maskImage: 'url(' + svgIcon.get(iconType, isTouchDevice) + ')'}" class="slide-btn"></button>
 </template>
 
 <script>
@@ -10,6 +10,9 @@ export default {
   computed: {
     svgIcon() {
       return svgIcon
+    },
+    isTouchDevice() {
+      return navigator.maxTouchPoints || 'ontouchstart' in document.documentElement ? 'Mobile' : '';
     }
   },
   props: {

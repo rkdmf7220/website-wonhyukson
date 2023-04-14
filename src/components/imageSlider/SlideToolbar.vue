@@ -6,7 +6,7 @@
     <div :class="{'is-disable': pinchZoomScale === 1}" class="slide-btn-wrap">
       <SlideBtn @click="onClickZoomOutBtn"
                 icon-type="zoomOutIcon"
-                class="slide-zoom-btn slide-zoom-in-btn"/>
+                class="slide-zoom-btn slide-zoom-out-btn"/>
     </div>
     <div :class="{'is-disable': pinchZoomScale === 4}" class="slide-btn-wrap">
       <SlideBtn @click="onClickZoomInBtn"
