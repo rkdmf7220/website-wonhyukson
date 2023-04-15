@@ -1,0 +1,170 @@
+<template>
+  <div class="wrap">
+    <PageTitle v-if="false"/>
+    <div :style="{backgroundImage: 'url(img/main/01' + isTouchDevice + '.png)'}" class="spot"></div>
+    <div class="contents">
+      <div class="exhibition">
+        <router-link to="/archive">
+          <h4 class="title">{{ isKorean ? '전시' : 'EXHIBITION' }}</h4>
+          <span :style="{backgroundImage: 'url(' + svgIcon.get('rightArrowIcon') + ')'}" class="right-arrow"></span>
+        </router-link>
+        <ul>
+          <li v-for="item in exhibitionListData" :key="item.id">
+            <GalleryListItem :item-data="item"/>
+          </li>
+        </ul>
+      </div>
+      <div class="news">
+        <router-link to="/news">
+          <h4 class="title">{{ isKorean ? '소식' : 'NEWS' }}</h4>
+          <span :style="{backgroundImage: 'url(' + svgIcon.get('rightArrowIcon') + ')'}" class="right-arrow"></span>
+        </router-link>
+        <ul>
+          <li v-for="item in newsListData" :key="item.id">
+            <GalleryListItem :item-data="item"/>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+
+import PageTitle from "../components/PageTitle.vue";
+import GalleryListItem from "../components/GalleryListItem.vue";
+import svgIcon from "../../public/img/svgIcon";
+
+export default {
+  name: "Main",
+  components: {GalleryListItem, PageTitle},
+  computed: {
+    svgIcon() {
+      return svgIcon
+    },
+    isTouchDevice() {
+      return navigator.maxTouchPoints || 'ontouchstart' in document.documentElement ? '_m' : '';
+    },
+    isKorean() {
+      return this.$store.state.lang === "kr"
+    },
+    exhibitionListData() {
+      let list = this.$store.state.worksList;
+      let filtered = list.filter(work => work.type === 'archive').slice(0, 4);
+      return (list) ? filtered : [];
+    },
+    newsListData() {
+      let list = this.$store.state.worksList;
+      let filtered = list.filter(work => work.type === 'news').slice(0, 4);
+      return (list) ? filtered : [];
+    }
+  },
+  mounted() {
+    this.$store.dispatch('loadWorksList')
+  },
+}
+</script>
+
+<style lang="scss" scoped>
+.wrap {
+  margin: 0;
+
+  .spot {
+    width: 100%;
+    height: 100vh;
+    background-position-x: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .contents {
+    width: calc(100% - 80px);
+    padding: 80px 0 80px 240px;
+    box-sizing: border-box;
+    background-color: white;
+
+    .exhibition {
+      padding-bottom: 80px;
+    }
+
+  a {
+    display: inline-block;
+    padding: 8px 0;
+    margin-bottom: 20px;
+
+    .title {
+      display: inline-block;
+      font-size: 1.25em;
+      font-weight: 700;
+    }
+
+    .right-arrow {
+      display: inline-block;
+      width: 8px;
+      height: 1em;
+      margin-left: 5px;
+      background-position-y: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      li {
+        width: 23%;
+        margin-right: 2%;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .contents {
+    ul {
+      li {
+        width: 18%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .contents {
+    ul {
+      li {
+        width: 48%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wrap {
+    padding: 0;
+
+    .spot {
+      height: 80vh;
+    }
+
+    .contents {
+      width: 100%;
+      padding: 80px 16px 0 16px;
+      border-radius: 30px 30px 0 0;
+      margin-top: -30px;
+      box-shadow: 0 10px 0 10px white, 0 -3px 9px rgba(106, 123, 234, 0.1);
+
+      ul {
+        li {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 64px;
+        }
+      }
+    }
+  }
+}
+</style>

@@ -4,7 +4,7 @@
       <video :src="`/video/intro01${this.isTouchDevice}.mp4`" class="background-video" autoplay muted playsinline></video>
     </div>
     <div class="opening-wrap">
-      <router-link to="/sculpture">
+      <router-link to="/main">
         <button>Enter</button>
       </router-link>
     </div>

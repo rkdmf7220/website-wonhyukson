@@ -71,8 +71,13 @@ const routes = [
     name: 'DetailPage',
     component: () => import('../components/Detail')
   },
-  ...gnb
-]
+  {
+    path: "/main",
+    name: "Main",
+    component: () => import("../views/Main"),
+  },
+  ...gnb,
+];
 
 const router = createRouter({
   history: createWebHistory(),

@@ -1,11 +1,17 @@
 <template>
   <div class="item-wrap">
     <router-link :to="`/${itemData.type}/${itemData.id}`" @click="onClickArtworkList">
-      <div class="bg-img">
+      <div :class="{archive: itemData.type === 'archive'}" class="bg-img">
         <img :src="itemData.thumb" alt="">
       </div>
-      <p class="txt-title">{{itemData.title}}</p>
-      <p class="txt-year">{{itemData.year}}</p>
+      <template v-if="this.$route.name !== 'Main'">
+        <p class="txt-title">{{itemData.title}}</p>
+        <p class="txt-year">{{itemData.year}}</p>
+      </template>
+      <template v-else>
+        <p class="txt-title">{{itemData.title}}</p>
+        <p class="txt-year">{{itemData.caption}}</p>
+      </template>
     </router-link>
   </div>
 </template>
@@ -41,6 +47,10 @@ export default {
       padding-bottom: 100%;
       position: relative;
       background-color: #efefef;
+
+      &.archive {
+        padding-bottom: 141.4%;
+      }
 
       img {
         position: absolute;
