@@ -4,7 +4,7 @@
     <div class="contents">
       <div class="txt-wrap">
         <h2 class="txt-caption">{{ itemData?.caption }}</h2>
-        <div v-if="this.$route.params.works === 'archive'" class="info-list">
+        <div v-if="this.$route.params.works === 'archive' || 'news'" class="info-list">
           <div v-for="(item, index) in itemData?.info" :key="index" class="info-item">
             <span class="info-title">{{ item.title }}</span>
             <span class="info-text">{{ item.text }}</span>

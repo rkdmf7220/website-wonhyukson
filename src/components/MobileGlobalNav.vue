@@ -9,7 +9,7 @@
       <span></span>
     </button>
   </div>
-  <MobileHamburgerMenu :is-active="!this.isActive" @removeClass="closeMobileMenu"/>
+  <MobileHamburgerMenu :is-active="this.isActive" @removeClass="closeMobileMenu"/>
 </template>
 
 <script>
@@ -29,7 +29,7 @@ export default {
   data() {
     return{
       Constants,
-      isActive: Boolean,
+      isActive: false,
       currentScrollTop: Number,
       pastScrollTop: Number
     }
@@ -44,7 +44,7 @@ export default {
       this.isActive = !this.isActive
     },
     closeMobileMenu(close) {
-      this.isActive = !close;
+      this.isActive = close;
     },
     onScrollHideNav(direction) {
       let nav = document.querySelector("#mobile-nav");
@@ -55,7 +55,7 @@ export default {
         }
     },
     onScrollToggleClass() {
-      this.currentScrollTop = window.pageYOffset || 0;
+      this.currentScrollTop = window.scrollY || 0;
       if (this.currentScrollTop > this.pastScrollTop) {
         this.onScrollHideNav("down");
       } else if (this.currentScrollTop < this.pastScrollTop) {

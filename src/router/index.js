@@ -53,10 +53,10 @@ const gnb = [
     component: () => import('../views/CV.vue')
   },
   {
-    path: '/contact',
-    name: 'Contact',
-    component: () => import('../views/Contact.vue')
-  }
+    path: "/news",
+    name: "News",
+    component: () => import("../views/News.vue"),
+  },
 ];
 
 const routes = [
