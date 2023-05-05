@@ -37,6 +37,8 @@
   height: $TOOL_BAR_SIZE;
   top: 0;
   left: 0;
+  padding: 10px;
+  box-sizing: border-box;
   position: fixed;
   display: flex;
   color: #cccccc;
@@ -97,7 +99,7 @@
     color: transparent;
 
     &:hover {
-      background-color: transparent;
+      background-color: transparent !important;
     }
 
     &.prev-btn-wrap {
@@ -120,6 +122,7 @@
   }
 
   .slide-toolbar {
+    padding-bottom: 0;
     height: $MOBILE_TOOL_BAR_SIZE;
 
     .slide-counter {
@@ -129,6 +132,10 @@
     .slide-btn-wrap {
       width: $MOBILE_BUTTON_SIZE;
       height: $MOBILE_BUTTON_SIZE;
+
+      &:hover {
+        background-color: transparent;
+      }
 
       .slide-btn {
         width: $MOBILE_BUTTON_SIZE;

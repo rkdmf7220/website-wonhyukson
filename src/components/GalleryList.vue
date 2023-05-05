@@ -1,7 +1,7 @@
 <template>
   <div class="contents">
     <ul>
-      <li v-for="item in listData" :key="item.id">
+      <li :class="{'is-2-column': this.$route.name === 'Archive'}" v-for="item in listData" :key="item.id">
         <gallery-list-item :item-data="item"/>
       </li>
     </ul>
@@ -10,6 +10,7 @@
 
 <script>
 import GalleryListItem from "./GalleryListItem";
+
 export default {
   name: "GalleryList",
   components: {GalleryListItem},
@@ -25,13 +26,9 @@ export default {
     this.$store.dispatch('loadWorksList')
   },
   data() {
-    return {
-
-    }
+    return {}
   },
-  methods: {
-
-  }
+  methods: {}
 }
 </script>
 
@@ -61,8 +58,9 @@ export default {
     }
   }
 }
+
 @media screen and (max-width: 1023px) {
-  .contents{
+  .contents {
     ul {
       li {
         width: 48%;
@@ -70,14 +68,24 @@ export default {
     }
   }
 }
+
 @media screen and (max-width: 767px) {
   .contents {
     width: 100%;
+
     ul {
       li {
         width: 100%;
         margin-right: 0;
         margin-bottom: 64px;
+
+        &.is-2-column {
+          width: 49%;
+
+          &:nth-child(odd) {
+            margin-right: 2%;
+          }
+        }
       }
     }
   }

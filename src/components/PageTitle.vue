@@ -1,15 +1,18 @@
 <template>
-  <div class="header">
-    <h1>{{detailTitle}}</h1>
+  <div :class="{'is-main': this.$route.name === 'Main'}" class="header">
+    <h1>{{ detailTitle }}</h1>
     <div class="lang-container">
-        <button :class='{active : currentLang === Constants.lang.kr}' @click="onClickLang(Constants.lang.kr)"><span>KR</span></button>
-        <button :class='{active : currentLang === Constants.lang.en}' @click="onClickLang(Constants.lang.en)"><span>EN</span></button>
+      <button :class='{active : currentLang === Constants.lang.kr}' @click="onClickLang(Constants.lang.kr)">
+        <span>KR</span></button>
+      <button :class='{active : currentLang === Constants.lang.en}' @click="onClickLang(Constants.lang.en)">
+        <span>EN</span></button>
     </div>
   </div>
 </template>
 
 <script>
 import Constants from "../contants/constants";
+
 export default {
   name: "PageTitle",
   props: {
@@ -24,7 +27,7 @@ export default {
     }
   },
   data() {
-    return{
+    return {
       Constants
     }
   },
@@ -39,43 +42,54 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  .header{
-    display: flex;
-    margin-bottom: 32px;
-    width: calc(100% - 80px);
+.header {
+  display: flex;
+  margin-bottom: 32px;
+  width: calc(100% - 80px);
 
-    h1{
-      line-height:  1.4em;
-    }
+  h1 {
+    line-height: 1.4em;
+  }
 
-    .lang-container{
-      margin: 6px 2% 0 auto;
-      flex-shrink: 0;
+  .lang-container {
+    margin: 6px 2% 0 auto;
+    flex-shrink: 0;
 
-      button{
-        border: none;
-        background: transparent;
-        font-size: 1em;
-        line-height: 1em;
-        cursor: pointer;
-        padding: 0 12px;
-        color: #bbb;
+    button {
+      border: none;
+      background: transparent;
+      font-size: 1em;
+      line-height: 1em;
+      cursor: pointer;
+      padding: 0 12px;
+      color: #bbb;
 
-        &:last-child{
-          border-left: 2px solid black;
-          margin-right: -12px;
-        }
-        &.active{
-          color: #000;
-        }
+      &:last-child {
+        border-left: 2px solid black;
+        margin-right: -12px;
+      }
+
+      &.active {
+        color: #000;
       }
     }
   }
+}
 
-  @media screen and (max-width: 767px){
-    .lang-container{
-      display: none;
-    }
-  ;
+.is-main {
+  width: calc(100% - 320px);
+  position: absolute;
+  top: 116px;
+  left: 240px;
+
+  h1 {
+    display: none;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .lang-container {
+    display: none;
+  }
+}
 </style>

@@ -1,11 +1,11 @@
 <template>
   <div class="wrap">
-    <PageTitle v-if="false"/>
+    <PageTitle v-if="!isTouchDevice"/>
     <div :style="{backgroundImage: 'url(img/main/01' + isTouchDevice + '.png)'}" class="spot"></div>
     <div class="contents">
       <div class="exhibition">
         <router-link to="/archive">
-          <h4 class="title">{{ isKorean ? '전시' : 'EXHIBITION' }}</h4>
+          <h4 class="title">{{ isKorean ? '전시' : 'EXHIBITIONS' }}</h4>
           <span :style="{backgroundImage: 'url(' + svgIcon.get('rightArrowIcon') + ')'}" class="right-arrow"></span>
         </router-link>
         <ul>
@@ -68,12 +68,12 @@ export default {
 <style lang="scss" scoped>
 .wrap {
   margin: 0;
+  position: relative;
 
   .spot {
     width: 100%;
     height: 100vh;
     background-position-x: center;
-    background-attachment: fixed;
     background-size: cover;
   }
 
@@ -147,21 +147,26 @@ export default {
     padding: 0;
 
     .spot {
-      height: 80vh;
+      height: 92vh;
     }
 
     .contents {
       width: 100%;
-      padding: 80px 16px 0 16px;
-      border-radius: 30px 30px 0 0;
-      margin-top: -30px;
+      padding: 32px 16px 0 16px;
       box-shadow: 0 10px 0 10px white, 0 -3px 9px rgba(106, 123, 234, 0.1);
+
+      .exhibition {
+        padding-bottom: 40px;
+      }
 
       ul {
         li {
-          width: 100%;
+          width: 49%;
           margin-right: 0;
           margin-bottom: 64px;
+          &:nth-child(odd) {
+            margin-right: 2%
+          }
         }
       }
     }
