@@ -147,7 +147,7 @@ export default {
     padding: 0;
 
     .spot {
-      height: 92vh;
+      max-height: calc(calc(var(--vh, 1vh) * 92));
     }
 
     .contents {
