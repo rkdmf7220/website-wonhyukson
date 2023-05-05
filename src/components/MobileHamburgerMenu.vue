@@ -42,7 +42,7 @@ export default {
   },
   methods: {
     closeMobileMenu() {
-      this.$emit('removeClass', !this.isActive)
+      this.$emit('removeClass')
     },
     onClickEmailIcon() {
       navigator.clipboard.writeText("xg6033@gmail.com")

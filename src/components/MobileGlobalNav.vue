@@ -1,6 +1,6 @@
 <template>
   <div id="mobile-nav" :class="{active: this.isActive}" v-if="this.$route.name !== 'Intro'">
-    <router-link to="/main" class="logo">Wonhyuk Son</router-link>
+    <router-link @click="closeMobileMenu(false)" to="/main" class="logo">Wonhyuk Son</router-link>
     <div class="lang-container">
       <button :class='{active : currentLang === Constants.lang.kr}' @click="onClickLang(Constants.lang.kr)"><span>KR</span></button>
       <button :class='{active : currentLang === Constants.lang.en}' @click="onClickLang(Constants.lang.en)"><span>EN</span></button>
@@ -43,8 +43,8 @@ export default {
     onClickMenu() {
       this.isActive = !this.isActive
     },
-    closeMobileMenu(close) {
-      this.isActive = close;
+    closeMobileMenu() {
+      this.isActive = false;
     },
     onScrollHideNav(direction) {
       let nav = document.querySelector("#mobile-nav");
