@@ -9,7 +9,7 @@
         <h4>Contact</h4>
         <div class="contact-icon-list">
           <div @click="onClickEmailIcon" :style="{backgroundImage: 'url(' + svgIcon.get('emailIcon') + ')'}" class="contact-icon-item contact-email-icon"></div>
-          <a href="https://www.instagram.com/wonhyuk_son/" :style="{backgroundImage: 'url(' + svgIcon.get('instagramIcon') + ')'}" class="contact-icon-item contact-instagram-icon"></a>
+          <a :style="{backgroundImage: 'url(' + svgIcon.get('instagramIcon') + ')'}" href="https://www.instagram.com/wonhyuk_son/"  target="_blank" class="contact-icon-item contact-instagram-icon"></a>
         </div>
       </li>
     </ul>
@@ -51,6 +51,7 @@ export default {
   left: 0;
   padding: 100px 0 0 32px;
   box-sizing: border-box;
+  z-index: 99;
 
   .logo {
     font-weight: 700;
