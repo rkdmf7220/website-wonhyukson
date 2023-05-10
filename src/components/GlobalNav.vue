@@ -8,7 +8,7 @@
       <li class="contact-wrap margin-to-infos">
         <h4>Contact</h4>
         <div class="contact-icon-list">
-          <div @click="onClickEmailIcon" :style="{backgroundImage: 'url(' + svgIcon.get('emailIcon') + ')'}" class="contact-icon-item contact-email-icon"></div>
+          <div @click="onClickEmailIcon(this.currentLang)" :style="{backgroundImage: 'url(' + svgIcon.get('emailIcon') + ')'}" class="contact-icon-item contact-email-icon"></div>
           <a :style="{backgroundImage: 'url(' + svgIcon.get('instagramIcon') + ')'}" href="https://www.instagram.com/wonhyuk_son/"  target="_blank" class="contact-icon-item contact-instagram-icon"></a>
         </div>
       </li>
@@ -23,6 +23,9 @@ export default {
   computed: {
     svgIcon() {
       return svgIcon
+    },
+    currentLang() {
+      return this.$store.state.lang
     }
   },
   mounted() {
@@ -34,9 +37,13 @@ export default {
     }
   },
   methods: {
-     onClickEmailIcon() {
-       navigator.clipboard.writeText("xg6033@gmail.com")
-       alert('이메일 주소가 복사되었습니다.')
+     onClickEmailIcon(lang) {
+       navigator.clipboard.writeText("xg60333@gmail.com")
+       if (lang === 'kr') {
+         alert('이메일 주소가 복사되었습니다.')
+       } else {
+         alert('Email address copied.')
+       }
      }
   }
 }

@@ -7,7 +7,7 @@
       <li class="contact-wrap">
         <h4>Contact</h4>
         <div class="contact-icon-list">
-          <div @click="onClickEmailIcon"
+          <div @click="onClickEmailIcon(this.currentLang)"
                :style="{backgroundImage: 'url(' + svgIcon.get('emailIcon', false, 'white') + ')'}"
                class="contact-icon-item contact-email-icon"></div>
           <a href="https://www.instagram.com/wonhyuk_son/"
@@ -27,6 +27,9 @@ export default {
   computed: {
     svgIcon() {
       return svgIcon
+    },
+    currentLang() {
+      return this.$store.state.lang
     }
   },
   props: {
@@ -44,9 +47,13 @@ export default {
     closeMobileMenu() {
       this.$emit('removeClass')
     },
-    onClickEmailIcon() {
+    onClickEmailIcon(lang) {
       navigator.clipboard.writeText("xg6033@gmail.com")
-      alert('이메일 주소가 복사되었습니다.')
+      if (lang === 'kr') {
+        alert('이메일 주소가 복사되었습니다.')
+      } else {
+        alert('Email address copied.')
+      }
     }
   }
 }
