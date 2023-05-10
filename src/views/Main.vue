@@ -153,7 +153,6 @@ export default {
     .contents {
       width: 100%;
       padding: 32px 16px 0 16px;
-      box-shadow: 0 10px 0 10px white, 0 -3px 9px rgba(106, 123, 234, 0.1);
 
       .exhibition {
         padding-bottom: 40px;
