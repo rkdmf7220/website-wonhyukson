@@ -37,6 +37,7 @@
 import PageTitle from "../components/PageTitle";
 
 export default {
+  name: "Texts",
   components: { PageTitle },
   computed: {
     reviewData() {

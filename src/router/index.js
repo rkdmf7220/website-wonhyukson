@@ -27,17 +27,17 @@ const gnb = [
     },
   },
   {
-    path: "/review",
-    name: "Review",
-    component: () => import("../views/Review.vue"),
+    path: "/texts",
+    name: "Texts",
+    component: () => import("../views/Texts.vue"),
     meta: {
       cssClass: "margin-to-works",
     },
   },
   {
-    path: "/archive",
-    name: "Archive",
-    component: () => import("../views/Archive.vue"),
+    path: "/archives",
+    name: "Archives",
+    component: () => import("../views/Archives.vue"),
   },
   {
     path: "/cv",

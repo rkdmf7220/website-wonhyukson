@@ -1,8 +1,12 @@
 <template>
   <div class="contents">
     <ul>
-      <li :class="{'is-2-column': this.$route.name === 'Archive'}" v-for="item in listData" :key="item.id">
-        <gallery-list-item :item-data="item"/>
+      <li
+        :class="{ 'is-2-column': this.$route.name === 'Archives' }"
+        v-for="item in listData"
+        :key="item.id"
+      >
+        <gallery-list-item :item-data="item" />
       </li>
     </ul>
   </div>
@@ -13,23 +17,24 @@ import GalleryListItem from "./GalleryListItem";
 
 export default {
   name: "GalleryList",
-  components: {GalleryListItem},
+  components: { GalleryListItem },
   computed: {
     listData() {
       let list = this.$store.state.worksList;
-      let filtered = list.filter(work => work.type === this.$route.name.toLowerCase());
-      return (list) ? filtered : [];
-    }
+      let filtered = list.filter(
+        (work) => work.type === this.$route.name.toLowerCase()
+      );
+      return list ? filtered : [];
+    },
   },
   mounted() {
-    // this.loadList()
-    this.$store.dispatch('loadWorksList')
+    this.$store.dispatch("loadWorksList");
   },
   data() {
-    return {}
+    return {};
   },
-  methods: {}
-}
+  methods: {},
+};
 </script>
 
 <style scoped lang="scss">

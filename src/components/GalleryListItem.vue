@@ -1,8 +1,11 @@
 <template>
   <div class="item-wrap">
-    <router-link :to="`/${itemData.type}/${itemData.id}`" @click="onClickArtworkList">
-      <div :class="{archive: itemData.type === 'archive'}" class="bg-img">
-        <img :src="itemData.thumb" alt="">
+    <router-link
+      :to="`/${itemData.type}/${itemData.id}`"
+      @click="onClickArtworkList"
+    >
+      <div :class="{ archives: itemData.type === 'archives' }" class="bg-img">
+        <img :src="itemData.thumb" alt="" />
       </div>
       <template v-if="this.$route.name !== 'Main'">
         <p class="text-title">{{ itemData.title }}</p>

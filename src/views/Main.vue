@@ -1,27 +1,40 @@
 <template>
   <div class="wrap">
-    <PageTitle v-if="!isTouchDevice"/>
-    <div :style="{backgroundImage: 'url(img/main/01' + isTouchDevice + '.png)'}" class="spot"></div>
+    <PageTitle v-if="!isTouchDevice" />
+    <div
+      :style="{ backgroundImage: 'url(img/main/01' + isTouchDevice + '.png)' }"
+      class="spot"
+    ></div>
     <div class="contents">
       <div class="exhibition">
-        <router-link to="/archive">
-          <h4 class="title">{{ isKorean ? '전시' : 'EXHIBITIONS' }}</h4>
-          <span :style="{backgroundImage: 'url(' + svgIcon.get('rightArrowIcon') + ')'}" class="right-arrow"></span>
+        <router-link to="/archives">
+          <h4 class="title">{{ isKorean ? "전시" : "EXHIBITIONS" }}</h4>
+          <span
+            :style="{
+              backgroundImage: 'url(' + svgIcon.get('rightArrowIcon') + ')',
+            }"
+            class="right-arrow"
+          ></span>
         </router-link>
         <ul>
           <li v-for="item in exhibitionListData" :key="item.id">
-            <GalleryListItem :item-data="item"/>
+            <GalleryListItem :item-data="item" />
           </li>
         </ul>
       </div>
       <div class="news">
         <router-link to="/news">
-          <h4 class="title">{{ isKorean ? '소식' : 'NEWS' }}</h4>
-          <span :style="{backgroundImage: 'url(' + svgIcon.get('rightArrowIcon') + ')'}" class="right-arrow"></span>
+          <h4 class="title">{{ isKorean ? "소식" : "NEWS" }}</h4>
+          <span
+            :style="{
+              backgroundImage: 'url(' + svgIcon.get('rightArrowIcon') + ')',
+            }"
+            class="right-arrow"
+          ></span>
         </router-link>
         <ul>
           <li v-for="item in newsListData" :key="item.id">
-            <GalleryListItem :item-data="item"/>
+            <GalleryListItem :item-data="item" />
           </li>
         </ul>
       </div>
@@ -30,39 +43,43 @@
 </template>
 
 <script>
-
 import PageTitle from "../components/PageTitle.vue";
 import GalleryListItem from "../components/GalleryListItem.vue";
 import svgIcon from "../../public/img/svgIcon";
 
 export default {
   name: "Main",
-  components: {GalleryListItem, PageTitle},
+  components: { GalleryListItem, PageTitle },
   computed: {
     svgIcon() {
-      return svgIcon
+      return svgIcon;
     },
     isTouchDevice() {
-      return navigator.maxTouchPoints || 'ontouchstart' in document.documentElement ? '_m' : '';
+      return navigator.maxTouchPoints ||
+        "ontouchstart" in document.documentElement
+        ? "_m"
+        : "";
     },
     isKorean() {
-      return this.$store.state.lang === "kr"
+      return this.$store.state.lang === "kr";
     },
     exhibitionListData() {
       let list = this.$store.state.worksList;
-      let filtered = list.filter(work => work.type === 'archive').slice(0, 4);
-      return (list) ? filtered : [];
+      let filtered = list
+        .filter((work) => work.type === "archives")
+        .slice(0, 4);
+      return list ? filtered : [];
     },
     newsListData() {
       let list = this.$store.state.worksList;
-      let filtered = list.filter(work => work.type === 'news').slice(0, 4);
-      return (list) ? filtered : [];
-    }
+      let filtered = list.filter((work) => work.type === "news").slice(0, 4);
+      return list ? filtered : [];
+    },
   },
   mounted() {
-    this.$store.dispatch('loadWorksList')
+    this.$store.dispatch("loadWorksList");
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>
@@ -87,26 +104,26 @@ export default {
       padding-bottom: 80px;
     }
 
-  a {
-    display: inline-block;
-    padding: 8px 0;
-    margin-bottom: 20px;
-
-    .title {
+    a {
       display: inline-block;
-      font-size: 1.25em;
-      font-weight: 700;
-    }
+      padding: 8px 0;
+      margin-bottom: 20px;
 
-    .right-arrow {
-      display: inline-block;
-      width: 8px;
-      height: 1em;
-      margin-left: 5px;
-      background-position-y: center;
-      background-repeat: no-repeat;
+      .title {
+        display: inline-block;
+        font-size: 1.25em;
+        font-weight: 700;
+      }
+
+      .right-arrow {
+        display: inline-block;
+        width: 8px;
+        height: 1em;
+        margin-left: 5px;
+        background-position-y: center;
+        background-repeat: no-repeat;
+      }
     }
-  }
 
     ul {
       display: flex;
@@ -164,7 +181,7 @@ export default {
           margin-right: 0;
           margin-bottom: 64px;
           &:nth-child(odd) {
-            margin-right: 2%
+            margin-right: 2%;
           }
         }
       }
