@@ -1,18 +1,30 @@
 <template>
   <div class="wrap">
-    <page-title/>
+    <page-title />
     <details v-for="(item, index) in reviewData" :key="index">
       <summary>{{ item.title }}</summary>
       <p class="sub-title">{{ item.subTitle }}</p>
-      <div class="review-wrap" v-for="(data, index) in item.contents" :key="index">
-        <span>{{ data.text }}</span>
+      <div
+        class="review-wrap"
+        v-for="(data, index) in item.contents"
+        :key="index"
+      >
+        <span v-html="data.text"></span>
         <div v-if="data.imgs" class="info-wrap">
           <div class="img-list">
-            <div class="img-item" v-for="(pic, index) in data.imgs" :key="index">
-              <img :src="pic.src" alt="">
+            <div
+              class="img-item"
+              v-for="(pic, index) in data.imgs"
+              :key="index"
+            >
+              <img :src="pic.src" alt="" />
             </div>
           </div>
-          <div class="caption-list" v-for="(caption, index) in data.imgs" :key="index">
+          <div
+            class="caption-list"
+            v-for="(caption, index) in data.imgs"
+            :key="index"
+          >
             <p class="caption-text">{{ caption.caption }}</p>
           </div>
         </div>
@@ -25,16 +37,16 @@
 import PageTitle from "../components/PageTitle";
 
 export default {
-  components: {PageTitle},
+  components: { PageTitle },
   computed: {
     reviewData() {
-      return this.$store.state.review
-    }
+      return this.$store.state.review;
+    },
   },
   mounted() {
-    this.$store.dispatch('loadReview')
-  }
-}
+    this.$store.dispatch("loadReview");
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -70,7 +82,6 @@ export default {
       transition: all 0.15s;
       cursor: pointer;
       word-break: keep-all;
-
 
       &::-webkit-details-marker {
         display: none;
