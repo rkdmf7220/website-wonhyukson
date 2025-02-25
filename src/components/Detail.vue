@@ -1,37 +1,65 @@
 <template>
   <div class="wrap">
-    <page-title :title="itemData?.title"/>
+    <page-title :title="itemData?.title" />
     <div class="contents">
       <div class="txt-wrap">
         <h2 class="txt-caption">{{ itemData?.caption }}</h2>
-        <div v-if="this.$route.params.works === 'archive' || 'news'" class="info-list">
-          <div v-for="(item, index) in itemData?.info" :key="index" class="info-item">
-            <span class="info-title">{{ item.title }}</span>
-            <span class="info-text">{{ item.text }}</span>
+        <div
+          v-if="this.$route.params.works === 'archive' || 'news'"
+          class="info-list"
+        >
+          <div
+            v-for="(item, index) in itemData?.info"
+            :key="index"
+            class="info-item"
+          >
+            <template v-if="item.type === 'PDF'">
+              <span class="info-title">PDF</span>
+              <a :href="'/' + item.link" class="info-text" target="_blank">
+                <u>{{ item.fileName }}</u>
+              </a>
+            </template>
+            <template v-else>
+              <span class="info-title">{{ item.title }}</span>
+              <span class="info-text">{{ item.text }}</span>
+            </template>
           </div>
         </div>
       </div>
 
       <image-slider
-          @close:slider="onClickCloseBtn"
-          :show-slider="this.showSlider"
-          :img-list="itemData?.imgs"
-          ref="slider-component"
+        @close:slider="onClickCloseBtn"
+        :show-slider="this.showSlider"
+        :img-list="itemData?.imgs"
+        ref="slider-component"
       />
 
-      <div :class="{'is-disable': this.showSlider}" class="img-list">
-        <div @click="onClickThumbnail(index)" v-for="(item, index) in itemData?.imgs" :key="index" class="img-item">
-          <img :src="'/'+item" :alt="`${this.$route.params.id} img ${index+1}`">
+      <div :class="{ 'is-disable': this.showSlider }" class="img-list">
+        <div
+          @click="onClickThumbnail(index)"
+          v-for="(item, index) in itemData?.imgs"
+          :key="index"
+          class="img-item"
+        >
+          <img
+            :src="'/' + item"
+            :alt="`${this.$route.params.id} img ${index + 1}`"
+          />
         </div>
       </div>
       <div class="video-wrap" v-if="itemData?.link">
-        <iframe width="100%" height="100%" :src="itemData?.link" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+        <iframe
+          width="100%"
+          height="100%"
+          :src="itemData?.link"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
     </div>
   </div>
-
 </template>
 
 <script>
@@ -39,38 +67,46 @@ import PageTitle from "./PageTitle";
 import ImageSlider from "./ImageSlider.vue";
 export default {
   name: "Detail",
-  components: {ImageSlider, PageTitle},
+  components: { ImageSlider, PageTitle },
   computed: {
     itemData() {
-      return this.$store.state.worksList.find(item => item.id === this.$route.params.id)
-    }
+      return this.$store.state.worksList.find(
+        (item) => item.id === this.$route.params.id
+      );
+    },
   },
   mounted() {
-    this.$store.dispatch('loadWorksList')
+    this.$store.dispatch("loadWorksList");
   },
   data() {
     return {
       showSlider: false,
-    }
+    };
   },
   methods: {
     onClickThumbnail(index) {
       if (this.showSlider) {
-        return
+        return;
       }
       // console.log('썸네일 index는?! >>>', index)
       this.$refs["slider-component"].currentIndex = index + 1;
       this.$refs["slider-component"].sliderOpacity = 1;
       this.showSlider = true;
-      document.body.classList.add('show-slider')
-      setTimeout(() => this.$refs["slider-component"].$refs["slide-inner"].isPreventTransition = false, 10)
+      document.body.classList.add("show-slider");
+      setTimeout(
+        () =>
+          (this.$refs["slider-component"].$refs[
+            "slide-inner"
+          ].isPreventTransition = false),
+        10
+      );
     },
     onClickCloseBtn() {
-      this.showSlider = false
-      document.body.classList.remove('show-slider')
-    }
-  }
-}
+      this.showSlider = false;
+      document.body.classList.remove("show-slider");
+    },
+  },
+};
 </script>
 
 <style scoped lang="scss">
@@ -137,7 +173,7 @@ export default {
           position: relative;
 
           &::after {
-            content: '';
+            content: "";
             position: absolute;
             right: 0;
             top: 6px;
