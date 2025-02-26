@@ -2,7 +2,7 @@
   <div class="wrap">
     <PageTitle v-if="!isTouchDevice" />
     <div
-      :style="{ backgroundImage: 'url(img/main/01' + isTouchDevice + '.png)' }"
+      :style="{ backgroundImage: 'url(img/main/01' + isTouchDevice + '.jpg)' }"
       class="spot"
     ></div>
     <div class="contents">
