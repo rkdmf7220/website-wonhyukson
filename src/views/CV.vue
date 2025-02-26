@@ -1,15 +1,29 @@
 <template>
   <div class="wrap">
-    <page-title title="Curriculum Vitae"/>
+    <page-title title="Curriculum Vitae" />
     <div class="selected-cv">
       <h2 class="cv-title">{{ selectedCv?.name }}</h2>
       <div class="profile">
-        <div class="item" v-for="(item, index) in selectedCv?.list" :key="index">
+        <div
+          class="item"
+          v-for="(item, index) in selectedCv?.list"
+          :key="index"
+        >
           <h4 class="title">{{ item.title }}</h4>
-          <div v-for="(items, index) in item.items" :key="index" class="text-wrap">
+          <div
+            v-for="(items, index) in item.items"
+            :key="index"
+            class="text-wrap"
+          >
             <span v-if="items.year" class="year">{{ items.year }}</span>
             <ul>
-              <li class="info-list" v-for="(text, index) in items.text" :key="index">{{ text }}</li>
+              <li
+                class="info-list"
+                v-for="(text, index) in items.text"
+                :key="index"
+              >
+                {{ text }}
+              </li>
             </ul>
           </div>
         </div>
@@ -20,10 +34,20 @@
       <div class="profile">
         <div class="item" v-for="(item, index) in fullCv?.list" :key="index">
           <h4 class="title">{{ item.title }}</h4>
-          <div v-for="(items, index) in item.items" :key="index" class="text-wrap">
+          <div
+            v-for="(items, index) in item.items"
+            :key="index"
+            class="text-wrap"
+          >
             <span v-if="items.year" class="year">{{ items.year }}</span>
             <ul>
-              <li class="info-list" v-for="(text, index) in items.text" :key="index">{{ text }}</li>
+              <li
+                class="info-list"
+                v-for="(text, index) in items.text"
+                :key="index"
+              >
+                {{ text }}
+              </li>
             </ul>
           </div>
         </div>
@@ -37,26 +61,27 @@ import PageTitle from "../components/PageTitle";
 
 export default {
   name: "CV",
-  components: {PageTitle},
+  components: { PageTitle },
   computed: {
     cv() {
-      return this.$store.state.cv
+      return this.$store.state.cv;
     },
     selectedCv() {
-      return this.$store.state.cv.selectedCv
+      console.log("computed");
+      return this.$store.state.cv.selectedCv;
     },
     fullCv() {
-      return this.$store.state.cv.fullCv
+      return this.$store.state.cv.fullCv;
     },
   },
   mounted() {
-    this.$store.dispatch('loadCv')
-  }
-}
+    console.log("mounted");
+    this.$store.dispatch("loadCv");
+  },
+};
 </script>
 
 <style scoped lang="scss">
-
 h2.cv-title {
   font-weight: 700;
   margin-bottom: 20px;
@@ -65,7 +90,9 @@ h2.cv-title {
 .item {
   margin-bottom: 40px;
 
-  .title, .info-list, .year {
+  .title,
+  .info-list,
+  .year {
     font-size: 0.75em;
     line-height: 1.3333em;
   }
@@ -116,7 +143,6 @@ details {
     transition: all 0.15s;
     cursor: pointer;
     word-break: keep-all;
-
 
     &::-webkit-details-marker {
       display: none;

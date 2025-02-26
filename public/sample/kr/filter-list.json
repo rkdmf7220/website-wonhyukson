@@ -1,0 +1,56 @@
+{
+  "sculpture": [{
+    "id": "_ALL_",
+    "name": "전체"
+  },{
+    "id": "assembly",
+    "name": "조립"
+  },{
+    "id": "assemble abstract",
+    "name": "조립 추상"
+  },{
+    "id": "foo bar",
+    "name": "푸바"
+  }],
+  "painting": [{
+    "id": "_ALL_",
+    "name": "전체"
+  },{
+    "id": "assembly",
+    "name": "조립"
+  },{
+    "id": "assemble abstract",
+    "name": "조립 추상"
+  },{
+    "id": "foo bar",
+    "name": "푸바"
+  }],
+  "typography": [{
+    "id": "_ALL_",
+    "name": "전체"
+  },{
+    "id": "assembly",
+    "name": "조립"
+  },{
+    "id": "assemble abstract",
+    "name": "조립 추상"
+  },{
+    "id": "foo bar",
+    "name": "푸바"
+  }],
+  "texts": [],
+  "archives": [{
+    "id": "_ALL_",
+    "name": "전체"
+  },{
+    "id": "assembly",
+    "name": "조립"
+  },{
+    "id": "assemble abstract",
+    "name": "조립 추상"
+  },{
+    "id": "foo bar",
+    "name": "푸바"
+  }],
+  "news": []
+}

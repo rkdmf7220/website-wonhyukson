@@ -8,6 +8,7 @@ export default createStore({
     worksList: [],
     cv: {},
     review: [],
+    filterList: {},
   },
   mutations: {
     lang(state, lang) {
@@ -21,6 +22,9 @@ export default createStore({
     },
     review(state, data) {
       state.review = data;
+    },
+    filterList(state, data) {
+      state.filterList = data;
     },
   },
   actions: {
@@ -37,6 +41,7 @@ export default createStore({
         dispatch("loadWorksList");
         dispatch("loadCv");
         dispatch("loadReview");
+        dispatch("loadFilterList");
       }
     },
     loadWorksList({ commit, state }) {
@@ -69,11 +74,27 @@ export default createStore({
         });
     },
     loadReview({ commit, state }) {
+      console.log("????????");
       axios
         .get("../sample/" + state.lang + "/review.json")
         .then((response) => {
           if (response.statusText === "OK" || response.status === 200) {
             commit("review", response.data);
+          } else {
+            //TODO: error handling
+          }
+        })
+        .catch((error) => {
+          console.log("error", error);
+        });
+    },
+    loadFilterList({ commit, state }) {
+      axios
+        .get("../sample/" + state.lang + "/filter-list.json")
+        .then((response) => {
+          if (response.statusText === "OK" || response.status === 200) {
+            commit("filterList", response.data);
+            console.log("data >>", response.data);
           } else {
             //TODO: error handling
           }

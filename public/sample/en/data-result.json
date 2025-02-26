@@ -3,6 +3,7 @@
     "type": "sculpture",
     "id": "lego-buddha",
     "title": "Cycle (Lego Buddha)",
+    "collectionType": "assembly",
     "year": 2021,
     "thumb": "img/sculpture/buddha/01.jpg",
     "imgs": [

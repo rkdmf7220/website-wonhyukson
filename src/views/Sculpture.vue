@@ -1,21 +1,18 @@
 <template>
   <div class="wrap">
-    <page-title/>
-    <gallery-list/>
+    <page-title />
+    <contents-with-filter />
   </div>
 </template>
 
 <script>
-import GalleryList from "../components/GalleryList";
 import PageTitle from "../components/PageTitle";
+import ContentsWithFilter from "../components/ContentsWithFilter.vue";
+
 export default {
   name: "Sculpture",
-  components: {PageTitle, GalleryList},
-  data() {
-    return{}
-  }
-}
+  components: { ContentsWithFilter, PageTitle },
+};
 </script>
 
-<style scoped lang="scss">
-</style>
+<style scoped lang="scss"></style>

@@ -21,19 +21,27 @@ export default {
   computed: {
     listData() {
       let list = this.$store.state.worksList;
-      let filtered = list.filter(
+      let listOfCurrentCategory = list.filter(
         (work) => work.type === this.$route.name.toLowerCase()
       );
+
+      let filtered;
+      if (this.selectedFilterId === "_ALL_") {
+        filtered = listOfCurrentCategory;
+      } else {
+        filtered = listOfCurrentCategory.filter(
+          (work) => work.collectionType === this.selectedFilterId
+        );
+      }
       return list ? filtered : [];
     },
+  },
+  props: {
+    selectedFilterId: String,
   },
   mounted() {
     this.$store.dispatch("loadWorksList");
   },
-  data() {
-    return {};
-  },
-  methods: {},
 };
 </script>
 
