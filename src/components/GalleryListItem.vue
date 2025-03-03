@@ -23,20 +23,20 @@
 export default {
   name: "GalleryListItem",
   props: {
-    itemData: Object
+    itemData: Object,
   },
   data() {
     return {
-      displayList: true
-    }
+      displayList: true,
+    };
   },
 
   methods: {
     onClickArtworkList() {
-      this.$emit('invisible', !this.displayList);
-    }
-  }
-}
+      this.$emit("invisible", !this.displayList);
+    },
+  },
+};
 </script>
 
 <style scoped lang="scss">
@@ -51,7 +51,7 @@ export default {
     position: relative;
     background-color: #efefef;
 
-    &.archive {
+    &.archives {
       padding-bottom: 141.4%;
     }
 
@@ -88,7 +88,6 @@ export default {
     }
   }
 }
-
 
 @media screen and (min-width: 768px) {
   .main-text {

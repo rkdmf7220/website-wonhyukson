@@ -74,7 +74,6 @@ export default createStore({
         });
     },
     loadReview({ commit, state }) {
-      console.log("????????");
       axios
         .get("../sample/" + state.lang + "/review.json")
         .then((response) => {
@@ -94,7 +93,6 @@ export default createStore({
         .then((response) => {
           if (response.statusText === "OK" || response.status === 200) {
             commit("filterList", response.data);
-            console.log("data >>", response.data);
           } else {
             //TODO: error handling
           }

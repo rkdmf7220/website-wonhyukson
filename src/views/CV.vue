@@ -67,7 +67,6 @@ export default {
       return this.$store.state.cv;
     },
     selectedCv() {
-      console.log("computed");
       return this.$store.state.cv.selectedCv;
     },
     fullCv() {
@@ -75,7 +74,6 @@ export default {
     },
   },
   mounted() {
-    console.log("mounted");
     this.$store.dispatch("loadCv");
   },
 };
