@@ -1,6 +1,5 @@
 <template>
-<!--<div v-if="this.$route.name !== 'Intro'" class="copyright">-->
-<div class="copyright">
+<div v-if="this.$route.name !== 'Intro'" class="copyright">
   <span>© 2020. Wonhyuk Son All rights reserved.</span>
 </div>
 </template>
