@@ -13,11 +13,13 @@
 </template>
 
 <script>
+import {useStore} from "../stores/index.js";
+
 export default {
   name: "FilterList",
   computed: {
     filterListData() {
-      let list = this.$store.state.filterList;
+      let list = useStore().filterList;
       let currentPath = this.$route.name.toLowerCase();
       return list[currentPath] ? list[currentPath] : null;
     },
@@ -26,7 +28,7 @@ export default {
     selectedFilterId: String,
   },
   mounted() {
-    this.$store.dispatch("loadFilterList");
+    useStore().loadFilterList();
   },
   methods: {
     onclickFilterList(id) {

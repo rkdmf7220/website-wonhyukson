@@ -46,6 +46,7 @@
 import PageTitle from "../components/PageTitle.vue";
 import GalleryListItem from "../components/GalleryListItem.vue";
 import svgIcon from "../../public/img/svgIcon";
+import {useStore} from "../stores/index.js";
 
 export default {
   name: "Main",
@@ -61,23 +62,23 @@ export default {
         : "";
     },
     isKorean() {
-      return this.$store.state.lang === "kr";
+      return useStore().lang === "kr";
     },
     exhibitionListData() {
-      let list = this.$store.state.worksList;
+      let list = useStore().worksList;
       let filtered = list
         .filter((work) => work.type === "archives")
         .slice(0, 4);
       return list ? filtered : [];
     },
     newsListData() {
-      let list = this.$store.state.worksList;
+      let list = useStore().worksList;
       let filtered = list.filter((work) => work.type === "news").slice(0, 4);
       return list ? filtered : [];
     },
   },
   mounted() {
-    this.$store.dispatch("loadWorksList");
+    useStore().loadWorksList();
   },
 };
 </script>

@@ -1,15 +1,15 @@
 <template>
   <div id="rendered">
-    <global-nav/>
-    <mobile-global-nav/>
-    <router-view/>
+    <GlobalNav/>
+    <MobileGlobalNav/>
+    <RouterView/>
     <Copyright/>
   </div>
 </template>
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
-@import "src/assets/css/reset";
+@import "src/assets/css/reset.css";
 
 body{
   font-size: 16px;
@@ -59,25 +59,15 @@ a, div, button{
   }
 }
 </style>
+
 <script>
-import GlobalNav from "./components/GlobalNav";
-import MobileGlobalNav from "./components/MobileGlobalNav";
-import Copyright from "./components/Copyright";
-export default {
-  components: {Copyright, MobileGlobalNav, GlobalNav},
-  mounted() {
-    this.$store.dispatch('loadReview');
-    window.addEventListener('resize', this.setScreenSize)
-    this.setScreenSize()
-  },
-  beforeUnmount() {
-    window.addEventListener('resize', this.setScreenSize)
-  },
-  methods: {
-    setScreenSize() {
-      let vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty('--vh', `${vh}px`)
-    }
-  }
-}
+import {defineComponent} from "vue";
+import GlobalNav from "./components/GlobalNav.vue";
+import MobileGlobalNav from "./components/MobileGlobalNav.vue";
+import Copyright from "./components/Copyright.vue";
+
+export default defineComponent({
+  components: {Copyright, MobileGlobalNav, GlobalNav}
+})
+
 </script>

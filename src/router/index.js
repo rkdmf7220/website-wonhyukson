@@ -13,7 +13,7 @@ const gnb = [
   {
     path: "/painting",
     name: "Painting",
-    component: () => import("../views/Painting"),
+    component: () => import("../views/Painting.vue"),
     meta: {
       isWorks: true,
     },
@@ -55,18 +55,18 @@ const routes = [
   {
     path: "/",
     name: "Intro",
-    component: () => import("../views/Intro"),
+    component: () => import("../views/Intro.vue"),
     // redirect: '/sculpture'
   },
   {
     path: "/:works/:id",
     name: "DetailPage",
-    component: () => import("../components/Detail"),
+    component: () => import("../components/Detail.vue"),
   },
   {
     path: "/main",
     name: "Main",
-    component: () => import("../views/Main"),
+    component: () => import("../views/Main.vue"),
   },
   ...gnb,
 ];

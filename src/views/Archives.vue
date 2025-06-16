@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import PageTitle from "../components/PageTitle";
+import PageTitle from "../components/PageTitle.vue";
 import ContentsWithFilter from "../components/ContentsWithFilter.vue";
 
 export default {

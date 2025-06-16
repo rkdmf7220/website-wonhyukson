@@ -13,14 +13,15 @@
 </template>
 
 <script>
-import GalleryListItem from "./GalleryListItem";
+import GalleryListItem from "./GalleryListItem.vue";
+import {useStore} from "../stores/index.js";
 
 export default {
   name: "GalleryList",
   components: { GalleryListItem },
   computed: {
     listData() {
-      let list = this.$store.state.worksList;
+      let list = useStore().worksList;
       let listOfCurrentCategory = list.filter(
         (work) => work.type === this.$route.name.toLowerCase()
       );
@@ -40,7 +41,7 @@ export default {
     selectedFilterId: String,
   },
   mounted() {
-    this.$store.dispatch("loadWorksList");
+    useStore().loadWorksList();
   },
 };
 </script>

@@ -34,18 +34,19 @@
 </template>
 
 <script>
-import PageTitle from "../components/PageTitle";
+import PageTitle from "../components/PageTitle.vue";
+import {useStore} from "../stores/index.js";
 
 export default {
   name: "Texts",
   components: { PageTitle },
   computed: {
     reviewData() {
-      return this.$store.state.review;
+      return useStore().review;
     },
   },
   mounted() {
-    this.$store.dispatch("loadReview");
+    useStore().loadReview();
   },
 };
 </script>

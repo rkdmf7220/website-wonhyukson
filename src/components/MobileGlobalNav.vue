@@ -14,13 +14,14 @@
 
 <script>
 import Constants from "../contants/constants";
-import MobileHamburgerMenu from "./MobileHamburgerMenu";
+import MobileHamburgerMenu from "./MobileHamburgerMenu.vue";
+import {useStore} from "../stores/index.js";
 export default {
   name: "MobileGlobalNav",
   components: {MobileHamburgerMenu},
   computed: {
     currentLang() {
-      return this.$store.state.lang;
+      return useStore().lang;
     }
   },
   mounted() {
@@ -36,9 +37,7 @@ export default {
   },
   methods: {
     onClickLang(lang) {
-      this.$store.dispatch('setLang', lang)
-      // this.currentLang = lang
-      this.$store.state.lang = lang
+      useStore().setLang(lang);
     },
     onClickMenu() {
       this.isActive = !this.isActive

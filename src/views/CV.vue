@@ -57,24 +57,25 @@
 </template>
 
 <script>
-import PageTitle from "../components/PageTitle";
+import PageTitle from "../components/PageTitle.vue";
+import {useStore} from "../stores/index.js";
 
 export default {
   name: "CV",
   components: { PageTitle },
   computed: {
     cv() {
-      return this.$store.state.cv;
+      return useStore().cv;
     },
     selectedCv() {
-      return this.$store.state.cv.selectedCv;
+      return useStore().cv.selectedCv
     },
     fullCv() {
-      return this.$store.state.cv.fullCv;
+      return useStore().cv.fullCv
     },
   },
   mounted() {
-    this.$store.dispatch("loadCv");
+    useStore().loadCv();
   },
 };
 </script>

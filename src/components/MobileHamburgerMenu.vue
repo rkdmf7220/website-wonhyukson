@@ -21,6 +21,7 @@
 
 <script>
 import svgIcon from "../../public/img/svgIcon";
+import {useStore} from "../stores/index.js";
 
 export default {
   name: "MobileHamburgerMenu",
@@ -29,7 +30,7 @@ export default {
       return svgIcon
     },
     currentLang() {
-      return this.$store.state.lang
+      return useStore().lang;
     }
   },
   props: {
