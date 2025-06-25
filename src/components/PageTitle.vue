@@ -1,7 +1,9 @@
 <template>
   <div :class="{'is-main': this.$route.name === 'Main'}" class="header">
     <h1>{{ detailTitle }}</h1>
+    <SearchWrap />
     <div class="lang-container">
+      <div class="vertical-bar"></div>
       <button :class='{active : currentLang === Constants.lang.kr}' @click="onClickLang(Constants.lang.kr)">
         <span>KR</span></button>
       <button :class='{active : currentLang === Constants.lang.en}' @click="onClickLang(Constants.lang.en)">
@@ -13,9 +15,11 @@
 <script>
 import Constants from "../contants/constants";
 import {useStore} from "../stores/index.js";
+import SearchWrap from "./search/SearchWrap.vue";
 
 export default {
   name: "PageTitle",
+  components: {SearchWrap},
   props: {
     title: String
   },
@@ -51,8 +55,17 @@ export default {
   }
 
   .lang-container {
-    margin: 6px 2% 0 auto;
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
     flex-shrink: 0;
+
+    .vertical-bar {
+      width: 2px;
+      height: 16px;
+      background-color: #666;
+      margin-right: 10px;
+    }
 
     button {
       border: none;
@@ -60,16 +73,24 @@ export default {
       font-size: 1em;
       line-height: 1em;
       cursor: pointer;
-      padding: 0 12px;
+      padding: 0 4px;
       color: #bbb;
 
       &:last-child {
-        border-left: 2px solid black;
-        margin-right: -12px;
+        margin-left: 4px;
+        margin-right: -8px;  // 라인을 맞추기 위해 버튼의 오른쪽 padding 크기 만큼 보정
+      }
+
+      span {
+        border-bottom: 1px solid transparent;
       }
 
       &.active {
         color: #000;
+
+        span {
+          border-color: #000;
+        }
       }
     }
   }

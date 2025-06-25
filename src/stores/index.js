@@ -9,6 +9,7 @@ export const useStore = defineStore('store', {
     cv: {},
     review: [],
     filterList: {},
+    searchKeyword: '',
   }),
   getter: {},
   actions: {
@@ -27,6 +28,9 @@ export const useStore = defineStore('store', {
     },
     updateFilterList(data) {
       this.filterList = data;
+    },
+    updateSearchKeyword(text) {
+      this.searchKeyword = text;
     },
     //actions
     setLang(lang) {
