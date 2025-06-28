@@ -41,7 +41,7 @@ export default {
     selectedFilterId: String,
   },
   mounted() {
-    useStore().loadWorksList();
+    // useStore().loadWorksList();
   },
 };
 </script>

@@ -78,7 +78,7 @@ export default {
     },
   },
   mounted() {
-    useStore().loadWorksList();
+    // useStore().loadWorksList();
   },
 };
 </script>

@@ -77,7 +77,7 @@ export default {
     },
   },
   mounted() {
-    useStore().loadWorksList()
+    // useStore().loadWorksList()
   },
   data() {
     return {

@@ -75,7 +75,7 @@ export default {
     },
   },
   mounted() {
-    useStore().loadCv();
+    // useStore().loadCv();
   },
 };
 </script>

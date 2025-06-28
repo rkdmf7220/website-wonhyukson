@@ -46,7 +46,7 @@ export default {
     },
   },
   mounted() {
-    useStore().loadReview();
+    // useStore().loadReview();
   },
 };
 </script>

@@ -65,9 +65,16 @@ import {defineComponent} from "vue";
 import GlobalNav from "./components/GlobalNav.vue";
 import MobileGlobalNav from "./components/MobileGlobalNav.vue";
 import Copyright from "./components/Copyright.vue";
+import {useStore} from "./stores/index.js";
 
 export default defineComponent({
-  components: {Copyright, MobileGlobalNav, GlobalNav}
+  components: {Copyright, MobileGlobalNav, GlobalNav},
+  mounted() {
+    useStore().loadWorksList();
+    useStore().loadCv();
+    useStore().loadReview();
+    useStore().loadFilterList();
+  }
 })
 
 </script>

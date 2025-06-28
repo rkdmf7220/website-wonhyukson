@@ -28,7 +28,7 @@ export default {
     selectedFilterId: String,
   },
   mounted() {
-    useStore().loadFilterList();
+    // useStore().loadFilterList();
   },
   methods: {
     onclickFilterList(id) {
