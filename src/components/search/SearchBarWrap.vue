@@ -1,5 +1,5 @@
 <template>
-  <div class="search-wrap">
+  <div class="search-bar-wrap">
     <button @click="onClickSearchBtn" class="search-btn">
       <span :style="{backgroundImage: 'url(' + svgIcon.get('searchIcon') + ')'}" class="search-icon"></span>
     </button>
@@ -12,7 +12,7 @@ import svgIcon from '../../../public/img/svgIcon.js';
 import {useStore} from "../../stores/index.js";
 
 export default {
-  name: "SearchWrap",
+  name: "SearchBarWrap",
   computed: {
     svgIcon() {
       return svgIcon;
@@ -62,7 +62,9 @@ export default {
       this.$router.push(`/search/${this.inputText}`);
     },
     hideSearchInput(e) {
-      if (e.target.closest('.search-wrap')) return;
+      if (e.target.closest('.search-bar-wrap')) return;
+      if (this.inputText.length !== 0) return;
+
       this.showSearchInput = false;
       this.inputText = '';
     },
@@ -78,7 +80,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.search-wrap {
+.search-bar-wrap {
   display: flex;
   justify-content: center;
   margin: 0 16px 0 auto;

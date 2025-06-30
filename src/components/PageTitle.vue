@@ -15,11 +15,11 @@
 <script>
 import Constants from "../contants/constants";
 import {useStore} from "../stores/index.js";
-import SearchWrap from "./search/SearchWrap.vue";
+import SearchBarWrap from "./search/SearchBarWrap.vue";
 
 export default {
   name: "PageTitle",
-  components: {SearchWrap},
+  components: {SearchWrap: SearchBarWrap},
   props: {
     title: String
   },
