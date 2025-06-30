@@ -68,6 +68,11 @@ const routes = [
     name: "Main",
     component: () => import("../views/Main.vue"),
   },
+  {
+    path: "/search/:keyword",
+    name: "Search",
+    component: () => import("../views/Search.vue"),
+  },
   ...gnb,
 ];
 

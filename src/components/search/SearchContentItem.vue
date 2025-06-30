@@ -1,0 +1,66 @@
+<template>
+  <li class="search-content-item">
+    <template v-if="searchItem?.type === 'texts'">
+      <router-link to="/texts">
+        <h4 class="search-item-title">{{ searchItem?.title }}</h4>
+        <p class="search-item-text">
+          {{ searchItem?.searchedText.before }}
+          <span class="search-item-text-highlight">{{ searchItem?.searchedText.highlight }}</span>
+          {{ searchItem?.searchedText.after }}
+        </p>
+        <p class="search-item-type">{{ searchItem?.type }}</p>
+      </router-link>
+    </template>
+    <template v-else>
+      <router-link :to="`/${searchItem?.type}/${searchItem?.id}`">
+        <h4 class="search-item-title">{{ searchItem?.title }}</h4>
+        <p class="search-item-text">
+          {{ searchItem?.searchedText.before }}
+          <span class="search-item-text-highlight">{{ searchItem?.searchedText.highlight }}</span>
+          {{ searchItem?.searchedText.after }}
+        </p>
+        <p class="search-item-type">{{ searchItem?.type }}</p>
+      </router-link>
+    </template>
+  </li>
+</template>
+
+<script>
+export default {
+  name: "SearchContentItem",
+  props: {
+    searchItem: Object,
+  },
+}
+</script>
+
+<style scoped lang="scss">
+li.search-content-item {
+  margin-bottom: 64px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  h4.search-item-title {
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+
+  .search-item-text {
+    line-height: 1.5em;
+
+    .search-item-text-highlight {
+      padding: 0 4px;
+      background-color: #ff0;
+      font-weight: 700;
+    }
+  }
+
+  .search-item-type {
+    margin-top: 4px;
+    color: #999999;
+    padding-bottom: 8px;
+  }
+}
+</style>
