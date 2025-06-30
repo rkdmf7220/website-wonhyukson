@@ -43,7 +43,7 @@ export const useStore = defineStore('store', {
       }
     },
     loadWorksList() {
-      return axios
+      axios
           .get("../sample/" + this.lang + "/data-result.json")
           .then((response) => {
             if (response.statusText === "OK" || response.status === 200) {
