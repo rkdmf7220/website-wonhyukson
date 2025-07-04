@@ -15,9 +15,6 @@
 </template>
 
 <script>
-import searchData from "../../utils/search-utils.js";
-import {useStore} from "../../stores/index.js";
-
 export default {
   name: "SearchFilter",
   props: {
@@ -66,8 +63,6 @@ export default {
     this.setFilterList(this.searchedList);
   },
   methods: {
-    useStore,
-    searchData,
     onClickFilterItem(id) {
       this.$emit('change-filter', id);
     },

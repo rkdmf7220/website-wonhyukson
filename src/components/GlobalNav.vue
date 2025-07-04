@@ -24,9 +24,9 @@ export default {
     svgIcon() {
       return svgIcon
     },
-    /*currentLang() {
+    currentLang() {
       return this.$store.state.lang
-    }*/
+    }
   },
   mounted() {
     this.menu = this.$router.options.gnb;

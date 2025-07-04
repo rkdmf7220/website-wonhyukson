@@ -119,4 +119,10 @@ export default {
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .search-bar-wrap {
+    display: none;
+  }
+}
 </style>

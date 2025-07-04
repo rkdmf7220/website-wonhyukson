@@ -108,7 +108,7 @@ export default {
 }
 
 @media screen and (max-width: 767px) {
-  .lang-container {
+  .header .lang-container {
     display: none;
   }
 }
