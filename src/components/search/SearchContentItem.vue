@@ -4,9 +4,9 @@
       <router-link to="/texts">
         <h4 class="search-item-title">{{ searchItem?.title }}</h4>
         <p class="search-item-text">
-          {{ searchItem?.searchedText.before }}
+          <span>{{ searchItem?.searchedText.before }}</span>
           <span class="search-item-text-highlight">{{ searchItem?.searchedText.highlight }}</span>
-          {{ searchItem?.searchedText.after }}
+          <span>{{ searchItem?.searchedText.after }}</span>
         </p>
         <p class="search-item-type">{{ searchItem?.type }}</p>
       </router-link>
@@ -15,9 +15,9 @@
       <router-link :to="`/${searchItem?.type}/${searchItem?.id}`">
         <h4 class="search-item-title">{{ searchItem?.title }}</h4>
         <p class="search-item-text">
-          {{ searchItem?.searchedText.before }}
+          <span>{{ searchItem?.searchedText.before }}</span>
           <span class="search-item-text-highlight">{{ searchItem?.searchedText.highlight }}</span>
-          {{ searchItem?.searchedText.after }}
+          <span>{{ searchItem?.searchedText.after }}</span>
         </p>
         <p class="search-item-type">{{ searchItem?.type }}</p>
       </router-link>
@@ -51,7 +51,6 @@ li.search-content-item {
     line-height: 1.5em;
 
     .search-item-text-highlight {
-      padding: 0 4px;
       background-color: #ff0;
       font-weight: 700;
     }
