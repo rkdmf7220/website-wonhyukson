@@ -26,7 +26,7 @@ function flattenWorkList() {
           type: work.type,
           id: work.id,
           title: work.title,
-          flattenedTexts: [work.title, work.caption].filter(Boolean)
+          flattenedTexts: [`${work.title} - ${work.caption}`].filter(Boolean)
         };
 
       case 'news':
@@ -52,13 +52,14 @@ function flattenReviewList() {
     let texts = review.contents
         .map(content => {
               return content.text // :string[]
-                  .replace(/<\/?[bi]>/g, '')  // 문자열 내 태그 제거
-                  .split(/\n+/) // 하나 이상 개행 문자를 분리
-                  .filter(line => line.trim() !== '') // 빈 문자열 제거
+                  .replace(/<\/?[bi]>/g, '')  // 1. 문자열 내 태그 제거
+                  .split(/\n+/) // 2. 하나 이상 개행 문자를 분리
+                  .flatMap(sentence => sentence.split(/(?<=\.\s)/)) // 3. string[]에서 '. '를 기준으로 한 번 더 분리
+                  .filter(line => line.trim() !== '') // 4. 빈 문자열 제거
             } // :string[][]
         ).flat();
     return {
-      type: 'texts', id: review.title, title: review.title, flattenedTexts: [review.title, review.subTitle, ...texts]
+      type: 'texts', id: review.title, title: review.title, flattenedTexts: [review.subTitle, ...texts]
     }
   })
 }
