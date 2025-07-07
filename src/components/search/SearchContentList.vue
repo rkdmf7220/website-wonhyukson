@@ -2,11 +2,19 @@
   <ul v-if="searchedList?.length !== 0" class="search-content-list">
     <SearchContentItem v-for="item in filteredList" :key="item.id" :search-item="item"/>
   </ul>
-  <span v-else>No search found.<br>Please try different keyword.</span>
+  <span class="no-result-text" v-else>
+    <template v-if="currentLang === 'kr'">
+      검색 결과가 없습니다.<br>다른 검색어를 입력해주세요.
+    </template>
+    <template v-else>
+      No search found.<br>Please try different keyword.
+    </template>
+  </span>
 </template>
 
 <script>
 import SearchContentItem from "./SearchContentItem.vue";
+import {useStore} from "../../stores/index.js";
 
 export default {
   name: "SearchContentsList",
@@ -21,6 +29,9 @@ export default {
         return this.searchedList;
       }
       return this.searchedList.filter(item => item.type === this.selectedType);
+    },
+    currentLang() {
+      return useStore().lang;
     }
   }
 }
@@ -29,5 +40,10 @@ export default {
 <style scoped lang="scss">
 .search-content-list {
   padding-right: 2%;
+}
+
+.no-result-text {
+  line-height: 1.25em;
+  color: #333;
 }
 </style>
