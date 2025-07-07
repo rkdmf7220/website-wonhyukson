@@ -12,8 +12,12 @@
                class="contact-icon-item contact-email-icon"></div>
           <a href="https://www.instagram.com/wonhyuk_son/"
              :style="{backgroundImage: 'url(' + svgIcon.get('instagramIcon', false, 'white') + ')'}"
+             target="_blank"
              class="contact-icon-item contact-instagram-icon"></a>
         </div>
+      </li>
+      <li class="lang-wrap">
+        <LangContainer class="is-mobile" />
       </li>
     </ul>
   </div>
@@ -22,9 +26,11 @@
 <script>
 import svgIcon from "../../public/img/svgIcon";
 import {useStore} from "../stores/index.js";
+import LangContainer from "./LangContainer.vue";
 
 export default {
   name: "MobileHamburgerMenu",
+  components: {LangContainer},
   computed: {
     svgIcon() {
       return svgIcon
@@ -110,7 +116,7 @@ export default {
     }
 
     .contact-wrap {
-      margin-top: 24px;
+      margin: 24px 0 16px;
 
       h4 {
         font-weight: 400;

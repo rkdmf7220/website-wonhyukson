@@ -4,10 +4,7 @@
     <SearchWrap />
     <div class="lang-container">
       <div class="vertical-bar"></div>
-      <button :class='{active : currentLang === Constants.lang.kr}' @click="onClickLang(Constants.lang.kr)">
-        <span>KR</span></button>
-      <button :class='{active : currentLang === Constants.lang.en}' @click="onClickLang(Constants.lang.en)">
-        <span>EN</span></button>
+      <LangContainer />
     </div>
   </div>
 </template>
@@ -16,10 +13,11 @@
 import Constants from "../contants/constants";
 import {useStore} from "../stores/index.js";
 import SearchBarWrap from "./search/SearchBarWrap.vue";
+import LangContainer from "./LangContainer.vue";
 
 export default {
   name: "PageTitle",
-  components: {SearchWrap: SearchBarWrap},
+  components: {LangContainer, SearchWrap: SearchBarWrap},
   props: {
     title: String
   },

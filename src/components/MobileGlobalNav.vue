@@ -1,5 +1,5 @@
 <template>
-  <div id="mobile-nav" :class="[{active: this.isActive}, {'open-search': this.showMobileSearchBar}]" v-if="this.$route.name !== 'Intro'">
+  <div id="mobile-nav" :class="[{active: this.showMobileNav}, {'open-search': this.showMobileSearchBar}]" v-if="this.$route.name !== 'Intro'">
     <router-link @click="closeMobileMenu(false)" to="/main" class="logo">Wonhyuk Son</router-link>
     <div class="search-bar-wrap">
       <button @click="onClickMobileSearchActiveBtn" class="search-active-btn">
@@ -7,37 +7,28 @@
               class="search-icon"></span>
       </button>
     </div>
-    <div class="lang-container">
-      <button :class='{active : currentLang === Constants.lang.kr}' @click="onClickLang(Constants.lang.kr)">
-        <span>KR</span></button>
-      <button :class='{active : currentLang === Constants.lang.en}' @click="onClickLang(Constants.lang.en)">
-        <span>EN</span></button>
-    </div>
     <button class="btn-hamburger" @click="onClickMenu">
       <span></span>
     </button>
   </div>
   <MobileSearchBarWrap :show-mobile-search-bar="this.showMobileSearchBar" @closeSearchBar="closeMobileSearchBar" ref="mobileSearchBarWarp" />
-  <MobileHamburgerMenu :is-active="this.isActive" @removeClass="closeMobileMenu"/>
+  <MobileHamburgerMenu :is-active="this.showMobileNav" @removeClass="closeMobileMenu"/>
 </template>
 
 <script>
 import Constants from "../contants/constants";
 import MobileHamburgerMenu from "./MobileHamburgerMenu.vue";
-import {useStore} from "../stores/index.js";
 import svgIcon from "../../public/img/svgIcon.js";
 import MobileSearchBarWrap from "./search/MobileSearchBarWrap.vue";
+import LangContainer from "./LangContainer.vue";
 
 export default {
   name: "MobileGlobalNav",
-  components: {MobileSearchBarWrap, MobileHamburgerMenu},
+  components: {LangContainer, MobileSearchBarWrap, MobileHamburgerMenu},
   computed: {
     svgIcon() {
       return svgIcon
     },
-    currentLang() {
-      return useStore().lang;
-    }
   },
   mounted() {
     window.addEventListener('scroll', this.onScrollToggleClass);
@@ -45,21 +36,19 @@ export default {
   data() {
     return {
       Constants,
-      isActive: false,
+      showMobileNav: false,
       currentScrollTop: Number,
       pastScrollTop: Number,
       showMobileSearchBar: false,
     }
   },
   methods: {
-    onClickLang(lang) {
-      useStore().setLang(lang);
-    },
     onClickMenu() {
-      this.isActive = !this.isActive
+      this.showMobileNav = !this.showMobileNav
+      this.showMobileSearchBar = false;
     },
     closeMobileMenu() {
-      this.isActive = false;
+      this.showMobileNav = false;
     },
     onScrollHideNav(direction) {
       let nav = document.querySelector("#mobile-nav");
@@ -80,6 +69,9 @@ export default {
     },
     onClickMobileSearchActiveBtn() {
       this.showMobileSearchBar = !this.showMobileSearchBar;
+      this.showMobileNav = false;
+
+      // 검색바 활성화 시 150ms 후 포커스
       if (this.showMobileSearchBar) {
         setTimeout(() => this.$refs.mobileSearchBarWarp.$refs.searchInput.focus(), 150);
       }
@@ -123,7 +115,7 @@ export default {
   }
 
   .search-bar-wrap {
-    margin-left: auto;
+    margin: 0 8px 0 auto;
 
     button.search-active-btn {
       height: 28px;
@@ -136,6 +128,7 @@ export default {
         display: inline-block;
         width: 24px;
         height: 24px;
+        margin-top: 2px;
         background-color: #000;
         transition: background-color 0.3s;
       }
