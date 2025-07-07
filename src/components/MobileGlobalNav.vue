@@ -46,9 +46,11 @@ export default {
     onClickMenu() {
       this.showMobileNav = !this.showMobileNav
       this.showMobileSearchBar = false;
+      this.handleBodyOverflow();
     },
     closeMobileMenu() {
       this.showMobileNav = false;
+      this.handleBodyOverflow();
     },
     onScrollHideNav(direction) {
       let nav = document.querySelector("#mobile-nav");
@@ -70,6 +72,7 @@ export default {
     onClickMobileSearchActiveBtn() {
       this.showMobileSearchBar = !this.showMobileSearchBar;
       this.showMobileNav = false;
+      this.handleBodyOverflow();
 
       // 검색바 활성화 시 150ms 후 포커스
       if (this.showMobileSearchBar) {
@@ -78,6 +81,14 @@ export default {
     },
     closeMobileSearchBar() {
       this.showMobileSearchBar = false;
+      this.handleBodyOverflow();
+    },
+    handleBodyOverflow() {
+      if (this.showMobileSearchBar || this.showMobileNav) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "auto";
+      }
     }
   }
 }
