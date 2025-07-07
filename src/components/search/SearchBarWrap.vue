@@ -3,7 +3,8 @@
     <button @click="onClickSearchBtn" class="search-btn">
       <span :style="{backgroundImage: 'url(' + svgIcon.get('searchIcon') + ')'}" class="search-icon"></span>
     </button>
-    <input ref="searchInput" v-model="inputText" @keydown.enter="onHandleSearch" type="text" :class="{'is-show': showSearchInput}" :placeholder="'search'" class="search-input">
+    <input ref="searchInput" v-model="inputText" @keydown.enter="onHandleSearch" type="text"
+           :class="{'is-show': showSearchInput}" :placeholder="'search'" class="search-input">
   </div>
 </template>
 
@@ -108,6 +109,7 @@ export default {
     margin-left: 0;
     transition: width 0.3s, margin 0.3s;
     overflow: hidden;
+    background-color: transparent;
 
     &:focus {
       outline: none;

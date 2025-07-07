@@ -77,6 +77,7 @@ export default {
       flex: 1 1 0;
       margin-right: 4px;
       position: relative;
+      background-color: transparent;
 
       &:focus {
         outline: none;

@@ -64,8 +64,9 @@ export default {
   margin-bottom: 64px;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 767px) {
   .search-wrap {
+    width: 100%;
     flex-direction: column;
     gap: 24px;
   }
