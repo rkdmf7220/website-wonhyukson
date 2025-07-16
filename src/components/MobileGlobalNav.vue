@@ -21,6 +21,7 @@ import MobileHamburgerMenu from "./MobileHamburgerMenu.vue";
 import svgIcon from "../../public/img/svgIcon.js";
 import MobileSearchBarWrap from "./search/MobileSearchBarWrap.vue";
 import LangContainer from "./LangContainer.vue";
+import {useStore} from "../stores/index.js";
 
 export default {
   name: "MobileGlobalNav",
@@ -29,6 +30,9 @@ export default {
     svgIcon() {
       return svgIcon
     },
+    searchKeywordInStore() {
+      return useStore().searchKeyword;
+    }
   },
   mounted() {
     window.addEventListener('scroll', this.onScrollToggleClass);
@@ -40,6 +44,17 @@ export default {
       currentScrollTop: Number,
       pastScrollTop: Number,
       showMobileSearchBar: false,
+    }
+  },
+  watch: {
+    // store에 값이 있을 때(search 페이지에 params가 있을 때) 검색어 기본 값 설정
+    searchKeywordInStore(newValue) {
+      console.log('test')
+      if (!newValue || newValue.length === 0) {
+        return;
+      }
+      this.inputText = newValue;
+      this.showSearchInput = true;
     }
   },
   methods: {
