@@ -51,13 +51,17 @@ function flattenReviewList() {
   return useStore().review.map(review => {
     let texts = review.contents
         .map(content => {
-              return content.text // :string[]
-                  .replace(/<\/?[bi]>/g, '')  // 1. 문자열 내 태그 제거
-                  .split(/\n+/) // 2. 하나 이상 개행 문자를 분리
-                  .flatMap(sentence => sentence.split(/(?<=\.\s)/)) // 3. string[]에서 '. '를 기준으로 한 번 더 분리
-                  .filter(line => line.trim() !== '') // 4. 빈 문자열 제거
+              if (content.hasOwnProperty('text')) { // text 키가 있을 때만
+                return content?.text // content.text: string[]
+                    .replace(/<\/?[bi]>/g, '')                        // 1. 문자열 내 태그 제거
+                    .split(/\n+/)                                     // 2. 하나 이상 개행 문자를 분리
+                    .flatMap(sentence => sentence.split(/(?<=\.\s)/)) // 3. string[]에서 '. '를 기준으로 한 번 더 분리
+                    .filter(line => line.trim() !== '')               // 4. 빈 문자열 제거
+              } else {
+                return [] // text가 없는 경우 빈 배열 return 후 뒤에서 flat()으로 제거
+              }
             } // :string[][]
-        ).flat();
+        ).flat(); // 배열 평탄화 및 빈 배열 제거
     return {
       type: 'texts', id: review.title, title: review.title, flattenedTexts: [review.subTitle, ...texts]
     }
