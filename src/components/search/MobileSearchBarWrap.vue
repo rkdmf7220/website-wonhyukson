@@ -1,13 +1,13 @@
 <template>
   <div :class="{'is-show': showMobileSearchBar}" class="mobile-search-bar-wrap">
     <div class="mobile-search-content">
-      <input ref="searchInput" v-model="inputText" @keydown.enter="onHandleSearch" type="text"
+      <input ref="searchInput" v-model="inputText" @keydown.enter="onHandleSearch" type="search"
              :placeholder="'search'" class="search-input">
       <button @click="onHandleSearch" class="search-btn">
         <span :style="{backgroundImage: 'url(' + svgIcon.get('searchIcon') + ')'}" class="search-icon"></span>
       </button>
     </div>
-    <div class="mobile-search-bar-dim"></div>
+    <div @click="onClickDimArea" class="mobile-search-bar-dim"></div>
   </div>
 </template>
 
@@ -35,6 +35,9 @@ export default {
         return;
       }
       this.$router.push(`/search/${this.inputText}`);
+      this.$emit('closeSearchBar');
+    },
+    onClickDimArea() {
       this.$emit('closeSearchBar');
     }
   }
@@ -78,6 +81,10 @@ export default {
       margin-right: 4px;
       position: relative;
       background-color: transparent;
+
+      // ios
+      appearance: none;
+      border-radius: 0;
 
       &:focus {
         outline: none;
@@ -123,7 +130,6 @@ export default {
     left: 0;
     z-index: 5;
     opacity: 0;
-    pointer-events: none;
     transition: opacity 0.15s;
     backdrop-filter: blur(4px);
   }
