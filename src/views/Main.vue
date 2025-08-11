@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-    <PageTitle v-if="!isTouchDevice" />
+    <PageTitle/>
     <div
       :style="{ backgroundImage: 'url(img/main/01' + isTouchDevice + '.jpg)' }"
       class="spot"
