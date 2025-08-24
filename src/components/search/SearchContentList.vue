@@ -3,7 +3,7 @@
     <SearchContentItem v-for="item in filteredList" :key="item.id" :search-item="item"/>
   </ul>
   <span class="no-result-text" v-else>
-    <template v-if="currentLang === 'kr'">
+    <template v-if="currentLang === Constants.lang.ko">
       검색 결과가 없습니다.<br>다른 검색어를 입력해주세요.
     </template>
     <template v-else>
@@ -15,6 +15,7 @@
 <script>
 import SearchContentItem from "./SearchContentItem.vue";
 import {useStore} from "../../stores/index.js";
+import Constants from "../../contants/constants.js";
 
 export default {
   name: "SearchContentsList",
@@ -24,6 +25,9 @@ export default {
     selectedType: String,
   },
   computed: {
+    Constants() {
+      return Constants
+    },
     filteredList() {
       if (this.selectedType === '_ALL_') {
         return this.searchedList;

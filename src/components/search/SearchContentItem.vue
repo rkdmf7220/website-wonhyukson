@@ -51,7 +51,7 @@ li.search-content-item {
     line-height: 1.5em;
 
     .search-item-text-highlight {
-      background-color: #ff0;
+      background-color: #e0e0e0;
       font-weight: 700;
     }
   }

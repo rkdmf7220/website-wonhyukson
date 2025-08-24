@@ -18,6 +18,7 @@
 
 <script>
 import svgIcon from "../../public/img/svgIcon";
+import Constants from "../contants/constants.js";
 export default {
   name: "GlobalNav",
   computed: {
@@ -39,7 +40,7 @@ export default {
   methods: {
      onClickEmailIcon(lang) {
        navigator.clipboard.writeText("xg60333@gmail.com")
-       if (lang === 'kr') {
+       if (lang === Constants.lang.ko) {
          alert('이메일 주소가 복사되었습니다.')
        } else {
          alert('Email address copied.')

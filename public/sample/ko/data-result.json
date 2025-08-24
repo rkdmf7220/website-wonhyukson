@@ -1,6 +1,42 @@
 [
   {
     "type": "sculpture",
+    "id": "assemble-sculpture2",
+    "title": "조립 조각 221116",
+    "year": 2022,
+    "thumb": "img/sculpture/assemblesculpture2/01.jpg",
+    "imgs": [
+      "img/sculpture/assemblesculpture2/01.jpg",
+      "img/sculpture/assemblesculpture2/02.jpg"
+    ],
+    "caption": "2022, 판넬에 아크릴, 채색된 레고 블록, 가변크기 (각 50 x 50 x 94cm x 4개)"
+  },
+  {
+    "type": "sculpture",
+    "id": "assemble-sculpture",
+    "title": "조립 조각",
+    "year": 2022,
+    "thumb": "img/sculpture/assemblesculpture/01.jpg",
+    "imgs": [
+      "img/sculpture/assemblesculpture/01.jpg",
+      "img/sculpture/assemblesculpture/02.jpg",
+      "img/sculpture/assemblesculpture/03.jpg"
+    ],
+    "caption": "2022, 판넬에 아크릴, 채색된 레고 블록, 가변크기 (각 50 x 50 x 94cm x 4개)"
+  },
+  {
+    "type": "sculpture",
+    "id": "composition-6",
+    "title": "구성 6 (분리 - 조합)",
+    "year": 2022,
+    "thumb": "img/sculpture/composition-6/01.jpg",
+    "imgs": [
+      "img/sculpture/composition-6/01.jpg"
+    ],
+    "caption": "2022, 판넬에 아크릴, 채색된 레고 블록, 35 x 35 x 20cm"
+  },
+  {
+    "type": "sculpture",
     "id": "lego-buddha",
     "title": "순환 (레고 부처)",
     "year": 2021,
@@ -11,7 +47,7 @@
       "img/sculpture/buddha/03.jpg",
       "img/sculpture/buddha/04.jpg"
     ],
-    "caption": "2021, 복합매체, 가변크기 (430 x 400 x 140cm)",
+    "caption": "2021, 캔버스에 실크스크린, TV, 레고 블록, 가변크기 (430 x 400 x 140cm)",
     "text": "색의 순환과 부처의 확장.\n표정과 형태가 명확히 보이지 않는, 무한히 확장하며 수렴하는 무한(無限)의 흰색 부처가 투명한 부처를 바라본다.\n프리즘의 역할을 하는 투명한 부처의 얼굴을 지나 흰색 부처는 디지털의 원색인 RGB (빨강, 초록, 파랑)의 부처와 아날로그의 원색인 CMYK(시안, 마젠타, 노랑, 검정)의 부처로 확장한다.\n그렇게 프리즘으로 투과된 색은 무한의 부처로 다시 순환한다.\n모든 색은 순환하며 모든 색을 구현할 수 있으며 부처의 형태를 통해 확장되며 수렴된다.\n시작과 끝이 존재하지 않으며 끊임없이 확장하고 수렴하는 부처는 색으로 순환되는 모래시계 구조로 4-3-1-∞(무한)으로 순환한다.\n색으로 분리된 부처는 선을 상징하고, 프리즘으로 수렴되는 투명의 부처는 점을 상징하며, 분리된 선의 부처가 모인 무한의 색을 가진 다(多)부처는 면을 상징하여 점•선•면의 구조로 이루어져 있다."
   },
   {
@@ -19,7 +55,7 @@
     "id": "194",
     "title": "194",
     "year": 2020,
-    "caption": "2020, 아크릴에 레고 블록, 86.6 x 65 cm",
+    "caption": "2020, 아크릴에 레고 블록, 86.6 x 65cm",
     "thumb": "img/sculpture/194/01.jpg",
     "imgs": [
       "img/sculpture/194/01.jpg",
@@ -36,31 +72,11 @@
   },
   {
     "type": "sculpture",
-    "id": "hunchback-orange",
-    "title": "꼽추",
-    "year": 2020,
-    "caption": "2020, 레고 블록, 22.7 x 3 x 42.5cm",
-    "thumb": "img/sculpture/hunchback_orange/01.jpg",
-    "imgs": [
-      "img/sculpture/hunchback_orange/01.jpg",
-      "img/sculpture/hunchback_orange/02.jpg",
-      "img/sculpture/hunchback_orange/03.jpg",
-      "img/sculpture/hunchback_orange/04.jpg",
-      "img/sculpture/hunchback_orange/05.jpg",
-      "img/sculpture/hunchback_orange/06.jpg",
-      "img/sculpture/hunchback_orange/07.jpg",
-      "img/sculpture/hunchback_orange/08.jpg",
-      "img/sculpture/hunchback_orange/09.jpg"
-    ],
-    "text": "시대의 남은 잔재로 인하여 잃어버린 현대인들의 영혼과 시간을 비판하는 작품이다.\n전쟁을 위해 만들어진 군대는 인류에게 수많은 물음표를 던졌고, 현대에 들어가서까지도 그 잔재는 없어지지 않는 채,\n수많은 국가에서 국가에 대한 충성심과 애국 그리고 효율성과 질서를 위해서라며 남아있는 계급사회로 그들을 초대한다.\n원치 않지만 명령에 복종해야만 하는 그들은 자신의 몸보다 무거운 쇠와 장비를 갖추고 목적지를 향해 나아가야 한다.\n그들이 감당할 수 없지만 자신은 부정당하고 만다.\n그렇게 연약하고 순수한 인간의 몸은 수동적이고 무거운 쇠에 짓눌려 꼽추와 같은 형상을 해지게 되고,\n빅토르 위고의 ‘노트르담의 파리’(Notre Dame de Paris)에서 등장하는 꼽추는 그저 소설이 아닌 동시대에도 다른 양상으로 존재하는 것이 아닌가에 대한 의문을 품게 된다"
-  },
-  {
-    "type": "sculpture",
     "id": "hunchback",
     "title": "꼽추",
     "year": 2020,
     "caption": "2020, 레고 블록, 22.7 x 3 x 42.5cm",
-    "thumb": "img/sculpture/hunchback/01.jpg",
+    "thumb": "img/sculpture/hunchback/04.jpg",
     "imgs": [
       "img/sculpture/hunchback/01.jpg",
       "img/sculpture/hunchback/02.jpg",
@@ -136,12 +152,115 @@
   },
   {
     "type": "painting",
+    "id": "untitled",
+    "title": "무제",
+    "collectionType": "foo bar",
+    "year": 2022,
+    "caption": "2022, 캔버스에 아크릴 및 채색된 레고, 72.7 x 60.6cm x 2개",
+    "thumb": "img/painting/untitled/01.jpg",
+    "imgs": [
+      "img/painting/untitled/01.jpg",
+      "img/painting/untitled/02.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "harmony",
+    "title": "조화",
+    "collectionType": "assemble abstract",
+    "year": 2022,
+    "caption": "2022, 캔버스에 아크릴 및 레고, 20 x 20 cm",
+    "thumb": "img/painting/harmony/01.jpg",
+    "imgs": [
+      "img/painting/harmony/01.jpg",
+      "img/painting/harmony/02.jpg",
+      "img/painting/harmony/03.jpg",
+      "img/painting/harmony/04.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "composition5",
+    "title": "구성 5 (분리 – 조합)",
+    "year": 2022,
+    "caption": "2022, 캔버스에 아크릴, 35cm x 35cm",
+    "thumb": "img/painting/composition-5/01.jpg",
+    "imgs": [
+      "img/painting/composition-5/01.jpg",
+      "img/painting/composition-1/02.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "assembly-2",
+    "title": "조립",
+    "year": 2022,
+    "caption": "2022, 캔버스에 아크릴 및 채색된 레고, 72.7 x 60.6 cm",
+    "thumb": "img/painting/assembly-2/01.jpg",
+    "imgs": [
+      "img/painting/assembly-2/01.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "assembly-1",
+    "title": "조립",
+    "year": 2022,
+    "caption": "2022, 캔버스에 아크릴 및 채색된 레고, 160 x 132 cm",
+    "thumb": "img/painting/assembly-1/01.jpg",
+    "imgs": [
+      "img/painting/assembly-1/01.jpg",
+      "img/painting/assembly-1/02.jpg",
+      "img/painting/assembly-1/03.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "composition-2-1",
+    "title": "구성 2-1",
+    "year": 2022,
+    "caption": "2022, 캔버스에 아크릴, 80.3cm x 80.3cm",
+    "thumb": "img/painting/composition-2-1/01.jpg",
+    "imgs": [
+      "img/painting/composition-2-1/01.jpg",
+      "img/painting/composition-2-1/02.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "assemble-landscape",
+    "title": "조립 산수",
+    "year": 2022,
+    "caption": "2022, 캔버스에 아크릴, 가변크기 (각 37.9 x 37.9cm)",
+    "thumb": "img/painting/assemblelandscape/01.jpg",
+    "imgs": [
+      "img/painting/assemblelandscape/01.jpg",
+      "img/painting/assemblelandscape/02.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "block211128",
+    "title": "블록 211128",
+    "year": 2021,
+    "caption": "2021, 캔버스에 아크릴, 가변크기",
+    "thumb": "img/painting/block211128/01.jpg",
+    "imgs": [
+      "img/painting/block211128/01.jpg",
+      "img/painting/block211128/02.jpg",
+      "img/painting/block211128/03.jpg"
+    ],
+    "text": "레고 블록이 입체적으로 조립되는 것이 아닌 평면적인 회화로서 재구성되어 조립되었을 때, 그 가능성과 근원성을 탐구한 작품이다.\n같은 모습의 한정된 색깔을 가져도 구성으로 그 모습이 변모되는, 즉 형태의 가능성이 무한하다.\n각기 다른 색과 사이즈를 가진 레고 블록을 이용하여 하나가 된 모습을 나타냈다.\n이것이 레고의 특성인 ‘조립’임을 나타내는 부분이다.\n각각의 형태는 면으로서 기하학적이며 본질의 속성을 담아내며 구체예술(concrete art)에 가까운 형태를 표현하고 있다."
+  },
+  {
+    "type": "painting",
     "id": "assemble-abstract",
     "title": "조립 추상",
     "year": 2021,
     "caption": "2021, 캔버스에 아크릴, 80.3cm x 80.3cm",
     "thumb": "img/painting/assemble/thumb.jpg",
     "imgs": [
+      "img/painting/assemble/thumb.jpg",
       "img/painting/assemble/01.jpg",
       "img/painting/assemble/02.jpg",
       "img/painting/assemble/03.jpg",
@@ -163,6 +282,20 @@
   },
   {
     "type": "painting",
+    "id": "block210929",
+    "title": "블록 210929",
+    "year": 2021,
+    "caption": "2021, 캔버스에 아크릴, 가변크기",
+    "thumb": "img/painting/block210929/01.jpg",
+    "imgs": [
+      "img/painting/block210929/01.jpg",
+      "img/painting/block210929/02.jpg",
+      "img/painting/block210929/03.jpg"
+    ],
+    "text": "레고 블록이 입체적으로 조립되는 것이 아닌 평면적인 회화로서 재구성되어 조립되었을 때, 그 가능성과 근원성을 탐구한 작품이다.\n같은 모습의 한정된 색깔을 가져도 구성으로 그 모습이 변모되는, 즉 형태의 가능성이 무한하다.\n각기 다른 색과 사이즈를 가진 레고 블록을 이용하여 하나가 된 모습을 나타냈다.\n이것이 레고의 특성인 ‘조립’임을 나타내는 부분이다.\n각각의 형태는 면으로서 기하학적이며 본질의 속성을 담아내며 구체예술(concrete art)에 가까운 형태를 표현하고 있다."
+  },
+  {
+    "type": "painting",
     "id": "composition4",
     "title": "구성 4 (분리 - 조합)",
     "year": 2020,
@@ -170,14 +303,7 @@
     "thumb": "img/painting/composition-4/01.jpg",
     "imgs": [
       "img/painting/composition-4/01.jpg",
-      "img/painting/composition-4/02.jpg",
-      "img/painting/composition-4/03.jpg",
-      "img/painting/composition-4/04.jpg",
-      "img/painting/composition-4/05.jpg",
-      "img/painting/composition-4/06.jpg",
-      "img/painting/composition-4/07.jpg",
-      "img/painting/composition-4/08.jpg",
-      "img/painting/composition-4/09.jpg"
+      "img/painting/composition-1/02.jpg"
     ],
     "text": "레고 블록이 입체적인 형태가 아닌 평면적인 회화로서 재구성되었을 때, 그 가능성과 근원성을 탐구한 작품에서 더 변주한 작품이다.\n레고 블록의 한 조각이 평면회화로 재구성이 되고, 그 한 조각은 다시 규격화된 양식에서 벗어나 회화의 기본요소인 점, 선, 면으로 해체되어 비구상적인(nonfigurative) 새로운 이상향을 도출해낸다.\n각기 다른 모습과 성질을 내포하고 있지만 결국에는 한 맥락 속에서 하나의 움직임으로서 톱니바퀴처럼 맞물려 나아간다.\n그렇기 때문에 어느 것이 먼저 탄생하여 분리(Division)가 되었는지 조합(Unity)이 되었는지 구분이 안가는 초현실적인 구조가 내포되어 있다."
   },
@@ -190,13 +316,7 @@
     "thumb": "img/painting/composition-3/01.jpg",
     "imgs": [
       "img/painting/composition-3/01.jpg",
-      "img/painting/composition-3/02.jpg",
-      "img/painting/composition-3/03.jpg",
-      "img/painting/composition-3/04.jpg",
-      "img/painting/composition-3/05.jpg",
-      "img/painting/composition-3/06.jpg",
-      "img/painting/composition-3/07.jpg",
-      "img/painting/composition-3/08.jpg"
+      "img/painting/composition-1/02.jpg"
     ],
     "text": "레고 블록이 입체적인 형태가 아닌 평면적인 회화로서 재구성되었을 때, 그 가능성과 근원성을 탐구한 작품에서 더 변주한 작품이다.\n레고 블록의 한 조각이 평면회화로 재구성이 되고, 그 한 조각은 다시 규격화된 양식에서 벗어나 회화의 기본요소인 점, 선, 면으로 해체되어 비구상적인(nonfigurative) 새로운 이상향을 도출해낸다.\n각기 다른 모습과 성질을 내포하고 있지만 결국에는 한 맥락 속에서 하나의 움직임으로서 톱니바퀴처럼 맞물려 나아간다.\n그렇기 때문에 어느 것이 먼저 탄생하여 분리(Division)가 되었는지 조합(Unity)이 되었는지 구분이 안가는 초현실적인 구조가 내포되어 있다."
   },
@@ -209,14 +329,7 @@
     "thumb": "img/painting/composition-2/01.jpg",
     "imgs": [
       "img/painting/composition-2/01.jpg",
-      "img/painting/composition-2/02.jpg",
-      "img/painting/composition-2/03.jpg",
-      "img/painting/composition-2/04.jpg",
-      "img/painting/composition-2/05.jpg",
-      "img/painting/composition-2/06.jpg",
-      "img/painting/composition-2/07.jpg",
-      "img/painting/composition-2/08.jpg",
-      "img/painting/composition-2/09.jpg"
+      "img/painting/composition-1/02.jpg"
     ],
     "text": "레고 블록이 입체적인 형태가 아닌 평면적인 회화로서 재구성되었을 때, 그 가능성과 근원성을 탐구한 작품에서 더 변주한 작품이다.\n레고 블록의 한 조각이 평면회화로 재구성이 되고, 그 한 조각은 다시 규격화된 양식에서 벗어나 회화의 기본요소인 점, 선, 면으로 해체되어 비구상적인(nonfigurative) 새로운 이상향을 도출해낸다.\n각기 다른 모습과 성질을 내포하고 있지만 결국에는 한 맥락 속에서 하나의 움직임으로서 톱니바퀴처럼 맞물려 나아간다.\n그렇기 때문에 어느 것이 먼저 탄생하여 분리(Division)가 되었는지 조합(Unity)이 되었는지 구분이 안가는 초현실적인 구조가 내포되어 있다."
   },
@@ -229,37 +342,34 @@
     "thumb": "img/painting/composition-1/01.jpg",
     "imgs": [
       "img/painting/composition-1/01.jpg",
-      "img/painting/composition-1/02.jpg",
-      "img/painting/composition-1/03.jpg",
-      "img/painting/composition-1/04.jpg",
-      "img/painting/composition-1/05.jpg",
-      "img/painting/composition-1/06.jpg",
-      "img/painting/composition-1/07.jpg",
-      "img/painting/composition-1/08.jpg",
-      "img/painting/composition-1/09.jpg"
+      "img/painting/composition-1/02.jpg"
     ],
     "text": "레고 블록이 입체적인 형태가 아닌 평면적인 회화로서 재구성되었을 때, 그 가능성과 근원성을 탐구한 작품에서 더 변주한 작품이다.\n레고 블록의 한 조각이 평면회화로 재구성이 되고, 그 한 조각은 다시 규격화된 양식에서 벗어나 회화의 기본요소인 점, 선, 면으로 해체되어 비구상적인(nonfigurative) 새로운 이상향을 도출해낸다.\n각기 다른 모습과 성질을 내포하고 있지만 결국에는 한 맥락 속에서 하나의 움직임으로서 톱니바퀴처럼 맞물려 나아간다.\n그렇기 때문에 어느 것이 먼저 탄생하여 분리(Division)가 되었는지 조합(Unity)이 되었는지 구분이 안가는 초현실적인 구조가 내포되어 있다."
   },
   {
     "type": "painting",
-    "id": "block-red",
-    "title": "블록",
+    "id": "block201015",
+    "title": "블록 201015",
     "year": 2020,
-    "caption": "2020, 캔버스에 아크릴, 35cm x 35cm",
-    "thumb": "img/painting/block-red/01.jpg",
+    "caption": "2020, 캔버스에 아크릴, 가변크기",
+    "thumb": "img/painting/block201015/01.jpg",
     "imgs": [
-      "img/painting/block-red/01.jpg",
-      "img/painting/block-red/02.jpg",
-      "img/painting/block-red/03.jpg",
-      "img/painting/block-red/04.jpg",
-      "img/painting/block-red/05.jpg",
-      "img/painting/block-red/06.jpg",
-      "img/painting/block-red/07.jpg",
-      "img/painting/block-red/08.jpg",
-      "img/painting/block-red/09.jpg",
-      "img/painting/block-red/10.jpg"
+      "img/painting/block201015/01.jpg",
+      "img/painting/block201015/02.jpg",
+      "img/painting/block201015/03.jpg"
     ],
     "text": "레고 블록이 입체적으로 조립되는 것이 아닌 평면적인 회화로서 재구성되어 조립되었을 때, 그 가능성과 근원성을 탐구한 작품이다.\n같은 모습의 한정된 색깔을 가져도 구성으로 그 모습이 변모되는, 즉 형태의 가능성이 무한하다.\n각기 다른 색과 사이즈를 가진 레고 블록을 이용하여 하나가 된 모습을 나타냈다.\n이것이 레고의 특성인 ‘조립’임을 나타내는 부분이다.\n각각의 형태는 면으로서 기하학적이며 본질의 속성을 담아내며 구체예술(concrete art)에 가까운 형태를 표현하고 있다."
+  },
+  {
+    "type": "painting",
+    "id": "blueportrait",
+    "title": "푸른 초상",
+    "year": 2019,
+    "caption": "2019, 캔버스에 레고 및 아크릴, 65.1 x 50cm",
+    "thumb": "img/painting/blueportrait/01.jpg",
+    "imgs": [
+      "img/painting/blueportrait/01.jpg"
+    ]
   },
   {
     "type": "painting",
@@ -281,6 +391,28 @@
   },
   {
     "type": "typography",
+    "id": "spaceship",
+    "title": "겉보기에 손상은 없었으나 마치 난파된 것 같은 우주선",
+    "year": 2022,
+    "caption": "2022, 스크린 및 종이에 인쇄, 101.6 x 57.15cm(3840 x 2160px)",
+    "thumb": "img/typography/spaceship/01.jpg",
+    "imgs": [
+      "img/typography/spaceship/01.jpg"
+    ]
+  },
+  {
+    "type": "typography",
+    "id": "assemblogy",
+    "title": "조립학: 구성하고 조합하기 포스터",
+    "year": 2022,
+    "caption": "2022, 종이에 인쇄, 59.4 x 84.1cm",
+    "thumb": "img/typography/assemblogy/01.jpg",
+    "imgs": [
+      "img/typography/assemblogy/01.jpg"
+    ]
+  },
+  {
+    "type": "typography",
     "id": "blue-wedge",
     "title": "푸른색 쐐기로 붉은색을 쳐라",
     "year": 2022,
@@ -296,12 +428,11 @@
     "id": "poster-buddha",
     "title": "Dream Land : color 포스터",
     "year": 2021,
-    "caption": "2021, 일러스트, 59.4 x 84.1cm",
+    "caption": "2021, 종이에 인쇄, 59.4 x 84.1cm",
     "thumb": "img/typography/buddha/01.jpg",
     "imgs": [
       "img/typography/buddha/01.jpg",
       "img/typography/buddha/02.jpg",
-      "img/typography/buddha/03.jpg",
       "img/typography/buddha/04.jpg",
       "img/typography/buddha/05.jpg"
     ],
@@ -430,11 +561,11 @@
     "title": "한국에서의 바우하우스란 무엇인가",
     "year": 2019,
     "caption": "2019, 단채널 비디오, 1920 x 1080 Frame, 9.5, 9, 10.5 min",
-    "thumb": "img/typography/bauhaus/01.png",
+    "thumb": "img/typography/bauhaus/01.jpg",
     "imgs": [
-      "img/typography/bauhaus/01.png",
-      "img/typography/bauhaus/02.png",
-      "img/typography/bauhaus/03.png",
+      "img/typography/bauhaus/01.jpg",
+      "img/typography/bauhaus/02.jpg",
+      "img/typography/bauhaus/03.jpg",
       "img/typography/bauhaus/04.jpg",
       "img/typography/bauhaus/05.jpg",
       "img/typography/bauhaus/06.jpg"
@@ -442,46 +573,314 @@
     "text": "클라이언트: 안그라픽스\n\n바우하우스 100주년을 기념하여 한국에서 바우하우스를 탐구하는 주된 인물들의 강연 영상을 편집, 디자인한 작업.\n동대문디자인플라자에서 진행된 바우하우스 100주년 기념 바우하우스 미러 전시회에도 상영되었다."
   },
   {
-    "type": "archive",
-    "id": "21-singing-word",
-    "title": "노래하는 말, 노래하는 글, 한국타이포그라피학회전 15, 단체전",
-    "year": 2021,
-    "caption": "2021년 12월 20일 - 2022년 1월 20일",
-    "text": "코엑스 C홀, 메타버스 온라인, 서울특별시 강남구 영동대로 513",
-    "thumb": "img/archive/2021-singing-word/thumb.jpg",
+    "type": "news",
+    "id": "sample-data-1",
+    "title": "뉴스 샘플 데이터",
+    "year": 2023,
+    "caption": "2023년 4월 15일",
+    "info": [
+      {
+        "title": "타이틀",
+        "text": "샘플 텍스트"
+      },
+      {
+        "title": "윤하 - 사건의 지평선",
+        "text": "저기, 사라진 별의 자리\n아스라이 하얀 빛\n한동안은 꺼내 볼 수 있을 거야.\n아낌없이 반짝인 시간은\n조금씩 옅어져 가더라도\n너와 내 맘에 살아 숨 쉴 테니."
+      },
+      {
+        "title": "줄줄이 텍스트",
+        "text": "여긴, 서로의 끝이 아닌 새로운 길 모퉁이 익숙함에 진심을 속이지 말자. 하나 둘 추억이 떠오르면 많이 많이 그리워할 거야. 고마웠어요 그래도 이제는 사건의 지평선 너머로."
+      }
+    ],
+    "thumb": "img/news/sample/01.jpg",
     "imgs": [
-      "img/archive/2021-singing-word/01.jpeg",
-      "img/archive/2021-singing-word/02.jpeg",
-      "img/archive/2021-singing-word/03.jpeg"
+      "img/news/sample/01.jpg",
+      "img/news/sample/02.png",
+      "img/news/sample/03.png"
     ]
   },
   {
-    "type": "archive",
+    "type": "archives",
+    "id": "23-portrait",
+    "title": "Portrait | 단체전",
+    "year": 2023,
+    "caption": "2022년 12월 28일 - 2023년 1월 15일",
+    "info": [
+      {
+        "title": "장소",
+        "text": "CICA 미술관"
+      },
+      {
+        "title": "주최·주관",
+        "text": "CICA 미술관"
+      }
+    ],
+    "thumb":"img/archive/2023-portrait/thumb.jpg",
+    "imgs": [
+      "img/archive/2023-portrait/thumb.jpg",
+      "img/archive/2023-portrait/01.jpg",
+      "img/archive/2023-portrait/02.jpg",
+      "img/archive/2023-portrait/03.jpg"
+    ]
+  },
+  {
+    "type": "archives",
+    "id": "22-A-vibrating bird-and-a-handwritten-letter",
+    "title": "진동새와 손편지 | 단체전",
+    "year": 2022,
+    "caption": "2022년 11월 9일 - 12월 31일",
+    "info": [
+      {
+        "title": "장소",
+        "text": "온라인·오프라인:《Ob/Scene Festival》아트선재센터, 예술청"
+      },
+      {
+        "title": "기간",
+        "text": "온라인 2022.11.9. - 12.31. | 오프라인 2022.11.9. - 11.20."
+      },
+      {
+        "title": "주최·주관",
+        "text": "한국타이포그라피학회"
+      },
+      {
+        "title": "기획",
+        "text": "민구홍, 양지은"
+      },
+      {
+        "title": "진행",
+        "text": "구경원, 김수은"
+      },
+      {
+        "title": "영상 편집",
+        "text": "양지은"
+      },
+      {
+        "title": "전시 웹사이트 디렉팅",
+        "text": "민구홍 매뉴팩처링"
+      },
+      {
+        "title": "홍보물 디자인",
+        "text": "양혜림"
+      },
+      {
+        "title": "협력",
+        "text": "옵/신 페스티벌"
+      },
+      {
+        "title": "전시 도록",
+        "text": "작업실유령 ISBN: 979-11-89356-88-0(00600)"
+      }
+    ],
+    "thumb": "img/archive/2022-A-vibrating bird-and-a-handwritten-letter/thumb.jpg",
+    "imgs": [
+      "img/archive/2022-A-vibrating bird-and-a-handwritten-letter/thumb.jpg",
+      "img/archive/2022-A-vibrating bird-and-a-handwritten-letter/01.jpg",
+      "img/archive/2022-A-vibrating bird-and-a-handwritten-letter/02.jpg",
+      "img/archive/2022-A-vibrating bird-and-a-handwritten-letter/03.jpg",
+      "img/archive/2022-A-vibrating bird-and-a-handwritten-letter/04.jpg",
+      "img/archive/2022-A-vibrating bird-and-a-handwritten-letter/05.jpg",
+      "img/archive/2022-A-vibrating bird-and-a-handwritten-letter/06.jpg",
+      "img/archive/2022-A-vibrating bird-and-a-handwritten-letter/07.jpg",
+      "img/archive/2022-A-vibrating bird-and-a-handwritten-letter/08.jpg"
+    ]
+  },
+  {
+    "type": "archives",
+    "id": "22-observer",
+    "title": "VENOMOLD | 단체전",
+    "year": 2022,
+    "caption": "2022년 11월 16일 - 11월 27일 | (총 11월 2일 - 12월 11일)",
+    "info": [
+      {
+        "title": "장소",
+        "text": "의외의 조합"
+      },
+      {
+        "title": "주최·주관",
+        "text": "OS, 의외의 조합"
+      },
+      {
+        "title": "기획",
+        "text": "OS 기획팀 (김민훈, 김중균, 박고운, 서예나, 신희상)"
+      },
+      {
+        "title": "디자인",
+        "text": "OS 디자인팀 (김도희, 손원혁, 최낙준)"
+      },
+      {
+        "title": "사진",
+        "text": "양이언"
+      }
+    ],
+    "thumb":"img/archive/2022-observer/thumb.jpg",
+    "imgs": [
+      "img/archive/2022-observer/thumb.jpg",
+      "img/archive/2022-observer/07.jpg",
+      "img/archive/2022-observer/05.jpg",
+      "img/archive/2022-observer/06.jpg",
+      "img/archive/2022-observer/01.jpg",
+      "img/archive/2022-observer/02.jpg",
+      "img/archive/2022-observer/03.jpg",
+      "img/archive/2022-observer/04.jpg"
+    ]
+  },
+  {
+    "type": "archives",
+    "id": "22-assemblogy",
+    "title": "조립학: 구성하고 조합하기 | 개인전",
+    "year": 2022,
+    "caption": "2022년 10월 19일 - 10월 23일",
+    "info": [
+      {
+        "title": "장소",
+        "text": "CICA 미술관"
+      },
+      {
+        "title": "주최·주관",
+        "text": "CICA 미술관"
+      },
+      {
+        "title": "사진",
+        "text": "안희상"
+      },
+      {
+        "title": "디자인",
+        "text": "손원혁"
+      }
+    ],
+    "thumb": "img/archive/2022-assemblogy/thumb.jpg",
+    "imgs": [
+      "img/archive/2022-assemblogy/thumb.jpg",
+      "img/archive/2022-assemblogy/08.jpg",
+      "img/archive/2022-assemblogy/06.jpg",
+      "img/archive/2022-assemblogy/05.jpg",
+      "img/archive/2022-assemblogy/07.jpg",
+      "img/archive/2022-assemblogy/01.jpg",
+      "img/archive/2022-assemblogy/03.jpg",
+      "img/archive/2022-assemblogy/04.jpg"
+    ]
+  },
+  {
+    "type": "archives",
+    "id": "21-singing-word",
+    "title": "노래하는 말, 노래하는 글 | 단체전",
+    "year": 2021,
+    "caption": "2021년 12월 20일 - 2022년 1월 20일",
+    "info": [
+      {
+        "title": "장소",
+        "text": "온라인·오프라인:《서울디자인페스티벌 2021》코엑스"
+      },
+      {
+        "title": "기간",
+        "text": "온라인 2021.12.20. - 2022.1.20. 오프라인 2021.12.22. - 12.26."
+      },
+      {
+        "title": "주최·주관",
+        "text": "한국타이포그라피학회, 스페이스 오디티"
+      },
+      {
+        "title": "협찬",
+        "text": "AG 타이포그라피연구소"
+      },
+      {
+        "title": "기획",
+        "text": "홍은주, 신해옥"
+      }
+    ],
+    "thumb": "img/archive/2021-singing-word/thumb.jpg",
+    "imgs": [
+      "img/archive/2021-singing-word/thumb.jpg",
+      "img/archive/2021-singing-word/01.jpeg",
+      "img/archive/2021-singing-word/02.jpeg",
+      "img/archive/2021-singing-word/03.jpeg",
+      "img/archive/2021-singing-word/04.jpg",
+      "img/archive/2021-singing-word/05.jpg",
+      "img/archive/2021-singing-word/06.jpg",
+      "img/archive/2021-singing-word/07.jpg"
+    ]
+  },
+  {
+    "type": "archives",
     "id": "21-dreamland",
-    "title": "Dream Land: Color, 개인전",
+    "title": "Dream Land: Color | 개인전",
     "year": 2021,
     "caption": "2021년 11월 28일 - 11월 30일",
-    "text": "광명시민회관, 경기 광명시 시청로 20 (철산동, 광명시청) 시민회관 2층 광명문화재단 (14234)",
+    "info": [
+      {
+        "title": "장소",
+        "text": "광명시민회관"
+      },
+      {
+        "title": "주최·주관",
+        "text": "광명문화재단"
+      },
+      {
+        "title": "후원",
+        "text": "광명시, 광명문화재단"
+      },
+      {
+        "title": "기획·디자인",
+        "text": "손원혁"
+      },
+      {
+        "title": "작가 평론",
+        "text": "정해선"
+      },
+      {
+        "title": "사진",
+        "text": "광명문화재단"
+      }
+    ],
     "thumb": "img/archive/2021-dreamland/thumb.jpg",
     "imgs": [
-      "img/archive/2021-dreamland/01.jpg",
+      "img/archive/2021-dreamland/thumb.jpg",
+      "img/typography/buddha/02.jpg",
+      "img/archive/2021-dreamland/07.jpg",
+      "img/archive/2021-dreamland/06.jpg",
+      "img/typography/buddha/05.jpg",
       "img/archive/2021-dreamland/02.jpg",
       "img/archive/2021-dreamland/03.jpg",
       "img/archive/2021-dreamland/04.jpg",
+      "img/sculpture/buddha/01.jpg",
       "img/archive/2021-dreamland/05.jpg",
-      "img/archive/2021-dreamland/06.jpg"
+      "img/archive/2021-dreamland/08.jpg",
+      "img/archive/2021-dreamland/09.jpg",
+      "img/archive/2021-dreamland/10.jpg",
+      "img/painting/block211128/01.jpg",
+      "img/painting/block211128/02.jpg"
     ]
   },
   {
-    "type": "archive",
+    "type": "archives",
     "id": "21-relativity-circuit",
-    "title": "상대성 회로: 지속 가능성 보고서, 단체전",
+    "title": "상대성 회로: 지속 가능성 보고서 | 단체전",
     "year": 2021,
     "caption": "2021년 9월 29일 - 10월 4일",
-    "text": "동덕아트갤러리, 서울특별시 종로구 관훈동 우정국로 68",
+    "info": [
+      {
+        "title": "장소",
+        "text": "동덕아트갤러리"
+      },
+      {
+        "title": "주최·주관",
+        "text": "동덕아트갤러리, 동덕여자대학교박물관"
+      },
+      {
+        "title": "총괄",
+        "text": "이승철, 조진희"
+      },
+      {
+        "title": "기획·진행",
+        "text": "김진주, 홍수진, 최아란, 한윤진"
+      }
+    ],
     "thumb": "img/archive/2021-relativity-circuit/thumb.jpg",
     "imgs": [
+      "img/archive/2021-relativity-circuit/thumb.jpg",
       "img/archive/2021-relativity-circuit/01.jpg",
+      "img/archive/2021-relativity-circuit/07.jpg",
+      "img/archive/2021-relativity-circuit/08.jpg",
       "img/archive/2021-relativity-circuit/02.jpg",
       "img/archive/2021-relativity-circuit/03.jpg",
       "img/archive/2021-relativity-circuit/04.jpg",
@@ -490,14 +889,24 @@
     ]
   },
   {
-    "type": "archive",
+    "type": "archives",
     "id": "21-over-the-structures",
-    "title": "Over the structures 2021, 단체전",
+    "title": "Over the structures 2021 | 단체전",
     "year": 2021,
     "caption": "2021년 3월 10일 - 3월 28일",
-    "text": "CICA 미술관, 경기도 김포시 양촌읍 삼도로 196-30",
+    "info": [
+      {
+        "title": "장소",
+        "text": "CICA 미술관"
+      },
+      {
+        "title": "주최·주관",
+        "text": "CICA 미술관"
+      }
+    ],
     "thumb": "img/archive/2021-over-the-structures/thumb.jpg",
     "imgs": [
+      "img/archive/2021-over-the-structures/thumb.jpg",
       "img/archive/2021-over-the-structures/01.jpg",
       "img/archive/2021-over-the-structures/02.jpg",
       "img/archive/2021-over-the-structures/03.jpg",
@@ -506,31 +915,68 @@
     ]
   },
   {
-    "type": "archive",
+    "type": "archives",
     "id": "20-contactless",
-    "title": "만질 수 없는, 한국타이포그라피학회전 14, 단체전",
+    "title": "만질 수 없는 | 단체전",
     "year": 2020,
     "caption": "2020년 12월 8일 - 2021년 2월 28일",
-    "text": "문화역서울284 RTO 및 온라인",
+    "info": [
+      {
+        "title": "장소",
+        "text": "온라인·오프라인:《타이포잔치 사이사이 2020-2021: 국제 타이포그래피 비엔날레》문화역서울284"
+      },
+      {
+        "title": "기간",
+        "text": "온라인 2020.12.8. - 2021.2.28. 오프라인 2020.12.14. - 12.20."
+      },
+      {
+        "title": "주최·주관",
+        "text": "한국타이포그라피학회"
+      },
+      {
+        "title": "협력",
+        "text": "한국공예·디자인문화진흥원, 국제타이포그래피비엔날레조직위원회, CAVA LIFE, CA BOOKS, 삼원특수지"
+      },
+      {
+        "title": "기획",
+        "text": "홍은주, 신해옥"
+      }
+    ],
     "thumb": "img/archive/2020-contactless/thumb.jpg",
     "imgs": [
-      "img/archive/2020-contactless/01.jpeg",
+      "img/archive/2020-contactless/thumb.jpg",
+      "img/archive/2020-contactless/07.jpg",
+      "img/archive/2020-contactless/08.jpg",
       "img/archive/2020-contactless/02.jpeg",
-      "img/archive/2020-contactless/03.jpeg",
       "img/archive/2020-contactless/04.jpeg",
       "img/archive/2020-contactless/05.png",
-      "img/archive/2020-contactless/06.jpeg"
+      "img/archive/2020-contactless/03.jpeg"
     ]
   },
   {
-    "type": "archive",
+    "type": "archives",
     "id": "20-dreamland",
-    "title": "Dream Land, 개인전",
+    "title": "Dream Land | 개인전",
     "year": 2020,
     "caption": "2020년 10월 15일-10월 24일",
-    "text": "h.art.bridge, 서울시 서초구 방배로 42길 43 노란건물 2층 (06584)",
+    "info": [
+      {
+        "title": "장소",
+        "text": "h.art.bridge"
+      },
+      {
+        "title": "주최·주관",
+        "text": "h.art.bridge"
+      },
+      {
+        "title": "후원",
+        "text": "한국문화예술위원회"
+      }
+    ],
     "thumb": "img/archive/2020-dreamland/thumb.jpg",
     "imgs": [
+      "img/archive/2020-dreamland/thumb.jpg",
+      "img/archive/2020-dreamland/07.jpg",
       "img/archive/2020-dreamland/01.jpg",
       "img/archive/2020-dreamland/02.jpg",
       "img/archive/2020-dreamland/03.jpg",
@@ -540,43 +986,60 @@
     ]
   },
   {
-    "type": "archive",
-    "id": "19-myeongji",
-    "title": "명지전문대학 졸업전시회, 단체전",
-    "year": 2019,
-    "caption": "2019년 11월 28일 - 12월 3일",
-    "text": "명지전문대학",
-    "thumb": "img/archive/2019-myeongji/thumb.png",
-    "imgs": [
-      "img/archive/2019-myeongji/01.jpg"
-    ]
-  },
-  {
-    "type": "archive",
+    "type": "archives",
     "id": "19-knowing",
-    "title": "‘앎’ 순우리말, 단체전",
+    "title": "‘앎’ 순우리말 | 단체전",
     "year": 2019,
     "caption": "2019년 11월 13 - 15일",
-    "text": "명지전문대학",
+    "info": [
+      {
+        "title": "장소",
+        "text": "MJ갤러리"
+      },
+      {
+        "title": "주최·주관",
+        "text": "익스타이포 (실험타이포그라피연구회)"
+      },
+      {
+        "title": "후원",
+        "text": "명지전문대학"
+      }
+    ],
     "thumb": "img/archive/2019-knowing/thumb.jpg",
     "imgs": [
-      "img/archive/2019-knowing/01.jpg",
+      "img/archive/2019-knowing/thumb.jpg",
+      "img/archive/2019-knowing/07.jpg",
       "img/archive/2019-knowing/02.jpg",
       "img/archive/2019-knowing/03.jpg",
+      "img/archive/2019-knowing/01.jpg",
       "img/archive/2019-knowing/04.jpg",
       "img/archive/2019-knowing/05.jpg",
       "img/archive/2019-knowing/06.jpg"
     ]
   },
   {
-    "type": "archive",
+    "type": "archives",
     "id": "19-bauhaus-mirror",
-    "title": "bauhaus mirror, 단체전",
+    "title": "bauhaus mirror | 단체전",
     "year": 2019,
     "caption": "2019년 10월 14일 - 11월 30일",
-    "text": "서울특별시 중구 을지로7가 을지로 281, DDP 기록관",
+    "info": [
+      {
+        "title": "장소",
+        "text": "DDP"
+      },
+      {
+        "title": "주최·주관",
+        "text": "서울디자인재단, 한국디자인사연구소"
+      },
+      {
+        "title": "후원",
+        "text": "안그라픽스"
+      }
+    ],
     "thumb": "img/archive/2019-bauhaus-mirror/thumb.jpg",
     "imgs": [
+      "img/archive/2019-bauhaus-mirror/thumb.jpg",
       "img/archive/2019-bauhaus-mirror/01.jpg",
       "img/archive/2019-bauhaus-mirror/02.jpg",
       "img/archive/2019-bauhaus-mirror/03.jpg",
@@ -585,14 +1048,28 @@
     ]
   },
   {
-    "type": "archive",
+    "type": "archives",
     "id": "19-gyeonggi-art-contest",
-    "title": "제 55회 경기미술대전, 단체전",
+    "title": "제 55회 경기미술대전 | 단체전",
     "year": 2019,
-    "caption": "2018년 6월 26일 - 6월 30일",
-    "text": "경기도 수원시 팔달구 효원로307번길 20 경기도 문화의 전당 갤러리",
+    "caption": "2019년 6월 26일 - 6월 30일",
+    "info": [
+      {
+        "title": "장소",
+        "text": "경기도 문화의 전당"
+      },
+      {
+        "title": "주최·주관",
+        "text": "한국미술협회 경기도지회, 제55회 경기미술대전 운영위원회"
+      },
+      {
+        "title": "후원",
+        "text": "경기도, 한국미술협회, 한국예총 경기도 연합회"
+      }
+    ],
     "thumb": "img/archive/2019-gyeonggi-art-contest/thumb.jpg",
     "imgs": [
+      "img/archive/2019-gyeonggi-art-contest/thumb.jpg",
       "img/archive/2019-gyeonggi-art-contest/01.jpg",
       "img/archive/2019-gyeonggi-art-contest/02.jpg",
       "img/archive/2019-gyeonggi-art-contest/03.jpg",
@@ -600,14 +1077,24 @@
     ]
   },
   {
-    "type": "archive",
+    "type": "archives",
     "id": "19-watch-the-wrold",
-    "title": "미술로 보는 세상, 단체전",
+    "title": "미술로 보는 세상 | 단체전",
     "year": 2019,
     "caption": "2019년 4월 29일 - 5월 14일",
-    "text": "서울특별시 강남구 426 강남구청",
+    "info": [
+      {
+        "title": "장소",
+        "text": "서울특별시 강남구청 본관"
+      },
+      {
+        "title": "주최·주관",
+        "text": "강남구, 갤러리위"
+      }
+    ],
     "thumb": "img/archive/2019-watch-the-world/thumb.jpg",
     "imgs": [
+      "img/archive/2019-watch-the-world/thumb.jpg",
       "img/archive/2019-watch-the-world/01.jpg",
       "img/archive/2019-watch-the-world/02.jpg",
       "img/archive/2019-watch-the-world/03.jpg",
@@ -617,32 +1104,60 @@
     ]
   },
   {
-    "type": "archive",
+    "type": "archives",
     "id": "18-scope-miami-beach",
-    "title": "SCOPE MIAMI BEACH 2018, 아트페어",
+    "title": "SCOPE MIAMI BEACH 2018 | 아트페어",
     "year": 2018,
     "caption": "2018년 12월 4일 - 12월 9일",
-    "text": "801 Ocean Dr, Miami Beach, FL",
+    "info": [
+      {
+        "title": "장소",
+        "text": "스콥 마이애미 비치 아트페어"
+      },
+      {
+        "title": "주최·주관",
+        "text": "SCOPE Miami Beach, 갤러리위"
+      },
+      {
+        "title": "후원",
+        "text": "포르쉐, 아트시 외 다수"
+      }
+    ],
     "thumb": "img/archive/2018-scope-miami-beach/thumb.png",
     "imgs": [
+      "img/archive/2018-scope-miami-beach/thumb.png",
+      "img/archive/2018-scope-miami-beach/04.jpg",
       "img/archive/2018-scope-miami-beach/01.jpg",
       "img/archive/2018-scope-miami-beach/02.jpg",
       "img/archive/2018-scope-miami-beach/03.jpg",
-      "img/archive/2018-scope-miami-beach/04.jpg",
       "img/archive/2018-scope-miami-beach/05.jpg",
       "img/archive/2018-scope-miami-beach/06.jpg",
       "img/archive/2018-scope-miami-beach/07.jpg"
     ]
   },
   {
-    "type": "archive",
+    "type": "archives",
     "id": "18-young-artist",
-    "title": "YOUNG ARTIST CONTEST, 단체전",
+    "title": "YOUNG ARTIST CONTEST | 단체전",
     "year": 2018,
     "caption": "2018년 12월 4일 - 12월 9일",
-    "text": "801 Ocean Dr, Miami Beach, FL",
+    "info": [
+      {
+        "title": "장소",
+        "text": "갤러리위"
+      },
+      {
+        "title": "주최·주관",
+        "text": "IYAA, 갤러리위"
+      },
+      {
+        "title": "후원",
+        "text": "한국미술협회, 서울문화홍보원"
+      }
+    ],
     "thumb": "img/archive/2018-young-artist/thumb.jpg",
     "imgs": [
+      "img/archive/2018-young-artist/thumb.jpg",
       "img/archive/2018-young-artist/01.jpg",
       "img/archive/2018-young-artist/02.jpg",
       "img/archive/2018-young-artist/03.jpg",
@@ -652,43 +1167,63 @@
     ]
   },
   {
-    "type": "archive",
+    "type": "archives",
     "id": "16-i-am-robot",
-    "title": "브릭의 반란 아이 엠 로봇, 단체전",
+    "title": "브릭의 반란 아이 엠 로봇 | 단체전",
     "year": 2016,
     "caption": "2016년 12월 13일 - 2017년 1월 31일",
-    "text": "부천로보파크 3층 기획전시실",
+    "info": [
+      {
+        "title": "장소",
+        "text": "부천로보파크"
+      },
+      {
+        "title": "주최·주관",
+        "text": "부천시, 부천산업진흥재단"
+      },
+      {
+        "title": "후원",
+        "text": "부천시"
+      },
+      {
+        "title": "기획",
+        "text": "장정규, 이선경"
+      }
+    ],
     "thumb": "img/archive/2016-i-am-robot/thumb.jpg",
     "imgs": [
+      "img/archive/2016-i-am-robot/thumb.jpg",
       "img/archive/2016-i-am-robot/01.jpg",
-      "img/archive/2016-i-am-robot/02.jpg",
-      "img/archive/2016-i-am-robot/03.jpg",
-      "img/archive/2016-i-am-robot/04.png",
-      "img/archive/2016-i-am-robot/05.jpg"
+      "img/archive/2016-i-am-robot/04.png"
     ]
   },
   {
-    "type": "archive",
-    "id": "16-brick-convention",
-    "title": "BRICKOREA CONVENTION, 단체전",
-    "year": 2016,
-    "caption": "2016년 10월 22일 - 10월 30일",
-    "text": "현대백화점 판교점 10층",
-    "thumb": "img/archive/2016-brick-convention/thumb.jpg",
-    "imgs": [
-      "img/archive/2016-brick-convention/01.jpg",
-      "img/archive/2016-brick-convention/02.jpg"
-    ]
-  },
-  {
-    "type": "archive",
+    "type": "archives",
     "id": "16-seoul-crafts-fair",
-    "title": "2016 서울공예박람회, 박람회",
+    "title": "2016 서울공예박람회 | 단체전",
     "year": 2016,
     "caption": "2016년 9월 22일 - 10월 2일",
-    "text": "서울특별시 중구 을지로7가 을지로 281, DDP 배움터 둘레길 (B2-4F)",
+    "info": [
+      {
+        "title": "장소",
+        "text": "DDP"
+      },
+      {
+        "title": "주최·주관",
+        "text": "서울디자인재단"
+      },
+      {
+        "title": "후원",
+        "text": "서울시, 한국문화재단, 서울문화재단 등 다수"
+      },
+      {
+        "title": "기획",
+        "text": "서울디자인재단 공예디자인팀"
+      }
+    ],
     "thumb": "img/archive/2016-seoul-crafts-fair/thumb.jpg",
     "imgs": [
+      "img/archive/2016-seoul-crafts-fair/thumb.jpg",
       "img/archive/2016-seoul-crafts-fair/01.jpg",
       "img/archive/2016-seoul-crafts-fair/02.jpg",
       "img/archive/2016-seoul-crafts-fair/03.jpg",
@@ -698,15 +1233,55 @@
     ]
   },
   {
-    "type": "archive",
+    "type": "archives",
+    "id": "16-brick-convention",
+    "title": "BRICKOREA CONVENTION | 단체전",
+    "year": 2016,
+    "caption": "2016년 10월 22일 - 10월 30일",
+    "info": [
+      {
+        "title": "장소",
+        "text": "현대백화점 판교점"
+      },
+      {
+        "title": "주최·주관",
+        "text": "브릭코리아"
+      },
+      {
+        "title": "후원",
+        "text": "레고코리아"
+      }
+    ],
+    "thumb": "img/archive/2016-brick-convention/thumb.jpg",
+    "imgs": [
+      "img/archive/2016-brick-convention/thumb.jpg",
+      "img/archive/2016-brick-convention/01.jpg",
+      "img/archive/2016-brick-convention/02.jpg"
+    ]
+  },
+  {
+    "type": "archives",
     "id": "15-brick-convention",
-    "title": "BRICKOREA CONVENTION, 단체전",
+    "title": "BRICKOREA CONVENTION | 단체전",
     "year": 2015,
     "caption": "2015년 10월 3일 - 10월 11일",
-    "text": "현대백화점 판교점 10층",
+    "info": [
+      {
+        "title": "장소",
+        "text": "현대백화점 판교점"
+      },
+      {
+        "title": "주최",
+        "text": "브릭코리아"
+      },
+      {
+        "title": "후원",
+        "text": "레고코리아"
+      }
+    ],
     "thumb": "img/archive/2015-brick-convention/thumb.jpg",
     "imgs": [
-      "img/archive/2015-brick-convention/01.jpg",
+      "img/archive/2015-brick-convention/thumb.jpg",
       "img/archive/2015-brick-convention/02.jpeg",
       "img/archive/2015-brick-convention/03.jpeg",
       "img/archive/2015-brick-convention/04.jpeg"

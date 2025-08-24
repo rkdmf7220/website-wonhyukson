@@ -1,9 +1,9 @@
 <template>
   <div class="lang-container">
-    <button :class='{active : currentLang === Constants.lang.kr}' @click="onClickLang(Constants.lang.kr)">
-      <span>KR</span></button>
+    <button :class='{active : currentLang === Constants.lang.ko}' @click="onClickLang(Constants.lang.ko)">
+      <span>{{ Constants.lang.ko.toUpperCase() }}</span></button>
     <button :class='{active : currentLang === Constants.lang.en}' @click="onClickLang(Constants.lang.en)">
-      <span>EN</span></button>
+      <span>{{ Constants.lang.en.toUpperCase() }}</span></button>
   </div>
 </template>
 
@@ -23,6 +23,7 @@ export default {
   },
   methods: {
     onClickLang(lang) {
+      if (this.currentLang === lang) return;
       useStore().setLang(lang)
     }
   }

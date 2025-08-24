@@ -1,6 +1,6 @@
 const Constants = {
     lang: {
-        kr: 'kr',
+        ko: 'ko',
         en: 'en'
     }
 }
