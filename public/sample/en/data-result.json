@@ -1,9 +1,75 @@
 [
   {
     "type": "sculpture",
+    "id": "assemble-sculpture24",
+    "collectionType": "assemble sculpture",
+    "title": "Assemble sculpture",
+    "year": 2024,
+    "thumb": "img/sculpture/assemblesculpture24/01.jpg",
+    "imgs": [
+      "img/sculpture/assemblesculpture24/01.jpg",
+      "img/sculpture/assemblesculpture24/02.jpg"
+    ],
+    "caption": "Collaboration with Plasterer, 2024, mortar, cement, mesh net, Acrylic on panel, Dimensions variable 37.9 x 37.9 x 2.5cm (8)"
+  },
+  {
+    "type": "sculpture",
+    "id": "assemble-sculpture20240901",
+    "collectionType": "assemble sculpture",
+    "title": "Assemble sculpture",
+    "year": 2024,
+    "thumb": "img/sculpture/assemblesculpture20240901/01.jpg",
+    "imgs": [
+      "img/sculpture/assemblesculpture20240901/01.jpg",
+      "img/sculpture/assemblesculpture20240901/02.jpg",
+      "img/sculpture/assemblesculpture20240901/03.jpg"
+    ],
+    "caption": "2024, Acrylic on panel, colored lego brick, Dimensions variable 72.7 x 60.6 x 7.5cm (3)"
+  },
+  {
+    "type": "sculpture",
+    "id": "assemble-sculpture2",
+    "collectionType": "assemble sculpture",
+    "title": "Assemble sculpture 22-1",
+    "year": 2022,
+    "thumb": "img/sculpture/assemblesculpture2/01.jpg",
+    "imgs": [
+      "img/sculpture/assemblesculpture2/01.jpg",
+      "img/sculpture/assemblesculpture2/02.jpg"
+    ],
+    "caption": "2022, Acrylic on panel, colored lego brick, Dimensions variable 94 x 50 x 50cm (4)"
+  },
+  {
+    "type": "sculpture",
+    "id": "assemble-sculpture",
+    "collectionType": "assemble sculpture",
+    "title": "Assemble sculpture",
+    "year": 2022,
+    "thumb": "img/sculpture/assemblesculpture/01.jpg",
+    "imgs": [
+      "img/sculpture/assemblesculpture/01.jpg",
+      "img/sculpture/assemblesculpture/02.jpg",
+      "img/sculpture/assemblesculpture/03.jpg"
+    ],
+    "caption": "2022, Acrylic on panel, colored lego brick, Dimensions variable 94 x 50 x 50cm (4)"
+  },
+  {
+    "type": "sculpture",
+    "id": "composition-6",
+    "collectionType": "assemble sculpture",
+    "title": "Composition 6 (Division – Unity)",
+    "year": 2022,
+    "thumb": "img/sculpture/composition-6/01.jpg",
+    "imgs": [
+      "img/sculpture/composition-6/01.jpg"
+    ],
+    "caption": "2022, Acrylic on panel, colored lego brick, 20 x 35 x 35cm"
+  },
+  {
+    "type": "sculpture",
     "id": "lego-buddha",
+    "collectionType": "dream land",
     "title": "Cycle (Lego Buddha)",
-    "collectionType": "assembly",
     "year": 2021,
     "thumb": "img/sculpture/buddha/01.jpg",
     "imgs": [
@@ -12,15 +78,16 @@
       "img/sculpture/buddha/03.jpg",
       "img/sculpture/buddha/04.jpg"
     ],
-    "caption": "2021, Mixed media, Dimensions variable (430 x 400 x 140cm)",
+    "caption": "2021, Slikscreen on canvas, Tv, Lego brick, Dimensions variable (140 x 430 x 400cm)",
     "text": "An infinite white Buddha who expands and converges infinitely, whose expression and shape cannot be clearly seen, looks at the transparent Buddha.\nThrough the prism of the transparent Buddha's face, the white Buddha turns into the original digital colors RGB (Red, Green, Blue) and CMYK (Cyan, Magenta, Yellow, and Black).\nThrough the prism, the transmitted color circulates back to the infinite Buddha.\nAll of the colors circulate and can implement all the colors, expand and converge through the form of Buddha. In a color-circulating hourglass structure, the Buddha, which continuously expands and converges, circulates in a circle of 4-3-1-∞ (infinite)."
   },
   {
     "type": "sculpture",
     "id": "194",
+    "collectionType": "dream land",
     "title": "194",
     "year": 2020,
-    "caption": "2020, Lego brick on acrylic, 86.6 x 65 cm",
+    "caption": "2020, Lego brick on acrylic, 86.6 x 65cm",
     "thumb": "img/sculpture/194/01.jpg",
     "imgs": [
       "img/sculpture/194/01.jpg",
@@ -37,31 +104,12 @@
   },
   {
     "type": "sculpture",
-    "id": "hunchback-orange",
-    "title": "hunchback",
-    "year": 2020,
-    "caption": "2020, Lego brick, 22.7 x 3 x 42.5cm",
-    "thumb": "img/sculpture/hunchback_orange/01.jpg",
-    "imgs": [
-      "img/sculpture/hunchback_orange/01.jpg",
-      "img/sculpture/hunchback_orange/02.jpg",
-      "img/sculpture/hunchback_orange/03.jpg",
-      "img/sculpture/hunchback_orange/04.jpg",
-      "img/sculpture/hunchback_orange/05.jpg",
-      "img/sculpture/hunchback_orange/06.jpg",
-      "img/sculpture/hunchback_orange/07.jpg",
-      "img/sculpture/hunchback_orange/08.jpg",
-      "img/sculpture/hunchback_orange/09.jpg"
-    ],
-    "text": "People, that has to obey to unwanted order, carrying steels and gears\nthat is heavier than their weight, head to the destination.\nOne's self constrained even though it's unendurable.\nThat weak and innocent human's body, squashed by passive heavy steel, makes the form of hunchback.\nIt drives question whether Victor Hugo's 'Notre Dame de Paris's hunchback\nexists not only in a novel but also exists differently in the contemporary era."
-  },
-  {
-    "type": "sculpture",
     "id": "hunchback",
+    "collectionType": "dream land",
     "title": "hunchback",
     "year": 2020,
-    "caption": "2020, Lego brick, 22.7 x 3 x 42.5cm",
-    "thumb": "img/sculpture/hunchback/01.jpg",
+    "caption": "2020, Lego brick, 42.5 x 22.7 x 3cm",
+    "thumb": "img/sculpture/hunchback/04.jpg",
     "imgs": [
       "img/sculpture/hunchback/01.jpg",
       "img/sculpture/hunchback/02.jpg",
@@ -78,9 +126,10 @@
   {
     "type": "sculpture",
     "id": "opera",
+    "collectionType": "dream land",
     "title": "The fall of opera",
     "year": 2019,
-    "caption": "2019, Lego brick, 41 x 24 x94cm",
+    "caption": "2019, Lego brick, 94 x 41 x 24cm",
     "thumb": "img/sculpture/opera/01.jpg",
     "imgs": [
       "img/sculpture/opera/01.jpg",
@@ -98,9 +147,10 @@
   {
     "type": "sculpture",
     "id": "cathedral",
+    "collectionType": "dream land",
     "title": "St.Atlas cathedral",
     "year": 2018,
-    "caption": "2018, Lego brick, LED, 26 x 26 x 65cm",
+    "caption": "2018, Lego brick, LED, 65 x 26 x 26cm",
     "thumb": "img/sculpture/cathedral/01.jpg",
     "imgs": [
       "img/sculpture/cathedral/01.jpg",
@@ -118,9 +168,10 @@
   {
     "type": "sculpture",
     "id": "guitar",
+    "collectionType": "dream land",
     "title": "Millennium Falcon Guitar",
     "year": 2016,
-    "caption": "2016, Lego brick, LED, Bluetooth speaker, Guitar string, 94 x 33 x 14cm",
+    "caption": "2016, Lego brick, LED, Bluetooth speaker, Guitar string, 14 x 94 x 33cm",
     "thumb": "img/sculpture/guitar/01.jpg",
     "imgs": [
       "img/sculpture/guitar/01.jpg",
@@ -137,134 +188,711 @@
   },
   {
     "type": "painting",
-    "id": "assemble-abstract",
-    "title": "Assemble Abstract",
+    "id": "Assembly 20240909",
+    "collectionType": "assembly",
+    "title": "Assembly",
+    "year": 2024,
+    "caption": "2024, Colored lego brick and Acrylic on canvas, 160 x 132cm",
+    "thumb": "img/painting/Assembly 20240909/01.jpg",
+    "imgs": [
+      "img/painting/Assembly 20240909/01.jpg",
+      "img/painting/Assembly 20240909/02.jpg",
+      "img/painting/Assembly 20240909/03.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "Assembly 20240630",
+    "collectionType": "assembly",
+    "title": "Assembly",
+    "year": 2024,
+    "caption": "2024, Colored lego brick and Acrylic on canvas, 145.5 x 112.1cm (2)",
+    "thumb": "img/painting/Assembly 20240630/01.jpg",
+    "imgs": [
+      "img/painting/Assembly 20240630/01.jpg",
+      "img/painting/Assembly 20240630/02.jpg",
+      "img/painting/Assembly 20240630/03.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "Assembly 20240519",
+    "collectionType": "assembly",
+    "title": "Assembly",
+    "year": 2024,
+    "caption": "2024, Acrylic on canvas, 160 x 132cm",
+    "thumb": "img/painting/Assembly 20240519/01.jpg",
+    "imgs": [
+      "img/painting/Assembly 20240519/01.jpg",
+      "img/painting/Assembly 20240519/02.jpg",
+      "img/painting/Assembly 20240519/03.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "Assembly-dawn-2",
+    "collectionType": "assemble abstract",
+    "title": "Assembly dawn",
+    "year": 2023,
+    "caption": "2023-2024, Acrylic on canvas, 37.9 x 37.9cm",
+    "thumb": "img/painting/Assembly-dawn-2/01.jpg",
+    "imgs": [
+      "img/painting/Assembly-dawn-2/01.jpg",
+      "img/painting/Assembly-dawn-1/01.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "Assembly-dawn-1",
+    "collectionType": "assemble abstract",
+    "title": "Assembly dawn",
+    "year": 2023,
+    "caption": "2023-2024, Acrylic on canvas, 37.9 x 37.9cm",
+    "thumb": "img/painting/Assembly-dawn-1/01.jpg",
+    "imgs": [
+      "img/painting/Assembly-dawn-1/01.jpg",
+      "img/painting/Assembly-dawn-2/01.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "Assembly 20231107-2",
+    "collectionType": "assembly",
+    "title": "Assembly",
+    "year": 2023,
+    "caption": "2023, Colored lego brick and acrylic on canvas, 72.7 x 60.6cm",
+    "thumb": "img/painting/Assembly 20231107/03.jpg",
+    "imgs": [
+      "img/painting/Assembly 20231107/03.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "Assembly 20231107-1",
+    "collectionType": "assembly",
+    "title": "Assembly",
+    "year": 2023,
+    "caption": "2023, Colored lego brick and acrylic on canvas, 72.7 x 60.6cm",
+    "thumb": "img/painting/Assembly 20231107/02.jpg",
+    "imgs": [
+      "img/painting/Assembly 20231107/02.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "Assembly 20231106",
+    "collectionType": "assembly",
+    "title": "Assembly",
+    "year": 2023,
+    "caption": "2023, Acrylic on canvas, 90.9 x 72.7cm",
+    "thumb": "img/painting/Assembly 20231106/01.jpg",
+    "imgs": [
+      "img/painting/Assembly 20231106/01.jpg",
+      "img/painting/Assembly 20231106/02.jpg",
+      "img/painting/Assembly 20231106/03.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "Assembly 20231028",
+    "collectionType": "assembly",
+    "title": "Assembly",
+    "year": 2023,
+    "caption": "2023, Colored lego brick and acrylic on canvas, 116.8 x 91cm (2)",
+    "thumb": "img/painting/Assembly 20231028/02.jpg",
+    "imgs": [
+      "img/painting/Assembly 20231028/02.jpg",
+      "img/painting/Assembly 20231028/03.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "Assembly 20231021",
+    "collectionType": "assembly",
+    "title": "Assembly",
+    "year": 2023,
+    "caption": "2023, Acrylic, slikscreen on paper, 39.4 x 27.2cm",
+    "thumb": "img/painting/Assembly 20231021/01.jpg",
+    "imgs": [
+      "img/painting/Assembly 20231021/01.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "Assembly 20231020",
+    "collectionType": "assembly",
+    "title": "Assembly",
+    "year": 2023,
+    "caption": "2023, Slikscreen on paper, 39.4 x 27.2cm",
+    "thumb": "img/painting/Assembly 20231020/01.jpg",
+    "imgs": [
+      "img/painting/Assembly 20231020/01.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "Assembly 20231011",
+    "collectionType": "assembly",
+    "title": "Assembly",
+    "year": 2023,
+    "caption": "2023, Acrylic on canvas, 24.2 x 24.2cm",
+    "thumb": "img/painting/Assembly 20231011/01.jpg",
+    "imgs": [
+      "img/painting/Assembly 20231011/01.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "Assembly 20231006",
+    "collectionType": "assembly",
+    "title": "Assembly",
+    "year": 2023,
+    "caption": "2023, Colored lego brick and acrylic on canvas, 72.7 x 60.6cm",
+    "thumb": "img/painting/Assembly 20231006/01.jpg",
+    "imgs": [
+      "img/painting/Assembly 20231006/01.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "Assembly 20231005",
+    "collectionType": "assembly",
+    "title": "Assembly",
+    "year": 2023,
+    "caption": "2023, Acrylic on canvas, 72.7 x 60.6cm",
+    "thumb": "img/painting/Assembly 20231005/01.jpg",
+    "imgs": [
+      "img/painting/Assembly 20231005/01.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "block 20231002",
+    "collectionType": "assemble abstract",
+    "title": "Block",
+    "year": 2023,
+    "caption": "2023, Acrylic on canvas, 45.5 x 45.5cm",
+    "thumb": "img/painting/Block 20231002/01.jpg",
+    "imgs": [
+      "img/painting/Block 20231002/01.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "Assembly 20230930",
+    "collectionType": "assembly",
+    "title": "Assembly",
+    "year": 2023,
+    "caption": "2023, Colored lego brick and acrylic on canvas, 53 x 45.5cm",
+    "thumb": "img/painting/Assembly 20230930/01.jpg",
+    "imgs": [
+      "img/painting/Assembly 20230930/01.jpg",
+      "img/painting/Assembly 20230930/02.jpg",
+      "img/painting/Assembly 20230930/03.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "Assembly 20230911",
+    "collectionType": "assembly",
+    "title": "Assembly",
+    "year": 2023,
+    "caption": "2023, Colored lego brick and acrylic on canvas, 116.8 x 72.7cm (2)",
+    "thumb": "img/painting/Assembly 20230911/02.jpg",
+    "imgs": [
+      "img/painting/Assembly 20230911/02.jpg",
+      "img/painting/Assembly 20230911/03.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "Assembly 20230824",
+    "collectionType": "assembly",
+    "title": "Assembly",
+    "year": 2023,
+    "caption": "2023, Acrylic on canvas, 45.5 x 53cm",
+    "thumb": "img/painting/Assembly 20230824/01.jpg",
+    "imgs": [
+      "img/painting/Assembly 20230824/01.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "Assembly 20230801-4",
+    "collectionType": "assembly",
+    "title": "Assembly",
+    "year": 2023,
+    "caption": "2023, Colored lego brick and acrylic on canvas, 76.6 x 32.3cm",
+    "thumb": "img/painting/Assembly 20230901/05.jpg",
+    "imgs": [
+      "img/painting/Assembly 20230901/05.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "Assembly 20230801-3",
+    "collectionType": "assembly",
+    "title": "Assembly",
+    "year": 2023,
+    "caption": "2023, Colored lego brick and acrylic on canvas, 76.6 x 32.3cm",
+    "thumb": "img/painting/Assembly 20230901/04.jpg",
+    "imgs": [
+      "img/painting/Assembly 20230901/04.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "Assembly 20230801-2",
+    "collectionType": "assembly",
+    "title": "Assembly",
+    "year": 2023,
+    "caption": "2023, Colored lego brick and acrylic on canvas, 76.6 x 32.3cm",
+    "thumb": "img/painting/Assembly 20230901/03.jpg",
+    "imgs": [
+      "img/painting/Assembly 20230901/03.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "Assembly 20230801-1",
+    "collectionType": "assembly",
+    "title": "Assembly",
+    "year": 2023,
+    "caption": "2023, Colored lego brick and acrylic on canvas, 76.6 x 32.3cm",
+    "thumb": "img/painting/Assembly 20230901/02.jpg",
+    "imgs": [
+      "img/painting/Assembly 20230901/02.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "Assembly 20230404",
+    "collectionType": "assembly",
+    "title": "Assembly",
+    "year": 2023,
+    "caption": "2023, Colored lego brick and acrylic on canvas, 80.3 x 80.3cm",
+    "thumb": "img/painting/Assembly 20230904/01.jpg",
+    "imgs": [
+      "img/painting/Assembly 20230904/01.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "Assembly 20230119",
+    "collectionType": "assembly",
+    "title": "Assembly",
+    "year": 2023,
+    "caption": "2023, Colored lego brick and acrylic on canvas, 72.7 x 53cm",
+    "thumb": "img/painting/Assembly 20230919/01.jpg",
+    "imgs": [
+      "img/painting/Assembly 20230919/01.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "untitled",
+    "collectionType": "assembly",
+    "title": "Untitled",
+    "year": 2022,
+    "caption": "2022, Colored lego brick and acrylic on canvas, 72.7 x 60.6cm (2)",
+    "thumb": "img/painting/untitled/01.jpg",
+    "imgs": [
+      "img/painting/untitled/01.jpg",
+      "img/painting/untitled/02.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "harmony",
+    "collectionType": "assembly",
+    "title": "Harmony",
+    "year": 2022,
+    "caption": "2022, Colored lego brick and acrylic on canvas, 60.6 x 60.6cm",
+    "thumb": "img/painting/harmony/01.jpg",
+    "imgs": [
+      "img/painting/harmony/01.jpg",
+      "img/painting/harmony/02.jpg",
+      "img/painting/harmony/03.jpg",
+      "img/painting/harmony/04.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "composition5",
+    "collectionType": "assemble abstract",
+    "title": "Composition 5 (Division – Unity)",
+    "year": 2022,
+    "caption": "2022, Acrylic on canvas, 35cm x 35cm",
+    "thumb": "img/painting/composition-5/01.jpg",
+    "imgs": [
+      "img/painting/composition-5/01.jpg",
+      "img/painting/composition-1/02.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "assembly-2",
+    "collectionType": "assembly",
+    "title": "Assembly",
+    "year": 2022,
+    "caption": "2022, Colored lego brick and acrylic on canvas, 72.7 x 60.6cm",
+    "thumb": "img/painting/assembly-2/01.jpg",
+    "imgs": [
+      "img/painting/assembly-2/01.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "assembly-1",
+    "collectionType": "assembly",
+    "title": "Assembly",
+    "year": 2022,
+    "caption": "2022, Colored lego brick and acrylic on canvas, 160 x 132cm",
+    "thumb": "img/painting/assembly-1/01.jpg",
+    "imgs": [
+      "img/painting/assembly-1/01.jpg",
+      "img/painting/assembly-1/02.jpg",
+      "img/painting/assembly-1/03.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "composition-2-1",
+    "collectionType": "assemble abstract",
+    "title": "Composition 2-1",
+    "year": 2022,
+    "caption": "2022, Acrylic on canvas, 80.3cm x 80.3cm",
+    "thumb": "img/painting/composition-2-1/01.jpg",
+    "imgs": [
+      "img/painting/composition-2-1/01.jpg",
+      "img/painting/composition-2-1/02.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "assemble-landscape",
+    "collectionType": "assemble abstract",
+    "title": "Assemble landscape",
+    "year": 2022,
+    "caption": "2022, Acrylic on canvas, Dimensions variable 37.9 x 37.9cm (58)",
+    "thumb": "img/painting/assemblelandscape/01.jpg",
+    "imgs": [
+      "img/painting/assemblelandscape/01.jpg",
+      "img/painting/assemblelandscape/02.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "block211128",
+    "collectionType": "assemble abstract",
+    "title": "Block 21-2",
     "year": 2021,
-    "caption": "2021, acrylic on canvas, 80.3 x 80.3 cm",
-    "thumb": "img/painting/assemble/thumb.jpg",
+    "caption": "2021, Acrylic on canvas, Dimensions variable 35 x 35cm (16)",
+    "thumb": "img/painting/block211128/01.jpg",
+    "imgs": [
+      "img/painting/block211128/01.jpg",
+      "img/painting/block211128/02.jpg",
+      "img/painting/block211128/03.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "assemble-abstract-16",
+    "collectionType": "assemble abstract",
+    "title": "Assemble abstract",
+    "year": 2021,
+    "caption": "2021, acrylic on canvas, 80.3cm x 80.3cm",
+    "thumb": "img/painting/assemble/16.jpg",
+    "imgs": [
+      "img/painting/assemble/16.jpg",
+      "img/painting/assemble/thumb.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "assemble-abstract-15",
+    "collectionType": "assemble abstract",
+    "title": "Assemble abstract",
+    "year": 2021,
+    "caption": "2021, acrylic on canvas, 80.3cm x 80.3cm",
+    "thumb": "img/painting/assemble/15.jpg",
+    "imgs": [
+      "img/painting/assemble/15.jpg",
+      "img/painting/assemble/thumb.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "assemble-abstract-14",
+    "collectionType": "assemble abstract",
+    "title": "Assemble abstract",
+    "year": 2021,
+    "caption": "2021, acrylic on canvas, 80.3cm x 80.3cm",
+    "thumb": "img/painting/assemble/14.jpg",
+    "imgs": [
+      "img/painting/assemble/14.jpg",
+      "img/painting/assemble/thumb.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "assemble-abstract-13",
+    "collectionType": "assemble abstract",
+    "title": "Assemble abstract",
+    "year": 2021,
+    "caption": "2021, acrylic on canvas, 80.3cm x 80.3cm",
+    "thumb": "img/painting/assemble/13.jpg",
+    "imgs": [
+      "img/painting/assemble/13.jpg",
+      "img/painting/assemble/thumb.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "assemble-abstract-12",
+    "collectionType": "assemble abstract",
+    "title": "Assemble abstract",
+    "year": 2021,
+    "caption": "2021, acrylic on canvas, 80.3cm x 80.3cm",
+    "thumb": "img/painting/assemble/12.jpg",
+    "imgs": [
+      "img/painting/assemble/12.jpg",
+      "img/painting/assemble/thumb.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "assemble-abstract-11",
+    "collectionType": "assemble abstract",
+    "title": "Assemble abstract",
+    "year": 2021,
+    "caption": "2021, acrylic on canvas, 80.3cm x 80.3cm",
+    "thumb": "img/painting/assemble/11.jpg",
+    "imgs": [
+      "img/painting/assemble/11.jpg",
+      "img/painting/assemble/thumb.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "assemble-abstract-10",
+    "collectionType": "assemble abstract",
+    "title": "Assemble abstract",
+    "year": 2021,
+    "caption": "2021, acrylic on canvas, 80.3cm x 80.3cm",
+    "thumb": "img/painting/assemble/10.jpg",
+    "imgs": [
+      "img/painting/assemble/10.jpg",
+      "img/painting/assemble/thumb.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "assemble-abstract-9",
+    "collectionType": "assemble abstract",
+    "title": "Assemble abstract",
+    "year": 2021,
+    "caption": "2021, acrylic on canvas, 80.3cm x 80.3cm",
+    "thumb": "img/painting/assemble/09.jpg",
+    "imgs": [
+      "img/painting/assemble/09.jpg",
+      "img/painting/assemble/thumb.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "assemble-abstract-8",
+    "collectionType": "assemble abstract",
+    "title": "Assemble abstract",
+    "year": 2021,
+    "caption": "2021, acrylic on canvas, 80.3cm x 80.3cm",
+    "thumb": "img/painting/assemble/08.jpg",
+    "imgs": [
+      "img/painting/assemble/08.jpg",
+      "img/painting/assemble/thumb.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "assemble-abstract-7",
+    "collectionType": "assemble abstract",
+    "title": "Assemble abstract",
+    "year": 2021,
+    "caption": "2021, acrylic on canvas, 80.3cm x 80.3cm",
+    "thumb": "img/painting/assemble/07.jpg",
+    "imgs": [
+      "img/painting/assemble/07.jpg",
+      "img/painting/assemble/thumb.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "assemble-abstract-6",
+    "collectionType": "assemble abstract",
+    "title": "Assemble abstract",
+    "year": 2021,
+    "caption": "2021, acrylic on canvas, 80.3cm x 80.3cm",
+    "thumb": "img/painting/assemble/06.jpg",
+    "imgs": [
+      "img/painting/assemble/06.jpg",
+      "img/painting/assemble/thumb.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "assemble-abstract-5",
+    "collectionType": "assemble abstract",
+    "title": "Assemble abstract",
+    "year": 2021,
+    "caption": "2021, acrylic on canvas, 80.3cm x 80.3cm",
+    "thumb": "img/painting/assemble/05.jpg",
+    "imgs": [
+      "img/painting/assemble/05.jpg",
+      "img/painting/assemble/thumb.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "assemble-abstract-4",
+    "collectionType": "assemble abstract",
+    "title": "Assemble abstract",
+    "year": 2021,
+    "caption": "2021, acrylic on canvas, 80.3cm x 80.3cm",
+    "thumb": "img/painting/assemble/04.jpg",
+    "imgs": [
+      "img/painting/assemble/04.jpg",
+      "img/painting/assemble/thumb.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "assemble-abstract-3",
+    "collectionType": "assemble abstract",
+    "title": "Assemble abstract",
+    "year": 2021,
+    "caption": "2021, acrylic on canvas, 80.3cm x 80.3cm",
+    "thumb": "img/painting/assemble/03.jpg",
+    "imgs": [
+      "img/painting/assemble/03.jpg",
+      "img/painting/assemble/thumb.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "assemble-abstract-2",
+    "collectionType": "assemble abstract",
+    "title": "Assemble abstract",
+    "year": 2021,
+    "caption": "2021, acrylic on canvas, 80.3cm x 80.3cm",
+    "thumb": "img/painting/assemble/02.jpg",
+    "imgs": [
+      "img/painting/assemble/02.jpg",
+      "img/painting/assemble/thumb.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "assemble-abstract-1",
+    "collectionType": "assemble abstract",
+    "title": "Assemble abstract",
+    "year": 2021,
+    "caption": "2021, acrylic on canvas, 80.3cm x 80.3cm",
+    "thumb": "img/painting/assemble/01.jpg",
     "imgs": [
       "img/painting/assemble/01.jpg",
-      "img/painting/assemble/02.jpg",
-      "img/painting/assemble/03.jpg",
-      "img/painting/assemble/04.jpg",
-      "img/painting/assemble/05.jpg",
-      "img/painting/assemble/06.jpg",
-      "img/painting/assemble/07.jpg",
-      "img/painting/assemble/08.jpg",
-      "img/painting/assemble/09.jpg",
-      "img/painting/assemble/10.jpg",
-      "img/painting/assemble/11.jpg",
-      "img/painting/assemble/12.jpg",
-      "img/painting/assemble/13.jpg",
-      "img/painting/assemble/14.jpg",
-      "img/painting/assemble/15.jpg",
-      "img/painting/assemble/16.jpg"
+      "img/painting/assemble/thumb.jpg"
+    ]
+  },
+  {
+    "type": "painting",
+    "id": "block210929",
+    "collectionType": "assemble abstract",
+    "title": "Block 21-1",
+    "year": 2021,
+    "caption": "2021, acrylic on canvas, Dimensions variable 35 x 35cm (13)",
+    "thumb": "img/painting/block210929/01.jpg",
+    "imgs": [
+      "img/painting/block210929/01.jpg",
+      "img/painting/block210929/02.jpg",
+      "img/painting/block210929/03.jpg"
     ],
-    "text": "Color plane abstraction that established color variations, harmony and contrast, and equilibrium between balance and tension.\nEach painting can be assembled in a plane.\nThe block is implemented in a three-dimensional assembly, but the assemble abstract is a mobile painting that varies in various ways without being restricted to the location, and can be assembled in a rhythmic and flat form.\nIn the intensified form of the Composition 1 (Division – Unity), the composition series is a variation on the form, and the assemble abstract is a series of variations on the color."
+    "text": "Experimental work on possibility and origin on Lego, not as a physical formative material but when reconstructed as a flat painting.\nIt changes its form even with the same limited colors and shapes through composition.\nshowing Lego's identity, assembly.\nEach form, geometric as a face and has attribute of nature, expresses a form, close to concrete art."
   },
   {
     "type": "painting",
     "id": "composition4",
+    "collectionType": "assemble abstract",
     "title": "Composition 4 (Division – Unity)",
     "year": 2020,
     "caption": "2020, acrylic on canvas, 35cm x 35cm",
     "thumb": "img/painting/composition-4/01.jpg",
     "imgs": [
       "img/painting/composition-4/01.jpg",
-      "img/painting/composition-4/02.jpg",
-      "img/painting/composition-4/03.jpg",
-      "img/painting/composition-4/04.jpg",
-      "img/painting/composition-4/05.jpg",
-      "img/painting/composition-4/06.jpg",
-      "img/painting/composition-4/07.jpg",
-      "img/painting/composition-4/08.jpg",
-      "img/painting/composition-4/09.jpg"
+      "img/painting/composition-1/02.jpg"
     ],
     "text": "Variations on 'Block, 2020's experiment. A brick of Lego reconstructs as a flat painting and that brick again deconstruct as a basic component of a painting; point, line and face and creates new, non-figurative ideal form.\nDifferent shapes and characters eventually, within the same context, combines.\nThus contains surreal structure, unidentifiable of its procedure and whether it is divided or united."
   },
   {
     "type": "painting",
     "id": "composition3",
+    "collectionType": "assemble abstract",
     "title": "Composition 3 (Division – Unity)",
     "year": 2020,
     "caption": "2020, acrylic on canvas, 35cm x 35cm",
     "thumb": "img/painting/composition-3/01.jpg",
     "imgs": [
       "img/painting/composition-3/01.jpg",
-      "img/painting/composition-3/02.jpg",
-      "img/painting/composition-3/03.jpg",
-      "img/painting/composition-3/04.jpg",
-      "img/painting/composition-3/05.jpg",
-      "img/painting/composition-3/06.jpg",
-      "img/painting/composition-3/07.jpg",
-      "img/painting/composition-3/08.jpg"
+      "img/painting/composition-1/02.jpg"
     ],
     "text": "Variations on 'Block, 2020''s experiment. A brick of Lego reconstructs as a flat painting and that brick again deconstruct as a basic component of a painting; point, line and face and creates new, non-figurative ideal form.\nDifferent shapes and characters eventually, within the same context, combines.\nThus contains surreal structure, unidentifiable of its procedure and whether it is divided or united."
   },
   {
     "type": "painting",
     "id": "composition2",
+    "collectionType": "assemble abstract",
     "title": "Composition 2 (Division – Unity)",
     "year": 2020,
     "caption": "2020, acrylic on canvas, 35cm x 35cm",
     "thumb": "img/painting/composition-2/01.jpg",
     "imgs": [
       "img/painting/composition-2/01.jpg",
-      "img/painting/composition-2/02.jpg",
-      "img/painting/composition-2/03.jpg",
-      "img/painting/composition-2/04.jpg",
-      "img/painting/composition-2/05.jpg",
-      "img/painting/composition-2/06.jpg",
-      "img/painting/composition-2/07.jpg",
-      "img/painting/composition-2/08.jpg",
-      "img/painting/composition-2/09.jpg"
+      "img/painting/composition-1/02.jpg"
     ],
     "text": "Variations on 'Block, 2020''s experiment. A brick of Lego reconstructs as a flat painting and that brick again deconstruct as a basic component of a painting; point, line and face and creates new, non-figurative ideal form.\nDifferent shapes and characters eventually, within the same context, combines.\nThus contains surreal structure, unidentifiable of its procedure and whether it is divided or united."
   },
   {
     "type": "painting",
     "id": "composition1",
+    "collectionType": "assemble abstract",
     "title": "Composition 1 (Division – Unity)",
     "year": 2020,
     "caption": "2020, acrylic on canvas, 35cm x 35cm",
     "thumb": "img/painting/composition-1/01.jpg",
     "imgs": [
       "img/painting/composition-1/01.jpg",
-      "img/painting/composition-1/02.jpg",
-      "img/painting/composition-1/03.jpg",
-      "img/painting/composition-1/04.jpg",
-      "img/painting/composition-1/05.jpg",
-      "img/painting/composition-1/06.jpg",
-      "img/painting/composition-1/07.jpg",
-      "img/painting/composition-1/08.jpg",
-      "img/painting/composition-1/09.jpg"
+      "img/painting/composition-1/02.jpg"
     ],
     "text": "Variations on 'Block, 2020''s experiment. A brick of Lego reconstructs as a flat painting and that brick again deconstruct as a basic component of a painting; point, line and face and creates new, non-figurative ideal form.\nDifferent shapes and characters eventually, within the same context, combines.\nThus contains surreal structure, unidentifiable of its procedure and whether it is divided or united."
   },
   {
     "type": "painting",
-    "id": "block-red",
-    "title": "block",
+    "id": "block201015",
+    "collectionType": "assemble abstract",
+    "title": "Block 20-1",
     "year": 2020,
-    "caption": "2020, acrylic on canvas, 35cm x 35cm",
-    "thumb": "img/painting/block-red/01.jpg",
+    "caption": "2020, acrylic on canvas, Dimensions variable 35 x 35cm (16)",
+    "thumb": "img/painting/block201015/01.jpg",
     "imgs": [
-      "img/painting/block-red/01.jpg",
-      "img/painting/block-red/02.jpg",
-      "img/painting/block-red/03.jpg",
-      "img/painting/block-red/04.jpg",
-      "img/painting/block-red/05.jpg",
-      "img/painting/block-red/06.jpg",
-      "img/painting/block-red/07.jpg",
-      "img/painting/block-red/08.jpg",
-      "img/painting/block-red/09.jpg",
-      "img/painting/block-red/10.jpg"
+      "img/painting/block201015/01.jpg",
+      "img/painting/block201015/02.jpg",
+      "img/painting/block201015/03.jpg"
     ],
     "text": "Experimental work on possibility and origin on Lego, not as a physical formative material but when reconstructed as a flat painting.\nIt changes its form even with the same limited colors and shapes through composition.\nshowing Lego's identity, assembly.\nEach form, geometric as a face and has attribute of nature, expresses a form, close to concrete art."
   },
   {
     "type": "painting",
     "id": "twisted-harmony",
+    "collectionType": "assembly",
     "title": "Twisted harmony",
     "year": 2018,
     "caption": "2018, Lego brick on canvas, 53cm x 53cm",
@@ -282,7 +910,54 @@
   },
   {
     "type": "typography",
+    "id": "book-Dream Land-assemblogy",
+    "collectionType": "book",
+    "title": "Dream Land·assemblogy",
+    "year": 2023,
+    "caption": "2023, Offset, Perfect binding, 203 x 254mm, 72page",
+    "thumb": "img/typography/23-Dream Land-assemblogy/01.jpg",
+    "imgs": [
+      "img/typography/23-Dream Land-assemblogy/01.jpg",
+      "img/typography/23-Dream Land-assemblogy/02.jpg",
+      "img/typography/23-Dream Land-assemblogy/03.jpg",
+      "img/typography/23-Dream Land-assemblogy/04.jpg",
+      "img/typography/23-Dream Land-assemblogy/05.jpg",
+      "img/typography/23-Dream Land-assemblogy/06.jpg",
+      "img/typography/23-Dream Land-assemblogy/07.jpg",
+      "img/typography/23-Dream Land-assemblogy/08.jpg",
+      "img/typography/23-Dream Land-assemblogy/09.jpg",
+      "img/typography/23-Dream Land-assemblogy/10.jpg",
+      "img/typography/23-Dream Land-assemblogy/11.jpg"
+    ]
+  },
+  {
+    "type": "typography",
+    "id": "spaceship",
+    "collectionType": "poster",
+    "title": "Wrecked but seemingly undamaged spcaeship",
+    "year": 2022,
+    "caption": "2022, Screen and Print on paper, 101.6 x 57.15cm (3840 x 2160px)",
+    "thumb": "img/typography/spaceship/01.jpg",
+    "imgs": [
+      "img/typography/spaceship/01.jpg"
+    ]
+  },
+  {
+    "type": "typography",
+    "id": "assemblogy",
+    "collectionType": "poster",
+    "title": "Assemblogy: compose and combine",
+    "year": 2022,
+    "caption": "2021, Print on paper, 59.4 x 84.1cm",
+    "thumb": "img/typography/assemblogy/01.jpg",
+    "imgs": [
+      "img/typography/assemblogy/01.jpg"
+    ]
+  },
+  {
+    "type": "typography",
     "id": "blue-wedge",
+    "collectionType": "poster",
     "title": "Beat the Reds with Blue wedge",
     "year": 2022,
     "caption": "2022, Print on paper, 29.9 x 24.1cm",
@@ -295,14 +970,14 @@
   {
     "type": "typography",
     "id": "poster-buddha",
-    "title": "Dream Land : color poster",
+    "collectionType": "poster",
+    "title": "Dream Land : color",
     "year": 2021,
-    "caption": "2021, illustration, 59.4 x 84.1cm",
+    "caption": "2021, Print on paper, 59.4 x 84.1cm",
     "thumb": "img/typography/buddha/01.jpg",
     "imgs": [
       "img/typography/buddha/01.jpg",
       "img/typography/buddha/02.jpg",
-      "img/typography/buddha/03.jpg",
       "img/typography/buddha/04.jpg",
       "img/typography/buddha/05.jpg"
     ],
@@ -311,9 +986,10 @@
   {
     "type": "typography",
     "id": "rainwater",
+    "collectionType": "poster",
     "title": "Rainwater",
     "year": 2021,
-    "caption": "2021, illustration, 59.4 x 84.1cm",
+    "caption": "2021, Illustration, 59.4 x 84.1cm",
     "thumb": "img/typography/rainwater/01.jpg",
     "imgs": [
       "img/typography/rainwater/01.jpg"
@@ -322,24 +998,8 @@
   },
   {
     "type": "typography",
-    "id": "artwork",
-    "title": "2020 Wonhyuk Son Art collection",
-    "year": 2020,
-    "caption": "2020, Digital printing, A5",
-    "thumb": "img/typography/artwork/01.jpg",
-    "imgs": [
-      "img/typography/artwork/01.jpg",
-      "img/typography/artwork/02.jpg",
-      "img/typography/artwork/03.jpg",
-      "img/typography/artwork/04.jpg",
-      "img/typography/artwork/05.jpg",
-      "img/typography/artwork/06.jpg"
-    ],
-    "text": "2016 ~ 2020 Art work"
-  },
-  {
-    "type": "typography",
     "id": "cycle-gestalt",
+    "collectionType": "poster",
     "title": "Cycle (gestalt)",
     "year": 2020,
     "caption": "2020, Digital printing, 59.4 x 84.1cm",
@@ -355,6 +1015,7 @@
   {
     "type": "typography",
     "id": "cycle-triangle",
+    "collectionType": "poster",
     "title": "Cycle (triangle)",
     "year": 2020,
     "caption": "2020, Digital printing, 59.4 x 84.1cm",
@@ -370,6 +1031,7 @@
   {
     "type": "typography",
     "id": "cycle-circle",
+    "collectionType": "poster",
     "title": "Cycle (circle)",
     "year": 2020,
     "caption": "2020, Digital printing, 59.4 x 84.1cm",
@@ -385,6 +1047,7 @@
   {
     "type": "typography",
     "id": "cycle-square",
+    "collectionType": "poster",
     "title": "Cycle (square)",
     "year": 2020,
     "caption": "2020, Digital printing, 59.4 x 84.1cm",
@@ -398,91 +1061,649 @@
     "text": "The principle of stroke addition, which changes shape as sound becomes stronger and weaker, can be compared implicitly to the circulation of the human world through the use of letters created by humans again.\nThere is a surreal structure in which the beginning and end of time cannot be separated, as well as geometric and concrete artistic characteristics in the form of sans serif."
   },
   {
-    "type": "typography",
-    "id": "flower",
-    "title": "Flower",
-    "year": 2019,
-    "caption": "2019, Illustration, A1 / 59.4 x 84.1cm",
-    "thumb": "img/typography/flower/01.jpg",
-    "imgs": [
-      "img/typography/flower/01.jpg",
-      "img/typography/flower/02.jpg",
-      "img/typography/flower/03.jpg"
+    "type": "news",
+    "id": "24-T incheon",
+    "collectionType": "etc",
+    "title": "Art·T Incheon",
+    "year": 2024,
+    "caption": "November 1 - December 1, 2024",
+    "info": [
+      {
+        "title": "Hosted by",
+        "text": "Incheon Foundation for Arts and Culture"
+      },
+      {
+        "title": "Venue",
+        "text": "Cafe Taeo"
+      },
+      {
+        "title": "Sponsored by",
+        "text": "Incheon Metropolitan City, Incheon Foundation for Arts and Culture"
+      }
     ],
-    "text": "Making use of the pure Korean one letter as a theme, the mandala consisted of a combination of flower petals as well as Hangeul consonants and vowels.\nBy transforming the shape and structure of the flower, it uses the regularity and formality of Hangeul as a metaphor for flowers."
-  },
-  {
-    "type": "typography",
-    "id": "yeot",
-    "title": "Yeot",
-    "year": 2019,
-    "caption": "2019, Illustration, A1 / 59.4 x 84.1cm",
-    "thumb": "img/typography/yeot/01.jpg",
+    "thumb": "img/news/24-T incheon/01.jpg",
     "imgs": [
-      "img/typography/yeot/01.jpg",
-      "img/typography/yeot/02.jpg",
-      "img/typography/yeot/03.jpg"
-    ],
-    "text": "As Korean traditional snack, Yeot, is melted, it captures a fluidity like a single stroke of a brush, giving a sense of being a single brush stroke, not from the front."
-  },
-  {
-    "type": "typography",
-    "id": "bauhaus",
-    "title": "What is Bauhaus in South Korea",
-    "year": 2019,
-    "caption": "2019, Single-channel video, 1920 x 1080 Frame, 9.5, 9, 10.5 min",
-    "thumb": "img/typography/bauhaus/01.png",
-    "imgs": [
-      "img/typography/bauhaus/01.png",
-      "img/typography/bauhaus/02.png",
-      "img/typography/bauhaus/03.png",
-      "img/typography/bauhaus/04.jpg",
-      "img/typography/bauhaus/05.jpg",
-      "img/typography/bauhaus/06.jpg"
-    ],
-    "text": "Client: AhnGraphics Publisher\n\nVideo created for the 100th anniversary of Bauhaus that combines lecture videos of its main characters exploring bauhaus in South Korea.\nAdditionally, it was screened at Dongdaemun Design Plaza in commemoration of Bauhaus' 100th anniversary."
-  },
-  {
-    "type": "archive",
-    "id": "21-singing-word",
-    "title": "Singing word, singing text, Korean Society of Typography Exhibition 15 ",
-    "year": 2021,
-    "caption": "December 20 2021 - January 20 2022",
-    "text" : "COEX Hall C, Seoul, Metaverse online, 513, Yeongdong-daero, Gangnam-gu, Seoul, Republic of Korea",
-    "thumb": "img/archive/2021-singing-word/thumb.jpg",
-    "imgs": [
-      "img/archive/2021-singing-word/01.jpeg",
-      "img/archive/2021-singing-word/02.jpeg",
-      "img/archive/2021-singing-word/03.jpeg"
+      "img/news/24-T incheon/01.jpg",
+      "img/news/24-T incheon/02.jpg"
     ]
   },
   {
-    "type": "archive",
-    "id": "21-dreamland",
-    "title": "Dream Land: Color, Solo Exhibition",
+    "type": "news",
+    "id": "23-Dream Land-assemblogy",
+    "collectionType": "publication",
+    "title": "Dream Land·assemblogy",
+    "year": 2023,
+    "caption": "November, 2023",
+    "info": [
+      {
+        "title": "Publisher",
+        "text": "Independent Publishing"
+      },
+      {
+        "title": "Specification",
+        "text": "Offset, Perfect binding, 203 x 254mm, 72page"
+      },
+      {
+        "title": "Edited, Designed by",
+        "text": "Wonhyuk Son"
+      },
+      {
+        "title": "Written by",
+        "text": "Haesun Chung"
+      },
+      {
+        "title": "Translated by",
+        "text": "Seoulselection"
+      },
+      {
+        "title": "Photo by",
+        "text": "Heesang Ahn, Gwangmyeong Foundation for Arts and Culture"
+      },
+      {
+        "title": "Thanks to",
+        "text": "Jisook moon, Sungwoon Yoo"
+      },
+      {
+        "title": "Printed by",
+        "text": "Intime"
+      },
+      {
+        "title": "Sponsored by",
+        "text": "Incheon Metropolitan City, Incheon Foundation for Arts and Culture, Space Ilbu"
+      },
+      {
+        "title": "Introduction",
+        "text": "Dreamland·assemblogy is a catalog that compiles individual exhibitions held at the Gwangmyeong Civic Center and CICA Museum, featuring artist's notes and a curator's essay by Haesun Chung."
+      },
+      {
+        "type": "PDF",
+        "link": "pdf/Dream Land·assemblogy.pdf",
+        "fileName": "Dream Land·assemblogy.pdf"
+      }
+    ],
+    "thumb": "img/typography/23-Dream Land-assemblogy/01.jpg",
+    "imgs": [
+      "img/typography/23-Dream Land-assemblogy/01.jpg",
+      "img/typography/23-Dream Land-assemblogy/02.jpg",
+      "img/typography/23-Dream Land-assemblogy/03.jpg",
+      "img/typography/23-Dream Land-assemblogy/08.jpg",
+      "img/typography/23-Dream Land-assemblogy/10.jpg"
+    ]
+  },
+  {
+    "type": "news",
+    "id": "23-CICA PRESS CICA ART NOW 2023",
+    "collectionType": "publication",
+    "title": "CICA ART NOW 2023",
+    "year": 2023,
+    "caption": "August 31, 2023",
+    "info": [
+      {
+        "title": "Publisher",
+        "text": "CICA PRESS"
+      },
+      {
+        "title": "ISBN",
+        "text": "2672-0345 35"
+      },
+      {
+        "title": "Introduction",
+        "text": "CICA Art Now 2023 features 52 artists from the CICA Contemporary Art Solo Show Series and CICA Young Korean Artists."
+      }
+    ],
+    "thumb": "img/news/23-CICA PRESS CICA ART NOW 2023/01.jpg",
+    "imgs": [
+      "img/news/23-CICA PRESS CICA ART NOW 2023/01.jpg",
+      "img/news/23-CICA PRESS CICA ART NOW 2023/02.jpg",
+      "img/news/23-CICA PRESS CICA ART NOW 2023/03.jpg",
+      "img/news/23-CICA PRESS CICA ART NOW 2023/04.jpg"
+    ]
+  },
+  {
+    "type": "news",
+    "id": "23-OS Round table",
+    "collectionType": "round table",
+    "title": "OS Round table",
+    "year": 2023,
+    "caption": "January 28, 2023",
+    "info": [
+      {
+        "title": "Hosted by",
+        "text": "OBSERVER:SCULPTURE"
+      },
+      {
+        "title": "Venue",
+        "text": "Art Space Seogyo"
+      },
+      {
+        "title": "Introduction",
+        "text": "OBSERVER: SCULPTURE (OS) Round Table 1.28\nOur team has prepared a place to have conversations with the artists participating in the OS.\nTogether, we’ll review OS’s conversation activities and exhibitions in 2022, <Pioneer and Drifty poems>, <VENOMOLD>, <Pressure perspective> and talk about the path and solidarity ahead.\nSection 1. Are you a sculptor? (13:00-13:45),\nSection 2. Power to drive 'creation’ (13:45-14:20),\nSection 3. Time difference adaptation (14:40-15:20),\nSection 4. Stepping on hard ground in loose solidarity (15:20-16:00)"
+      }
+    ],
+    "thumb": "img/news/23-OS Round table/01.jpg",
+    "imgs": [
+      "img/news/23-OS Round table/01.jpg"
+    ]
+  },
+  {
+    "type": "news",
+    "id": "22-Vibrating Birds and Handwritten Letter",
+    "collectionType": "publication",
+    "title": "Vibrating Birds and Handwritten Letter",
+    "year": 2022,
+    "caption": "November 9, 2022",
+    "info": [
+      {
+        "title": "Publisher",
+        "text": "workroom specter"
+      },
+      {
+        "title": "Writer",
+        "text": "Korean Society of Typography, Kim Cho-yeop"
+      },
+      {
+        "title": "ISBN",
+        "text": "9791189356880"
+      },
+      {
+        "title": "Introduction",
+        "text": "『Vibrating Birds and Handwritten Letter』 is composed of (1) the 16th exhibition of the Korea Typography Society, (2) a new novel by SF novelist Kim Cho-yeop, (3) a video work involving 194 members and non-members, (4) an offline publication covering works and participants on paper, and (5) an an online website."
+      }
+    ],
+    "thumb": "img/news/22-Vibrating Birds and Handwritten Letter/01.jpg",
+    "imgs": [
+      "img/news/22-Vibrating Birds and Handwritten Letter/01.jpg",
+      "img/news/22-Vibrating Birds and Handwritten Letter/02.png",
+      "img/news/22-Vibrating Birds and Handwritten Letter/03.png"
+    ]
+  },
+  {
+    "type": "archives",
+    "id": "24-Wess",
+    "collectionType": "group exhibition",
+    "title": "Exhibition / Publication",
+    "year": 2024,
+    "caption": "December 5 - 8, 2024",
+    "info": [
+      {
+        "title": "Venue",
+        "text": "daPalm (108, Eulji-ro, Jung-gu, Seoul, South Korea)"
+      },
+      {
+        "title": "Organized by",
+        "text": "WESS"
+      },
+      {
+        "title": "Cooperated with",
+        "text": "Adocs"
+      },
+      {
+        "title": "Coordinated by",
+        "text": "Jiyul fog"
+      },
+      {
+        "title": "Graphic Design by",
+        "text": "Bulldozer"
+      },
+      {
+        "title": "Photo by",
+        "text": "Yeonkeun Choi"
+      }
+    ],
+    "thumb": "img/archive/2024-wess/thumb.jpg",
+    "imgs": [
+      "img/archive/2024-wess/thumb.jpg",
+      "img/archive/2024-wess/01.jpg",
+      "img/archive/2024-wess/02.jpg",
+      "img/archive/2024-wess/03.jpg",
+      "img/archive/2024-wess/04.jpg",
+      "img/archive/2024-wess/05.jpg",
+      "img/archive/2024-wess/06.jpg",
+      "img/archive/2024-wess/07.jpg",
+      "img/archive/2024-wess/08.jpg",
+      "img/archive/2024-wess/09.png"
+    ]
+  },
+  {
+    "type": "archives",
+    "id": "24-observer",
+    "collectionType": "group exhibition",
+    "title": "Harmonic Drive",
+    "year": 2024,
+    "caption": "November 22 - December 13, 2024",
+    "info": [
+      {
+        "title": "Venue",
+        "text": "moonrise kingdom (17-22, Jangwi-ro 31-gil, Seongbuk-gu, Seoul, South Korea)"
+      },
+      {
+        "title": "Organized by",
+        "text": "OS (Observer: Sculpture)"
+      },
+      {
+        "title": "Curated by",
+        "text": "OS Curator team"
+      },
+      {
+        "title": "Text by",
+        "text": "Minhoon Kim, Joongkyun Kim"
+      },
+      {
+        "title": "Photo by",
+        "text": "Yujin Shin"
+      },
+      {
+        "title": "Designed by",
+        "text": "Soee yang, Minjae Joo"
+      },
+
+      {
+        "title": "Sponsored by",
+        "text": "Art Space Hyeong"
+      },
+      {
+        "title": "Cooperated with",
+        "text": "OS, moonrise kingdom"
+      }
+    ],
+    "thumb":"img/archive/2024-observer/thumb.jpg",
+    "imgs": [
+      "img/archive/2024-observer/thumb.jpg",
+      "img/archive/2024-observer/04.jpg",
+      "img/archive/2024-observer/05.jpg",
+      "img/archive/2024-observer/06.jpg",
+      "img/archive/2024-observer/07.jpg",
+      "img/archive/2024-observer/01.jpg",
+      "img/archive/2024-observer/02.jpg",
+      "img/archive/2024-observer/03.jpg",
+      "img/archive/2024-observer/08.jpg",
+      "img/archive/2024-observer/09.jpg",
+      "img/archive/2024-observer/10.jpg"
+    ]
+  },
+  {
+    "type": "archives",
+    "id": "24-assembly",
+    "collectionType": "solo exhibition",
+    "title": "Assembly",
+    "year": 2024,
+    "caption": "October 9 - 20, 2024",
+    "info": [
+      {
+        "title": "Venue",
+        "text": "Buyeon (8, Gaehang-ro 106beon-gil, Jung-gu, Incheon, South Korea)"
+      },
+      {
+        "title": "Organized by",
+        "text": "Wonhyuk Son"
+      },
+      {
+        "title": "Text by",
+        "text": "Yoonji Cho"
+      },
+      {
+        "title": "Poster designed by",
+        "text": "Jisook Moon"
+      },
+      {
+        "title": "Photo by",
+        "text": "Heesang Ahn"
+      },
+      {
+        "title": "Sponsored by",
+        "text": "Incheon Metropolitan City, Incheon Foundation for Arts and Culture, Space Ilbu"
+      }
+    ],
+    "thumb": "img/archive/2024-assembly/thumb.jpg",
+    "imgs": [
+      "img/archive/2024-assembly/thumb.jpg",
+      "img/archive/2024-assembly/09.jpg",
+      "img/archive/2024-assembly/01.jpg",
+      "img/archive/2024-assembly/02.jpg",
+      "img/archive/2024-assembly/03.jpg",
+      "img/archive/2024-assembly/04.jpg",
+      "img/archive/2024-assembly/05.jpg",
+      "img/archive/2024-assembly/06.jpg",
+      "img/archive/2024-assembly/07.jpg",
+      "img/archive/2024-assembly/08.jpg"
+    ]
+  },
+  {
+    "type": "archives",
+    "id": "23-portrait",
+    "collectionType": "group exhibition",
+    "title": "Portrait",
+    "year": 2023,
+    "caption": "December 28 2022 - January 15 2023",
+    "info": [
+      {
+        "title": "Venue",
+        "text": "CICA Museum (196-30, Samdo-ro, Yangchon-eup, Gimpo-si, Gyeonggi-do, South Korea)"
+      },
+      {
+        "title": "Hosted by",
+        "text": "CICA Museum"
+      },
+      {
+        "title": "Organized by",
+        "text": "CICA Museum"
+      }
+    ],
+    "thumb":"img/archive/2023-portrait/thumb.jpg",
+    "imgs": [
+      "img/archive/2023-portrait/thumb.jpg",
+      "img/archive/2023-portrait/01.jpg",
+      "img/archive/2023-portrait/02.jpg",
+      "img/archive/2023-portrait/03.jpg"
+    ]
+  },
+  {
+    "type": "archives",
+    "id": "22-A-vibrating bird-and-a-handwritten-letter",
+    "collectionType": "group exhibition",
+    "title": "Vibrating birds and handwritten letter",
+    "year": 2022,
+    "caption": "November 9 - December 31, 2022",
+    "info": [
+      {
+        "title": "Venue",
+        "text": "Online·Offline: 《Ob/Scene Festival》Art Sonje Center, S.A.P (87, Yulgok-ro 3-gil, Jongno-gu and 26-26, Kyonggidae-ro, Seodaemun-gu, Seoul, South Korea)"
+      },
+      {
+        "title": "Period",
+        "text": "Online 11.9. - 12.31, 2022 | Offline 11.9. - 11.20, 2022"
+      },
+      {
+        "title": "Hosted by",
+        "text": "Korean Society of Typography"
+      },
+      {
+        "title": "Organized by",
+        "text": "Korean Society of Typography"
+      },
+      {
+        "title": "Curated by",
+        "text": "Min Guhong, Yang Jieun"
+      },
+      {
+        "title": "Coordinated by",
+        "text": "Gu Kyungwon, Kim Sueun"
+      },
+      {
+        "title": "Video edited by",
+        "text": "Yang Jieun"
+      },
+      {
+        "title": "Web directed by",
+        "text": "Minguhong manufacturing"
+      },
+      {
+        "title": "Public relations designed by",
+        "text": "Yang Hyerim"
+      },
+      {
+        "title": "Cooperated by",
+        "text": "Ob/Scene Festival"
+      },
+      {
+        "title": "Exihibition catalogue",
+        "text": "Workroom Specter (ISBN: 979-11-89356-88-0(00600))"
+      }
+    ],
+    "thumb": "img/archive/2022-A-vibrating bird-and-a-handwritten-letter/thumb.jpg",
+    "imgs": [
+      "img/archive/2022-A-vibrating bird-and-a-handwritten-letter/thumb.jpg",
+      "img/archive/2022-A-vibrating bird-and-a-handwritten-letter/01.jpg",
+      "img/archive/2022-A-vibrating bird-and-a-handwritten-letter/02.jpg",
+      "img/archive/2022-A-vibrating bird-and-a-handwritten-letter/03.jpg",
+      "img/archive/2022-A-vibrating bird-and-a-handwritten-letter/04.jpg",
+      "img/archive/2022-A-vibrating bird-and-a-handwritten-letter/05.jpg",
+      "img/archive/2022-A-vibrating bird-and-a-handwritten-letter/06.jpg",
+      "img/archive/2022-A-vibrating bird-and-a-handwritten-letter/07.jpg"
+    ]
+  },
+  {
+    "type": "archives",
+    "id": "22-observer",
+    "collectionType": "group exhibition",
+    "title": "VENOMOLD",
+    "year": 2022,
+    "caption": "November 16 - 27, 2022 | (Total Nov 2 - Dec 11)",
+    "info": [
+      {
+        "title": "Venue",
+        "text": "Gallery OOOJH (121, Dongho-ro 17-gil, Jung-gu, Seoul, South Korea)"
+      },
+      {
+        "title": "Hosted by",
+        "text": "OS (Observer: Sculpture)"
+      },
+      {
+        "title": "Organized by",
+        "text": "OS (Observer: Sculpture), Gallery OOOJH"
+      },
+      {
+        "title": "Curated by",
+        "text": "OS Curator team"
+      },
+      {
+        "title": "Designed by",
+        "text": "OS Design team"
+      },
+      {
+        "title": "Photo by",
+        "text": "Yang IAn"
+      }
+    ],
+    "thumb":"img/archive/2022-observer/07.jpg",
+    "imgs": [
+      "img/archive/2022-observer/thumb.jpg",
+      "img/archive/2022-observer/07.jpg",
+      "img/archive/2022-observer/05.jpg",
+      "img/archive/2022-observer/06.jpg",
+      "img/archive/2022-observer/01.jpg",
+      "img/archive/2022-observer/02.jpg",
+      "img/archive/2022-observer/03.jpg",
+      "img/archive/2022-observer/04.jpg"
+    ]
+  },
+  {
+    "type": "archives",
+    "id": "22-assemblogy",
+    "collectionType": "solo exhibition",
+    "title": "Assemblogy: compose and combine",
+    "year": 2022,
+    "caption": "October 19 - 23, 2022",
+    "info": [
+      {
+        "title": "Venue",
+        "text": "CICA Museum (196-30, Samdo-ro, Yangchon-eup, Gimpo-si, Gyeonggi-do, South Korea)"
+      },
+      {
+        "title": "Hosted by",
+        "text": "CICA Museum"
+      },
+      {
+        "title": "Organized by",
+        "text": "CICA Museum"
+      },
+      {
+        "title": "Photo by",
+        "text": "Ahn Heesang"
+      },
+      {
+        "title": "Design by",
+        "text": "Wonhyuk Son"
+      },
+      {
+        "title": "Thanks to",
+        "text": "Sangmin Lee"
+      },
+      {
+        "type": "PDF",
+        "link": "pdf/Dream Land·assemblogy.pdf",
+        "fileName": "Dream Land·assemblogy.pdf"
+      }
+    ],
+    "thumb": "img/archive/2022-assemblogy/thumb.jpg",
+    "imgs": [
+      "img/archive/2022-assemblogy/thumb.jpg",
+      "img/archive/2022-assemblogy/08.jpg",
+      "img/archive/2022-assemblogy/06.jpg",
+      "img/archive/2022-assemblogy/05.jpg",
+      "img/archive/2022-assemblogy/07.jpg",
+      "img/archive/2022-assemblogy/01.jpg",
+      "img/archive/2022-assemblogy/03.jpg",
+      "img/painting/harmony/03.jpg",
+      "img/archive/2022-assemblogy/04.jpg"
+    ]
+  },
+  {
+    "type": "archives",
+    "id": "21-singing-word",
+    "collectionType": "group exhibition",
+    "title": "Singing word, singing text",
     "year": 2021,
-    "caption": "November 28 - November 30, 2021",
-    "text": "Gwangmyeong Foundation for Arts and Culture, 2F Civic center, 20, Sicheong-ro, Gwangmyeong-si, Gyeonggi-do, Korea (14234)",
+    "caption": "December 20 2021 - January 20 2022",
+    "info": [
+      {
+        "title": "Venue",
+        "text": "Online·Offline: 《Seoul Design Festival 2022》COEX (513, Yeongdong-daero, Gangnam-gu, Seoul, South Korea)"
+      },
+      {
+        "title": "Period",
+        "text": "Online 12.20.2021 - 1.20.2022. Offline 12.22.2021 - 12.26"
+      },
+      {
+        "title": "Organized by",
+        "text": "Korean Society of Typography, Space Oddity"
+      },
+      {
+        "title": "Supported by",
+        "text": "AG Typography Institute"
+      },
+      {
+        "title": "Curated by",
+        "text": "Hong Eunjoo, Shin Haeok"
+      }
+    ],
+    "thumb": "img/archive/2021-singing-word/thumb.jpg",
+    "imgs": [
+      "img/archive/2021-singing-word/thumb.jpg"
+    ]
+  },
+  {
+    "type": "archives",
+    "id": "21-dreamland",
+    "collectionType": "solo exhibition",
+    "title": "Dream Land: Color",
+    "year": 2021,
+    "caption": "November 28 - 30, 2021",
+    "info": [
+      {
+        "title": "Venue",
+        "text": "Gwangmyeong Civic center (20, Sicheong-ro, Gwangmyeong-si, Gyeonggi-do, South Korea)"
+      },
+      {
+        "title": "Organized by",
+        "text": "Gwangmyeong Foundation for Arts and Culture"
+      },
+      {
+        "title": "Supported by",
+        "text": "Gwangmyeong City, Gwangmyeong Foundation for Arts and Culture"
+      },
+      {
+        "title": "Curated·Design by",
+        "text": "Wonhyuk Son"
+      },
+      {
+        "title": "Artist critique by",
+        "text": "Haesun Chung"
+      },
+      {
+        "title": "Photo by",
+        "text": "Gwangmyeong Foundation for Arts and Culture"
+      },
+      {
+        "type": "PDF",
+        "link": "pdf/Dream Land·assemblogy.pdf",
+        "fileName": "Dream Land·assemblogy.pdf"
+      }
+    ],
     "thumb": "img/archive/2021-dreamland/thumb.jpg",
     "imgs": [
-      "img/archive/2021-dreamland/01.jpg",
+      "img/archive/2021-dreamland/thumb.jpg",
+      "img/typography/buddha/02.jpg",
+      "img/archive/2021-dreamland/07.jpg",
+      "img/archive/2021-dreamland/11.jpg",
+      "img/archive/2021-dreamland/12.jpg",
+      "img/archive/2021-dreamland/13.jpg",
+      "img/archive/2021-dreamland/14.jpg",
+      "img/archive/2021-dreamland/06.jpg",
+      "img/typography/buddha/05.jpg",
       "img/archive/2021-dreamland/02.jpg",
       "img/archive/2021-dreamland/03.jpg",
       "img/archive/2021-dreamland/04.jpg",
+      "img/sculpture/buddha/01.jpg",
       "img/archive/2021-dreamland/05.jpg",
-      "img/archive/2021-dreamland/06.jpg"
+      "img/archive/2021-dreamland/08.jpg",
+      "img/archive/2021-dreamland/09.jpg",
+      "img/archive/2021-dreamland/10.jpg",
+      "img/painting/block211128/01.jpg",
+      "img/painting/block211128/02.jpg"
     ]
   },
   {
-    "type": "archive",
+    "type": "archives",
     "id": "21-relativity-circuit",
+    "collectionType": "group exhibition",
     "title": "Relativity Circuit: Sustainability Report",
     "year": 2021,
     "caption": "September 29 - October 4",
-    "text" : "Dongduk art gallery, 68, Ujeongguk-ro, Jongno-gu, Seoul, Republic of Korea",
+    "info": [
+      {
+        "title": "Venue",
+        "text": "Dongduk art gallery (68, Ujeongguk-ro, Jongno-gu, Seoul, South Korea)"
+      },
+      {
+        "title": "Organized by",
+        "text": "Dongduk art gallery, Dongduk Women's University Museum"
+      },
+      {
+        "title": "Directed by",
+        "text": "Lee Seungchul, Cho Jinhee"
+      },
+      {
+        "title": "Curated by",
+        "text": "Soojin Hong, Pearl Kim, Aran Choi, Yoonjin Han"
+      }
+    ],
     "thumb": "img/archive/2021-relativity-circuit/thumb.jpg",
     "imgs": [
+      "img/archive/2021-relativity-circuit/thumb.jpg",
       "img/archive/2021-relativity-circuit/01.jpg",
+      "img/archive/2021-relativity-circuit/07.jpg",
+      "img/archive/2021-relativity-circuit/08.jpg",
       "img/archive/2021-relativity-circuit/02.jpg",
       "img/archive/2021-relativity-circuit/03.jpg",
       "img/archive/2021-relativity-circuit/04.jpg",
@@ -491,14 +1712,25 @@
     ]
   },
   {
-    "type": "archive",
+    "type": "archives",
     "id": "21-over-the-structures",
-    "title": "Over the structures 2021, Group Exhibition",
+    "collectionType": "group exhibition",
+    "title": "Over the structures 2021",
     "year": 2021,
     "caption": "March 10 - March 28, 2021",
-    "text": " CICA Museum 196-30, Samdo-ro, Yangchon-eup, Gimpo-si, Gyeonggi-do, Korea",
+    "info": [
+      {
+        "title": "Venue",
+        "text": "CICA Museum (196-30, Samdo-ro, Yangchon-eup, Gimpo-si, Gyeonggi-do, South Korea)"
+      },
+      {
+        "title": "Organized by",
+        "text": "CICA Museum"
+      }
+    ],
     "thumb": "img/archive/2021-over-the-structures/thumb.jpg",
     "imgs": [
+      "img/archive/2021-over-the-structures/thumb.jpg",
       "img/archive/2021-over-the-structures/01.jpg",
       "img/archive/2021-over-the-structures/02.jpg",
       "img/archive/2021-over-the-structures/03.jpg",
@@ -507,210 +1739,70 @@
     ]
   },
   {
-    "type": "archive",
+    "type": "archives",
     "id": "20-contactless",
-    "title": "Contactless, Korean Society of Typography Exhibition 14, Group Exhibition",
+    "collectionType": "group exhibition",
+    "title": "Contactless",
     "year": 2020,
     "caption": "December 8, 2020 - February 28",
-    "text": "2021, Culture Station Seoul 284 RTO & Online, Seoul, Korea",
+    "info": [
+      {
+        "title": "Venue",
+        "text": "Online·Offline:《Typojanchi saisai 2020-2021: International Typography Biennale》Culture Station Seoul 284 RTO (1, Tongil-ro, Jung-gu, Seoul, South Korea)"
+      },
+      {
+        "title": "Period",
+        "text": "Online 12.8.2020. - 2.28.2021. Offline 12.14.2020. - 12.20."
+      },
+      {
+        "title": "Organized by",
+        "text": "Korean Society of Typography"
+      },
+      {
+        "title": "Cooperated by",
+        "text": "Korea Craft & Design Foundation, Organizing Committee of International Typography Biennale, CAVA LIFE, CA BOOKS,SAMWON PAPER"
+      },
+      {
+        "title": "Curated by",
+        "text": "Hong Eunjoo, Shin Haeok"
+      }
+    ],
     "thumb": "img/archive/2020-contactless/thumb.jpg",
     "imgs": [
-      "img/archive/2020-contactless/01.jpeg",
+      "img/archive/2020-contactless/thumb.jpg",
+      "img/archive/2020-contactless/07.jpg",
+      "img/archive/2020-contactless/08.jpg",
       "img/archive/2020-contactless/02.jpeg",
-      "img/archive/2020-contactless/03.jpeg",
       "img/archive/2020-contactless/04.jpeg",
       "img/archive/2020-contactless/05.png",
-      "img/archive/2020-contactless/06.jpeg"
+      "img/archive/2020-contactless/03.jpeg"
     ]
   },
   {
-    "type": "archive",
-    "id": "20-dreamland",
-    "title": "Dream Land, Solo Exhibition",
-    "year": 2020,
-    "caption": "October 15 - October 24, 2020",
-    "text": "h.art.bridge, 2F, Bangbae-ro 42 gil, Seocho, Seoul, Korea (06584)",
-    "thumb": "img/archive/2020-dreamland/thumb.jpg",
-    "imgs": [
-      "img/archive/2020-dreamland/01.jpg",
-      "img/archive/2020-dreamland/02.jpg",
-      "img/archive/2020-dreamland/03.jpg",
-      "img/archive/2020-dreamland/04.jpg",
-      "img/archive/2020-dreamland/05.jpg",
-      "img/archive/2020-dreamland/06.jpg"
-    ]
-  },
-  {
-    "type": "archive",
-    "id": "19-myeongji",
-    "title": "MyeongJi College graduation exhibition, Group Exhibition",
-    "year": 2019,
-    "caption": "November 28 - December 3",
-    "text": "2019, MyeongJi College Gallery",
-    "thumb": "img/archive/2019-myeongji/thumb.png",
-    "imgs": [
-      "img/archive/2019-myeongji/01.jpg"
-    ]
-  },
-  {
-    "type": "archive",
-    "id": "19-knowing",
-    "title": "‘Knowing’ pure Korean word, Group Exhibition",
-    "year": 2019,
-    "caption": "November 13 - 15",
-    "text": "2019, MyeongJi College Gallery",
-    "thumb": "img/archive/2019-knowing/thumb.jpg",
-    "imgs": [
-      "img/archive/2019-knowing/01.jpg",
-      "img/archive/2019-knowing/02.jpg",
-      "img/archive/2019-knowing/03.jpg",
-      "img/archive/2019-knowing/04.jpg",
-      "img/archive/2019-knowing/05.jpg",
-      "img/archive/2019-knowing/06.jpg"
-    ]
-  },
-  {
-    "type": "archive",
-    "id": "19-bauhaus-mirror",
-    "title": "Bauhaus mirror, Group Exhibition",
-    "year": 2019,
-    "caption": "October 14 - November 30, 2019",
-    "text": "281, Eulji-ro, Jung-gu, Seoul, Dongdaemun Design Plaza, DDP",
-    "thumb": "img/archive/2019-bauhaus-mirror/thumb.jpg",
-    "imgs": [
-      "img/archive/2019-bauhaus-mirror/01.jpg",
-      "img/archive/2019-bauhaus-mirror/02.jpg",
-      "img/archive/2019-bauhaus-mirror/03.jpg",
-      "img/archive/2019-bauhaus-mirror/04.jpg",
-      "img/archive/2019-bauhaus-mirror/05.jpg"
-    ]
-  },
-  {
-    "type": "archive",
-    "id": "19-gyeonggi-art-contest",
-    "title": "The 55th Gyeonggi art contest, Group Exhibition",
-    "year": 2019,
-    "caption": "June 26 - 30, 2018",
-    "text": "Gyeonggi art center gallery, 20, Hyowon-ro 307beon-gil, Paldal-gu, Suwon-si, Gyeonggi-do",
-    "thumb": "img/archive/2019-gyeonggi-art-contest/thumb.jpg",
-    "imgs": [
-      "img/archive/2019-gyeonggi-art-contest/01.jpg",
-      "img/archive/2019-gyeonggi-art-contest/02.jpg",
-      "img/archive/2019-gyeonggi-art-contest/03.jpg",
-      "img/archive/2019-gyeonggi-art-contest/04.jpg"
-    ]
-  },
-  {
-    "type": "archive",
-    "id": "19-watch-the-wrold",
-    "title": "Watch the world through the art, Group Exhibition",
-    "year": 2019,
-    "caption": "April 4 - May 14, 2019",
-    "text": "Gangnam-gu Office, Gangnam-gu 426, Seoul",
-    "thumb": "img/archive/2019-watch-the-world/thumb.jpg",
-    "imgs": [
-      "img/archive/2019-watch-the-world/01.jpg",
-      "img/archive/2019-watch-the-world/02.jpg",
-      "img/archive/2019-watch-the-world/03.jpg",
-      "img/archive/2019-watch-the-world/04.jpg",
-      "img/archive/2019-watch-the-world/05.jpg",
-      "img/archive/2019-watch-the-world/06.jpg"
-    ]
-  },
-  {
-    "type": "archive",
-    "id": "18-scope-miami-beach",
-    "title": "SCOPE MIAMI BEACH 2018, Art Fair",
-    "year": 2018,
-    "caption": "December 4 - 9, 2018",
-    "text": "801 Ocean Dr, Miami Beach, FL",
-    "thumb": "img/archive/2018-scope-miami-beach/thumb.png",
-    "imgs": [
-      "img/archive/2018-scope-miami-beach/01.jpg",
-      "img/archive/2018-scope-miami-beach/02.jpg",
-      "img/archive/2018-scope-miami-beach/03.jpg",
-      "img/archive/2018-scope-miami-beach/04.jpg",
-      "img/archive/2018-scope-miami-beach/05.jpg",
-      "img/archive/2018-scope-miami-beach/06.jpg",
-      "img/archive/2018-scope-miami-beach/07.jpg"
-    ]
-  },
-  {
-    "type": "archive",
+    "type": "archives",
     "id": "18-young-artist",
-    "title": "YOUNG ARTIST CONTEST, Group Exhibition",
+    "collectionType": "group exhibition",
+    "title": "YOUNG ARTIST CONTEST",
     "year": 2018,
     "caption": "August 1 - August 24, 2018",
-    "text": "15-1, Dosan-daero 56-gil, Gangnam-gu, Seoul (06062)",
+    "info": [
+      {
+        "title": "Venue",
+        "text": "Gallery We (15-1, Dosan-daero 56-gil, Gangnam-gu, Seoul, South Korea)"
+      },
+      {
+        "title": "Organized by",
+        "text": "IYAA(International Young Artist Association), Gallery We"
+      },
+      {
+        "title": "Supported by",
+        "text": "Korean Fine Arts Association, Seoul Cultural Public Relations Institution "
+      }
+    ],
     "thumb": "img/archive/2018-young-artist/thumb.jpg",
     "imgs": [
-      "img/archive/2018-young-artist/01.jpg",
-      "img/archive/2018-young-artist/02.jpg",
-      "img/archive/2018-young-artist/03.jpg",
-      "img/archive/2018-young-artist/04.jpg",
-      "img/archive/2018-young-artist/05.jpg",
-      "img/archive/2018-young-artist/06.jpg"
-    ]
-  },
-  {
-    "type": "archive",
-    "id": "16-i-am-robot",
-    "title": "I AM ROBOT, Group Exhibition",
-    "year": 2016,
-    "caption": "December 13 - January 31, 2016 - 2017",
-    "text": "Bucheon Robo Park 3F",
-    "thumb": "img/archive/2016-i-am-robot/thumb.jpg",
-    "imgs": [
-      "img/archive/2016-i-am-robot/01.jpg",
-      "img/archive/2016-i-am-robot/02.jpg",
-      "img/archive/2016-i-am-robot/03.jpg",
-      "img/archive/2016-i-am-robot/04.png",
-      "img/archive/2016-i-am-robot/05.jpg"
-    ]
-  },
-  {
-    "type": "archive",
-    "id": "16-brick-convention",
-    "title": "BRICKOREA CONVENTION, Group Exhibition",
-    "year": 2016,
-    "caption": "October 22 - October 30, 2015",
-    "text": "Hyundai Departmentstore 10F",
-    "thumb": "img/archive/2016-brick-convention/thumb.jpg",
-    "imgs": [
-      "img/archive/2016-brick-convention/01.jpg",
-      "img/archive/2016-brick-convention/02.jpg"
-    ]
-  },
-  {
-    "type": "archive",
-    "id": "16-seoul-crafts-fair",
-    "title": "2016 SEOUL CRAFTS FAIR, Fair",
-    "year": 2016,
-    "caption": "September 22 - October 2, 2016",
-    "text": "281, Eulji-ro, Jung-gu, Seoul, Dongdaemun Design Plaza, DDP",
-    "thumb": "img/archive/2016-seoul-crafts-fair/thumb.jpg",
-    "imgs": [
-      "img/archive/2016-seoul-crafts-fair/01.jpg",
-      "img/archive/2016-seoul-crafts-fair/02.jpg",
-      "img/archive/2016-seoul-crafts-fair/03.jpg",
-      "img/archive/2016-seoul-crafts-fair/04.jpg",
-      "img/archive/2016-seoul-crafts-fair/05.jpg",
-      "img/archive/2016-seoul-crafts-fair/06.jpg"
-    ]
-  },
-  {
-    "type": "archive",
-    "id": "15-brick-convention",
-    "title": "BRICKOREA CONVENTION, Group Exhibition",
-    "year": 2015,
-    "caption": "October 3 - October 11, 2015",
-    "text": "Hyundai Departmentstore 10F",
-    "thumb": "img/archive/2015-brick-convention/thumb.jpg",
-    "imgs": [
-      "img/archive/2015-brick-convention/01.jpg",
-      "img/archive/2015-brick-convention/02.jpeg",
-      "img/archive/2015-brick-convention/03.jpeg",
-      "img/archive/2015-brick-convention/04.jpeg"
+      "img/archive/2018-young-artist/thumb.jpg",
+      "img/archive/2018-young-artist/02.jpg"
     ]
   }
 ]
