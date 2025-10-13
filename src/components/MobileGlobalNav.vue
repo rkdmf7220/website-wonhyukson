@@ -1,5 +1,5 @@
 <template>
-  <div id="mobile-nav" :class="[{active: this.showMobileNav}, {'open-search': this.showMobileSearchBar}]" v-if="this.$route.name !== 'Intro'">
+  <nav id="mobile-nav" :class="[{active: this.showMobileNav}, {'open-search': this.showMobileSearchBar}]" v-if="this.$route.name !== 'Intro'">
     <router-link @click="closeMobileMenu(false)" to="/main" class="logo">Wonhyuk Son</router-link>
     <div class="search-bar-wrap">
       <button @click="onClickMobileSearchActiveBtn" class="search-active-btn">
@@ -10,7 +10,7 @@
     <button class="btn-hamburger" @click="onClickMenu">
       <span></span>
     </button>
-  </div>
+  </nav>
   <MobileSearchBarWrap :show-mobile-search-bar="this.showMobileSearchBar" @closeSearchBar="closeMobileSearchBar" ref="mobileSearchBarWarp" />
   <MobileHamburgerMenu :is-active="this.showMobileNav" @removeClass="closeMobileMenu"/>
 </template>
