@@ -46,6 +46,7 @@ export default {
 
 <style scoped lang="scss">
 .mobile-search-bar-wrap {
+  display: none;
   width: 100%;
   height: 100svh;
   visibility: hidden;
@@ -147,6 +148,12 @@ export default {
     .mobile-search-bar-dim {
       opacity: 0.5;
     }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-search-bar-wrap {
+    display: block;
   }
 }
 </style>
