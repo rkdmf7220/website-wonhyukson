@@ -1,5 +1,5 @@
 <template>
-  <div class="wrap">
+  <main class="wrap">
     <page-title title="Curriculum Vitae" />
     <div class="selected-cv">
       <h2 class="cv-title">{{ selectedCv?.name }}</h2>
@@ -30,7 +30,9 @@
       </div>
     </div>
     <details class="full-cv">
-      <summary class="cv-title">{{ fullCv?.name }}</summary>
+      <summary class="cv-title">
+        <h3>{{ fullCv?.name }}</h3>
+      </summary>
       <div class="profile">
         <div class="item" v-for="(item, index) in fullCv?.list" :key="index">
           <h4 class="title">{{ item.title }}</h4>
@@ -53,7 +55,7 @@
         </div>
       </div>
     </details>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -142,6 +144,10 @@ details {
     transition: all 0.15s;
     cursor: pointer;
     word-break: keep-all;
+
+    h3 {
+      display: inline-block;
+    }
 
     &::-webkit-details-marker {
       display: none;

@@ -1,8 +1,8 @@
 <template>
-  <div class="wrap">
+  <main class="wrap">
     <page-title />
     <contents-with-filter />
-  </div>
+  </main>
 </template>
 
 <script>

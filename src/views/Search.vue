@@ -1,11 +1,11 @@
 <template>
-  <div class="wrap">
+  <main class="wrap">
     <PageTitle/>
     <div class="search-wrap">
       <SearchFilter @change-filter="onChangeFilter" :searched-list="searchedList" :selectedType="selectedType"/>
       <SearchContentsList :searched-list="searchedList" :selectedType="selectedType"/>
     </div>
-  </div>
+  </main>
 </template>
 
 <script>

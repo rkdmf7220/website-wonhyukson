@@ -1,5 +1,5 @@
 <template>
-  <div class="wrap">
+  <main class="wrap">
     <PageTitle/>
     <div
       :style="{ backgroundImage: 'url(/img/main/01' + isTouchDevice + '.jpg)' }"
@@ -39,7 +39,7 @@
         </ul>
       </div>
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -77,9 +77,6 @@ export default {
       let filtered = list.filter((work) => work.type === "news").slice(0, 4);
       return list ? filtered : [];
     },
-  },
-  mounted() {
-    // useStore().loadWorksList();
   },
 };
 </script>
