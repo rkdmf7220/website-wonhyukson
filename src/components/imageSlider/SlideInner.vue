@@ -109,7 +109,7 @@ export default {
     },
   },
   mounted() {
-    window.addEventListener("keydown", (e) => this.onKeydownSlide(e));
+    window.addEventListener("keydown",  this.onKeydownSlide);
     window.addEventListener("resize", this.applyMovedSliderPosition);
     if (this.isTouchDevice) {
       this.$parent.$refs["image-slider"].addEventListener(
@@ -143,10 +143,10 @@ export default {
     }
   },
   beforeUnmount() {
-    window.removeEventListener("keydown", (e) => this.onKeydownSlide(e));
+    window.removeEventListener("keydown", this.onKeydownSlide);
     window.removeEventListener("resize", this.applyMovedSliderPosition);
-    window.addEventListener("mousemove", this.onDragSlider);
-    window.addEventListener("mouseup", this.onDropSlider);
+    window.removeEventListener("mousemove", this.onDragSlider);
+    window.removeEventListener("mouseup", this.onDropSlider);
   },
   data() {
     return {
