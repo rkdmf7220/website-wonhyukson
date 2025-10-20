@@ -5,7 +5,7 @@
       @click="onClickArtworkList"
     >
       <div :class="{ archives: itemData.type === 'archives' }" class="bg-img">
-        <img :src="itemData.thumb" alt="" />
+        <img :src="'/' + itemData.thumb" :alt="itemData.title + ' thumbnail'" />
       </div>
       <template v-if="this.$route.name !== 'Main'">
         <p class="text-title">{{ itemData.title }}</p>

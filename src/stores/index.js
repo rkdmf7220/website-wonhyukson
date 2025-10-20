@@ -44,7 +44,7 @@ export const useStore = defineStore('store', {
     },
     loadWorksList() {
       axios
-          .get("../sample/" + this.lang + "/data-result.json")
+          .get("/sample/" + this.lang + "/data-result.json")
           .then((response) => {
             if (response.statusText === "OK" || response.status === 200) {
               this.updateWorksList(response.data);
@@ -59,7 +59,7 @@ export const useStore = defineStore('store', {
     },
     loadCv() {
       axios
-          .get("../sample/" + this.lang + "/cv.json")
+          .get("/sample/" + this.lang + "/cv.json")
           .then((response) => {
             if (response.statusText === "OK" || response.status === 200) {
               this.updateCv(response.data);
@@ -73,7 +73,7 @@ export const useStore = defineStore('store', {
     },
     loadReview() {
       axios
-          .get("../sample/" + this.lang + "/review.json")
+          .get("/sample/" + this.lang + "/review.json")
           .then((response) => {
             if (response.statusText === "OK" || response.status === 200) {
               this.updateReview(response.data);
@@ -87,7 +87,7 @@ export const useStore = defineStore('store', {
     },
     loadFilterList() {
       axios
-          .get("../sample/" + this.lang + "/filter-list.json")
+          .get("/sample/" + this.lang + "/filter-list.json")
           .then((response) => {
             if (response.statusText === "OK" || response.status === 200) {
               this.updateFilterList(response.data);

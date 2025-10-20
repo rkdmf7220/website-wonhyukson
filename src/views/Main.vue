@@ -2,7 +2,7 @@
   <div class="wrap">
     <PageTitle/>
     <div
-      :style="{ backgroundImage: 'url(img/main/01' + isTouchDevice + '.jpg)' }"
+      :style="{ backgroundImage: 'url(/img/main/01' + isTouchDevice + '.jpg)' }"
       class="spot"
     ></div>
     <div class="contents">
