@@ -1,9 +1,9 @@
 <template>
   <nav id="nav" v-if="this.$route.name !== 'Intro'">
-    <router-link to="/main" class="logo">Wonhyuk Son</router-link>
+    <router-link :to="`/${useStore().lang}/main`" class="logo">Wonhyuk Son</router-link>
     <ul>
       <li v-for="item in menu" :key="item.name" :class="item?.meta?.cssClass">
-        <router-link :to="item.path">{{ item.name }}</router-link>
+        <router-link :to="`/${useStore().lang}/${item.name.toLowerCase()}`">{{ item.name }}</router-link>
       </li>
       <li class="contact-wrap margin-to-infos">
         <h4>Contact</h4>
@@ -19,6 +19,7 @@
 <script>
 import svgIcon from "../../public/img/svgIcon";
 import Constants from "../contants/constants.js";
+import {useStore} from "../stores/index.js";
 export default {
   name: "GlobalNav",
   computed: {
@@ -38,6 +39,7 @@ export default {
     }
   },
   methods: {
+    useStore,
      onClickEmailIcon(lang) {
        navigator.clipboard.writeText("xg60333@gmail.com")
        if (lang === Constants.lang.ko) {

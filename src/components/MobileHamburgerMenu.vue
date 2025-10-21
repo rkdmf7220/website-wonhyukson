@@ -2,7 +2,9 @@
   <div class="m-menu-wrap" :class="{active: this.isActive}">
     <ul>
       <li v-for="item in menu" :key="item.name" :class="item?.meta?.cssClass">
-        <router-link :to="item.path" @click="closeMobileMenu">{{ item.name }}</router-link>
+        <router-link :to="`/${useStore().lang}/${item.name.toLowerCase()}`" @click="closeMobileMenu">
+          {{ item.name }}
+        </router-link>
       </li>
       <li class="contact-wrap">
         <h4>Contact</h4>
@@ -17,7 +19,7 @@
         </div>
       </li>
       <li class="lang-wrap">
-        <LangContainer class="is-mobile" />
+        <LangContainer class="is-mobile"/>
       </li>
     </ul>
   </div>
@@ -52,6 +54,7 @@ export default {
     }
   },
   methods: {
+    useStore,
     closeMobileMenu() {
       this.$emit('removeClass')
     },

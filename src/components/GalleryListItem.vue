@@ -1,7 +1,7 @@
 <template>
   <div class="item-wrap">
     <router-link
-      :to="`/${itemData.type}/${itemData.id}`"
+      :to="`/${useStore().lang}/${itemData.type}/${itemData.id}`"
       @click="onClickArtworkList"
     >
       <div :class="{ archives: itemData.type === 'archives' }" class="bg-img">
@@ -20,6 +20,8 @@
 </template>
 
 <script>
+import {useStore} from "../stores/index.js";
+
 export default {
   name: "GalleryListItem",
   props: {
@@ -32,6 +34,7 @@ export default {
   },
 
   methods: {
+    useStore,
     onClickArtworkList() {
       this.$emit("invisible", !this.displayList);
     },

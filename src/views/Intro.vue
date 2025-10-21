@@ -4,7 +4,7 @@
       <video :src="`/video/intro01${this.isTouchDevice}.mp4`" class="background-video" autoplay muted playsinline></video>
     </div>
     <div class="opening-wrap">
-      <router-link to="/main">
+      <router-link :to="'/en/main'">
         <button>Enter</button>
       </router-link>
     </div>
@@ -12,6 +12,8 @@
 </template>
 
 <script>
+import {useStore} from "../stores/index.js";
+
 export default {
   name: "Intro",
   computed: {
@@ -28,6 +30,7 @@ export default {
     }
   },
   methods: {
+    useStore,
     continueNextVideo() {
       this.videoCount ++;
       if (this.videoCount > 2) {

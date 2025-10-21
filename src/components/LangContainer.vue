@@ -25,6 +25,7 @@ export default {
     onClickLang(lang) {
       if (this.currentLang === lang) return;
       useStore().setLang(lang)
+      this.$router.replace({params: {lang: lang}})
     }
   }
 }

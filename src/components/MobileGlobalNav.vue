@@ -1,6 +1,7 @@
 <template>
-  <nav id="mobile-nav" :class="[{active: this.showMobileNav}, {'open-search': this.showMobileSearchBar}]" v-if="this.$route.name !== 'Intro'">
-    <router-link @click="closeMobileMenu(false)" to="/main" class="logo">Wonhyuk Son</router-link>
+  <nav id="mobile-nav" v-if="this.$route.name !== 'Intro'"
+       :class="[{active: this.showMobileNav}, {'open-search': this.showMobileSearchBar}]">
+    <router-link @click="closeMobileMenu(false)" :to="`/${useStore().lang}/main`" class="logo">Wonhyuk Son</router-link>
     <div class="search-bar-wrap">
       <button @click="onClickMobileSearchActiveBtn" class="search-active-btn">
         <span :style="{maskImage: 'url(' + svgIcon.get(!showMobileSearchBar ? 'searchIcon' : 'searchCloseIcon') + ')'}"
@@ -11,7 +12,8 @@
       <span></span>
     </button>
   </nav>
-  <MobileSearchBarWrap :show-mobile-search-bar="this.showMobileSearchBar" @closeSearchBar="closeMobileSearchBar" ref="mobileSearchBarWarp" />
+  <MobileSearchBarWrap :show-mobile-search-bar="this.showMobileSearchBar" @closeSearchBar="closeMobileSearchBar"
+                       ref="mobileSearchBarWarp"/>
   <MobileHamburgerMenu :is-active="this.showMobileNav" @removeClass="closeMobileMenu"/>
 </template>
 
@@ -58,6 +60,7 @@ export default {
     }
   },
   methods: {
+    useStore,
     onClickMenu() {
       this.showMobileNav = !this.showMobileNav
       this.showMobileSearchBar = false;
