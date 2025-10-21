@@ -66,14 +66,29 @@ import GlobalNav from "./components/GlobalNav.vue";
 import MobileGlobalNav from "./components/MobileGlobalNav.vue";
 import Copyright from "./components/Copyright.vue";
 import {useStore} from "./stores/index.js";
+import {LanguagePathHandler} from "./utils/language-path-handler.js";
 
 export default defineComponent({
   components: {Copyright, MobileGlobalNav, GlobalNav},
   mounted() {
-    useStore().loadWorksList();
-    useStore().loadCv();
-    useStore().loadReview();
-    useStore().loadFilterList();
+    window.addEventListener('popstate', () => LanguagePathHandler(this.$route, this.$router));
+  },
+  watch: {
+    '$route.params': {
+      /**
+       * App에 처음 접속시에만 작동하는 함수.
+       * router params에 언어가 있을 경우 사이트 언어를 변경.
+       * mounted 단계에선 params 감지 불가하여 watch에서 작동
+       *
+       * @param {{ lang?: 'ko' | 'en' }} newVal
+       * @param {{ lang?: 'ko' | 'en' }} oldVal
+       */
+      handler: function (newVal, oldVal) {
+        if (!oldVal.lang && newVal.lang) {  // 최초에만 실행 위해 !oldval.lang이 조건
+          useStore().setLang(newVal.lang);
+        }
+      }
+    },
   }
 })
 

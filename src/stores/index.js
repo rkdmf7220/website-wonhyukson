@@ -4,7 +4,7 @@ import {defineStore} from "pinia";
 
 export const useStore = defineStore('store', {
   state: () => ({
-    lang: Constants.lang.en,
+    lang: null,
     worksList: [],
     cv: {},
     review: [],

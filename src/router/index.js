@@ -3,7 +3,7 @@ import Sculpture from "../views/Sculpture.vue";
 
 const gnb = [
   {
-    path: "/sculpture",
+    path: "/:lang(ko|en)/sculpture",
     name: "Sculpture",
     component: Sculpture,
     meta: {
@@ -11,7 +11,7 @@ const gnb = [
     },
   },
   {
-    path: "/painting",
+    path: "/:lang(ko|en)/painting",
     name: "Painting",
     component: () => import("../views/Painting.vue"),
     meta: {
@@ -19,7 +19,7 @@ const gnb = [
     },
   },
   {
-    path: "/typography",
+    path: "/:lang(ko|en)/typography",
     name: "Typography",
     component: () => import("../views/Typography.vue"),
     meta: {
@@ -27,7 +27,7 @@ const gnb = [
     },
   },
   {
-    path: "/texts",
+    path: "/:lang(ko|en)/texts",
     name: "Texts",
     component: () => import("../views/Texts.vue"),
     meta: {
@@ -35,17 +35,17 @@ const gnb = [
     },
   },
   {
-    path: "/archives",
+    path: "/:lang(ko|en)/archives",
     name: "Archives",
     component: () => import("../views/Archives.vue"),
   },
   {
-    path: "/cv",
+    path: "/:lang(ko|en)/cv",
     name: "CV",
     component: () => import("../views/CV.vue"),
   },
   {
-    path: "/news",
+    path: "/:lang(ko|en)/news",
     name: "News",
     component: () => import("../views/News.vue"),
   },
@@ -59,17 +59,17 @@ const routes = [
     // redirect: '/sculpture'
   },
   {
-    path: "/:works/:id",
+    path: "/:lang(ko|en)/:works/:id",
     name: "DetailPage",
     component: () => import("../components/Detail.vue"),
   },
   {
-    path: "/main",
+    path: "/:lang(ko|en)/main",
     name: "Main",
     component: () => import("../views/Main.vue"),
   },
   {
-    path: "/search/:keyword",
+    path: "/:lang(ko|en)/search/:keyword",
     name: "Search",
     component: () => import("../views/Search.vue"),
   },
