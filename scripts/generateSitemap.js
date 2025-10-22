@@ -1,29 +1,52 @@
-import {writeFileSync, readFileSync} from 'fs';
+import {readFileSync, writeFileSync} from 'fs';
 import {resolve} from 'path';
 
 // file path
 const projectRoot = process.cwd();
 const xmlFilePath = resolve(projectRoot, 'dist', 'sitemap.xml');
-const jsonFilePath = (lang) => resolve(projectRoot, 'public/sample', lang, 'data-result.json');
+const jsonFilePath = resolve(projectRoot, 'public/sample/ko/data-result.json');
 
 
+const sitemapUrlTemplate = (link) => `<url>
+    <loc>${link}</loc>
+  </url>`;
 
-// test
-const jsonData = readFileSync(jsonFilePath('ko', 'cv'), 'utf8');
-// const koJsonData = readFileSync(jsonFilePath('ko'), 'utf8');
-// const enJsonData = readFileSync(jsonFilePath('en'), 'utf8');
+let staticUrlList = ['main', 'sculpture', 'painting', 'typography', 'texts', 'archives', 'cv', 'news'];
+let dynamicUrlList = [];
+let urlList = [];
 
-// todo: static - intro, main, sculpture, painting, typography, texts, archives, cv, news
-// todo: dynamic - sculpture, sculpture, painting, typography, archives, news
+try {
+  // read and parse
+  const jsonData = readFileSync(jsonFilePath, 'utf8');
+  const parsedData = JSON.parse(jsonData);
 
-const data = `<?xml version="1.0" encoding="UTF-8"?>
+  parsedData.forEach(item => {
+    dynamicUrlList.push(`${item.type}/${item.id}`)
+  })
+
+  // root url은 하드 코딩
+  urlList.push(sitemapUrlTemplate(`${projectRoot}/`));
+
+  // 정적 + 동적 url push
+  staticUrlList.forEach(item => {
+    urlList.push(sitemapUrlTemplate(`${projectRoot}/ko/${item}`))
+    urlList.push(sitemapUrlTemplate(`${projectRoot}/en/${item}`))
+  })
+  dynamicUrlList.forEach(item => {
+    urlList.push(sitemapUrlTemplate(`${projectRoot}/ko/${item}`))
+    urlList.push(sitemapUrlTemplate(`${projectRoot}/en/${item}`))
+  })
+
+  // 줄바꿈 + 들여쓰기 고려해서 join 사용
+  const sitemapList = urlList.join("\n  ");
+
+  const data = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <>${jsonData}</>
+  ${sitemapList}
 </urlset>`;
 
-
-
-
-
-// write file
-writeFileSync(xmlFilePath, data, 'utf8');
+  // write file
+  writeFileSync(xmlFilePath, data, 'utf8');
+} catch (err) {
+  console.log(err)
+}
