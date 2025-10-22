@@ -5,7 +5,7 @@ import {resolve} from 'path';
 const projectRoot = process.cwd();
 const xmlFilePath = resolve(projectRoot, 'dist', 'sitemap.xml');
 const jsonFilePath = resolve(projectRoot, 'public/sample/ko/data-result.json');
-const baseUrl = process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://wonhyukson.com';
+const baseUrl = process.env.CUSTOM_DOMAIN ? `https://${process.env.CUSTOM_DOMAIN}` : `https://${process.env.VERCEL_URL}`;
 
 
 const sitemapUrlTemplate = (link) => `<url>
