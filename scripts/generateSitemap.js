@@ -9,9 +9,9 @@ const jsonFilePath = (lang) => resolve(projectRoot, 'public/sample', lang, 'data
 
 
 // test
-// const jsonData = readFileSync(jsonFilePath('ko', 'cv'), 'utf8');
-const koJsonData = readFileSync(jsonFilePath('ko'), 'utf8');
-const enJsonData = readFileSync(jsonFilePath('en'), 'utf8');
+const jsonData = readFileSync(jsonFilePath('ko', 'cv'), 'utf8');
+// const koJsonData = readFileSync(jsonFilePath('ko'), 'utf8');
+// const enJsonData = readFileSync(jsonFilePath('en'), 'utf8');
 
 // todo: static - intro, main, sculpture, painting, typography, texts, archives, cv, news
 // todo: dynamic - sculpture, sculpture, painting, typography, archives, news
