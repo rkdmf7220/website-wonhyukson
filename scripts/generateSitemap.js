@@ -26,16 +26,16 @@ try {
   })
 
   // root url은 하드 코딩
-  urlList.push(sitemapUrlTemplate(`${projectRoot}/`));
+  urlList.push(sitemapUrlTemplate(`${baseUrl}/`));
 
   // 정적 + 동적 url push
   staticUrlList.forEach(item => {
-    urlList.push(sitemapUrlTemplate(`${projectRoot}/ko/${item}`))
-    urlList.push(sitemapUrlTemplate(`${projectRoot}/en/${item}`))
+    urlList.push(sitemapUrlTemplate(`${baseUrl}/ko/${item}`))
+    urlList.push(sitemapUrlTemplate(`${baseUrl}/en/${item}`))
   })
   dynamicUrlList.forEach(item => {
-    urlList.push(sitemapUrlTemplate(`${projectRoot}/ko/${item}`))
-    urlList.push(sitemapUrlTemplate(`${projectRoot}/en/${item}`))
+    urlList.push(sitemapUrlTemplate(`${baseUrl}/ko/${item}`))
+    urlList.push(sitemapUrlTemplate(`${baseUrl}/en/${item}`))
   })
 
   // 줄바꿈 + 들여쓰기 고려해서 join 사용
