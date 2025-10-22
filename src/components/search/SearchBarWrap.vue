@@ -60,7 +60,7 @@ export default {
         return;
       }
 
-      this.$router.push(`/search/${this.inputText}`);
+      this.$router.push(`/${useStore().lang}/search/${this.inputText}`);
     },
     hideSearchInput(e) {
       if (e.target.closest('.search-bar-wrap')) return;

@@ -13,6 +13,7 @@
 
 <script>
 import svgIcon from "../../../public/img/svgIcon.js";
+import {useStore} from "../../stores/index.js";
 
 export default {
   name: "MobileSearchBarWrap",
@@ -30,11 +31,12 @@ export default {
     }
   },
   methods: {
+    useStore,
     onHandleSearch() {
       if (!this.inputText || this.inputText.length === 0) {
         return;
       }
-      this.$router.push(`/search/${this.inputText}`);
+      this.$router.push(`/${useStore().lang}/search/${this.inputText}`);
       this.$emit('closeSearchBar');
     },
     onClickDimArea() {
