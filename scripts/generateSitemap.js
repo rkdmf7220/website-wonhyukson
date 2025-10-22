@@ -7,6 +7,8 @@ const xmlFilePath = resolve(projectRoot, 'dist', 'sitemap.xml');
 const jsonFilePath = resolve(projectRoot, 'public/sample/ko/data-result.json');
 const baseUrl = process.env.CUSTOM_DOMAIN ? `https://${process.env.CUSTOM_DOMAIN}` : `https://${process.env.VERCEL_URL}`;
 
+console.log('baseUrl: ', baseUrl);
+
 
 const sitemapUrlTemplate = (link) => `<url>
     <loc>${link}</loc>
