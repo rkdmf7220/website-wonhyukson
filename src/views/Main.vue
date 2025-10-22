@@ -84,6 +84,7 @@ export default {
 <style lang="scss" scoped>
 .wrap {
   margin: 0;
+  padding: 0;
   position: relative;
 
   .spot {

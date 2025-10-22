@@ -45,7 +45,7 @@ a, div, button{
 }
 
 .wrap{
-  margin: 116px 0 80px 240px;
+  padding: 116px 0 80px 240px;
 
   &>h1{
     margin-bottom: 32px;
