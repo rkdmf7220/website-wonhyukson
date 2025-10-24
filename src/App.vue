@@ -86,6 +86,7 @@ export default defineComponent({
       handler: function (newVal, oldVal) {
         if (!oldVal.lang && newVal.lang) {  // 최초에만 실행 위해 !oldval.lang이 조건
           useStore().setLang(newVal.lang);
+          document.querySelector('html').setAttribute('lang', newVal.lang);
         }
       }
     },

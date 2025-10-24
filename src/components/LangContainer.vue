@@ -26,6 +26,7 @@ export default {
       if (this.currentLang === lang) return;
       useStore().setLang(lang)
       this.$router.replace({params: {lang: lang}})
+      document.querySelector('html').setAttribute('lang', lang);
     }
   }
 }
