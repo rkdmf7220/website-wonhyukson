@@ -1,7 +1,7 @@
 <template>
   <li class="search-content-item">
     <template v-if="searchItem?.type === 'texts'">
-      <router-link to="/texts">
+      <router-link :to="`/${useStore().lang}/texts`">
         <h4 class="search-item-title">{{ searchItem?.title }}</h4>
         <p class="search-item-text">
           <span>{{ searchItem?.searchedText.before }}</span>
@@ -12,7 +12,7 @@
       </router-link>
     </template>
     <template v-else>
-      <router-link :to="`/${searchItem?.type}/${searchItem?.id}`">
+      <router-link :to="`/${useStore().lang}/${searchItem?.type}/${searchItem?.id}`">
         <h4 class="search-item-title">{{ searchItem?.title }}</h4>
         <p class="search-item-text">
           <span>{{ searchItem?.searchedText.before }}</span>
@@ -26,11 +26,16 @@
 </template>
 
 <script>
+import {useStore} from "../../stores/index.js";
+
 export default {
   name: "SearchContentItem",
   props: {
     searchItem: Object,
   },
+  methods: {
+    useStore
+  }
 }
 </script>
 
