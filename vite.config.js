@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import path from 'path';
 import { exec } from 'child_process';
 
-// 커맨드라인 인자에서 --genKey 옵션이 있는지 확인
+// 커맨드라인 인자에서 --genSitemap 옵션이 있는지 확인
 const shouldGenerateSitemap = process.argv.includes('--genSitemap');
 
 // https://vite.dev/config/
