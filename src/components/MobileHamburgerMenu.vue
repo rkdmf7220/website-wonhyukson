@@ -9,7 +9,7 @@
       <li class="contact-wrap">
         <h4>Contact</h4>
         <div class="contact-icon-list">
-          <div @click="onClickEmailIcon(this.currentLang)"
+          <div @click="onClickEmailIcon(useStore().lang)"
                :style="{backgroundImage: 'url(' + svgIcon.get('emailIcon', false, 'white') + ')'}"
                class="contact-icon-item contact-email-icon"></div>
           <a href="https://www.instagram.com/wonhyuk_son/"
@@ -38,9 +38,6 @@ export default {
     svgIcon() {
       return svgIcon
     },
-    currentLang() {
-      return useStore().lang;
-    }
   },
   props: {
     isActive: Boolean
