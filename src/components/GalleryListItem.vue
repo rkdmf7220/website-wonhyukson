@@ -1,11 +1,29 @@
 <template>
   <div class="item-wrap">
     <router-link
+      v-if="itemData.type === ('sculpture' || 'painting')"
+      :to="`/${useStore().lang}/works/${itemData.id}`"
+      @click="onClickArtworkList"
+    >
+      <div :class="{ archives: itemData.type === 'archives' }" class="bg-img">
+        <img :src="'/' + itemData.thumb" :alt="itemData.title + ' thumbnail'"/>
+      </div>
+      <template v-if="this.$route.name !== 'Main'">
+        <p class="text-title">{{ itemData.title }}</p>
+        <p class="text-year">{{ itemData.year }}</p>
+      </template>
+      <template v-else>
+        <p class="text-title main-text">{{ itemData.title }}</p>
+        <p class="text-year main-text">{{ itemData.caption }}</p>
+      </template>
+    </router-link>
+    <router-link
+      v-else
       :to="`/${useStore().lang}/${itemData.type}/${itemData.id}`"
       @click="onClickArtworkList"
     >
       <div :class="{ archives: itemData.type === 'archives' }" class="bg-img">
-        <img :src="'/' + itemData.thumb" :alt="itemData.title + ' thumbnail'" />
+        <img :src="'/' + itemData.thumb" :alt="itemData.title + ' thumbnail'"/>
       </div>
       <template v-if="this.$route.name !== 'Main'">
         <p class="text-title">{{ itemData.title }}</p>
