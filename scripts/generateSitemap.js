@@ -11,7 +11,7 @@ const sitemapUrlTemplate = (link) => `<url>
     <loc>${link}</loc>
   </url>`;
 
-let staticUrlList = ['main', 'sculpture', 'painting', 'typography', 'texts', 'archives', 'cv', 'news'];
+let staticUrlList = ['main', 'works', 'typography', 'texts', 'archives', 'cv', 'news'];
 let dynamicUrlList = [];
 let urlList = [];
 
@@ -21,8 +21,13 @@ try {
   const parsedData = JSON.parse(jsonData);
 
   parsedData.forEach(item => {
-    dynamicUrlList.push(`${item.type}/${item.id}`)
-  })
+    const type =
+        item.type === 'sculpture' || item.type === 'painting'
+            ? 'works'
+            : item.type;
+
+    dynamicUrlList.push(`${type}/${item.id}`);
+  });
 
   // root url은 하드 코딩
   urlList.push(sitemapUrlTemplate(`${baseUrl}/`));
