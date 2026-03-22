@@ -114,6 +114,7 @@ h2.cv-title {
 
     .info-list {
       margin-bottom: 8px;
+      white-space: break-spaces;
     }
   }
 }
