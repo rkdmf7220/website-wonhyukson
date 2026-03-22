@@ -1,7 +1,7 @@
 <template>
   <div class="item-wrap">
     <router-link
-      v-if="itemData.type === ('sculpture' || 'painting')"
+      v-if="itemData.type === 'sculpture' || itemData.type === 'painting'"
       :to="`/${useStore().lang}/works/${itemData.id}`"
       @click="onClickArtworkList"
     >
