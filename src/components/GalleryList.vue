@@ -20,7 +20,7 @@ export default {
   name: "GalleryList",
   components: { GalleryListItem },
   computed: {
-    listData() {
+    /*listData() {
       let list = useStore().worksList;
       let listOfCurrentCategory = list.filter(
         (work) => work.type === this.$route.name.toLowerCase()
@@ -35,6 +35,31 @@ export default {
         );
       }
       return list ? filtered : [];
+    },*/
+    listData() {
+      const list = useStore().worksList;
+      const currentCategory = this.$route.name.toLowerCase();
+
+      let listOfCurrentCategory = list.filter((work) => {
+        switch (currentCategory) {
+          case 'works':
+            // 두 카테고리 중 하나라도 일치하면 true 반환
+            return work.type === 'sculpture' || work.type === 'painting';
+
+          default:
+            // 그 외 카테고리는 기존처럼 1:1 매칭
+            return work.type === currentCategory;
+        }
+      });
+
+      // 필터링 로직 (기존과 동일)
+      if (this.selectedFilterId !== "_ALL_") {
+        listOfCurrentCategory = listOfCurrentCategory.filter(
+            (work) => work.collectionType === this.selectedFilterId
+        );
+      }
+
+      return list ? listOfCurrentCategory : [];
     },
   },
   props: {

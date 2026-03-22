@@ -1,4 +1,17 @@
 {
+  "works": [{
+    "id": "_ALL_",
+    "name": "All"
+  },{
+    "id": "assembly",
+    "name": "Assembly"
+  },{
+    "id": "assemble abstract",
+    "name": "Assemble abstract"
+  },{
+    "id": "assemble sculpture",
+    "name": "Assemble sculpture"
+  }],
   "sculpture": [{
     "id": "_ALL_",
     "name": "All"
