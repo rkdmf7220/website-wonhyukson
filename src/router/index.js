@@ -72,7 +72,7 @@ const routes = [
     // redirect: '/sculpture'
   },*/
   {
-    path: "/:lang(ko|en)/:works(works|texts|archives|news)/:id",
+    path: "/:lang(ko|en)/:works(works|typography|texts|archives|news)/:id",
     name: "DetailPage",
     component: () => import("../components/Detail.vue"),
   },
