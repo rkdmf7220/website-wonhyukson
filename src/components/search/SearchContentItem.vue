@@ -11,6 +11,17 @@
         <p class="search-item-type">{{ searchItem?.type }}</p>
       </router-link>
     </template>
+    <template v-else-if="searchItem?.type === ('sculpture' || 'painting')">
+      <router-link :to="`/${useStore().lang}/works/${searchItem?.id}`">
+        <h4 class="search-item-title">{{ searchItem?.title }}</h4>
+        <p class="search-item-text">
+          <span>{{ searchItem?.searchedText.before }}</span>
+          <span class="search-item-text-highlight">{{ searchItem?.searchedText.highlight }}</span>
+          <span>{{ searchItem?.searchedText.after }}</span>
+        </p>
+        <p class="search-item-type">works</p>
+      </router-link>
+    </template>
     <template v-else>
       <router-link :to="`/${useStore().lang}/${searchItem?.type}/${searchItem?.id}`">
         <h4 class="search-item-title">{{ searchItem?.title }}</h4>

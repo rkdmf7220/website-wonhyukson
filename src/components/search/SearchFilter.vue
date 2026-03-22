@@ -28,6 +28,10 @@ export default {
         id: '_ALL_',
         length: null
       }, {
+        title: 'Works',
+        id: 'works',
+        length: null
+      }, /*{
         title: 'Sculpture',
         id: 'sculpture',
         length: null
@@ -35,7 +39,7 @@ export default {
         title: 'Painting',
         id: 'painting',
         length: null
-      }, {
+      }, */{
         title: 'Typography',
         id: 'typography',
         length: null
@@ -69,11 +73,21 @@ export default {
     setFilterList(list) {
       this.filterList.forEach(item => {
         if (item.id === '_ALL_') {
-          item.length = list?.length
+          item.length = list?.length;
           return;
         }
-        item.length = list?.filter(searchedItem => searchedItem.type === item.id).length;
-      })
+
+        item.length = list?.filter(searchedItem => {
+          if (item.id === 'works') {
+            return (
+                searchedItem.type === 'sculpture' ||
+                searchedItem.type === 'painting'
+            );
+          }
+
+          return searchedItem.type === item.id;
+        }).length;
+      });
     }
   }
 }

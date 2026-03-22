@@ -32,7 +32,16 @@ export default {
       if (this.selectedType === '_ALL_') {
         return this.searchedList;
       }
-      return this.searchedList.filter(item => item.type === this.selectedType);
+
+      return this.searchedList.filter(item => {
+        if (this.selectedType === 'works') {
+          return (
+              item.type === 'sculpture' ||
+              item.type === 'painting'
+          );
+        }
+        return item.type === this.selectedType;
+      });
     },
     currentLang() {
       return useStore().lang;
